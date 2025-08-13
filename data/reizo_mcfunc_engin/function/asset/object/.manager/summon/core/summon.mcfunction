@@ -5,4 +5,4 @@
 # @within function reizo_mcfunc_engin:asset/object/.manager/summon/summon
 
 # IDを代入
-$function reizo_mcfunc_engin:asset/object/$(ID)/summon/_
+$function $(namespace):asset/object/$(ID)/summon/_
