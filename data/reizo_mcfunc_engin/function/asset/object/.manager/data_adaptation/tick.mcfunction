@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/object/.manager/data_adaptation/tick
 #
-# 
+# レジスターとレジストリを覗いて見て常時Tickで設定を変更してもらう。
 #
 # @public
 

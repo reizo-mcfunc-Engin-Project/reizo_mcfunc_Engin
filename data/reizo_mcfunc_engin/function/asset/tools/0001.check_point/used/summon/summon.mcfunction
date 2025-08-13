@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/tools/0001.check_point/used/summon/summon
 #
-# 
+# チェックポイントを召喚し、もう一度TPして戻ってこれるようにする動作。召喚位置も知らせる。
 #
 # @within function reizo_mcfunc_engin:asset/tools/0001.check_point/used/summon/_
 

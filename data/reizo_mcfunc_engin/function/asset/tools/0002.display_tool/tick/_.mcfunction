@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/tools/0002.display_tool/tick/_
 #
-# 
+# ディスプレイツールの動作。
 #
 # @within function reizo_mcfunc_engin:asset/tools/.manager/tick/run.m/_
 

@@ -1,10 +1,10 @@
-#> 
+#> reizo_mcfunc_engin:asset/object/.manager/data_adaptation/extends/tick
 #
-# 
+# 継承譲歩をコピー、そして継承元を呼び出し。
 #
-# @
+# @within function reizo_mcfunc_engin:asset/object/.manager/data_adaptation/tick
 
-#
+# 継承情報をコピー
 data modify storage reizo_mcfunc_engin:object CopyExtends append value []
 data modify storage reizo_mcfunc_engin:object CopyExtends[-1] set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register.Extends
 

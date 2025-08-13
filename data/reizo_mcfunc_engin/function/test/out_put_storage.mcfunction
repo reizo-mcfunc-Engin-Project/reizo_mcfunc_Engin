@@ -4,7 +4,7 @@
 #
 # @public
 # @MacroInput
-#   Name = ストレージのリソースパス
-#   Path = アウトプットしたいNBTのパス
+#   storage = ストレージのリソースパス
+#   nbt = アウトプットしたいNBTのパス
 
-$tellraw @a[tag=reizo.Debug] {storage:"$(Name)",nbt:"$(Path)"}
+$tellraw @a[tag=reizo.Debug] {storage:"$(storage)",nbt:"$(nbt)"}

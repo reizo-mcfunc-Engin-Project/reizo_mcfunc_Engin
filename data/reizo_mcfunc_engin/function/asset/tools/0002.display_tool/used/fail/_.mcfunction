@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/tools/0002.display_tool/used/fail/_
 #
-# 
+# 召喚されたディスプレイがアイテムだった場合はアイテムディスプレイにして再召喚
 #
 # @within function reizo_mcfunc_engin:asset/tools/0002.display_tool/used/summon_display
 

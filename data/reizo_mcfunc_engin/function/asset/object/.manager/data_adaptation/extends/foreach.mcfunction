@@ -1,8 +1,10 @@
-#> 
+#> reizo_mcfunc_engin:asset/object/.manager/data_adaptation/extends/foreach
 #
-# 
+# スーパークラスを呼び出す...Finalがついてたら止まるぞ。
 #
-# @
+# @within function
+#   reizo_mcfunc_engin:asset/object/.manager/data_adaptation/extends/tick
+#   reizo_mcfunc_engin:asset/object/.manager/data_adaptation/extends/foreach
 
 # よかぁ考えればnamespaceいるよね。
 data modify storage reizo_mcfunc_engin:object Object.namespace set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Object.namespace

@@ -1,10 +1,10 @@
 #> reizo_mcfunc_engin:asset/tools/0002.display_tool/used/sneak/false/summon_display
 #
-# 
+# ディスプレイの召喚処理
 #
 # @within function reizo_mcfunc_engin:asset/tools/0002.display_tool/used/sneak/false/_
 
-# なんでデータないんだよ！
+# なんでデータないんだよ！エラーだよ！
 execute \
 unless data storage reizo_mcfunc_engin:_ Tools.DisplayTool.Block run \
 function reizo_mcfunc_engin:error/args {Args:"Block"}

@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/tools/0002.display_tool/tick/sneak
 #
-# 
+# しゃがんでいるときに、kill対象へとパーティクルを置くもの。
 #
 # @within function reizo_mcfunc_engin:asset/tools/0002.display_tool/tick/sneak
 

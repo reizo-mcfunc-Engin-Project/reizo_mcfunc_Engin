@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/object/.manager/register/set_data/extends/_
 #
-# 
+# 継承元のRegisterを呼び出す
 #
 # @within function reizo_mcfunc_engin:asset/object/.manager/register/set_data/_
 

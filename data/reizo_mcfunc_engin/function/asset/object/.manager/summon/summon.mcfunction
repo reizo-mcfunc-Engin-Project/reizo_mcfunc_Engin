@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/object/.manager/summon/summon
 #
-# 
+# 召喚処理はここで管理。
 #
 # @within function reizo_mcfunc_engin:asset/object/.manager/summon/run.m
 

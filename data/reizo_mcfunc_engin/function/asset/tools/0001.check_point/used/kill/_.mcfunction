@@ -1,8 +1,8 @@
 #> reizo_mcfunc_engin:asset/tools/0001.check_point/used/kill/_
 #
-# kill!
+# 自分とスコアで結びついてるチェックポイントを消してくれる
 #
-# @
+# @within function reizo_mcfunc_engin:asset/tools/0001.check_point/used/_
 
 # 先にフォースロード削除!
 execute \

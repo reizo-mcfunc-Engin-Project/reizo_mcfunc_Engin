@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/object/.manager/summon/run.m
 #
-# 
+# IDとnamespaceを設定してもらう。
 #
 # @public
 
