@@ -9,6 +9,7 @@ function #oh_my_dat:please
 
 #> データ登録
     # 継承(オプション)
+    # data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register.Extends set value ""
     # 継承されないかどうか。 boolean型
     data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Mob.Final set value 1b
     # 名前 String型
