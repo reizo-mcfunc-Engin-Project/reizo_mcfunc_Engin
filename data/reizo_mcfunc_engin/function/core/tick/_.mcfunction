@@ -17,8 +17,8 @@ function reizo_mcfunc_engin:core/tick/re_spawn_cube_particle
 
 # Object以外はMobやで～
 execute \
-if entity @e[type=!#reizo_mcfunc_engin:object/default,type=!player] \
-as @e[type=!#reizo_mcfunc_engin:object/default,type=!player] at @s run \
+if entity @e[type=!#reizo_mcfunc_engin:object/default,type=!player,tag=reizo_mcfunc_Engin.Mob] \
+as @e[type=!#reizo_mcfunc_engin:object/default,type=!player,tag=reizo_mcfunc_Engin.Mob] at @s run \
 function reizo_mcfunc_engin:asset/mob/.manager/tick/_
 
 # Objectの処理

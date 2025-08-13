@@ -32,3 +32,8 @@ data modify entity @s equipment set from storage reizo_mcfunc_engin:mob Register
 
 # 大きさ変更
 function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/scale with storage reizo_mcfunc_engin:mob Register
+
+# 何かしら継承しているなら動かす
+execute \
+if data storage reizo_mcfunc_engin:mob Register.Extends run \
+function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_

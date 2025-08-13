@@ -4,8 +4,8 @@
 #
 # @within function core/tick/_
 
-# OMD呼び出し
-function #oh_my_dat:please
+# 常時データ適応を呼び出し
+function reizo_mcfunc_engin:asset/mob/.manager/data_adaptation/tick
 
 # tick処理を叩く。
 function reizo_mcfunc_engin:asset/mob/.manager/tick/run.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Mob

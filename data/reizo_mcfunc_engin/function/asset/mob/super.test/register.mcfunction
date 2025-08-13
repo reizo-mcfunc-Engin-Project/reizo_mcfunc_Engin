@@ -5,8 +5,8 @@
 # @within function reizo_mcfunc_engin:asset/mob/.manager/register/run.m
 
 #> データ登録
-    # 継承(オプション)
-    # data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register.Extends set value ""
+    # 継承(オプション) String型
+    # data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register.Extends append value ""
     # 継承されないかどうか。 boolean型
     data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register.Final set value 0b
     # 名前 String型
