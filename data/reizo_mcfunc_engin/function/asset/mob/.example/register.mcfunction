@@ -20,3 +20,5 @@ function #oh_my_dat:please
     data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register.equipment set value {chest:{id:"leather_chestplate"},mainhand:{id:"iron_axe"}}
     # 大きさはどれくらい？ Max = 16.0d
     data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register.Scale set value 1.1d
+    # アイテムを落とすか？ boolean型
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register.DethItem_Empty set value 1b
