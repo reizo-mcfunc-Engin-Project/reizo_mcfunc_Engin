@@ -13,7 +13,7 @@ data modify storage reizo_mcfunc_engin:object Register set from storage oh_my_da
 # まさかのデータ取得出来てない事件
 execute \
 unless data storage reizo_mcfunc_engin:object Register run \
-function reizo_mcfunc_engin:error/fail_data_get {Data:"Register"}
+function reizo_mcfunc_engin:error/fail_data_get {Data:"Register(Reg)"}
 
 # 動くことが許されないなら、最初に初期のPosを取得。
 execute \

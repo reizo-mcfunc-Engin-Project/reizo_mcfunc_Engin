@@ -14,7 +14,7 @@ data modify storage reizo_mcfunc_engin:object Register set from storage oh_my_da
 # まさかのデータ取得無理でした。
 execute \
 unless data storage reizo_mcfunc_engin:object Register run \
-function reizo_mcfunc_engin:error/fail_data_get {Data:"Register"}
+function reizo_mcfunc_engin:error/fail_data_get {Data:"Register(tick)"}
 
 # 動いていいか？
 execute \
