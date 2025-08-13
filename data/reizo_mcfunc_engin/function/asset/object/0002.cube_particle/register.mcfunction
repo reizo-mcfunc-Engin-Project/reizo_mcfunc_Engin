@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/object/0002.cube_particle/register
 #
-# function reizo_mcfunc_engin:asset/object/.manager/summon/run.m {ID:"0002.cube_particle",namespace:"reizo_mcfunc_engin"}
+# 四角いパーティクルを作るためのObjectの登録処理
 #
 # @within function reizo_mcfunc_engin:asset/object/.manager/register/run.m
 
