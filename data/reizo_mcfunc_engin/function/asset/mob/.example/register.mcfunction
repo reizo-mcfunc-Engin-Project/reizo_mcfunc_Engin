@@ -8,10 +8,6 @@
 function #oh_my_dat:please
 
 #> データ登録
-    # IDをコピー
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Mob.ID set from storage reizo_mcfunc_engin:asset ID
-    # namespaceコピー
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Mob.namespace set from storage reizo_mcfunc_engin:asset namespace
     # 継承(オプション)
     # 継承されないかどうか。 boolean型
     data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Mob.Final set value 1b

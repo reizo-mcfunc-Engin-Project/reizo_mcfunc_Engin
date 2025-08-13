@@ -15,6 +15,12 @@ execute \
 if score $CubeParticleCount reizo_mcfunc_Engin._ matches ..1 run \
 function reizo_mcfunc_engin:core/tick/re_spawn_cube_particle
 
+# Object以外はMobやで～
+execute \
+if entity @e[type=!#reizo_mcfunc_engin:object/default,type=!player] \
+as @e[type=!#reizo_mcfunc_engin:object/default,type=!player] at @s run \
+function reizo_mcfunc_engin:asset/mob/.manager/tick/_
+
 # Objectの処理
 execute \
 if entity @e[tag=reizo_mcfunc_Engin.Object,type=#reizo_mcfunc_engin:object/default] \
