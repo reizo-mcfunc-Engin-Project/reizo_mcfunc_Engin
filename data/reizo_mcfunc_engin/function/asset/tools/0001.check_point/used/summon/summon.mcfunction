@@ -29,3 +29,6 @@ scoreboard players operation @n[tag=reizo_mcfunc_Engin.Object,type=marker,tag=re
     execute \
     if data storage reizo_mcfunc_engin:_ MarkerPos run \
     function reizo_mcfunc_engin:asset/tools/0001.check_point/used/summon/tell with storage reizo_mcfunc_engin:_ MarkerPos
+
+# 帰ってこれるようにフォースロード！
+forceload add ~ ~

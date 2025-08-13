@@ -4,6 +4,11 @@
 #
 # @
 
+# 先にフォースロード削除!
+execute \
+positioned as @n[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CheckPointMarker,type=marker] run \
+forceload remove ~ ~
+
 kill @n[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CheckPointMarker,type=marker]
 
 # 音
