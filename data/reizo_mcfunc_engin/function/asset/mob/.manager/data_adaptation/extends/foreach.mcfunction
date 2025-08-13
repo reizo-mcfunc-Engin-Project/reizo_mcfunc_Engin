@@ -12,7 +12,7 @@ data modify storage reizo_mcfunc_engin:mob Extends.namespace set from storage oh
 # IDを代入
 data modify storage reizo_mcfunc_engin:mob Extends.ID set from storage reizo_mcfunc_engin:mob CopyExtends[-1][0]
 
-# Registerで継承が禁止されていた。
+# Finalが1bのやつは継承が禁止されているんだ。
 execute \
 if data storage reizo_mcfunc_engin:mob {Register:{Final:1b}} run \
 return run function reizo_mcfunc_engin:error/call.super_method/final
