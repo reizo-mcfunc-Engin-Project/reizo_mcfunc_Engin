@@ -5,7 +5,7 @@
 # @within function reizo_mcfunc_engin:asset/object/.manager/register/set_data/_
 
 # 継承したいObjectのレジストリに対応させるためにIDに。
-data modify storage reizo_mcfunc_engin:asset Registry.CopyExtends.ID set from storage reizo_mcfunc_engin:asset Register.Extends
+data modify storage reizo_mcfunc_engin:object Registry.CopyExtends.ID set from storage reizo_mcfunc_engin:object Register.Extends
 
-# このままでは配列になっているので、一つずつ分けて実行
-function reizo_mcfunc_engin:asset/object/.manager/extends/get_id
+# このままだと配列なんで...なんとか分けて実行する。
+function reizo_mcfunc_engin:asset/.manager/extends/get_id {Type:"object"}

@@ -5,40 +5,40 @@
 # @within function reizo_mcfunc_engin:asset/object/.manager/data_adaptation/tick
 
 # Posを常時確認
-data modify storage reizo_mcfunc_engin:asset Registry.Pos set from entity @s Pos
+data modify storage reizo_mcfunc_engin:object Registry.Pos set from entity @s Pos
 
 # スコアに格納
     # Pos
     execute \
     store result score $Registry.Pos.X reizo_mcfunc_Engin.Temp run \
-    data get storage reizo_mcfunc_engin:asset Registry.Pos[0]
+    data get storage reizo_mcfunc_engin:object Registry.Pos[0]
     execute \
     store result score $Registry.Pos.Y reizo_mcfunc_Engin.Temp run \
-    data get storage reizo_mcfunc_engin:asset Registry.Pos[1]
+    data get storage reizo_mcfunc_engin:object Registry.Pos[1]
     execute \
     store result score $Registry.Pos.Z reizo_mcfunc_Engin.Temp run \
-    data get storage reizo_mcfunc_engin:asset Registry.Pos[2]
+    data get storage reizo_mcfunc_engin:object Registry.Pos[2]
     # InitPos
     execute \
     store result score $Registry.InitPos.X reizo_mcfunc_Engin.Temp run \
-    data get storage reizo_mcfunc_engin:asset Registry.InitPos[0]
+    data get storage reizo_mcfunc_engin:object Registry.InitPos[0]
     execute \
     store result score $Registry.InitPos.Y reizo_mcfunc_Engin.Temp run \
-    data get storage reizo_mcfunc_engin:asset Registry.InitPos[1]
+    data get storage reizo_mcfunc_engin:object Registry.InitPos[1]
     execute \
     store result score $Registry.InitPos.Z reizo_mcfunc_Engin.Temp run \
-    data get storage reizo_mcfunc_engin:asset Registry.InitPos[2]
+    data get storage reizo_mcfunc_engin:object Registry.InitPos[2]
 
 # Initから離れてる!動いたな！戻れ！
 execute \
 unless score $Registry.InitPos.X reizo_mcfunc_Engin.Temp = $Registry.Pos.X reizo_mcfunc_Engin.Temp run \
-data modify entity @s Pos set from storage reizo_mcfunc_engin:asset Registry.InitPos
+data modify entity @s Pos set from storage reizo_mcfunc_engin:object Registry.InitPos
 execute \
 unless score $Registry.InitPos.Y reizo_mcfunc_Engin.Temp = $Registry.Pos.Y reizo_mcfunc_Engin.Temp run \
-data modify entity @s Pos set from storage reizo_mcfunc_engin:asset Registry.InitPos
+data modify entity @s Pos set from storage reizo_mcfunc_engin:object Registry.InitPos
 execute \
 unless score $Registry.InitPos.Z reizo_mcfunc_Engin.Temp = $Registry.Pos.Z reizo_mcfunc_Engin.Temp run \
-data modify entity @s Pos set from storage reizo_mcfunc_engin:asset Registry.InitPos
+data modify entity @s Pos set from storage reizo_mcfunc_engin:object Registry.InitPos
 
 # リセット
 execute \
