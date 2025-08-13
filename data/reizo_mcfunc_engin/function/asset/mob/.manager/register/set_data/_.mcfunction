@@ -30,6 +30,11 @@ execute \
 if data storage reizo_mcfunc_engin:mob Register.equipment run \
 data modify entity @s equipment set from storage reizo_mcfunc_engin:mob Register.equipment
 
+# 死んだときのアイテムはどうなるか。
+execute \
+if data storage reizo_mcfunc_engin:mob {Register:{DethItem_Empty:1b}} run \
+data modify entity @s DeathLootTable set value "reizo_mcfunc_engin:death/empty"
+
 # 大きさ変更
 function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/scale with storage reizo_mcfunc_engin:mob Register
 
