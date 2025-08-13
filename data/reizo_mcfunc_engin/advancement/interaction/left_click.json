@@ -1,0 +1,16 @@
+{
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:player_hurt_entity",
+        "conditions": {
+          "entity": {
+            "type": "interaction",
+            "nbt": "{Tags:[\"reizo_mcfunc_Engin.Object.ClickDetection\"]}"
+          }
+        }
+      }
+    },
+    "rewards": {
+      "function": "reizo_mcfunc_engin:core/tick/player/get_data/click_detection/left"
+    }
+  }

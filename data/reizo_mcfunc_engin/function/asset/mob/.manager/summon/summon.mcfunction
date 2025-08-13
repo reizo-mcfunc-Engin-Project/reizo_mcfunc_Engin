@@ -1,0 +1,17 @@
+#> reizo_mcfunc_engin:asset/mob/.manager/summon/summon
+#
+# 
+#
+# @within function reizo_mcfunc_engin:asset/mob/.manager/summon/run.m
+
+# 召喚！
+function reizo_mcfunc_engin:asset/mob/.manager/summon/core/summon with storage reizo_mcfunc_engin:asset
+
+# Init処理
+execute as @e[tag=reizo_mcfunc_Engin.Mob.Init,distance=..0.01,limit=1] at @s run \
+function reizo_mcfunc_engin:asset/mob/.manager/summon/init
+
+# リセット
+data remove storage reizo_mcfunc_engin:asset ID
+data remove storage reizo_mcfunc_engin:asset namespace
+data remove storage reizo_mcfunc_engin:asset Register

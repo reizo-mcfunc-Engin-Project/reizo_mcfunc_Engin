@@ -1,0 +1,69 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "diamond_horse_armor",
+                    "functions": [
+                        {
+                            "function": "set_components",
+                            "components": {
+                                "custom_data": {"Address":"0002.display_tool","namespace":"reizo_mcfunc_engin"},
+                                "consumable": {
+                                    "animation": "none",
+                                    "consume_seconds": 2147483647},
+                                    "enchantment_glint_override": true,
+                                    "max_stack_size": 1,
+                                    "item_model": "netherite_ingot",
+                                    "!minecraft:attribute_modifiers": {}
+                            }
+                        },
+                        {
+                            "function": "set_name",
+                            "name": [
+                                {
+                                    "text": "ディスプレイツール",
+                                    "color": "#FF006C",
+                                    "italic": false
+                                }
+                            ]
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": "   "
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": "右クリックで左手に持っている",
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "set_lore",
+                            "lore": [
+                                {
+                                    "text": "ブロックをディスプレイにできる。",
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "append"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

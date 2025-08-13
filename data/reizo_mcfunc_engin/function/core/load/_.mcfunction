@@ -1,0 +1,31 @@
+#> reizo_mcfunc_engin:core/load/_
+#
+# リロードだ！
+#
+# @within tag/function minecraft:load
+
+#> ライブラリ呼び出し
+    # Oh_my_dat
+    function oh_my_dat:sys/load
+    # hb.PlayerMotion
+    function p_motion:system/load
+    # まさかの無理やり適応 AiUtil
+    function util:load
+
+# スコア作成
+scoreboard objectives add reizo_mcfunc_Engin._ dummy
+scoreboard objectives add reizo_mcfunc_Engin.Temp dummy
+scoreboard objectives add reizo_mcfunc_Engin.ScoreID dummy "スコアID Int型"
+scoreboard objectives add reizo_mcfunc_Engin.PFire_Power dummy "プレイヤーを燃やす強さ Int型"
+scoreboard objectives add reizo_mcfunc_Engin.using_Item dummy "アイテムを使用している。 Int型"
+scoreboard objectives add reizo_mcfunc_Engin.used_Item dummy "アイテムを使用した。 Int型"
+scoreboard objectives add reizo_mcfunc_Engin.AiTimer dummy "Aiの動作をタイマー式で決める。"
+scoreboard objectives add reizo_mcfunc_Engin.KiiTimer dummy "killされるまでの時間"
+
+# Initが終わった後の処理
+execute \
+if data storage reizo_mcfunc_engin:lib {OnlyOnce:{"reizo_mcfunc_engin:core/load/init":1b}} run \
+function reizo_mcfunc_engin:core/load/inited
+
+# Init処理
+function reizo_mcfunc_engin:lib/only_once/_ {func:"reizo_mcfunc_engin:core/load/init"}
