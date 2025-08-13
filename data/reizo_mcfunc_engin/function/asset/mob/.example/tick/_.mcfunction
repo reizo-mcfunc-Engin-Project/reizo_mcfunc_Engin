@@ -1,3 +1,3 @@
 
 
-particle electric_spark
+particle electric_spark ~ ~2.3 ~
