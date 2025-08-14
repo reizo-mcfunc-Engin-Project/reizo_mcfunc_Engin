@@ -20,6 +20,5 @@ if dimension the_end
 
 # デバッカーがいるなら。
 execute \
-if entity @s[tag=reizo.Debug,type=player] \
-at @s[tag=reizo.Debug,type=player] run \
+if entity @s[tag=reizo.Debug,type=player] run \
 function reizo_mcfunc_engin:lib/get_dimension/debug/tell_dimension
