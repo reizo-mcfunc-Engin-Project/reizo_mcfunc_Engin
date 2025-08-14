@@ -5,11 +5,7 @@
 # @within function function reizo_mcfunc_engin:asset/object/.manager/summon/run.m
 
 # もうすでに俺がいる。
-execute \
-unless entity @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CubeParticle,type=block_display] run \
 summon block_display 0.0 0.0 0.0 {Tags:["reizo_mcfunc_Engin.Object","reizo_mcfunc_Engin.Object.Init","reizo_mcfunc_Engin.Object.CubeParticle"],Rotation:[0f,90f]}
 
 # 次に俺が召喚されんだ。一つのsummonで二つ。効率いいな。
-execute \
-if entity @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CubeParticle,type=block_display] run \
 summon block_display 0.0 0.0 0.0 {Tags:["reizo_mcfunc_Engin.Object","reizo_mcfunc_Engin.Object.Init","reizo_mcfunc_Engin.Object.CubeParticle"],Rotation:[180f,-90f]}
