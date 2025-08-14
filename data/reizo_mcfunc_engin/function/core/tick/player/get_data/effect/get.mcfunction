@@ -2,7 +2,7 @@
 #
 # エフェクトを確認
 #
-# @within function reizo_mcfunc_engin:core/tick/player/get_data/effect/_
+# @within function reizo_mcfunc_engin:core/tick/player/get_data/tick
 
 # お願いOh_my_data!
 function #oh_my_dat:please
