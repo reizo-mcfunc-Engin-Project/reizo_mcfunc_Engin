@@ -7,7 +7,7 @@
 # しゃがんでて笑う。
 execute \
 if predicate reizo_mcfunc_engin:sneak run \
-function reizo_mcfunc_engin:asset/tools/0002.display_tool/tick/sneak
+function reizo_mcfunc_engin:asset/tools/0002.display_tool/tick/sneak/_
 
 # 左手
 execute \
