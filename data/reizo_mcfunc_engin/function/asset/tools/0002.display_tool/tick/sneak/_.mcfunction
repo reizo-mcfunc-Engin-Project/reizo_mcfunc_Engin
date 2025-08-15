@@ -4,7 +4,7 @@
 #
 # @within function reizo_mcfunc_engin:asset/tools/0002.display_tool/tick/sneak
 
-# ブロックでスプレイ
+# ブロックディスプレイ
 execute \
 positioned as @n[type=block_display,tag=!reizo_mcfunc_Engin.Object.CubeParticle] \
 positioned ~0.5 ~0.5 ~0.5 run \
