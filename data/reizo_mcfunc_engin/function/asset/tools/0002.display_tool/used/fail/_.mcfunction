@@ -18,7 +18,7 @@ tag @n[tag=reizo_mcfunc_Engin.BD.Init,type=block_display,nbt={block_state:{Name:
     # 左手先よ！
     execute \
     if data storage reizo_mcfunc_engin:_ Item.Main_Address run \
-    data modify storage reizo_mcfunc_engin:_ Tools.DisplayTool.Item set from entity @s equipment.offhand
+    data modify storage reizo_mcfunc_engin:_ Tools.DisplayTool.Item set from entity @s Inventory[{Slot:-106b}]
 
 # 召喚
 function reizo_mcfunc_engin:asset/tools/0002.display_tool/used/fail/summon with storage reizo_mcfunc_engin:_ Tools.DisplayTool
