@@ -25,7 +25,7 @@
 # ホーミングする敵の方向に旋回
     # 右に旋回
         execute \
-        facing entity @e[tag=reizo_mcfunc_Engin.HomingTarget,distance=..20,limit=1] eyes \
+        facing entity @e[tag=reizo_mcfunc_Engin.HomingTarget,distance=..40,limit=1] eyes \
         positioned ^0.3 ^ ^3.0 \
         rotated as @s \
         positioned ^4.0 ^ ^ \
@@ -33,7 +33,7 @@
         scoreboard players operation $RotationX reizo_mcfunc_Engin.Temp += $HomingAngle reizo_mcfunc_Engin.Temp
     # 左に旋回
         execute \
-        facing entity @e[tag=reizo_mcfunc_Engin.HomingTarget,distance=..20,limit=1] eyes \
+        facing entity @e[tag=reizo_mcfunc_Engin.HomingTarget,distance=..40,limit=1] eyes \
         positioned ^-0.3 ^ ^3.0 \
         rotated as @s \
         positioned ^-4.0 ^ ^ \
@@ -41,7 +41,7 @@
         scoreboard players operation $RotationX reizo_mcfunc_Engin.Temp -= $HomingAngle reizo_mcfunc_Engin.Temp
     # 上に旋回
         execute \
-        facing entity @e[tag=reizo_mcfunc_Engin.HomingTarget,distance=..20,limit=1] eyes \
+        facing entity @e[tag=reizo_mcfunc_Engin.HomingTarget,distance=..40,limit=1] eyes \
         positioned ^ ^0.3 ^3.0 \
         rotated as @s \
         positioned ^ ^4.0 ^ \
@@ -49,7 +49,7 @@
         scoreboard players operation $RotationY reizo_mcfunc_Engin.Temp += $HomingAngle reizo_mcfunc_Engin.Temp
     # 下に旋回
         execute \
-        facing entity @e[tag=reizo_mcfunc_Engin.HomingTarget,distance=..20,limit=1] eyes \
+        facing entity @e[tag=reizo_mcfunc_Engin.HomingTarget,distance=..40,limit=1] eyes \
         positioned ^ ^-0.3 ^3.0 \
         rotated as @s \
         positioned ^ ^-4.0 ^ \
