@@ -67,7 +67,7 @@
     scoreboard players get $RotationY reizo_mcfunc_Engin.Temp
 
 # リセット
-    # data remove storage reizo_mcfunc_engin:lib Rotation
-    # scoreboard players reset $RotationX reizo_mcfunc_Engin.Temp
-    # scoreboard players reset $RotationY reizo_mcfunc_Engin.Temp
-    # scoreboard players reset $HomingAngle reizo_mcfunc_Engin.Temp
+    data remove storage reizo_mcfunc_engin:lib Rotation
+    scoreboard players reset $RotationX reizo_mcfunc_Engin.Temp
+    scoreboard players reset $RotationY reizo_mcfunc_Engin.Temp
+    scoreboard players reset $HomingAngle reizo_mcfunc_Engin.Temp
