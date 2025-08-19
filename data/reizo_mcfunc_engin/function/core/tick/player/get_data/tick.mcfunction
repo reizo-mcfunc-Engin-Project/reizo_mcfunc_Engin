@@ -9,11 +9,11 @@
         # アドレス
         execute \
         if data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".Address run \
-        data modify storage reizo_mcfunc_engin:_ Item.Off_Address set from entity @s equipment.offhand.components."minecraft:custom_data".Address
+        data modify storage reizo_mcfunc_engin:_ Item.Off_Address set from entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".Address
         # namespace
         execute \
         if data entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".namespace run \
-        data modify storage reizo_mcfunc_engin:_ Item.Off_namespace set from entity @s equipment.offhand.components."minecraft:custom_data".namespace
+        data modify storage reizo_mcfunc_engin:_ Item.Off_namespace set from entity @s Inventory[{Slot:-106b}].components."minecraft:custom_data".namespace
     # ここで右手
         # アドレス
         execute \

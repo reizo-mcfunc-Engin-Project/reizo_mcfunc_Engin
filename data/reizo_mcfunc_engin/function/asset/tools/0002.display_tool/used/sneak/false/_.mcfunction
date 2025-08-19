@@ -12,7 +12,7 @@
     # 右手
     execute \
     if data storage reizo_mcfunc_engin:_ Item.Main_Address run \
-    data modify storage reizo_mcfunc_engin:_ Tools.DisplayTool.Block set from entity @s equipment.offhand.id
+    data modify storage reizo_mcfunc_engin:_ Tools.DisplayTool.Block set from entity @s Inventory[{Slot:-106b}].id
 
 # 何にも持っていないならガラスに。
     execute \
