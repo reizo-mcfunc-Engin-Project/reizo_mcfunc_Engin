@@ -16,20 +16,7 @@ scoreboard players set $MotionPower reizo_mcfunc_Engin.Temp 125
     execute \
     positioned 0.0 0.0 0.0 \
     rotated as @s run \
-    summon area_effect_cloud ^ ^ ^0.4 \
-    {\
-    Tags:\
-        ["reizo_mcfunc_Engin.Motion.PosGetAEC"],\
-    Particle:\
-        {\
-        type:"block",\
-        block_state:\
-            {\
-            Name:"air"\
-            }\
-        },\
-    Duration:1\
-    }
+    summon area_effect_cloud ^ ^ ^0.4 {Tags:["reizo_mcfunc_Engin.Motion.PosGetAEC"]}
     # PosGetAECのPosを取得
     data modify storage reizo_mcfunc_engin:lib Args.Pos set from entity @n[type=area_effect_cloud,tag=reizo_mcfunc_Engin.Motion.PosGetAEC] Pos
 
