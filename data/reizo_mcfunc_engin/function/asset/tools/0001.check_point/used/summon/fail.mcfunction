@@ -5,7 +5,7 @@
 # @within function reizo_mcfunc_engin:asset/tools/0001.check_point/used/summon/_
 
 # 音！
-playsound block.note_block.bass
+playsound block.note_block.bass player @s ~ ~ ~ 1 1 1
 
 # 声！
-tellraw @s {"text":"地面に足がついていないため、召喚されませんでした。",color:"red"}
+tellraw @s {"text":"地面に足がついていないため、召喚されませんでした。","color":"red"}
