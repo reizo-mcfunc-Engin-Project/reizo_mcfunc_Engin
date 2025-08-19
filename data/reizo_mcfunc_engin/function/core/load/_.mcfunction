@@ -24,8 +24,5 @@ scoreboard objectives add reizo_mcfunc_Engin.KiiTimer dummy "killされるまで
 
 # Initが終わった後の処理
 execute \
-if data storage reizo_mcfunc_engin:lib {OnlyOnce:{"reizo_mcfunc_engin:core/load/init":1b}} run \
+if data storage reizo_mcfunc_engin:lib {OnlyOnce:{"reizo_mcfunc_engin:core/install/init":1b}} run \
 function reizo_mcfunc_engin:core/load/inited
-
-# Init処理
-function reizo_mcfunc_engin:lib/only_once/_ {func:"reizo_mcfunc_engin:core/load/init"}

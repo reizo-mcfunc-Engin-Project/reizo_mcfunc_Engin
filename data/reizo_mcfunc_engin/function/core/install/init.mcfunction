@@ -1,8 +1,8 @@
-#> reizo_mcfunc_engin:core/load/init
+#> reizo_mcfunc_engin:core/install/init
 #
-# 俺、Init処理
+# インストール通告をしてくれる。
 #
-# @within function reizo_mcfunc_engin:core/load/_
+# @within function reizo_mcfunc_engin:core/install/check
 
 # フォースロード！
 forceload add 0 0
