@@ -4,6 +4,9 @@
 #
 # @within function reizo_mcfunc_engin:asset/tools/.manager/tick/run.m/_
 
+# 俺にだけ見えててくれ！(パクリ)
+tag @s add reizo_mcfunc_Engin.User
+
 # しゃがんでて笑う。
 execute \
 if predicate reizo_mcfunc_engin:sneak \
@@ -34,3 +37,4 @@ function reizo_mcfunc_engin:asset/tools/0002.display_tool/used/_
 # リセット！
 data remove storage reizo_mcfunc_engin:_ Tools.DisplayTool.Item
 data remove storage reizo_mcfunc_engin:_ Tools.DisplayTool.Block
+tag @s remove reizo_mcfunc_Engin.User
