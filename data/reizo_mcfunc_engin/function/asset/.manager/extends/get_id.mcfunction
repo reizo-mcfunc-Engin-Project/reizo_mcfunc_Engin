@@ -3,7 +3,7 @@
 # 一つずつ分けて実行させる
 #
 # @api
-# @within function 
+# @within function
 #   reizo_mcfunc_engin:asset/.manager/extends/get_id
 #   reizo_mcfunc_engin:asset/*/.manager/register/set_data/extends/_
 # @MacroInput
