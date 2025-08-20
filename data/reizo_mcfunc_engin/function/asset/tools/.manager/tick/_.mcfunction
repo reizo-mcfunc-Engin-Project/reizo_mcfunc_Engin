@@ -10,5 +10,5 @@
 # アドレスを使い実行！ここはBothだけ。
 function reizo_mcfunc_engin:asset/tools/.manager/tick/run.m with storage reizo_mcfunc_engin:_ Item.Both
 
-#
+# いらないデータをお掃除
 data remove storage reizo_mcfunc_engin:_ Tools
