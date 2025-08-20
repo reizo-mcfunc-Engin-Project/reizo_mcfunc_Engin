@@ -16,7 +16,8 @@ function reizo_mcfunc_engin:asset/tools/0001.check_point/used/summon/_
     unless predicate reizo_mcfunc_engin:sneak \
     if entity @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CheckPointMarker,type=marker] \
     store success storage reizo_mcfunc_engin:_ Tools.CheckPointTool.Summon byte 1 \
-    unless score @s reizo_mcfunc_Engin.ScoreID = @n[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CheckPointMarker,type=marker] reizo_mcfunc_Engin.ScoreID
+    as @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CheckPointMarker,type=marker] at @s \
+    unless score @s reizo_mcfunc_Engin.ScoreID = @p[scores={reizo_mcfunc_Engin.using_Item=1..}] reizo_mcfunc_Engin.ScoreID
     # 確認出来たら召喚処理。
     execute \
     unless predicate reizo_mcfunc_engin:sneak \
