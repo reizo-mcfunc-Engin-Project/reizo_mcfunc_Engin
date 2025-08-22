@@ -1,0 +1,11 @@
+{
+    "mcdutil.createFile.fileTemplate": {
+        "function": [
+            "#> %fileResourcePath%",
+            "#",
+            "# %cursor%",
+            "#",
+            "# @within %nowOpenFileType% %nowOpenFileResourcePath%"
+        ]
+    }
+}
