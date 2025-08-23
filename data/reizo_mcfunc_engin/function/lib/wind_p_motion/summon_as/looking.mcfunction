@@ -6,11 +6,11 @@
 
 # Nullならデフォへ。
 execute \
-unless score $strength reizo_mcfunc_Engin._ matches -2147483648..2147483647 run \
-scoreboard players set $strength reizo_mcfunc_Engin._ 3
+unless score $strength reizo_mcfunc_Engin.Temp matches -2147483648..2147483647 run \
+scoreboard players set $strength reizo_mcfunc_Engin.Temp 3
 
 # 正の数か負の数かチェック
-function reizo_mcfunc_engin:lib/signum_check/score {Selecter:"$strength",Obj:"reizo_mcfunc_Engin._"}
+function reizo_mcfunc_engin:lib/signum_check/score {Selecter:"$strength",Obj:"reizo_mcfunc_Engin.Temp"}
 
 # 正の値か負の値かで分岐
     # 正
