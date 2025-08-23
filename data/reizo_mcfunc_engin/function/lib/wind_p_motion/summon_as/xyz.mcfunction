@@ -25,14 +25,14 @@
         execute \
         if data storage reizo_mcfunc_engin:lib Return{Signum:1.0f} \
         as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
-        positioned ~1 ~0.5 ~ run \
-        function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/looking
+        positioned ~-1 ~0.5 ~ run \
+        function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/xyz
         # 負の値
         execute \
         if data storage reizo_mcfunc_engin:lib Return{Signum:-1.0f} \
         as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
-        positioned ~-1 ~0.5 ~ run \
-        function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/looking
+        positioned ~1 ~0.5 ~ run \
+        function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/xyz
     # ライブラリリセット
     data remove storage reizo_mcfunc_engin:lib Return.Signum
     # Y
@@ -42,13 +42,13 @@
         if data storage reizo_mcfunc_engin:lib Return{Signum:1.0f} \
         as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
         positioned ~ ~-0.5 ~ run \
-        function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/looking
+        function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/xyz
         # 負の値
         execute \
         if data storage reizo_mcfunc_engin:lib Return{Signum:-1.0f} \
         as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
         positioned ~ ~1.5 ~ run \
-        function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/looking
+        function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/xyz
     # ライブラリリセット
     data remove storage reizo_mcfunc_engin:lib Return.Signum
     # Z
@@ -57,14 +57,14 @@
         execute \
         if data storage reizo_mcfunc_engin:lib Return{Signum:1.0f} \
         as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
-        positioned ~ ~0.5 ~1 run \
-        function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/looking
+        positioned ~ ~0.5 ~-1 run \
+        function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/xyz
         # 負の値
         execute \
         if data storage reizo_mcfunc_engin:lib Return{Signum:-1.0f} \
         as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
-        positioned ~ ~0.5 ~-1 run \
-        function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/looking
+        positioned ~ ~0.5 ~1 run \
+        function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/xyz
     # ライブラリリセット
     data remove storage reizo_mcfunc_engin:lib Return.Signum
 
