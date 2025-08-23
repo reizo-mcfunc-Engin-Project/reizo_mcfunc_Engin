@@ -9,14 +9,14 @@ execute \
 if score $Signum reizo_mcfunc_Engin.Temp matches 0 run \
 data modify storage reizo_mcfunc_engin:lib Return.Signum set value 0.0f
 
-# 0以上
+# 1以上
 execute \
-if score $Signum reizo_mcfunc_Engin.Temp matches 0.. run \
+if score $Signum reizo_mcfunc_Engin.Temp matches 1.. run \
 data modify storage reizo_mcfunc_engin:lib Return.Signum set value 1.0f
 
-# 0以下
+# 1以下
 execute \
-if score $Signum reizo_mcfunc_Engin.Temp matches ..0 run \
+if score $Signum reizo_mcfunc_Engin.Temp matches ..1 run \
 data modify storage reizo_mcfunc_engin:lib Return.Signum set value -1.0f
 
 # デバッグTagついてる奴いるな、伝えるか。
