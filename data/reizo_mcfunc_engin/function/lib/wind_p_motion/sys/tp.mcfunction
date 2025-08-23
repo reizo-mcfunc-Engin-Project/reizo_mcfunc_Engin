@@ -1,8 +1,8 @@
-#> reizo_mcfunc_engin:lib/wind_p_motion/tp
+#> reizo_mcfunc_engin:lib/wind_p_motion/sys/tp
 #
 # 
 #
-# @within function reizo_mcfunc_engin:lib/wind_p_motion/_
+# @within function reizo_mcfunc_engin:lib/wind_p_motion/after
 
 # markerにTP
 execute \
