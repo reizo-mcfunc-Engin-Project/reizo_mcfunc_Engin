@@ -12,11 +12,11 @@ if data storage reizo_mcfunc_engin:lib {Return:{Signum:0.0f}} run \
 tellraw @a [{"text":"値は、",color:"white"},{"text":"0",color:"gold"},{"text":"でした。",color:"white"}]
 
 # 正の数でした。
-execute \
+$execute \
 if data storage reizo_mcfunc_engin:lib {Return:{Signum:1.0f}} run \
-tellraw @a [{"text":"値は、",color:"white"},{"text":"正の数",color:"gold"},{"text":"でした。",color:"white"}]
+tellraw @a [{"text":"値は、",color:"white"},{"text":"正の数",color:"gold",hover_event:{action:"show_text",value:[{"text":"Obj名:$(Obj)"},{"text":"\nホルダー名:$(Selecter)\n"},{"score":{name:"$Signum",objective:"reizo_mcfunc_Engin.Temp"}}]}},{"text":"でした。",color:"white"}]
 
 # 負の数来たぞ。
-execute \
+$execute \
 if data storage reizo_mcfunc_engin:lib {Return:{Signum:-1.0f}} run \
-tellraw @a [{"text":"値は、",color:"white"},{"text":"負の数",color:"gold"},{"text":"でした。",color:"white"}]
+tellraw @a [{"text":"値は、",color:"white"},{"text":"負の数",color:"gold",hover_event:{action:"show_text",value:[{"text":"Obj名:$(Obj):"},{"text":"\nホルダー名:$(Selecter)\n"},{"score":{name:"$Signum",objective:"reizo_mcfunc_Engin.Temp"}}]}},{"text":"でした。",color:"white"}]

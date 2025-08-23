@@ -4,6 +4,16 @@
 #
 # @public
 
+# デバッグ
+    # Selecter
+    $execute \
+    if entity @a[tag=reizo.Debug] run \
+    data modify storage reizo_mcfunc_engin:lib Debug.Selecter set value "$(Selecter)"
+    # Obj
+    $execute \
+    if entity @a[tag=reizo.Debug] run \
+    data modify storage reizo_mcfunc_engin:lib Debug.Obj set value "$(Obj)"
+
 # Tempにスコアをコピー
 $execute \
 store result score $Signum reizo_mcfunc_Engin.Temp run \

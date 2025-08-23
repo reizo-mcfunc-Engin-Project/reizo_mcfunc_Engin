@@ -22,7 +22,7 @@ data modify storage reizo_mcfunc_engin:lib Return.Signum set value -1.0f
 # デバッグTagついてる奴いるな、伝えるか。
 execute \
 if entity @a[tag=reizo.Debug] run \
-function reizo_mcfunc_engin:lib/signum_check/debug/tell_value
+function reizo_mcfunc_engin:lib/signum_check/debug/tell_value with storage reizo_mcfunc_engin:lib Debug
 
 # リセット！
 scoreboard players reset $Signum reizo_mcfunc_Engin.Temp
