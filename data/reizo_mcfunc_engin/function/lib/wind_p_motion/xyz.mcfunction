@@ -4,6 +4,20 @@
 #
 # @within function reizo_mcfunc_engin:lib/wind_p_motion/looking
 
+#> ストレージから参照
+    # X
+    execute \
+    store result score $x reizo_mcfunc_Engin.Temp run \
+    data get storage reizo_mcfunc_engin:lib Wind_P_Motion.XYZ[0]
+    # Y
+    execute \
+    store result score $y reizo_mcfunc_Engin.Temp run \
+    data get storage reizo_mcfunc_engin:lib Wind_P_Motion.XYZ[1]
+    # Z
+    execute \
+    store result score $z reizo_mcfunc_Engin.Temp run \
+    data get storage reizo_mcfunc_engin:lib Wind_P_Motion.XYZ[2]
+
 # ビフォー処理
 function reizo_mcfunc_engin:lib/wind_p_motion/sys/before
 
