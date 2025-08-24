@@ -18,14 +18,14 @@ function reizo_mcfunc_engin:lib/signum_check/score {Selecter:"$strength",Obj:"re
     if data storage reizo_mcfunc_engin:lib Return{Signum:1.0f} \
     as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
     positioned ~ ~0.5 ~ \
-    positioned ^ ^ ^-1 run \
+    positioned ^ ^ ^-2.2 run \
     function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/looking
     # 負
     execute \
     if data storage reizo_mcfunc_engin:lib Return{Signum:-1.0f} \
     as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
     positioned ~ ~0.5 ~ \
-    positioned ^ ^ ^1 run \
+    positioned ^ ^ ^2.2 run \
     function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/looking
 
 # Tagはもういらない。
