@@ -26,13 +26,13 @@
         execute \
         if data storage reizo_mcfunc_engin:lib Return{Signum:1.0f} \
         as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
-        positioned ~-2.2 ~0.5 ~ run \
+        positioned ~-2.2 ~-0.733 ~ run \
         function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/xyz/x
         # 負の値
         execute \
         if data storage reizo_mcfunc_engin:lib Return{Signum:-1.0f} \
         as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
-        positioned ~2.2 ~0.5 ~ run \
+        positioned ~2.2 ~0.733 ~ run \
         function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/xyz/x
     # ライブラリリセット
     data remove storage reizo_mcfunc_engin:lib Return.Signum
@@ -43,13 +43,13 @@
         execute \
         if data storage reizo_mcfunc_engin:lib Return{Signum:1.0f} \
         as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
-        positioned ~ ~-1.7 ~ run \
+        positioned ~ ~-0.733 ~ run \
         function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/xyz/y
         # 負の値
         execute \
         if data storage reizo_mcfunc_engin:lib Return{Signum:-1.0f} \
         as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
-        positioned ~ ~2.7 ~ run \
+        positioned ~ ~0.733 ~ run \
         function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/xyz/y
     # ライブラリリセット
     data remove storage reizo_mcfunc_engin:lib Return.Signum
@@ -60,13 +60,13 @@
         execute \
         if data storage reizo_mcfunc_engin:lib Return{Signum:1.0f} \
         as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
-        positioned ~ ~0.5 ~-2.2 run \
+        positioned ~ ~-0.733 ~-2.2 run \
         function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/xyz/z
         # 負の値
         execute \
         if data storage reizo_mcfunc_engin:lib Return{Signum:-1.0f} \
         as @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] at @s \
-        positioned ~ ~0.5 ~2.2 run \
+        positioned ~ ~0.733 ~2.2 run \
         function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/xyz/z
     # ライブラリリセット
     data remove storage reizo_mcfunc_engin:lib Return.Signum
