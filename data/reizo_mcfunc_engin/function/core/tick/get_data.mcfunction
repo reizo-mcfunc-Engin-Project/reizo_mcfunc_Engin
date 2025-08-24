@@ -16,7 +16,7 @@ scoreboard players add $PlayTime reizo_mcfunc_Engin._ 1
 
 # ChuzToolsが導入されているなら、Test君の数を検知する。
 execute \
-if score #ChuzTools.Install ChuzTools.Install matches 1 \
+if entity @e[tag=ChuzTools.OriginMarker] \
 store result score $TestCount reizo_mcfunc_Engin._ \
 if entity @e[type=armor_stand,tag=Test]
 
