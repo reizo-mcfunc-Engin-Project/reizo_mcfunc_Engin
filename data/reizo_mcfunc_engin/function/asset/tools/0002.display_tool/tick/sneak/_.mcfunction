@@ -6,7 +6,7 @@
 
 # ブロックディスプレイ
 execute \
-if entity @s[type=block_display,tag=!reizo_mcfunc_Engin.Object.CubeParticle] \
+if entity @s[type=block_display] \
 positioned ~0.5 ~0.5 ~0.5 run \
 function reizo_mcfunc_engin:asset/tools/0002.display_tool/tick/sneak/cube_particle
 

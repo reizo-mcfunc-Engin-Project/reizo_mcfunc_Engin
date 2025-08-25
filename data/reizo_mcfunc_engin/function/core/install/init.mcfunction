@@ -22,7 +22,7 @@ playsound ui.toast.challenge_complete player @a ~ ~ ~ 100 1.5 1
 
 # 四角形製作用のObject
 execute \
-unless entity @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CubeParticle,type=block_display] run \
+unless entity @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CubeParticle,type=armor_stand] run \
 function reizo_mcfunc_engin:asset/object/.manager/summon/run.m {ID:"0002.cube_particle",namespace:"reizo_mcfunc_engin"}
 
 # 配列ストレージの準備
