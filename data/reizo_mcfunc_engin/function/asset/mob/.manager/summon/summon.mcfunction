@@ -8,7 +8,7 @@
 function reizo_mcfunc_engin:asset/mob/.manager/summon/core/summon with storage reizo_mcfunc_engin:mob
 
 # Init処理
-execute as @e[tag=reizo_mcfunc_Engin.Mob.Init] at @s run \
+execute as @e[tag=reizo_mcfunc_Engin.Mob,tag=reizo_mcfunc_Engin.Mob.Init] at @s run \
 function reizo_mcfunc_engin:asset/mob/.manager/summon/init
 
 # リセット
