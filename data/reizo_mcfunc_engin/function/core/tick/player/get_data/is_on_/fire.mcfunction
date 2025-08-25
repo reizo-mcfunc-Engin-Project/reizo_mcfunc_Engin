@@ -6,9 +6,7 @@
 
 #> 俺、燃えてるし。
     # 先にTag剥奪
-    execute \
-    if entity @s[tag=reizo_mcfunc_Engin.Is_on_Fire] run \
-    tag @s remove reizo_mcfunc_Engin.Is_on_Fire
+    tag @s[tag=reizo_mcfunc_Engin.Is_on_Fire] remove reizo_mcfunc_Engin.Is_on_Fire
     # 燃えてるならTag付け
     execute \
     if predicate reizo_mcfunc_engin:is_on_fire run \

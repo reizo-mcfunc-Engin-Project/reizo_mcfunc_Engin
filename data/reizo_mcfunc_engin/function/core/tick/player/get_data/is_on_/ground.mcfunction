@@ -6,9 +6,7 @@
 
 #> 地面についているかいないか。
     # 先にTag剥奪
-    execute \
-    if entity @s[tag=reizo_mcfunc_Engin.Is_on_Ground] run \
-    tag @s remove reizo_mcfunc_Engin.Is_on_Ground
+    tag @s[tag=reizo_mcfunc_Engin.Is_on_Ground] remove reizo_mcfunc_Engin.Is_on_Ground
     # 地面についているならOnGround付与
     execute \
     if entity @s[nbt={OnGround:1b}] run \
