@@ -24,7 +24,7 @@
                             "function": "set_name",
                             "name": [
                                 {
-                                    "text": "チェックポイント召喚",
+                                    "text": "チェックポイント召喚 / TP",
                                     "color": "#FF006C",
                                     "italic": false
                                 }
