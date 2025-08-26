@@ -12,4 +12,4 @@
 function reizo_mcfunc_engin:asset/object/.manager/data_adaptation/tick
 
 # tick処理を動かすぜ！
-function reizo_mcfunc_engin:asset/object/.manager/tick/run.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Object
+function reizo_mcfunc_engin:asset/object/.manager/tick/run.m with entity @s data.Object

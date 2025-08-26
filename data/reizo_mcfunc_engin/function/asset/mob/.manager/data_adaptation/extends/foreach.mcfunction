@@ -7,7 +7,7 @@
 #   reizo_mcfunc_engin:asset/mob/.manager/data_adaptation/extends/foreach
 
 # 実行用にnamespaceをコピー
-data modify storage reizo_mcfunc_engin:mob Extends.namespace set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Mob.namespace
+data modify storage reizo_mcfunc_engin:mob Extends.namespace set from entity @s data.Mob.namespace
 
 # IDを代入
 data modify storage reizo_mcfunc_engin:mob Extends.ID set from storage reizo_mcfunc_engin:mob CopyExtends[-1][0]

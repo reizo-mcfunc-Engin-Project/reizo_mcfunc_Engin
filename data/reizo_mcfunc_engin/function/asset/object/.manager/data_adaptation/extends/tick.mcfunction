@@ -6,7 +6,7 @@
 
 # 継承情報をコピー
 data modify storage reizo_mcfunc_engin:object CopyExtends append value []
-data modify storage reizo_mcfunc_engin:object CopyExtends[-1] set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register.Extends
+data modify storage reizo_mcfunc_engin:object CopyExtends[-1] set from entity @s data.Register.Extends
 
 # 継承元を呼び出す
 execute \

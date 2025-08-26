@@ -4,12 +4,9 @@
 #
 # @public
 
-# OMD呼び出し
-function #oh_my_dat:please
-
 # データ取得
-data modify storage reizo_mcfunc_engin:object Registry set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Registry
-data modify storage reizo_mcfunc_engin:object Register set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register
+data modify storage reizo_mcfunc_engin:object Registry set from entity @s data.Registry
+data modify storage reizo_mcfunc_engin:object Register set from entity @s data.Register
 
 # まさかのデータ取得無理でした。
 execute \

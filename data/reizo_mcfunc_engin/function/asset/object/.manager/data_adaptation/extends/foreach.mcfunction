@@ -7,7 +7,7 @@
 #   reizo_mcfunc_engin:asset/object/.manager/data_adaptation/extends/foreach
 
 # よかぁ考えればnamespaceいるよね。
-data modify storage reizo_mcfunc_engin:object Object.namespace set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Object.namespace
+data modify storage reizo_mcfunc_engin:object Object.namespace set from entity @s data.Object.namespace
 
 # IDを代入
 data modify storage reizo_mcfunc_engin:object Object.ID set from storage reizo_mcfunc_engin:object CopyExtends[-1][0]

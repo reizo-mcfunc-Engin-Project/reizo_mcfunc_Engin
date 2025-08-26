@@ -4,14 +4,11 @@
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/tick/_
 
-# OMD呼び出し
-function #oh_my_dat:please
-
 # データを取得(今のところMobはregistryを持っていないためregistryは、貰わない)
 execute \
-if data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register run \
-data modify storage reizo_mcfunc_engin:mob Register set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register
-# data modify storage reizo_mcfunc_engin:mob Registry set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Registry
+if data entity @s data.Register run \
+data modify storage reizo_mcfunc_engin:mob Register set from entity @s data.Register
+# data modify storage reizo_mcfunc_engin:mob Registry set from entity @s data.Registry
 
 # まさかのデータ取得無理でした。
 execute \

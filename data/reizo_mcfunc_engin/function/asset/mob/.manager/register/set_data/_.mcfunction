@@ -4,11 +4,8 @@
 #
 # @
 
-# OMD呼び出し
-function #oh_my_dat:please
-
 # データ取得
-data modify storage reizo_mcfunc_engin:mob Register set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Register
+data modify storage reizo_mcfunc_engin:mob Register set from entity @s data.Register
 
 # まさかのデータ取得出来てない事件
 execute \

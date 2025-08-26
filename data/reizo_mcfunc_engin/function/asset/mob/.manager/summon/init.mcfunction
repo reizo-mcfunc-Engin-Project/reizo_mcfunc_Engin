@@ -4,14 +4,11 @@
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/summon/summon
 
-# OMD呼び出し
-function #oh_my_dat:please
-
-#> ID,namespaceをOMDに
+#> ID,namespaceをdataに
     # IDをコピー
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Mob.ID set from storage reizo_mcfunc_engin:mob ID
+    data modify entity @s data.Mob.ID set from storage reizo_mcfunc_engin:mob ID
     # namespaceコピー
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Mob.namespace set from storage reizo_mcfunc_engin:mob namespace
+    data modify entity @s data.Mob.namespace set from storage reizo_mcfunc_engin:mob namespace
 
 # 登録処理
 function reizo_mcfunc_engin:asset/mob/.manager/register/run.m with storage reizo_mcfunc_engin:mob
