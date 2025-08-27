@@ -17,5 +17,5 @@
     data modify entity @s data.Register.equipment set value {chest:{id:"leather_chestplate"},mainhand:{id:"iron_axe"}}
     # 大きさはどれくらい？ Max = 16.0d
     data modify entity @s data.Register.Scale set value 1.1d
-    # アイテムを落とすか？ boolean型
+    # アイテムを落とさないか？ boolean型
     data modify entity @s data.Register.DethItem_Empty set value 1b
