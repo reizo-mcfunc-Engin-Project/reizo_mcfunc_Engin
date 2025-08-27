@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/object/0001.click_detection/register
 #
-# 
+# クリック検知用インタラクションの登録処理。
 #
 # @within function reizo_mcfunc_engin:asset/object/.manager/register/run.m
 

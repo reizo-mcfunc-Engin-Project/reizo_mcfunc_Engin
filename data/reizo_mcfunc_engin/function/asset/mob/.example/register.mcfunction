@@ -1,8 +1,8 @@
-#> 
+#> reizo_mcfunc_engin:asset/mob/.example/register
 #
-# 
+# .exampleの登録処理。
 #
-# @
+# @within function reizo_mcfunc_engin:asset/mob/.manager/register/run.m
 
 #> データ登録
     # 継承(オプション)
