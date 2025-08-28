@@ -33,7 +33,10 @@
     positioned ^ ^ ^2 run \
     function reizo_mcfunc_engin:asset/tools/0002.display_tool/used/sneak/false/summon_display with storage reizo_mcfunc_engin:_ Tools.DisplayTool
 
-# デバッグ用 召喚したブロックの名前をアウトプット
-execute \
-if entity @s[tag=reizo.Debug] run \
-function reizo_mcfunc_engin:test/out_put_storage {"storage":"reizo_mcfunc_engin:_",nbt:"Tools.DisplayTool.Block"}
+#> デバッグ用
+    # ストレージに見たいストレージを入れる。
+    data modify storage reizo_mcfunc_engin:test OPS.NBT set from storage reizo_mcfunc_engin:_ Tools.DisplayTool.Block
+    # 召喚したブロックの名前をアウトプット
+    execute \
+    if entity @s[tag=reizo.Debug] run \
+    function reizo_mcfunc_engin:test/out_put_storage
