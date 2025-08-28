@@ -43,7 +43,7 @@
                             "function": "set_lore",
                             "lore": [
                                 {
-                                    "text": "右クリックで左手に持っている",
+                                    "text": "表示位置にディスプレイを召喚する。",
                                     "color": "white",
                                     "italic": false
                                 }
@@ -54,7 +54,7 @@
                             "function": "set_lore",
                             "lore": [
                                 {
-                                    "text": "ブロックをディスプレイにできる。",
+                                    "text": "オフハンドで使用する場合は、メインハンドのアイテムのディスプレイを召喚する。",
                                     "color": "white",
                                     "italic": false
                                 }
