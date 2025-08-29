@@ -14,3 +14,6 @@ return run data modify storage reizo_mcfunc_engin:lib Return.AbsGet set value "0
 
 # 絶対値を求めてみる。
 data modify storage reizo_mcfunc_engin:lib Return.AbsGet set string storage reizo_mcfunc_engin:lib Temp.AbsGet 1
+
+# Tempリセット
+data remove storage reizo_mcfunc_engin:lib Temp.AbsGet
