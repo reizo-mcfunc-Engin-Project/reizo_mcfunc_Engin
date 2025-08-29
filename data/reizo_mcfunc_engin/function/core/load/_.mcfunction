@@ -22,6 +22,10 @@ scoreboard objectives add reizo_mcfunc_Engin.used_Item dummy "アイテムを使
 scoreboard objectives add reizo_mcfunc_Engin.AiTimer dummy "Aiの動作をタイマー式で決める。"
 scoreboard objectives add reizo_mcfunc_Engin.KiiTimer dummy "killされるまでの時間"
 
+#> コンスト
+scoreboard players set #2 reizo_mcfunc_Engin.Temp 2
+scoreboard players set #-2147483648 reizo_mcfunc_Engin.Temp -2147483648
+
 # Initが終わった後の処理
 execute \
 if data storage reizo_mcfunc_engin:lib {OnlyOnce:{"reizo_mcfunc_engin:core/install/init":1b}} run \
