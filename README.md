@@ -30,3 +30,6 @@ https://github.com/Ai-Akaishi/AiUtil/tree/main
 
 #### ひろばお氏のプレイヤーモーション
 https://github.com/Hirobao1/CustomEnchant_PlayerMotion
+
+### こま氏の距離測定ライブラリ
+https://github.com/komaramune/km-distance
