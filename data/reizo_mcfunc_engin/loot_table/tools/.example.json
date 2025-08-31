@@ -10,13 +10,13 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "custom_data": {"Tool":{"Address":"0001.check_point","namespace":"reizo_mcfunc_engin"}},
+                                "custom_data": {"Tool":{"Address":".example","namespace":"reizo_mcfunc_engin"}},
                                 "consumable": {
                                     "animation": "none",
                                     "consume_seconds": 2147483647},
                                     "enchantment_glint_override": true,
                                     "max_stack_size": 1,
-                                    "item_model": "breeze_rod",
+                                    "item_model": "player_head",
                                     "!minecraft:attribute_modifiers": {}
                             }
                         },
@@ -24,7 +24,7 @@
                             "function": "set_name",
                             "name": [
                                 {
-                                    "text": "チェックポイント召喚 / TP",
+                                    "text": "お手本ツールルートテーブル",
                                     "color": "#FF006C",
                                     "italic": false
                                 }
@@ -43,7 +43,7 @@
                             "function": "set_lore",
                             "lore": [
                                 {
-                                    "text": "右クリックでチェックポイントを召喚し、",
+                                    "text": "お手本ツールのルートテーブル",
                                     "color": "white",
                                     "italic": false
                                 }
@@ -54,7 +54,7 @@
                             "function": "set_lore",
                             "lore": [
                                 {
-                                    "text": "もう一度クリックすることで、そこに戻れる。",
+                                    "text": "ルートテーブル用なので何も効果は持っていない。",
                                     "color": "white",
                                     "italic": false
                                 }

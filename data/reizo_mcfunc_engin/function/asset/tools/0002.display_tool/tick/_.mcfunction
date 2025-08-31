@@ -16,7 +16,7 @@ function reizo_mcfunc_engin:asset/tools/0002.display_tool/tick/sneak/_
 # 左手
 execute \
 unless predicate reizo_mcfunc_engin:sneak \
-if data storage reizo_mcfunc_engin:_ Item.Off_Address \
+if data storage reizo_mcfunc_engin:_ Tool.Off_Address \
 anchored eyes \
 positioned ^ ^ ^4 run \
 function reizo_mcfunc_engin:asset/tools/0002.display_tool/tick/cursor
@@ -24,7 +24,7 @@ function reizo_mcfunc_engin:asset/tools/0002.display_tool/tick/cursor
 # 右手
 execute \
 unless predicate reizo_mcfunc_engin:sneak \
-if data storage reizo_mcfunc_engin:_ Item.Main_Address \
+if data storage reizo_mcfunc_engin:_ Tool.Main_Address \
 anchored eyes \
 positioned ^ ^ ^2 run \
 function reizo_mcfunc_engin:asset/tools/0002.display_tool/tick/cursor

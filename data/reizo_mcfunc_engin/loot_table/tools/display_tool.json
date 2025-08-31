@@ -10,7 +10,7 @@
                         {
                             "function": "set_components",
                             "components": {
-                                "custom_data": {"Address":"0002.display_tool","namespace":"reizo_mcfunc_engin"},
+                                "custom_data": {"Tool":{"Address":"0002.display_tool","namespace":"reizo_mcfunc_engin"}},
                                 "consumable": {
                                     "animation": "none",
                                     "consume_seconds": 2147483647},

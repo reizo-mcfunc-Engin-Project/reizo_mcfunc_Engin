@@ -28,7 +28,7 @@ scoreboard players set @s reizo_mcfunc_Engin.used_Item 0
     function reizo_mcfunc_engin:asset/item/.manager/tick/_
     # Tool
     execute \
-    if data storage reizo_mcfunc_engin:_ Item.Both run \
+    if data storage reizo_mcfunc_engin:_ Tool.Both run \
     function reizo_mcfunc_engin:asset/tools/.manager/tick/_
 # Item,Toolは、必ずcustom_dataに、Addressとnamespaceを記述すること。
 
