@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:error/address
+#> reizo_mcfunc_engin:error/args
 #
 # 
 #
