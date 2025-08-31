@@ -9,5 +9,5 @@ tellraw @s "左クリック来て泣く(?)"
 playsound ui.button.click player @s ~ ~ ~ 1 2 1
 
 # 前にぶっ飛ぶ
-scoreboard players set $MotionPower reizo_mcfunc_Engin.Temp 200
-function reizo_mcfunc_engin:lib/motion/pounce_on
+data modify storage reizo_mcfunc_engin:lib Wind_P_Motion.Strength set value 3
+function reizo_mcfunc_engin:lib/wind_p_motion/looking
