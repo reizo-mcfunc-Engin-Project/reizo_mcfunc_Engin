@@ -10,8 +10,3 @@ if predicate reizo_mcfunc_engin:sneak \
 if score @s reizo_mcfunc_Engin.ScoreID = @n[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CheckPointMarker,type=marker,limit=1,distance=..1000] reizo_mcfunc_Engin.ScoreID \
 positioned as @n[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CheckPointMarker,type=marker,limit=1] run \
 particle electric_spark ~ ~1.3 ~
-
-# 使ったな！
-execute \
-if score @s reizo_mcfunc_Engin.using_Item matches 1 run \
-function reizo_mcfunc_engin:asset/tools/0001.check_point/used/_

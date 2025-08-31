@@ -29,11 +29,6 @@ anchored eyes \
 positioned ^ ^ ^2 run \
 function reizo_mcfunc_engin:asset/tools/0002.display_tool/tick/cursor
 
-# 使ったな！
-execute \
-if score @s reizo_mcfunc_Engin.using_Item matches 1 run \
-function reizo_mcfunc_engin:asset/tools/0002.display_tool/used/_
-
 # リセット！
 data remove storage reizo_mcfunc_engin:_ Tools.DisplayTool.Item
 data remove storage reizo_mcfunc_engin:_ Tools.DisplayTool.Block
