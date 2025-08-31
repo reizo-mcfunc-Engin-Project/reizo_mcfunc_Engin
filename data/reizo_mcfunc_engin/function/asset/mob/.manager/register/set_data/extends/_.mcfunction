@@ -8,4 +8,4 @@
 data modify storage reizo_mcfunc_engin:mob Registry.CopyExtends.ID set from storage reizo_mcfunc_engin:mob Register.Extends
 
 # このままだと配列なんで...なんとか分けて実行する。
-function reizo_mcfunc_engin:asset/.manager/extends/get_id {Type:"mob"}
+function reizo_mcfunc_engin:asset/.manager/extends/get_id.m {Type:"mob"}

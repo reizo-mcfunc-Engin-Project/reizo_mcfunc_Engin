@@ -25,13 +25,13 @@
     if data storage reizo_mcfunc_engin:_ Item.Off_Address \
     anchored eyes \
     positioned ^ ^ ^4 run \
-    function reizo_mcfunc_engin:asset/tools/0002.display_tool/used/sneak/false/summon_display with storage reizo_mcfunc_engin:_ Tools.DisplayTool
+    function reizo_mcfunc_engin:asset/tools/0002.display_tool/used/sneak/false/summon_display.m with storage reizo_mcfunc_engin:_ Tools.DisplayTool
     # 右手で視線から2マス先
     execute \
     if data storage reizo_mcfunc_engin:_ Item.Main_Address \
     anchored eyes \
     positioned ^ ^ ^2 run \
-    function reizo_mcfunc_engin:asset/tools/0002.display_tool/used/sneak/false/summon_display with storage reizo_mcfunc_engin:_ Tools.DisplayTool
+    function reizo_mcfunc_engin:asset/tools/0002.display_tool/used/sneak/false/summon_display.m with storage reizo_mcfunc_engin:_ Tools.DisplayTool
 
 #> デバッグ用
     # ストレージに見たいストレージを入れる。

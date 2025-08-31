@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:asset/mob/.manager/summon/core/summon
+#> reizo_mcfunc_engin:asset/mob/.manager/summon/core/summon.m
 #
 # 
 #

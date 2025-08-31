@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:asset/mob/.manager/register/set_data/scale
+#> reizo_mcfunc_engin:asset/mob/.manager/register/set_data/scale.m
 #
 # mobの大きさを決める。
 #

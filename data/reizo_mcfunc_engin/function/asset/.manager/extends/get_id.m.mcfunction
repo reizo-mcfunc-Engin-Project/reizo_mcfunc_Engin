@@ -1,11 +1,12 @@
-#> reizo_mcfunc_engin:asset/.manager/extends/get_id
+#> reizo_mcfunc_engin:asset/.manager/extends/get_id.m
 #
 # 一つずつ分けて実行させる
 #
 # @api
-# @within function 
+# @within function
 #   reizo_mcfunc_engin:asset/.manager/extends/get_id
-#   reizo_mcfunc_engin:asset/*/.manager/register/set_data/extends/_
+#   reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_
+#   reizo_mcfunc_engin:asset/object/.manager/register/set_data/extends/_
 # @MacroInput
 #   Type = EntityType...あ～、既存のじゃなくて、ObjectかMobか...カスタムで出来たやつだよ。
 

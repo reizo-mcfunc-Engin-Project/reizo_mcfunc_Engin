@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:lib/get_name/sys/summon_display
+#> reizo_mcfunc_engin:lib/get_name/sys/summon_display.m
 #
 # プレイヤーの頭をしたディスプレイを召喚
 #

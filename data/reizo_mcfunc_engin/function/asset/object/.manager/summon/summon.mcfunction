@@ -5,7 +5,7 @@
 # @within function reizo_mcfunc_engin:asset/object/.manager/summon/run.m
 
 # 召喚！
-function reizo_mcfunc_engin:asset/object/.manager/summon/core/summon with storage reizo_mcfunc_engin:object
+function reizo_mcfunc_engin:asset/object/.manager/summon/core/summon.m with storage reizo_mcfunc_engin:object
 
 # init処理
 execute as @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.Init] at @s run \

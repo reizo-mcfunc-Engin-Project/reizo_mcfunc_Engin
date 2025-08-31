@@ -33,7 +33,7 @@ if data storage reizo_mcfunc_engin:mob {Register:{DethItem_Empty:1b}} run \
 data modify entity @s DeathLootTable set value "reizo_mcfunc_engin:death/empty"
 
 # 大きさ変更
-function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/scale with storage reizo_mcfunc_engin:mob Register
+function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/scale.m with storage reizo_mcfunc_engin:mob Register
 
 # 何かしら継承しているなら動かす
 execute \

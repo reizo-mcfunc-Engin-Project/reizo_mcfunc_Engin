@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:lib/player_fire/executer_player/summon_slime
+#> reizo_mcfunc_engin:lib/player_fire/executer_player/summon_slime.m
 #
 # FirePower = 燃える時間(1 = 1s)
 #

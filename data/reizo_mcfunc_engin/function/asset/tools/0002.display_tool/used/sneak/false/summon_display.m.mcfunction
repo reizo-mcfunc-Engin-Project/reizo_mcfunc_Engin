@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:asset/tools/0002.display_tool/used/sneak/false/summon_display
+#> reizo_mcfunc_engin:asset/tools/0002.display_tool/used/sneak/false/summon_display.m
 #
 # ディスプレイの召喚処理
 #

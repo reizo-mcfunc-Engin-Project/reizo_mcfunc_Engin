@@ -5,7 +5,7 @@
 # @public
 
 # Tempにコピー
-function reizo_mcfunc_engin:lib/abs/get/conversion_string with storage reizo_mcfunc_engin:lib In
+function reizo_mcfunc_engin:lib/abs/get/conversion_string.m with storage reizo_mcfunc_engin:lib In
 
 # 0じゃねぇか！
 execute \
