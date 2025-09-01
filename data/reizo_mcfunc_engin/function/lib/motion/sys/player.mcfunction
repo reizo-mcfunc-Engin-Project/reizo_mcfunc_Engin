@@ -2,7 +2,7 @@
 #
 # プレイヤー用の補正計算
 #
-# @within function function reizo_mcfunc_engin:lib/motion/*
+# @within function reizo_mcfunc_engin:lib/motion/*
 
 #> 計算用にPosをスコアに格納。
     # X座標
