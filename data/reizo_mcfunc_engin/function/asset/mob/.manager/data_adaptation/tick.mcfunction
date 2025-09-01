@@ -15,6 +15,11 @@ execute \
 unless data storage reizo_mcfunc_engin:mob Register run \
 function reizo_mcfunc_engin:error/fail_data_get {Data:"Register"}
 
+# 燃えるかどうか。
+execute \
+if data storage reizo_mcfunc_engin:mob {Register:{Flammable:0b}} run \
+data modify entity @s Fire set value -255
+
 # 何かしら継承している！
 execute \
 if data storage reizo_mcfunc_engin:mob Register.Extends run \

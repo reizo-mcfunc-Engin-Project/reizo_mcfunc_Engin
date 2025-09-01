@@ -19,3 +19,5 @@
     data modify entity @s data.Register.Scale set value 1.1d
     # アイテムを落とさないか？ boolean型
     data modify entity @s data.Register.DethItem_Empty set value 1b
+    # 燃えるかどうか。 boolean型
+    data modify entity @s data.Register.Flammable set value 0b
