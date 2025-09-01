@@ -22,4 +22,4 @@ $data remove storage reizo_mcfunc_engin:$(Type) Registry.CopyExtends.ID[0]
 # まだ要素が残っているなら再帰
 $execute \
 if data storage reizo_mcfunc_engin:$(Type) Registry.CopyExtends.ID[0] run \
-function reizo_mcfunc_engin:asset/.manager/extends/get_id
+function reizo_mcfunc_engin:asset/.manager/extends/get_id.m
