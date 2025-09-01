@@ -35,3 +35,7 @@ function reizo_mcfunc_engin:lib/truncate/sys/conversion_string/check
     execute \
     if data storage reizo_mcfunc_engin:lib {Return:{CheckPlaceValue:1000000}} run \
     return run data modify storage reizo_mcfunc_engin:lib Return.Truncate set string storage reizo_mcfunc_engin:lib Truncate.String 0 9
+
+# ライブラリリセット
+data remove storage reizo_mcfunc_engin:lib In.CheckPlaceValue
+data remove storage reizo_mcfunc_engin:lib Return.CheckPlaceValue
