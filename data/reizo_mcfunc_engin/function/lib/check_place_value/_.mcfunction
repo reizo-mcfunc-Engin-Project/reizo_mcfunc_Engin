@@ -11,7 +11,7 @@ data get storage reizo_mcfunc_engin:lib In.CheckPlaceValue
 
 #> 位の検知(力技。)
     execute \
-    if score $PlaceValue._ reizo_mcfunc_Engin.Temp matches 0..9 run \
+    if score $PlaceValue._ reizo_mcfunc_Engin.Temp matches 0 run \
     data modify storage reizo_mcfunc_engin:lib Return.CheckPlaceValue set value "Null"
     execute \
     if score $PlaceValue._ reizo_mcfunc_Engin.Temp matches 1..9 run \
