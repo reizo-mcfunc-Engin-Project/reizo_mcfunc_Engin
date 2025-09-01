@@ -7,11 +7,6 @@
 # 持っているアイテムのデータ取得
 function reizo_mcfunc_engin:core/tick/player/get_data/item
 
-# プレイヤーの数をスコアに反映
-execute \
-store result score $PlayerCount reizo_mcfunc_Engin._ \
-if entity @s
-
 # 地面についているかついていないか。
 function reizo_mcfunc_engin:core/tick/player/get_data/is_on_/ground
 

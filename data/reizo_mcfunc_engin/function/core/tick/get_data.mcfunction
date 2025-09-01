@@ -4,6 +4,11 @@
 #
 # @within function reizo_mcfunc_engin:core/tick/_
 
+# プレイヤーの数をスコアに反映
+execute \
+store result score $PlayerCount reizo_mcfunc_Engin._ \
+if entity @a
+
 # 現在の時間を取得
 execute \
 store result score $Time reizo_mcfunc_Engin._ run \
