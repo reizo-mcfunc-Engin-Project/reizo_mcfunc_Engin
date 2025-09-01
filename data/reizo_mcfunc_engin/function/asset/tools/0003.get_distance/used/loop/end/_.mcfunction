@@ -20,5 +20,9 @@ function km_distance:as_to_at
 
 # 出た距離をチャットに出す。
 function reizo_mcfunc_engin:asset/tools/0003.get_distance/used/loop/end/tell.m with storage reizo_mcfunc_engin:lib Return
+
 # マーカーkill
 kill @n[tag=reizo_mcfunc_Engin.Tools.GetDis.Marker,type=marker]
+
+# ライブラリリセット
+data remove storage reizo_mcfunc_engin:lib Return.Truncate
