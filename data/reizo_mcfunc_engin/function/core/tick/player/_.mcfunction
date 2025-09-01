@@ -1,11 +1,11 @@
-#> reizo_mcfunc_engin:core/tick/player/tick
+#> reizo_mcfunc_engin:core/tick/player/_
 #
 # プレイヤーの処理
 #
 # @within function reizo_mcfunc_engin:core/tick/_
 
 # プレイヤーのデータを取得
-function reizo_mcfunc_engin:core/tick/player/get_data/tick
+function reizo_mcfunc_engin:core/tick/player/get_data/_
 
 # IDを持っていない奴にIDを与える
 execute \

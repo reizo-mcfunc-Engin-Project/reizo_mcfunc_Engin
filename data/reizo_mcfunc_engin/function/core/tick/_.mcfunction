@@ -5,7 +5,7 @@
 # @within tag/function minecraft:tick
 
 # プレイヤーの処理
-execute as @a at @s run function reizo_mcfunc_engin:core/tick/player/tick
+execute as @a at @s run function reizo_mcfunc_engin:core/tick/player/_
 
 # tick単位でのデータ取得
 function reizo_mcfunc_engin:core/tick/get_data
