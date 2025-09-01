@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function reizo_mcfunc_engin:lib/truncate/13
+# @public
 
 # CPVライブラリ呼び出し
 function reizo_mcfunc_engin:lib/truncate/sys/used_cpv_lib

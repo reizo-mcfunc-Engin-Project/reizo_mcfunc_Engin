@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function reizo_mcfunc_engin:core/load/_
+# @public
 
 # まずはフォースロード
 execute \

@@ -2,7 +2,7 @@
 #
 # Int型の位を検知する。
 #
-# @within function reizo_mcfunc_engin:asset/tools/0003.get_distance/used/loop/end/_
+# @public
 
 # まずはスコアに。
 execute \
