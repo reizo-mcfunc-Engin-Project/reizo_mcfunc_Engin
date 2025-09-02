@@ -4,6 +4,9 @@
 #
 # @within function reizo_mcfunc_engin:asset/tools/0003.get_distance/tick/_
 
+# 音を出す
+playsound item.spyglass.use player @s ~ ~ ~ 1 1 1
+
 # シフトを押していないなら、ループ開始
 execute \
 unless predicate reizo_mcfunc_engin:sneak \
