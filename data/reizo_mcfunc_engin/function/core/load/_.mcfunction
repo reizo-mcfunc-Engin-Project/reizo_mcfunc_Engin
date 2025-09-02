@@ -16,7 +16,6 @@
 scoreboard objectives add reizo_mcfunc_Engin._ dummy
 scoreboard objectives add reizo_mcfunc_Engin.Temp dummy
 scoreboard objectives add reizo_mcfunc_Engin.ScoreID dummy "スコアID Int型"
-scoreboard objectives add reizo_mcfunc_Engin.PFire_Power dummy "プレイヤーを燃やす強さ Int型"
 scoreboard objectives add reizo_mcfunc_Engin.using_Item dummy "アイテムを使用している。 Int型"
 scoreboard objectives add reizo_mcfunc_Engin.used_Item dummy "アイテムを使用した。 Int型"
 scoreboard objectives add reizo_mcfunc_Engin.KiiTimer dummy "killされるまでの時間"

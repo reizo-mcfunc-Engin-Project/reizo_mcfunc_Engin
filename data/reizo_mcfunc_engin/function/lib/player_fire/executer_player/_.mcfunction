@@ -10,10 +10,8 @@ tag @s add reizo_mcfunc_Engin.PFire.Executer
 # ノクバ耐性を付ける。
 attribute @s knockback_resistance base set 100
 
-# スコアをストレージに移動
-execute \
-store result storage reizo_mcfunc_engin:lib PFire.FirePower int 1 run \
-scoreboard players get @s reizo_mcfunc_Engin.PFire_Power
+# Inから移動
+data modify storage reizo_mcfunc_engin:lib PFire.FirePower set from storage reizo_mcfunc_engin:lib In.PFire
 
 # 燃やしてくれるスライム召喚
 function reizo_mcfunc_engin:lib/player_fire/executer_player/summon_slime.m with storage reizo_mcfunc_engin:lib PFire
