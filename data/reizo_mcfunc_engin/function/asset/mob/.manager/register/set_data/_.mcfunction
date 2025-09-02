@@ -4,9 +4,6 @@
 #
 # @
 
-# データ取得
-data modify storage reizo_mcfunc_engin:mob Register set from entity @s data.Register
-
 # まさかのデータ取得出来てない事件
 execute \
 unless data storage reizo_mcfunc_engin:mob Register run \
@@ -34,3 +31,7 @@ data modify entity @s DeathLootTable set value "reizo_mcfunc_engin:death/empty"
 
 # 大きさ変更
 function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/scale.m with storage reizo_mcfunc_engin:mob Register
+
+#> dataにして持っていきたいものがあるんだ。
+    # Flammable
+    data modify entity @s data.Registry.Flammable set from storage reizo_mcfunc_engin:mob Register.Flammable

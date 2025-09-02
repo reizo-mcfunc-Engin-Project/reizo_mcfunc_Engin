@@ -6,7 +6,7 @@
 
 # 継承情報コピー
 data modify storage reizo_mcfunc_engin:mob CopyExtends append value []
-data modify storage reizo_mcfunc_engin:mob CopyExtends append from storage reizo_mcfunc_engin:mob Register.Extends
+data modify storage reizo_mcfunc_engin:mob CopyExtends append from storage reizo_mcfunc_engin:mob Registry.Extends
 
 # 継承元を呼び出す
 execute \

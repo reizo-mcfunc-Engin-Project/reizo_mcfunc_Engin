@@ -6,22 +6,22 @@
 
 #> データ登録
     # 継承(オプション)
-    data modify entity @s data.Register.Extends append value "super.test"
+    data modify storage reizo_mcfunc_engin:mob Register.Extends append value "super.test"
     # 継承されないかどうか。 boolean型
-    data modify entity @s data.Register.Final set value 1b
+    data modify storage reizo_mcfunc_engin:mob Register.Final set value 1b
         # 何かしら継承している。
         execute \
-        if data entity @s data.Register.Extends run \
+        if data storage reizo_mcfunc_engin:mob Register.Extends run \
         function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_
     # 名前 String型
-    data modify entity @s data.Register.Name set value "お手本ゾンビマン"
+    data modify storage reizo_mcfunc_engin:mob Register.Name set value "お手本ゾンビマン"
     # 体力はどれぐらい？ Float型
-    # data modify entity @s data.Register.Health set value 1.0f
+    # data modify storage reizo_mcfunc_engin:mob Register.Health set value 1.0f
     # 持っているアイテム String型
-    data modify entity @s data.Register.equipment set value {chest:{id:"leather_chestplate"},mainhand:{id:"golden_axe"}}
+    data modify storage reizo_mcfunc_engin:mob Register.equipment set value {chest:{id:"leather_chestplate"},mainhand:{id:"golden_axe"}}
     # 大きさはどれくらい？ Max = 16.0d
-    data modify entity @s data.Register.Scale set value 1.1d
+    data modify storage reizo_mcfunc_engin:mob Register.Scale set value 1.1d
     # アイテムを落とさないか？ boolean型
-    data modify entity @s data.Register.DethItem_Empty set value 1b
+    data modify storage reizo_mcfunc_engin:mob Register.DethItem_Empty set value 1b
     # 燃えるかどうか。 boolean型
-    data modify entity @s data.Register.Flammable set value 0b
+    data modify storage reizo_mcfunc_engin:mob Register.Flammable set value 0b
