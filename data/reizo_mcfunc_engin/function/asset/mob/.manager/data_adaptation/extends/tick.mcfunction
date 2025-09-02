@@ -14,4 +14,4 @@ if data storage reizo_mcfunc_engin:mob CopyExtends[-1][0] run \
 function reizo_mcfunc_engin:asset/mob/.manager/data_adaptation/extends/foreach
 
 # リセット
-data remove storage reizo_mcfunc_engin:mob CopyExtends[-1]
+data remove storage reizo_mcfunc_engin:mob CopyExtends
