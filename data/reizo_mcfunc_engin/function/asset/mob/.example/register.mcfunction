@@ -9,8 +9,11 @@
     data modify storage reizo_mcfunc_engin:mob Register.Extends append value "super.test"
     # 継承されないかどうか。 boolean型
     data modify storage reizo_mcfunc_engin:mob Register.Final set value 1b
+    # 継承されることを前提とした、抽象的なMobかどうか。
+    data modify storage reizo_mcfunc_engin:mob Register.IsAbstract set value 0b
         # 何かしら継承している。
         execute \
+        if data storage reizo_mcfunc_engin:mob {Register:{IsAbstract:0b}} \
         if data storage reizo_mcfunc_engin:mob Register.Extends run \
         function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_
     # 名前 String型
