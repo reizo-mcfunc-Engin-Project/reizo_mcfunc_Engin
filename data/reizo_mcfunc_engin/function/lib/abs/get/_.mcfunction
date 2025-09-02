@@ -4,13 +4,23 @@
 #
 # @public
 
+# 一度スコアに
+execute \
+store result score $AbsGet.In reizo_mcfunc_Engin.Temp run \
+data get storage reizo_mcfunc_engin:lib In.AbsGet
+
+# 値が0だ...そのままだぞ。
+execute \
+if score $AbsGet.In reizo_mcfunc_Engin.Temp matches 0 run \
+return run function reizo_mcfunc_engin:lib/abs/get/early_return/0
+
+# 1以上じゃねぇか！
+execute \
+if score $AbsGet.In reizo_mcfunc_Engin.Temp matches 1.. run \
+return run function reizo_mcfunc_engin:lib/abs/get/early_return/1..
+
 # Tempにコピー
 function reizo_mcfunc_engin:lib/abs/get/conversion/string.m with storage reizo_mcfunc_engin:lib In
-
-# 0じゃねぇか！
-execute \
-if data storage reizo_mcfunc_engin:lib {Temp:{AbsGet:"0"}} run \
-return run data modify storage reizo_mcfunc_engin:lib Return.AbsGet set value 0
 
 # 絶対値を求めてみる。
 data modify storage reizo_mcfunc_engin:lib Temp.AbsGet set string storage reizo_mcfunc_engin:lib Temp.AbsGet 1
