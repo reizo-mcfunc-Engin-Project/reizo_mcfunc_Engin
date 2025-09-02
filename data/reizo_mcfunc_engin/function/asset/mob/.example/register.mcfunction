@@ -9,12 +9,16 @@
     data modify entity @s data.Register.Extends append value "super.test"
     # 継承されないかどうか。 boolean型
     data modify entity @s data.Register.Final set value 1b
+        # 何かしら継承している。
+        execute \
+        if data entity @s data.Register.Extends run \
+        function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_
     # 名前 String型
     data modify entity @s data.Register.Name set value "お手本ゾンビマン"
     # 体力はどれぐらい？ Float型
     # data modify entity @s data.Register.Health set value 1.0f
     # 持っているアイテム String型
-    data modify entity @s data.Register.equipment set value {chest:{id:"leather_chestplate"},mainhand:{id:"iron_axe"}}
+    data modify entity @s data.Register.equipment set value {chest:{id:"leather_chestplate"},mainhand:{id:"golden_axe"}}
     # 大きさはどれくらい？ Max = 16.0d
     data modify entity @s data.Register.Scale set value 1.1d
     # アイテムを落とさないか？ boolean型

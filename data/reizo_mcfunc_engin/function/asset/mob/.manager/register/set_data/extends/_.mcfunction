@@ -9,3 +9,6 @@ data modify storage reizo_mcfunc_engin:mob Registry.CopyExtends.ID set from stor
 
 # このままだと配列なんで...なんとか分けて実行する。
 function reizo_mcfunc_engin:asset/.manager/extends/get_id.m {Type:"mob"}
+
+# Extendsのデータ適応
+function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/_
