@@ -32,27 +32,23 @@ summon slime 0.0 0.0 0.0 \
                 }\
             }\
         },\
-    active_effects:\
-        [\
-            {\
-            id:"invisibility",\
-            duration:2147483647\
-            }\
-        ],\
-    attributes:[{id:"attack_knockback",base:0}],\
+    attributes:[{id:"attack_knockback",base:0},{id:"scale",base:0.01}],\
     Size:1,\
     Team:"NoCol",\
-    Silent:true\
+    Silent:true,\
+    Invulnerable:true\
     }
 
 # 燃やす強さを設定
 execute \
 positioned 0.0 0.0 0.0 run \
 data modify entity @n[type=slime,tag=reizo_mcfunc_Engin.PFire.On_Fire] equipment.mainhand.components."minecraft:enchantments"."reizo_mcfunc_engin:p_fire" set from storage reizo_mcfunc_engin:lib In.PFire
-# function reizo_mcfunc_engin:lib/player_fire/executer_player/summon_slime.m with storage reizo_mcfunc_engin:lib PFire
 
-# フォースロード！
-forceload add ~ ~ ~ ~
+# 実行者にスライムをtp
+execute \
+as @n[tag=reizo_mcfunc_Engin.PFire.On_Fire] at @s \
+positioned ~ ~ ~ run \
+tp @s @p[tag=reizo_mcfunc_Engin.PFire.Executer]
 
-# スライムが透明化するまで待つ
-schedule function reizo_mcfunc_engin:lib/player_fire/executer_player/tp 1t
+# 攻撃するまで待つ 索敵 = 1t 攻撃 = 1t
+schedule function reizo_mcfunc_engin:lib/player_fire/executer_player/reset 2t
