@@ -43,3 +43,6 @@ data get storage reizo_mcfunc_engin:lib In.CheckPlaceValue
     execute \
     if score $PlaceValue._ reizo_mcfunc_Engin.Temp matches 1000000000..2147483647 run \
     data modify storage reizo_mcfunc_engin:lib Return.CheckPlaceValue set value 1000000000
+
+# スコアリセット
+scoreboard players reset $PlaceValue._ reizo_mcfunc_Engin.Temp
