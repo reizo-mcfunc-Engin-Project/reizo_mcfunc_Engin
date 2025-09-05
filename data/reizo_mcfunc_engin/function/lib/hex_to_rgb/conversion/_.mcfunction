@@ -66,11 +66,11 @@ store result storage reizo_mcfunc_engin:lib Return.HexToRGB int 1 run \
 scoreboard players get $HexToRGB.out reizo_mcfunc_Engin.Temp
 
 # リセット
-# scoreboard players reset $HexToRGB.R
+scoreboard players reset $HexToRGB.R
 scoreboard players reset $HexToRGB.R'
-# scoreboard players reset $HexToRGB.G
+scoreboard players reset $HexToRGB.G
 scoreboard players reset $HexToRGB.G'
-# scoreboard players reset $HexToRGB.B
+scoreboard players reset $HexToRGB.B
 scoreboard players reset $HexToRGB.B'
 scoreboard players reset $HexToRGB.R'+G'
 scoreboard players reset $HexToRGB.out
@@ -80,3 +80,4 @@ scoreboard players reset $HexToRGB.String.3
 scoreboard players reset $HexToRGB.String.4
 scoreboard players reset $HexToRGB.String.5
 scoreboard players reset $HexToRGB.String.6
+data remove storage reizo_mcfunc_engin:lib HexToRGB
