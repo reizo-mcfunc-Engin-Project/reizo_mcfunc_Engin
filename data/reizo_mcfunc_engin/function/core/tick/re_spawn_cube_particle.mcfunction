@@ -1,10 +1,10 @@
 #> reizo_mcfunc_engin:core/tick/re_spawn_cube_particle
 #
-# CubeParticleがいないぜ！
+# CubeParticleが足りないときの処理
 #
 # @within function reizo_mcfunc_engin:core/tick/_
 
-# とりま残っている奴らを殺す
+# 残ったら困るから殺す
 kill @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CubeParticle,type=armor_stand]
 
 # 召喚

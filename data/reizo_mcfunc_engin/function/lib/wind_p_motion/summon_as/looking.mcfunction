@@ -28,8 +28,6 @@ function reizo_mcfunc_engin:lib/signum_check/score {Selecter:"$strength",Obj:"re
     positioned ^ ^ ^2.2 run \
     function reizo_mcfunc_engin:lib/wind_p_motion/summon_as/summon/looking
 
-# Tagはもういらない。
+# リセット
 tag @a[tag=reizo_mcfunc_Engin.Wind_P_Motion.This] remove reizo_mcfunc_Engin.Wind_P_Motion.This
-
-# Signumライブラリも。
 data remove storage reizo_mcfunc_engin:lib Return.Signum

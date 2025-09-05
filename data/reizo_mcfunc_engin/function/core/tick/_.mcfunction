@@ -15,12 +15,12 @@ execute \
 if score $CubeParticleCount reizo_mcfunc_Engin._ matches ..1 run \
 function reizo_mcfunc_engin:core/tick/re_spawn_cube_particle
 
-# ...なんでCubeParticleは3体以上いるんだ？
+# CubeParticleが三体以上いるならオカシイ
 execute \
 if score $CubeParticleCount reizo_mcfunc_Engin._ matches 3.. run \
 function reizo_mcfunc_engin:core/tick/re_spawn_cube_particle
 
-# Object以外はMobやで～
+# Object以外は基本Mob
 execute \
 if entity @e[type=!#reizo_mcfunc_engin:object/default,type=!player,tag=reizo_mcfunc_Engin.Mob] \
 as @e[type=!#reizo_mcfunc_engin:object/default,type=!player,tag=reizo_mcfunc_Engin.Mob] at @s run \

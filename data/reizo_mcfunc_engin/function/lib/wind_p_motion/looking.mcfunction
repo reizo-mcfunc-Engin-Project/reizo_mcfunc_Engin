@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function reizo_mcfunc_engin:lib/wind_p_motion/_
+# @public
 
 # ストレージから参照
 execute \

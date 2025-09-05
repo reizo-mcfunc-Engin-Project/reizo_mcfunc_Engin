@@ -8,7 +8,7 @@
 #   reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_
 #   reizo_mcfunc_engin:asset/object/.manager/register/set_data/extends/_
 # @MacroInput
-#   Type = EntityType...あ～、既存のじゃなくて、ObjectかMobか...カスタムで出来たやつだよ。
+#   Type = EntityType これは既存のTypeではなくObjectかMobかということである。
 
 # まずは[0]を入手
 $data modify storage reizo_mcfunc_engin:$(Type) Registry.Extends.ID set from storage reizo_mcfunc_engin:$(Type) Registry.CopyExtends.ID[0]

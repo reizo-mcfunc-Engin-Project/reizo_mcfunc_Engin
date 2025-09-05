@@ -4,7 +4,7 @@
 #
 # @within function reizo_mcfunc_engin:core/tick/player/get_data/_
 
-#> 俺、燃えてるし。
+#> 燃えてる。
     # 先にTag剥奪
     tag @s[tag=reizo_mcfunc_Engin.Is_on_Fire] remove reizo_mcfunc_Engin.Is_on_Fire
     # 燃えてるならTag付け

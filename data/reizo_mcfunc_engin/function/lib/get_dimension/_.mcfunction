@@ -1,7 +1,7 @@
 #> reizo_mcfunc_engin:lib/get_dimension/_
 #
 # 俺は今どのディメンションにいる？
-
+#
 # OMD呼び出し
 function #oh_my_dat:please
 
@@ -18,7 +18,7 @@ execute \
 store success storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].In_End byte 1 \
 if dimension the_end
 
-# デバッカーがいるなら。
+# デバッグ処理
 execute \
 if entity @s[tag=reizo.Debug,type=player] run \
 function reizo_mcfunc_engin:lib/get_dimension/debug/tell_dimension

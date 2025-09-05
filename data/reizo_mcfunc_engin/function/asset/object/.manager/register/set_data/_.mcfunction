@@ -2,7 +2,9 @@
 #
 # Registerで設定したものを実際のObjectに適応させる。
 #
-# @within function reizo_mcfunc_engin:asset/object/.manager/summon/init
+# @within
+#   reizo_mcfunc_engin:asset/object/.manager/summon/init
+#   reizo_mcfunc_engin:asset/object/.manager/register/set_data/extends/_
 
 # まさかのデータ取得出来てない事件
 execute \

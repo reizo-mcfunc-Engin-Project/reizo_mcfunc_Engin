@@ -2,7 +2,7 @@
 #
 # 継承元のRegisterを呼び出す
 #
-# @within function reizo_mcfunc_engin:asset/object/.manager/register/set_data/_
+# @within function reizo_mcfunc_engin:asset/object/.manager/*/register/_
 
 # 継承情報は持っておきたいものだ。
 data modify entity @s data.Register.Extends set from storage reizo_mcfunc_engin:object Register.Extends

@@ -4,7 +4,7 @@
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/tick/_
 
-# データを取得(今のところMobはregistryを持っていないためregistryは、貰わない)
+# データを取得
 execute \
 if data entity @s data.Registry run \
 data modify storage reizo_mcfunc_engin:mob Registry set from entity @s data.Registry
@@ -26,4 +26,3 @@ function reizo_mcfunc_engin:asset/mob/.manager/data_adaptation/extends/tick
 
 # データリセット
 data remove storage reizo_mcfunc_engin:mob Registry
-# data remove storage reizo_mcfunc_engin:mob Register

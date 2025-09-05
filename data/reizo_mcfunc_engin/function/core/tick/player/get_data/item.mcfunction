@@ -5,7 +5,7 @@
 # @within function reizo_mcfunc_engin:core/tick/player/get_data/tick
 
 #> 持っているアイテムデータ取得。
-    # 右手のほうを優先したいので、左手を前に書く
+    # 右手のほうを優先したいので、左手の処理はここに。
             # ツール
                 # アドレス
                 execute \
@@ -24,7 +24,7 @@
                 execute \
                 if data entity @s equipment.offhand.components."minecraft:custom_data".Item.namespace run \
                 data modify storage reizo_mcfunc_engin:_ Item.Off_namespace set from entity @s equipment.offhand.components."minecraft:custom_data".Item.namespace
-    # ここで右手
+    # 右手
             # ツール
                 # アドレス
                 execute \
@@ -43,7 +43,7 @@
                 execute \
                 if data entity @s SelectedItem.components."minecraft:custom_data".Item.namespace run \
                 data modify storage reizo_mcfunc_engin:_ Item.Main_namespace set from entity @s SelectedItem.components."minecraft:custom_data".Item.namespace
-    # 両手で動作変えたくないときもあるでしょう。
+    # 両手、基本的にここで持っていること検知
         # 左手からBothに
             # ツール
                 # アドレス

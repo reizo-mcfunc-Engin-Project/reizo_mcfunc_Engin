@@ -13,7 +13,7 @@ if score $PlayerCount reizo_mcfunc_Engin._ matches 1.. \
 unless score @s reizo_mcfunc_Engin.ScoreID matches -2147483648..2147483647 run \
 function reizo_mcfunc_engin:core/tick/player/get_id
 
-# 使ってる？使ってない？どっちなんだい！
+# クリックを離したなら使ってない
 execute \
 if score @s[scores={reizo_mcfunc_Engin.using_Item=1..}] reizo_mcfunc_Engin.used_Item matches 0 run \
 function reizo_mcfunc_engin:core/tick/player/get_data/relase_using
@@ -21,7 +21,7 @@ function reizo_mcfunc_engin:core/tick/player/get_data/relase_using
 # クリックを離したな！
 scoreboard players set @s reizo_mcfunc_Engin.used_Item 0
 
-# アイテムを持っているならItemとToolのtick処理を実行
+# データがあるなら、データがあるほうを実行
     # Item
     execute \
     if data storage reizo_mcfunc_engin:_ Item.Both run \

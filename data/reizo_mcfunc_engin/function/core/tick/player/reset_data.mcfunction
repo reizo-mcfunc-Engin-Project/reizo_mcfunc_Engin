@@ -12,7 +12,6 @@ execute \
 unless data entity @s SelectedItem.components."minecraft:custom_data".Tool.Address run \
 data remove storage reizo_mcfunc_engin:_ Tool
 
-
 # PlayerEffectも。
 data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Effect
 

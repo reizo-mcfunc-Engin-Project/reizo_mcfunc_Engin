@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function reizo_mcfunc_engin:lib/wind_p_motion/looking
+# @public
 
 #> ストレージから参照
     # X

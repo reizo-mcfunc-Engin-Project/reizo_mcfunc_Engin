@@ -9,7 +9,7 @@
     function oh_my_dat:sys/load
     # hb.PlayerMotion
     function p_motion:system/load
-    # まさかの無理やり適応 AiUtil
+    # AiUtil
     function util:load
 
 # スコア作成
@@ -21,7 +21,7 @@ scoreboard objectives add reizo_mcfunc_Engin.used_Item dummy "アイテムを使
 scoreboard objectives add reizo_mcfunc_Engin.KiiTimer dummy "killされるまでの時間"
 scoreboard objectives add reizo_mcfunc_Engin.GetDis.Get_N.UseCount dummy
 
-#> コンスト
+#> 定数
 scoreboard players set #2 reizo_mcfunc_Engin.Temp 2
 scoreboard players set #-2147483648 reizo_mcfunc_Engin.Temp -2147483648
 

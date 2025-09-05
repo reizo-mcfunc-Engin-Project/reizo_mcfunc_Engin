@@ -11,5 +11,5 @@ tag @s add reizo_mcfunc_Engin.Wind_P_Motion.This
 # 現在位置にmarker設置
 summon marker ~ ~ ~ {Tags:["reizo_mcfunc_Engin.Wind_P_Motion.BackMarker"]}
 
-# めちゃ上
+# 上に移動
 tp @s ~ ~1000 ~

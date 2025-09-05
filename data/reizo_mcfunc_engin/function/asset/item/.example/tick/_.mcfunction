@@ -4,7 +4,7 @@
 #
 # @within function reizo_mcfunc_engin:asset/item/.manager/tick/run.m
 
-# 検知用のMob召喚
+# 検知用のObject召喚
 execute \
 anchored eyes \
 positioned ^ ^ ^ run \

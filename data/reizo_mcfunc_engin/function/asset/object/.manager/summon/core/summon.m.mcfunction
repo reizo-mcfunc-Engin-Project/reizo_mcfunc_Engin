@@ -4,5 +4,5 @@
 #
 # @within function reizo_mcfunc_engin:asset/object/.manager/summon/summon
 
-# IDを代入
+# IDと名前空間から召喚処理を叩く
 $function $(namespace):asset/object/$(ID)/summon/_

@@ -4,6 +4,7 @@
 #
 # @within function reizo_mcfunc_engin:lib/abs/get/_
 
+# Inの値をそのままReturnに。
 data modify storage reizo_mcfunc_engin:lib Return.AbsGet set from storage reizo_mcfunc_engin:lib In.AbsGet
 
 # スコアリセット

@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:error/call.super_method/
 #
-#  
+# 
 #
 # @public
 

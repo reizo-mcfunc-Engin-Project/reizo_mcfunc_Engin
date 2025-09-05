@@ -2,7 +2,9 @@
 #
 # 
 #
-# @
+# @within function
+#   reizo_mcfunc_engin:asset/mob/.manager/summon/init
+#   reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_
 
 # まさかのデータ取得出来てない事件
 execute \
