@@ -13,28 +13,28 @@ function reizo_mcfunc_engin:lib/truncate/sys/conversion_string/check
 #> 必要なもの以外消す。
     execute \
     if data storage reizo_mcfunc_engin:lib {Return:{CheckPlaceValue:Null}} run \
-    return run data modify storage reizo_mcfunc_engin:lib Return.Truncate set string storage reizo_mcfunc_engin:lib Truncate.String 0 4
+    data modify storage reizo_mcfunc_engin:lib Truncate.SelectedString set string storage reizo_mcfunc_engin:lib Truncate.String 0 4
     execute \
     if data storage reizo_mcfunc_engin:lib {Return:{CheckPlaceValue:1}} run \
-    return run data modify storage reizo_mcfunc_engin:lib Return.Truncate set string storage reizo_mcfunc_engin:lib Truncate.String 0 4
+    data modify storage reizo_mcfunc_engin:lib Truncate.SelectedString set string storage reizo_mcfunc_engin:lib Truncate.String 0 4
     execute \
     if data storage reizo_mcfunc_engin:lib {Return:{CheckPlaceValue:10}} run \
-    return run data modify storage reizo_mcfunc_engin:lib Return.Truncate set string storage reizo_mcfunc_engin:lib Truncate.String 0 5
+    data modify storage reizo_mcfunc_engin:lib Truncate.SelectedString set string storage reizo_mcfunc_engin:lib Truncate.String 0 5
     execute \
     if data storage reizo_mcfunc_engin:lib {Return:{CheckPlaceValue:100}} run \
-    return run data modify storage reizo_mcfunc_engin:lib Return.Truncate set string storage reizo_mcfunc_engin:lib Truncate.String 0 6
+    data modify storage reizo_mcfunc_engin:lib Truncate.SelectedString set string storage reizo_mcfunc_engin:lib Truncate.String 0 6
     execute \
     if data storage reizo_mcfunc_engin:lib {Return:{CheckPlaceValue:1000}} run \
-    return run data modify storage reizo_mcfunc_engin:lib Return.Truncate set string storage reizo_mcfunc_engin:lib Truncate.String 0 7
+    data modify storage reizo_mcfunc_engin:lib Truncate.SelectedString set string storage reizo_mcfunc_engin:lib Truncate.String 0 7
     execute \
     if data storage reizo_mcfunc_engin:lib {Return:{CheckPlaceValue:10000}} run \
-    return run data modify storage reizo_mcfunc_engin:lib Return.Truncate set string storage reizo_mcfunc_engin:lib Truncate.String 0 8
+    data modify storage reizo_mcfunc_engin:lib Truncate.SelectedString set string storage reizo_mcfunc_engin:lib Truncate.String 0 8
     execute \
     if data storage reizo_mcfunc_engin:lib {Return:{CheckPlaceValue:100000}} run \
-    return run data modify storage reizo_mcfunc_engin:lib Return.Truncate set string storage reizo_mcfunc_engin:lib Truncate.String 0 9
+    data modify storage reizo_mcfunc_engin:lib Truncate.SelectedString set string storage reizo_mcfunc_engin:lib Truncate.String 0 9
     execute \
     if data storage reizo_mcfunc_engin:lib {Return:{CheckPlaceValue:1000000}} run \
-    return run data modify storage reizo_mcfunc_engin:lib Return.Truncate set string storage reizo_mcfunc_engin:lib Truncate.String 0 10
+    data modify storage reizo_mcfunc_engin:lib Truncate.SelectedString set string storage reizo_mcfunc_engin:lib Truncate.String 0 10
 
 # ライブラリリセット
 data remove storage reizo_mcfunc_engin:lib In.CheckPlaceValue
