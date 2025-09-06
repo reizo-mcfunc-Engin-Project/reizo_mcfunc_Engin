@@ -17,7 +17,7 @@ function km_distance:as_to_at
     function reizo_mcfunc_engin:lib/truncate/1
 
 # 出してみる。
-function reizo_mcfunc_engin:asset/tools/0003.get_distance/used/get_n/tell.m with storage reizo_mcfunc_engin:lib Return
+function reizo_mcfunc_engin:asset/tools/0003.get_distance/used/get_n/tell.m with storage reizo_mcfunc_engin:lib Return.Truncate
 
 scoreboard players reset @n[tag=reizo_mcfunc_Engin.Tools.GetDis.Target] reizo_mcfunc_Engin.ScoreID
 scoreboard players set @s reizo_mcfunc_Engin.GetDis.Get_N.UseCount 0
