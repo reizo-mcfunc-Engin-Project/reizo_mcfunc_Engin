@@ -12,5 +12,10 @@ execute \
 if score @s reizo_mcfunc_Engin.using_Item matches 1 run \
 function reizo_mcfunc_engin:asset/tools/.manager/used.m with storage reizo_mcfunc_engin:_ Tool.Both
 
+#
+execute \
+if score @s reizo_mcfunc_Engin.using_Item matches 1.. run \
+function reizo_mcfunc_engin:asset/tools/.manager/using.m with storage reizo_mcfunc_engin:_ Tool.Both
+
 # アドレスを使い実行！ここはBothだけ。
 function reizo_mcfunc_engin:asset/tools/.manager/tick/run.m with storage reizo_mcfunc_engin:_ Tool.Both

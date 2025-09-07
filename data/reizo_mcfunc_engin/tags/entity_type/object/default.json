@@ -9,6 +9,7 @@
         "splash_potion",
         "lingering_potion",
         "area_effect_cloud",
-        "interaction"
+        "interaction",
+        "chest_minecart"
     ]
 }
