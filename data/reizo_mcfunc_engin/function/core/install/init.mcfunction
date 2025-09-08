@@ -11,9 +11,6 @@ forceload add 0 0
 team add NoCol
 team modify NoCol collisionRule never
 
-# 値をセット
-scoreboard players set $Core reizo_mcfunc_Engin.ScoreID -2147483648
-
 # 完了通告
 tellraw @a [{"text":"reizo_mcfunc_Enginが、"},{"text":"DownLoad",color:"aqua",hover_event:{action:"show_text",value:{text:"サンキューな！"}}},{"text":"されました。"}]
 playsound ui.toast.challenge_complete player @a ~ ~ ~ 100 1.5 1

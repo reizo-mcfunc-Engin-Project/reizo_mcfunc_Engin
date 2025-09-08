@@ -4,6 +4,11 @@
 #
 # @within tag/function minecraft:tick
 
+# IDの$Coreの値がNullならば初期値を入れる
+execute \
+unless score $Core reizo_mcfunc_Engin.ScoreID matches -2147483648..2147483647 run \
+scoreboard players set $Core reizo_mcfunc_Engin.ScoreID -2147483648
+
 # プレイヤーの処理
 execute as @a at @s run function reizo_mcfunc_engin:core/tick/player/_
 
