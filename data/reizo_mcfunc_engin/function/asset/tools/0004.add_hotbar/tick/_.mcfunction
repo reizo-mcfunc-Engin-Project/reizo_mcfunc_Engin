@@ -23,4 +23,4 @@ at @e[type=chest_minecart,tag=reizo_mcfunc_Engin.Object.AddHotBar_ChestMinecart]
 if score @s reizo_mcfunc_Engin.ScoreID = @n[type=chest_minecart,tag=reizo_mcfunc_Engin.Object.AddHotBar_ChestMinecart,distance=..0.1] reizo_mcfunc_Engin.ScoreID \
 positioned as @s \
 positioned ~ ~1000 ~ run \
-tp @n[tag=reizo_mcfunc_Engin.Object.AddHotBar_ChestMinecart,type=chest_minecart] ~ ~ ~
+tp @n[type=chest_minecart,tag=reizo_mcfunc_Engin.Object.AddHotBar_ChestMinecart] ~ ~1000 ~
