@@ -11,9 +11,7 @@ forceload add 0 0
 team add NoCol
 team modify NoCol collisionRule never
 
-# 値がNullなら初期化
-execute \
-unless score $Core reizo_mcfunc_Engin.ScoreID matches -2147483648..2147483647 run \
+# 値をセット
 scoreboard players set $Core reizo_mcfunc_Engin.ScoreID -2147483648
 
 # 完了通告
