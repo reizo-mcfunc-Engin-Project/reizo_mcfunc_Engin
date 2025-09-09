@@ -7,7 +7,12 @@
 # 地に足ついてない。召喚できない。
 execute \
 if entity @s[tag=!reizo_mcfunc_Engin.Is_on_Ground] run \
-function reizo_mcfunc_engin:asset/tools/0001.check_point/used/summon/fail
+return run function reizo_mcfunc_engin:asset/tools/0001.check_point/used/summon/fail
+
+# ブロックの中だぞ！
+execute \
+unless block ~ ~ ~ #reizo_mcfunc_engin:no_col run \
+return run function reizo_mcfunc_engin:asset/tools/0001.check_point/used/summon/fail
 
 # 地に足ついてる。召喚できる。
 execute \
