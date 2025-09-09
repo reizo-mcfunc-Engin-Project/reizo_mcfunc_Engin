@@ -19,8 +19,9 @@ execute \
 if predicate reizo_mcfunc_engin:sneak run \
 function reizo_mcfunc_engin:asset/tools/0003.get_distance/used/get_n/_
 
-# 距離測定失敗したときの処理
+# 距離測定失敗したときの処理、get_nは含まれず
 execute \
+unless predicate reizo_mcfunc_engin:sneak \
 unless entity @s[tag=reizo_mcfunc_Engin.Tools.GetDis.GetDisSuccess] run \
 function reizo_mcfunc_engin:asset/tools/0003.get_distance/used/fail
 
