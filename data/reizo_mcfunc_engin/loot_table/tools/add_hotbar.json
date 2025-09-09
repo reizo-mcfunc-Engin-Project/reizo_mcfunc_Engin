@@ -16,7 +16,7 @@
                                     "consume_seconds": 2147483647},
                                     "enchantment_glint_override": true,
                                     "max_stack_size": 1,
-                                    "item_model": "minecraft:oak_chest_boat",
+                                    "item_model": "minecraft:bundle",
                                     "!minecraft:attribute_modifiers": {}
                             }
                         },
