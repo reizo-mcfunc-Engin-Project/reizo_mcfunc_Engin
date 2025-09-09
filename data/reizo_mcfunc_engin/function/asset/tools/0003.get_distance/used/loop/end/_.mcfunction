@@ -26,3 +26,6 @@ kill @n[tag=reizo_mcfunc_Engin.Tools.GetDis.Marker,type=marker]
 
 # ライブラリリセット
 data remove storage reizo_mcfunc_engin:lib Return.Truncate
+
+# Tag付け
+tag @s add reizo_mcfunc_Engin.Tools.GetDis.GetDisSuccess
