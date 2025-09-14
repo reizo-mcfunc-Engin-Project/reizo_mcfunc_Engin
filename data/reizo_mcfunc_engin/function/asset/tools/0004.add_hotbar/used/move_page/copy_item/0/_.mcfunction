@@ -13,15 +13,15 @@ unless data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.Add
 function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/init
 
 # 出力
-function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/_
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/import/_
 
 # 読み込み
-function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/import/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.0
-function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/import/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.1
-function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/import/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.2
-function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/import/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.3
-function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/import/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.4
-function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/import/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.5
-function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/import/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.6
-function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/import/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.7
-function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/import/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.8
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.0
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.1
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.2
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.3
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.4
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.5
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.6
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.7
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/_.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.0.8

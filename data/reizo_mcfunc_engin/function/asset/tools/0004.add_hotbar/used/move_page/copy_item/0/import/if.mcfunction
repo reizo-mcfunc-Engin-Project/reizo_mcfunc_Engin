@@ -1,8 +1,8 @@
-#> reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/if
+#> reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/import/if
 #
 # 
 #
-# @within function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/_
+# @within function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/import/_
 
     # 出力
     execute \

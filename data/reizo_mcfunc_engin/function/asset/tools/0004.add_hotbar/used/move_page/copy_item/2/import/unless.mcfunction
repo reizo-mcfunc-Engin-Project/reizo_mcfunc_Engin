@@ -1,10 +1,10 @@
-#> reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/unless
+#> reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/2/import/unless
 #
 # 
 #
-# @within function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/export/if
+# @within function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/2/import/if
 
-    # 出力
+    # 読み込み
     execute \
     unless data entity @s Inventory[{Slot:0b}] run \
     data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.2.0 set from entity @s Inventory[{Slot:0b}]
