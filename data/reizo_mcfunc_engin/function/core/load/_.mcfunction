@@ -9,8 +9,6 @@
     function oh_my_dat:sys/load
     # hb.PlayerMotion
     function p_motion:system/load
-    # AiUtil
-    function util:load
 
 # スコア作成
 scoreboard objectives add reizo_mcfunc_Engin._ dummy
