@@ -7,28 +7,28 @@
     # 読み込み
     execute \
     if data entity @s Inventory[{Slot:0b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.2[0] set from entity @s Inventory[{Slot:0b}]
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.1[0] set from entity @s Inventory[{Slot:0b}]
     execute \
     if data entity @s Inventory[{Slot:1b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.2[1] set from entity @s Inventory[{Slot:1b}]
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.1[1] set from entity @s Inventory[{Slot:1b}]
     execute \
     if data entity @s Inventory[{Slot:2b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.2[2] set from entity @s Inventory[{Slot:2b}]
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.1[2] set from entity @s Inventory[{Slot:2b}]
     execute \
     if data entity @s Inventory[{Slot:3b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.2[3] set from entity @s Inventory[{Slot:3b}]
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.1[3] set from entity @s Inventory[{Slot:3b}]
     execute \
     if data entity @s Inventory[{Slot:4b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.2[4] set from entity @s Inventory[{Slot:4b}]
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.1[4] set from entity @s Inventory[{Slot:4b}]
     execute \
     if data entity @s Inventory[{Slot:5b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.2[5] set from entity @s Inventory[{Slot:5b}]
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.1[5] set from entity @s Inventory[{Slot:5b}]
     execute \
     if data entity @s Inventory[{Slot:6b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.2[6] set from entity @s Inventory[{Slot:6b}]
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.1[6] set from entity @s Inventory[{Slot:6b}]
     execute \
     if data entity @s Inventory[{Slot:7b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.2[7] set from entity @s Inventory[{Slot:7b}]
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.1[7] set from entity @s Inventory[{Slot:7b}]
     execute \
     if data entity @s Inventory[{Slot:8b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.2[8] set from entity @s Inventory[{Slot:8b}]
+    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.1[8] set from entity @s Inventory[{Slot:8b}]
