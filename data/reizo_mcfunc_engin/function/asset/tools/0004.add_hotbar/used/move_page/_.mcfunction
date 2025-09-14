@@ -20,17 +20,11 @@ playsound block.chest.locked master @s ~ ~ ~ 0.5 2
 playsound entity.experience_orb.pickup master @s ~ ~ ~ 0.3 2
 
 execute \
-if data storage reizo_mcfunc_engin:_ {Tools:{AddHotBar:{HotBarNum:"0"}}} \
-at @e[tag=reizo_mcfunc_Engin.Object.AddHotBar_ChestMinecart,type=chest_minecart] \
-if score @s reizo_mcfunc_Engin.ScoreID = @n[tag=reizo_mcfunc_Engin.Object.AddHotBar_ChestMinecart,type=chest_minecart,distance=..0.1] reizo_mcfunc_Engin.ScoreID run \
-return run function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0
+if data storage reizo_mcfunc_engin:_ {Tools:{AddHotBar:{HotBarNum:"0"}}} run \
+return run function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/0/_
 execute \
-if data storage reizo_mcfunc_engin:_ {Tools:{AddHotBar:{HotBarNum:"1"}}} \
-at @e[tag=reizo_mcfunc_Engin.Object.AddHotBar_ChestMinecart,type=chest_minecart] \
-if score @s reizo_mcfunc_Engin.ScoreID = @n[tag=reizo_mcfunc_Engin.Object.AddHotBar_ChestMinecart,type=chest_minecart,distance=..0.1] reizo_mcfunc_Engin.ScoreID run \
-return run function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/1
+if data storage reizo_mcfunc_engin:_ {Tools:{AddHotBar:{HotBarNum:"1"}}} run \
+return run function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/1/_
 execute \
-if data storage reizo_mcfunc_engin:_ {Tools:{AddHotBar:{HotBarNum:"2"}}} \
-at @e[tag=reizo_mcfunc_Engin.Object.AddHotBar_ChestMinecart,type=chest_minecart] \
-if score @s reizo_mcfunc_Engin.ScoreID = @n[tag=reizo_mcfunc_Engin.Object.AddHotBar_ChestMinecart,type=chest_minecart,distance=..0.1] reizo_mcfunc_Engin.ScoreID run \
-return run function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/2
+if data storage reizo_mcfunc_engin:_ {Tools:{AddHotBar:{HotBarNum:"2"}}} run \
+return run function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item/2/_
