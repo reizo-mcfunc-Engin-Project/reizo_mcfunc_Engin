@@ -5,4 +5,4 @@
 # @within function reizo_mcfunc_engin:asset/object/.manager/summon/summon
 
 # IDから登録処理を呼び出す。
-$function reizo_mcfunc_engin:asset/object/$(ID)/register
+$function $(namespace):asset/object/$(ID)/register
