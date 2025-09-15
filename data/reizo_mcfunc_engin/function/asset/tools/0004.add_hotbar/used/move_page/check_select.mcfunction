@@ -7,12 +7,12 @@
 # 配列の長さを取得
 execute \
 store result score $Tools.AddHotBar.ListCount reizo_mcfunc_Engin.Temp run \
-data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar._
+data get storage reizo_mcfunc_engin:_ Tools.AddHotBar._
 
 # セレクトされている場所をTempにコピー
 execute \
 store result score $Tools.AddHotBar.SelectHotBar reizo_mcfunc_Engin.Temp run \
-data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.SelectHotBar
+data get storage reizo_mcfunc_engin:_ Tools.AddHotBar.SelectHotBar
 
 # スコアを1上げる
 scoreboard players add $Tools.AddHotBar.SelectHotBar reizo_mcfunc_Engin.Temp 1
@@ -27,7 +27,7 @@ title @s actionbar [{"text":"ホットバー",color:"aqua"},{"text":":","color":
 
 # ストレージにコピー
 execute \
-store result storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar.SelectHotBar int 1 run \
+store result storage reizo_mcfunc_engin:_ Tools.AddHotBar.SelectHotBar int 1 run \
 scoreboard players get $Tools.AddHotBar.SelectHotBar reizo_mcfunc_Engin.Temp
 
 # スコアリセット

@@ -6,28 +6,28 @@
 
     execute \
     if data entity @s Inventory[{Slot:0b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar._[-1] append from entity @s Inventory[{Slot:0b}]
+    data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar._[-1] append from entity @s Inventory[{Slot:0b}]
     execute \
     if data entity @s Inventory[{Slot:1b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar._[-1] append from entity @s Inventory[{Slot:1b}]
+    data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar._[-1] append from entity @s Inventory[{Slot:1b}]
     execute \
     if data entity @s Inventory[{Slot:2b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar._[-1] append from entity @s Inventory[{Slot:2b}]
+    data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar._[-1] append from entity @s Inventory[{Slot:2b}]
     execute \
     if data entity @s Inventory[{Slot:3b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar._[-1] append from entity @s Inventory[{Slot:3b}]
+    data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar._[-1] append from entity @s Inventory[{Slot:3b}]
     execute \
     if data entity @s Inventory[{Slot:4b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar._[-1] append from entity @s Inventory[{Slot:4b}]
+    data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar._[-1] append from entity @s Inventory[{Slot:4b}]
     execute \
     if data entity @s Inventory[{Slot:5b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar._[-1] append from entity @s Inventory[{Slot:5b}]
+    data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar._[-1] append from entity @s Inventory[{Slot:5b}]
     execute \
     if data entity @s Inventory[{Slot:6b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar._[-1] append from entity @s Inventory[{Slot:6b}]
+    data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar._[-1] append from entity @s Inventory[{Slot:6b}]
     execute \
     if data entity @s Inventory[{Slot:7b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar._[-1] append from entity @s Inventory[{Slot:7b}]
+    data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar._[-1] append from entity @s Inventory[{Slot:7b}]
     execute \
     if data entity @s Inventory[{Slot:8b}] run \
-    data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar._[-1] append from entity @s Inventory[{Slot:8b}]
+    data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar._[-1] append from entity @s Inventory[{Slot:8b}]
