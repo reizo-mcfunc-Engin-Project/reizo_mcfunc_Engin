@@ -1,8 +1,8 @@
-#> reizo_mcfunc_engin:core/tick/player/get_data/item
+#> reizo_mcfunc_engin:player/get_data/tick
 #
 # 
 #
-# @within function reizo_mcfunc_engin:core/tick/player/get_data/tick
+# @within function reizo_mcfunc_engin:player/tick/_
 
 #> 持っているアイテムデータ取得。
     # 右手のほうを優先したいので、左手の処理はここに。

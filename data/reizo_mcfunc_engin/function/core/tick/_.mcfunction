@@ -10,7 +10,7 @@ unless score $Core reizo_mcfunc_Engin.ScoreID matches -2147483648..2147483647 ru
 scoreboard players set $Core reizo_mcfunc_Engin.ScoreID -2147483648
 
 # プレイヤーの処理
-execute as @a at @s run function reizo_mcfunc_engin:core/tick/player/_
+execute as @a at @s run function reizo_mcfunc_engin:player/tick/_
 
 # tick単位でのデータ取得
 function reizo_mcfunc_engin:core/tick/get_data

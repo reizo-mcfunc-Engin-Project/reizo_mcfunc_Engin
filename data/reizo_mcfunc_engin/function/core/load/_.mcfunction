@@ -15,9 +15,9 @@ scoreboard objectives add reizo_mcfunc_Engin._ dummy
 scoreboard objectives add reizo_mcfunc_Engin.Temp dummy
 scoreboard objectives add reizo_mcfunc_Engin.ScoreID dummy "スコアID Int型"
 scoreboard objectives add reizo_mcfunc_Engin.using_Item dummy "アイテムを使用している。 Int型"
-scoreboard objectives add reizo_mcfunc_Engin.used_Item dummy "アイテムを使用した。 Int型"
 scoreboard objectives add reizo_mcfunc_Engin.KiiTimer dummy "killされるまでの時間"
 scoreboard objectives add reizo_mcfunc_Engin.GetDis.Get_N.UseCount dummy
+scoreboard objectives add reizo_mcfunc_Engin.Sneaking dummy "シフトを押している。 Int型"
 
 #> 定数
 scoreboard players set #2 reizo_mcfunc_Engin.Temp 2
