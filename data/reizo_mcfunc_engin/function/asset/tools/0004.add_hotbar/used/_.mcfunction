@@ -9,7 +9,26 @@ execute \
 if data storage reizo_mcfunc_engin:_ Tool.Main_Address run \
 return run function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/fail
 
+#> OMD関連
+    # OMD呼び出し
+    function #oh_my_dat:please
+    # OMDをコピー
+    data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar
+
+# ホットバー追加
+execute \
+if predicate reizo_mcfunc_engin:sneak \
+if data storage reizo_mcfunc_engin:_ Tool.Off_Address run \
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/add_hotbar/_
+
 # ホットバー移動
 execute \
+unless predicate reizo_mcfunc_engin:sneak \
 if data storage reizo_mcfunc_engin:_ Tool.Off_Address run \
 function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/_
+
+# OMDへコピー
+data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar set from storage reizo_mcfunc_engin:_ Tools.AddHotBar
+
+# お掃除
+data remove storage reizo_mcfunc_engin:_ Tools.AddHotBar

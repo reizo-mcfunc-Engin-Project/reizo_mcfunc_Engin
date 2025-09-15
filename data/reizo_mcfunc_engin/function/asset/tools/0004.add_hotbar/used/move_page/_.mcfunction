@@ -4,12 +4,6 @@
 #
 # @within function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/_
 
-# OMD呼び出し
-function #oh_my_dat:please
-
-# OMDをコピー
-data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar
-
 #> Init
     # 最初にセレクトしているホットバーは0
     execute \
@@ -54,9 +48,3 @@ function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/copy_item
 
 # Remove
 data remove storage reizo_mcfunc_engin:_ Tools.AddHotBar._[0]
-
-# 最後にOMDへコピー
-data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar set from storage reizo_mcfunc_engin:_ Tools.AddHotBar
-
-# お掃除
-data remove storage reizo_mcfunc_engin:_ Tools.AddHotBar
