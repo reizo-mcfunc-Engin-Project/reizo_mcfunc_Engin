@@ -19,7 +19,7 @@ scoreboard players add $Tools.AddHotBar.SelectHotBar reizo_mcfunc_Engin.Temp 1
 
 # 値が配列の長さと同じなら0に
 execute \
-if score $Tools.AddHotBar.SelectHotBar reizo_mcfunc_Engin.Temp = $Tools.AddHotBar.ListCount reizo_mcfunc_Engin.Temp run \
+if score $Tools.AddHotBar.SelectHotBar reizo_mcfunc_Engin.Temp >= $Tools.AddHotBar.ListCount reizo_mcfunc_Engin.Temp run \
 scoreboard players set $Tools.AddHotBar.SelectHotBar reizo_mcfunc_Engin.Temp 0
 
 # 今どこのホットバーなのか伝える

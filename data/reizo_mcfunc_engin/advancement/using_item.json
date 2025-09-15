@@ -14,7 +14,6 @@
       }
     },
     "rewards": {
-      "function": "reizo_mcfunc_engin:core/tick/player/get_data/using_item"
+      "function": "reizo_mcfunc_engin:player/get_data/using_item"
     }
   }
-  

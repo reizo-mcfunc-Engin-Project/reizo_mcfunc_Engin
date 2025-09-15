@@ -15,17 +15,20 @@ return run function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/fail
     # OMDをコピー
     data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar
 
-# ホットバー追加
-execute \
-if predicate reizo_mcfunc_engin:sneak \
-if data storage reizo_mcfunc_engin:_ Tool.Off_Address run \
-function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/add_hotbar/_
-
 # ホットバー移動
 execute \
-unless predicate reizo_mcfunc_engin:sneak \
-if data storage reizo_mcfunc_engin:_ Tool.Off_Address run \
+if data storage reizo_mcfunc_engin:_ Tools.AddHotBar{Mode:0} run \
 function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/_
+
+# ホットバー追加
+execute \
+if data storage reizo_mcfunc_engin:_ Tools.AddHotBar{Mode:1} run \
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/add_hotbar/_
+
+# ホットバー削除
+execute \
+if data storage reizo_mcfunc_engin:_ Tools.AddHotBar{Mode:2} run \
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/remove_hotbar/_
 
 # OMDへコピー
 data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Player.Tool.AddHotBar set from storage reizo_mcfunc_engin:_ Tools.AddHotBar
