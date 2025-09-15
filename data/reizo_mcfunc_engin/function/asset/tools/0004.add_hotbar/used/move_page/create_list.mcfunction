@@ -1,8 +1,8 @@
-#> reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/create_list
+#> reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/create_list
 #
 # 
 #
-# @within function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/move_page/_
+# @within function reizo_mcfunc_engin:lib/for/_
 
 data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar._ append value []
 data modify storage reizo_mcfunc_engin:_ Tools.AddHotBar._[-1] append value {id:"minecraft:air",Slot:0b,count:1}

@@ -5,7 +5,7 @@
 # @within function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/_
 
 # リストを作成
-function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/create_list
+function reizo_mcfunc_engin:asset/tools/0004.add_hotbar/used/add_hotbar/create_list
 
 # 音
 playsound minecraft:block.crafter.craft master @s ~ ~ ~ 1 0 1
