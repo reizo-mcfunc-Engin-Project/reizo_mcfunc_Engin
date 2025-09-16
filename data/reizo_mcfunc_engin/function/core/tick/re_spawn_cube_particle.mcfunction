@@ -8,4 +8,4 @@
 kill @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CubeParticle,type=armor_stand]
 
 # 召喚
-function reizo_mcfunc_engin:asset/object/.manager/summon/run.m {ID:"0002.cube_particle",namespace:"reizo_mcfunc_engin"}
+function reizo_mcfunc_engin:api/object/summon.m {ID:"0002.cube_particle",namespace:"reizo_mcfunc_engin"}

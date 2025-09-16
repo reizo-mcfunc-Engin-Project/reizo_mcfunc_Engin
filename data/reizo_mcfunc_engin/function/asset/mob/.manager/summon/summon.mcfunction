@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function reizo_mcfunc_engin:asset/mob/.manager/summon/run.m
+# @within function reizo_mcfunc_engin:api/mob/summon.m
 
 # 召喚！
 function reizo_mcfunc_engin:asset/mob/.manager/summon/core/summon.m with storage reizo_mcfunc_engin:mob

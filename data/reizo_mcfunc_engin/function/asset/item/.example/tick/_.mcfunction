@@ -8,7 +8,7 @@
 execute \
 anchored eyes \
 positioned ^ ^ ^ run \
-function reizo_mcfunc_engin:asset/object/.manager/summon/run.m {ID:"0001.click_detection",namespace:"reizo_mcfunc_engin"}
+function reizo_mcfunc_engin:api/object/summon.m {ID:"0001.click_detection",namespace:"reizo_mcfunc_engin"}
 
 # スコアと結びつけ
 execute \

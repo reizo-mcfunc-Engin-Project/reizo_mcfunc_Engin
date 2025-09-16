@@ -7,7 +7,7 @@
 # 召喚！
 execute \
 positioned as @a[scores={reizo_mcfunc_Engin.using_Item=1..}] run \
-function reizo_mcfunc_engin:asset/object/.manager/summon/run.m {ID:"tools.check_point_marker",namespace:"reizo_mcfunc_engin"}
+function reizo_mcfunc_engin:api/object/summon.m {ID:"tools.check_point_marker",namespace:"reizo_mcfunc_engin"}
 
 # スコアで結びつける
 execute \
