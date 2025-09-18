@@ -11,6 +11,6 @@
       }
     },
     "rewards": {
-      "function": "reizo_mcfunc_engin:core/tick/player/get_data/click_detection/left"
+      "function": "reizo_mcfunc_engin:player/get_data/click/left"
     }
   }

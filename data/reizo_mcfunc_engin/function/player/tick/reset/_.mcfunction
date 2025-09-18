@@ -5,12 +5,9 @@
 # @within function reizo_mcfunc_engin:player/tick/_
 
 # Tag
-    # tag @s[tag=reizo_mcfunc_Engin.Is_on_Fire,advancements={reizo_mcfunc_engin:player/get_data={is_on_fire=false}}] remove reizo_mcfunc_Engin.Is_on_Fire
-    # tag @s[tag=reizo_mcfunc_Engin.Is_on_Ground,advancements={reizo_mcfunc_engin:player/get_data={is_on_ground=false}}] remove reizo_mcfunc_Engin.Is_on_Ground
-    # tag @s[tag=reizo_mcfunc_Engin.Is_on_Hurt,advancements={reizo_mcfunc_engin:player/get_data={is_on_hurt=false}}] remove reizo_mcfunc_Engin.Is_on_Hurt
-
-
-# Score
+    # Click
+    tag @s[tag=reizo_mcfunc_Engin.Click.Left] remove reizo_mcfunc_Engin.Click.Left
+    tag @s[tag=reizo_mcfunc_Engin.Click.Right] remove reizo_mcfunc_Engin.Click.Right
 
 # Storage
     execute \
