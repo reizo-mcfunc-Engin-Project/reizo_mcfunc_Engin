@@ -25,9 +25,6 @@ CC0 1.0が適応されるもの
 #### 赤石愛氏のOhMyDat
 https://github.com/Ai-Akaishi/OhMyDat/tree/master?tab=MIT-1-ov-file
 
-#### 赤石愛氏のAiUtil
-https://github.com/Ai-Akaishi/AiUtil/tree/main
-
 #### ひろばお氏のプレイヤーモーション
 https://github.com/Hirobao1/CustomEnchant_PlayerMotion
 
