@@ -4,6 +4,11 @@
 #
 # @within function reizo_mcfunc_engin:lib/display_backup/load
 
+# Storageコピーできなかったらおしまい。
+execute \
+unless data storage reizo_mcfunc_engin:lib DisplayBackUp.BackUpData run \
+return run function reizo_mcfunc_engin:lib/display_backup/sys/load/fail
+
 # [0]Copy
 data modify storage reizo_mcfunc_engin:lib DisplayBackUp.Temp set from storage reizo_mcfunc_engin:lib DisplayBackUp.BackUpData[0]
 
