@@ -29,9 +29,9 @@ data modify storage reizo_mcfunc_engin:lib DisplayBackUp.Temp set from storage r
     data remove storage reizo_mcfunc_engin:lib DisplayBackUp.Temp
 
 # 生きているかチェック
-function reizo_mcfunc_engin:lib/display_backup/sys/load/check/block.m with storage reizo_mcfunc_engin:lib DisplayBackUp.Macro
-function reizo_mcfunc_engin:lib/display_backup/sys/load/check/item.m with storage reizo_mcfunc_engin:lib DisplayBackUp.Macro
-function reizo_mcfunc_engin:lib/display_backup/sys/load/check/text.m with storage reizo_mcfunc_engin:lib DisplayBackUp.Macro
+function reizo_mcfunc_engin:lib/display_backup/sys/load/check/set_pos.m with storage reizo_mcfunc_engin:lib DisplayBackUp.Macro
+function reizo_mcfunc_engin:lib/display_backup/sys/load/check/set_pos.m with storage reizo_mcfunc_engin:lib DisplayBackUp.Macro
+function reizo_mcfunc_engin:lib/display_backup/sys/load/check/set_pos.m with storage reizo_mcfunc_engin:lib DisplayBackUp.Macro
 
 # summon
 execute \
@@ -40,6 +40,7 @@ function reizo_mcfunc_engin:lib/display_backup/sys/load/summon.m with storage re
 
 # リセット
 data remove storage reizo_mcfunc_engin:lib DisplayBackUp.Macro
+data remove storage reizo_mcfunc_engin:lib DisplayBackUp.Summon
 
 # 先頭削除
 data remove storage reizo_mcfunc_engin:lib DisplayBackUp.BackUpData[0]
