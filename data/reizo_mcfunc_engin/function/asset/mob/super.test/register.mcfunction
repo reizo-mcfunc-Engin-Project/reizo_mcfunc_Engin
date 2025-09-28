@@ -21,7 +21,18 @@
     # 体力はどれぐらい？ Float型
     # data modify storage reizo_mcfunc_engin:mob Register.Health set value 1.0f
     # 持っているアイテム String型
-    data modify storage reizo_mcfunc_engin:mob Register.equipment set value {chest:{id:"leather_chestplate"},mainhand:{id:"iron_axe"}}
+        # head
+        # data modify storage reizo_mcfunc_engin:mob Register.Head set value {id:""}
+        # chest
+        data modify storage reizo_mcfunc_engin:mob Register.Chest set value {id:"netherite_chestplate"}
+        # legs
+        # data modify storage reizo_mcfunc_engin:mob Register.Legs set value {id:""}
+        # feet
+        # data modify storage reizo_mcfunc_engin:mob Register.Feet set value {id:""}
+        # main_hand
+        data modify storage reizo_mcfunc_engin:mob Register.main_hand set value {id:"iron_axe"}
+        # off_hand
+        # data modify storage reizo_mcfunc_engin:mob Register.off_hand set value {id:""}
     # 大きさはどれくらい？ Max = 16.0d
     data modify storage reizo_mcfunc_engin:mob Register.Scale set value 1.1d
     # アイテムを落とさないか？ boolean型
