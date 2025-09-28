@@ -4,6 +4,9 @@
 #
 # @within function reizo_mcfunc_engin:asset/object/.manager/*/register/_
 
+# RegisterをTempに。
+data modify storage reizo_mcfunc_engin:object Temp.Register set from storage reizo_mcfunc_engin:object Register
+
 # 継承情報は持っておきたいものだ。
 data modify entity @s data.Register.Extends set from storage reizo_mcfunc_engin:object Register.Extends
 
@@ -15,3 +18,12 @@ function reizo_mcfunc_engin:asset/.manager/extends/get_id.m {Type:"object"}
 
 # 継承元のデータ適応
 function reizo_mcfunc_engin:asset/object/.manager/register/set_data/_
+
+# お掃除
+data remove storage reizo_mcfunc_engin:object Register
+
+# 呼び出し
+data modify storage reizo_mcfunc_engin:object Register set from storage reizo_mcfunc_engin:object Temp.Register
+
+# お掃除
+data remove storage reizo_mcfunc_engin:object Temp.Register

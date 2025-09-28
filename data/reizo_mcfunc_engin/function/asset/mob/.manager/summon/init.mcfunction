@@ -4,6 +4,8 @@
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/summon/summon
 
+# TODO:ObjectとExtendsの動作を同じように！
+
 #> ID,namespaceをdataに
     # IDをコピー
     data modify entity @s data.Mob.ID set from storage reizo_mcfunc_engin:mob ID
