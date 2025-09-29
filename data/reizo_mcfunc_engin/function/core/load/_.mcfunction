@@ -21,11 +21,7 @@ scoreboard objectives add reizo_mcfunc_Engin.GetDis.Get_N.UseCount dummy
 scoreboard objectives add reizo_mcfunc_Engin.Sneaking dummy "シフトを押している。 Int型"
 scoreboard objectives add reizo_mcfunc_Engin.Sneaked dummy "シフトを押した。 Int型"
 
-#> 定数
-scoreboard players set #2 reizo_mcfunc_Engin.Temp 2
-scoreboard players set #-2147483648 reizo_mcfunc_Engin.Temp -2147483648
-
 # Initが終わった後の処理
 execute \
-if data storage reizo_mcfunc_engin:lib {OnlyOnce:{"reizo_mcfunc_engin:core/install/init":1b}} run \
+if predicate {condition:"value_check",value:{type:"storage",storage:"reizo_mcfunc_engin:lib",path:"OnlyOnce.reizo_mcfunc_engin:core/install/init"},range:1b} run \
 function reizo_mcfunc_engin:core/load/inited
