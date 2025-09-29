@@ -4,10 +4,15 @@
 #
 # @within function reizo_libs:get_dimension/_
 
+# OMDコピー
+data modify storage reizo_mcfunc_engin:lib Debug.GetDimension.In_OverWorld set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].In_OverWorld
+data modify storage reizo_mcfunc_engin:lib Debug.GetDimension.In_Nether set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].In_Nether
+data modify storage reizo_mcfunc_engin:lib Debug.GetDimension.In_End set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].In_End
+
 # デバッグ
     # オーバーワールド
     execute \
-    if data storage oh_my_dat: {_:[[[[[[[[{In_OverWorld:1b}]]]]]]]]} run \
+    if predicate {condition:"value_check",value:{type:"storage",storage:"reizo_mcfunc_engin:lib",path:"Debug.GetDimension.In_OverWorld"},range:1b} run \
     tellraw @s \
     [\
         {\
@@ -56,7 +61,7 @@
     ]
     # ネザー
     execute \
-    if data storage oh_my_dat: {_:[[[[[[[[{In_Nether:1b}]]]]]]]]} run \
+    if predicate {condition:"value_check",value:{type:"storage",storage:"reizo_mcfunc_engin:lib",path:"Debug.GetDimension.In_Nether"},range:1b} run \
     tellraw @s \
     [\
         {\
@@ -105,7 +110,7 @@
     ]
     # エンド
     execute \
-    if data storage oh_my_dat: {_:[[[[[[[[{In_End:1b}]]]]]]]]} run \
+    if predicate {condition:"value_check",value:{type:"storage",storage:"reizo_mcfunc_engin:lib",path:"Debug.GetDimension.In_End"},range:1b} run \
     tellraw @s \
     [\
         {\
@@ -152,3 +157,6 @@
         "text": "にいます。"\
         }\
     ]
+
+# お掃除
+data remove storage reizo_mcfunc_engin:lib Debug.GetDimension
