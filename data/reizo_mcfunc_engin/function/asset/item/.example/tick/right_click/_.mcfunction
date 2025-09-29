@@ -10,4 +10,4 @@ playsound ui.button.click player @s ~ ~ ~ 1 1 1
 
 # 後ろ
 data modify storage reizo_mcfunc_engin:lib Wind_P_Motion.Strength set value -3
-function reizo_mcfunc_engin:lib/wind_p_motion/looking
+function reizo_libs:wind_p_motion/looking
