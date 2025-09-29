@@ -16,8 +16,6 @@ $data modify storage reizo_mcfunc_engin:$(Type) Registry.Extends.ID set from sto
 # 継承されているMobのRegisterを呼び出し
 $function reizo_mcfunc_engin:asset/$(Type)/.manager/register/run.m with storage reizo_mcfunc_engin:$(Type) Registry.Extends
 
-tellraw @a {storage:"reizo_mcfunc_engin:mob","nbt":"Registry"}
-
 # 今一番前にいるやつはもういらないよ、さよ～なら～
 $data remove storage reizo_mcfunc_engin:$(Type) Registry.CopyExtends.ID[0]
 
