@@ -11,11 +11,6 @@
     data modify storage reizo_mcfunc_engin:mob Register.Final set value 0b
     # 継承されることを前提とした、抽象的なMobかどうか。
     data modify storage reizo_mcfunc_engin:mob Register.IsAbstract set value 1b
-        # 何かしら継承している。
-        execute \
-        if data storage reizo_mcfunc_engin:mob {Register:{IsAbstract:0b}} \
-        if data storage reizo_mcfunc_engin:mob Register.Extends run \
-        function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_
     # 名前 String型
     data modify storage reizo_mcfunc_engin:mob Register.Name set value "お手本Testマン"
     # 体力はどれぐらい？ Float型

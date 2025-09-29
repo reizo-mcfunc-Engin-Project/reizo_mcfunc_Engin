@@ -4,8 +4,6 @@
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/summon/summon
 
-# TODO:ObjectとExtendsの動作を同じように！
-
 #> ID,namespaceをdataに
     # IDをコピー
     data modify entity @s data.Mob.ID set from storage reizo_mcfunc_engin:mob ID
@@ -14,6 +12,12 @@
 
 # 登録処理
 function reizo_mcfunc_engin:asset/mob/.manager/register/run.m with storage reizo_mcfunc_engin:mob
+
+# 何かしら継承している。
+execute \
+if data storage reizo_mcfunc_engin:mob {Register:{IsAbstract:0b}} \
+if data storage reizo_mcfunc_engin:mob Register.Extends run \
+function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_
 
 # 登録したデータを適応
 function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/_
