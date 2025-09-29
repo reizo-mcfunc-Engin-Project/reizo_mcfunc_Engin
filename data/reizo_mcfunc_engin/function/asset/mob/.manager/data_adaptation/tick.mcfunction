@@ -12,7 +12,7 @@ data modify storage reizo_mcfunc_engin:mob Registry set from entity @s data.Regi
 # まさかのデータ取得無理でした。
 execute \
 unless data storage reizo_mcfunc_engin:mob Registry run \
-function reizo_mcfunc_engin:error/fail_data_get {Data:"Registry"}
+function reizo_erros:fail_data_get {Data:"Registry"}
 
 # 燃えるかどうか。
 execute \

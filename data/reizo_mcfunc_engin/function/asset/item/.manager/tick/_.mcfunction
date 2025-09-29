@@ -11,11 +11,11 @@
     # Address足りない
     execute \
     unless data storage reizo_mcfunc_engin:_ Item.Both.Address run \
-    function reizo_mcfunc_engin:error/args {Args:"Address"}
+    function reizo_erros:args {Args:"Address"}
     # namespace足りない
     execute \
     unless data storage reizo_mcfunc_engin:_ Item.Both.namespace run \
-    function reizo_mcfunc_engin:error/args {Args:"namespace"}
+    function reizo_erros:args {Args:"namespace"}
 
 # アドレスを使い実行！ここはBothだけ。
 function reizo_mcfunc_engin:asset/item/.manager/tick/run.m with storage reizo_mcfunc_engin:_ Item.Both

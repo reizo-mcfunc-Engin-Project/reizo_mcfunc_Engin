@@ -9,7 +9,7 @@
 # まさかのデータ取得出来てない事件
 execute \
 unless data storage reizo_mcfunc_engin:mob Register run \
-function reizo_mcfunc_engin:error/fail_data_get {Data:"Register"}
+function reizo_erros:fail_data_get {Data:"Register"}
 
 # お名前つけます。
 execute \

@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:error/args
+#> reizo_erros:args
 #
 # 
 #

@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:error/fail_entity_data_get
+#> reizo_erros:fail_entity_data_get
 #
 # データとれねぇじゃねぇか！
 # @MacroInput

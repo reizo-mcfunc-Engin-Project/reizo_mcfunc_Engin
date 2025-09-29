@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:error/non_set_value
+#> reizo_erros:non_set_value
 #
 # 値が設定されていないじゃないか！
 # マクロ必須 ValueName = スコア名、Path名

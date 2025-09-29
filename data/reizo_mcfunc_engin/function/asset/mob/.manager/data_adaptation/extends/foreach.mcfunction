@@ -15,7 +15,7 @@ data modify storage reizo_mcfunc_engin:mob Extends.ID set from storage reizo_mcf
 # Finalが1bのやつは継承が禁止されているんだ。
 execute \
 if data storage reizo_mcfunc_engin:mob {Register:{Final:1b}} run \
-return run function reizo_mcfunc_engin:error/call.super_method/final
+return run function reizo_erros:call.super_method/final
 
 # superクラスを常時呼び出し
 function reizo_mcfunc_engin:asset/mob/.manager/tick/run.m with storage reizo_mcfunc_engin:mob Extends

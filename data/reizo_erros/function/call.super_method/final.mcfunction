@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:error/call.super_method/
+#> reizo_erros:call.super_method/
 #
 # 
 #

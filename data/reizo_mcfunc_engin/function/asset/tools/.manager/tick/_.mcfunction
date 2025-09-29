@@ -11,11 +11,11 @@
     # Address足りない
     execute \
     unless data storage reizo_mcfunc_engin:_ Tool.Both.Address run \
-    return run function reizo_mcfunc_engin:error/args {Args:"Address(Tool)"}
+    return run function reizo_erros:args {Args:"Address(Tool)"}
     # namespace足りない
     execute \
     unless data storage reizo_mcfunc_engin:_ Tool.Both.namespace run \
-    return run function reizo_mcfunc_engin:error/args {Args:"namespace(Tool)"}
+    return run function reizo_erros:args {Args:"namespace(Tool)"}
 
 # アイテムを使ったら実行
 execute \

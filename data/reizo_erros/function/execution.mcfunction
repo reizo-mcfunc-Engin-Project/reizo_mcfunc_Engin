@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:error/execution
+#> reizo_erros:execution
 #
 # こいつは実行しちゃいけないんだぞ！
 #

@@ -7,7 +7,7 @@
 #> まずはプレイヤーかどうか確認
     # 違うならエラー
     execute if entity @s[type=!player] run \
-    function reizo_mcfunc_engin:error/execution
+    function reizo_erros:execution
     # プレイヤーなら実行
     execute if entity @s[type=player] run \
     function reizo_mcfunc_engin:lib/get_name/sys/_

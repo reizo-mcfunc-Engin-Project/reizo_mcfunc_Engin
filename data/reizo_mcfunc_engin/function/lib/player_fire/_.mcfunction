@@ -8,11 +8,11 @@
     # プレイヤーじゃないなら早期リターン
     execute \
     if entity @s[type=!player] run \
-    return run function reizo_mcfunc_engin:error/execution
+    return run function reizo_erros:execution
     # 値がNullな時は早期リターン
     execute \
     unless data storage reizo_mcfunc_engin:lib In.PFire run \
-    return run function reizo_mcfunc_engin:error/non_set_value {ValueName:"reizo_mcfunc_engin:lib In.PFire"}
+    return run function reizo_erros:non_set_value {ValueName:"reizo_mcfunc_engin:lib In.PFire"}
     # プレイヤーなら実行
     execute \
     if entity @s[type=player] run \
