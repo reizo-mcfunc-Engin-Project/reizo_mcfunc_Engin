@@ -17,10 +17,10 @@ function reizo_mcfunc_engin:asset/mob/.manager/register/run.m with storage reizo
 execute \
 if data storage reizo_mcfunc_engin:mob {Register:{IsAbstract:0b}} \
 if data storage reizo_mcfunc_engin:mob Register.Extends run \
-function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_
+function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/extends/_
 
 # 登録したデータを適応
-function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/_
+function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/_
 
 # Tag剥奪
 tag @s remove reizo_mcfunc_Engin.Mob.Init

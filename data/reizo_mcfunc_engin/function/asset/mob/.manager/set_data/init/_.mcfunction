@@ -1,10 +1,8 @@
-#> reizo_mcfunc_engin:asset/mob/.manager/register/set_data/_
+#> reizo_mcfunc_engin:asset/mob/.manager/set_data/init/_
 #
 # 
 #
-# @within function
-#   reizo_mcfunc_engin:asset/mob/.manager/summon/init
-#   reizo_mcfunc_engin:asset/mob/.manager/register/set_data/extends/_
+# @within function reizo_mcfunc_engin:asset/mob/.manager/summon/init
 
 # まさかのデータ取得出来てない事件
 execute \
@@ -53,7 +51,7 @@ if data storage reizo_mcfunc_engin:mob {Register:{DethItem_Empty:1b}} run \
 data modify entity @s DeathLootTable set value "reizo_mcfunc_engin:death/empty"
 
 # 大きさ変更
-function reizo_mcfunc_engin:asset/mob/.manager/register/set_data/scale.m with storage reizo_mcfunc_engin:mob Register
+function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/scale.m with storage reizo_mcfunc_engin:mob Register
 
 #> dataにして持っていきたいものがあるんだ。
     # Flammable

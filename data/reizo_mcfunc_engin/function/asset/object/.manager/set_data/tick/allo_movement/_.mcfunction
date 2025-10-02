@@ -1,8 +1,8 @@
-#> reizo_mcfunc_engin:asset/object/.manager/data_adaptation/allow_movement/tick
+#> reizo_mcfunc_engin:asset/object/.manager/set_data/tick/allo_movement/_
 #
-# 動くことがダメな奴の常時動作、Posを取って離れてたら戻して...
+# 
 #
-# @within function reizo_mcfunc_engin:asset/object/.manager/data_adaptation/tick
+# @within function reizo_mcfunc_engin:asset/object/.manager/set_data/tick/_
 
 # スコアに格納
     # Pos

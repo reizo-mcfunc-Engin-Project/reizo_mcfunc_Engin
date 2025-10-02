@@ -9,7 +9,7 @@
 # さらに、reizo_mcfunc_Engin.Objectという風に、TagでObjectであることを宣言しなければならない。
 
 # 常時tickでデータ適応
-function reizo_mcfunc_engin:asset/object/.manager/data_adaptation/tick
+function reizo_mcfunc_engin:asset/object/.manager/set_data/tick/_
 
 # tick処理を動かすぜ！
 function reizo_mcfunc_engin:asset/object/.manager/tick/run.m with entity @s data.Object

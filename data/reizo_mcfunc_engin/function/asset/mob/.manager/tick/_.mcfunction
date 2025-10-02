@@ -9,7 +9,7 @@
 # さらに、reizo_mcfunc_Engin.Mobという風に、自分がMobであることを宣言するTagを付けなければならない。
 
 # 常時データ適応を呼び出し
-function reizo_mcfunc_engin:asset/mob/.manager/data_adaptation/tick
+function reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/_
 
 # IDからtick処理を叩く。
 function reizo_mcfunc_engin:asset/mob/.manager/tick/run.m with entity @s data.Mob

@@ -1,8 +1,8 @@
-#> reizo_mcfunc_engin:asset/object/.manager/register/set_data/_
+#> reizo_mcfunc_engin:asset/object/.manager/set_data/init/_
 #
-# Registerで設定したものを実際のObjectに適応させる。
+# 
 #
-# @within
+# @within function
 #   reizo_mcfunc_engin:asset/object/.manager/summon/init
 #   reizo_mcfunc_engin:asset/object/.manager/register/set_data/extends/_
 
@@ -18,4 +18,4 @@ data modify entity @s data.Registry.InitPos set from entity @s Pos
 
 #> dataにして、持っていきたいものがあるんだ。
     # Allow_Movement
-    data modify entity @s data.Register.Allow_Movement set from storage reizo_mcfunc_engin:object Register.Allow_Movement
+    data modify entity @s data.Registry.Allow_Movement set from storage reizo_mcfunc_engin:object Register.Allow_Movement

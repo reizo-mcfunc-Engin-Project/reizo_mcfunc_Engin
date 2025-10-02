@@ -1,6 +1,6 @@
-#> reizo_mcfunc_engin:asset/mob/.manager/data_adaptation/tick
+#> reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/_
 #
-# 常時のデータ適応
+# 
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/tick/_
 
@@ -22,7 +22,7 @@ data modify entity @s Fire set value -255
 # 何かしら継承している！
 execute \
 if data storage reizo_mcfunc_engin:mob Registry.Extends run \
-function reizo_mcfunc_engin:asset/mob/.manager/data_adaptation/extends/tick
+function reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/extends/_
 
 # データリセット
 data remove storage reizo_mcfunc_engin:mob Registry

@@ -1,23 +1,26 @@
-#> reizo_mcfunc_engin:asset/object/.manager/register/set_data/extends/_
+#> reizo_mcfunc_engin:asset/object/.manager/set_data/init/extends/_
 #
-# 継承元のRegisterを呼び出す
+# 
 #
-# @within function reizo_mcfunc_engin:asset/object/.manager/*/register/_
+# @within function reizo_mcfunc_engin:asset/object/.manager/summon/init
 
 # RegisterをTempに。
 data modify storage reizo_mcfunc_engin:object Temp.Register set from storage reizo_mcfunc_engin:object Register
 
 # 継承情報は持っておきたいものだ。
-data modify entity @s data.Register.Extends set from storage reizo_mcfunc_engin:object Register.Extends
+data modify entity @s data.Registry.Extends set from storage reizo_mcfunc_engin:object Register.Extends
 
 # 継承したいObjectのレジストリに対応させるためにIDに。
 data modify storage reizo_mcfunc_engin:object Registry.CopyExtends.ID set from entity @s data.Register.Extends
 
-# このままだと配列なんで...なんとか分けて実行する。
-function reizo_mcfunc_engin:asset/.manager/extends/get_id.m {Type:"object"}
+# namespaceをExtendsにコピー
+data modify storage reizo_mcfunc_engin:object Extends.namespace set from entity @s data.Object.namespace
 
-# 継承元のデータ適応
-function reizo_mcfunc_engin:asset/object/.manager/register/set_data/_
+# このままだと配列なんで...なんとか分けて実行する。
+function reizo_mcfunc_engin:api/extends/get_id.m {Type:"object",namespace:"reizo_mcfunc_engin",S_namsepace:"reizo_mcfunc_engin"}
+
+# 継承元のFinalデータ格納
+data modify entity @s data.Registry.Extends.SuperClass.Final set from storage reizo_mcfunc_engin:object Register.Final
 
 # お掃除
 data remove storage reizo_mcfunc_engin:object Register

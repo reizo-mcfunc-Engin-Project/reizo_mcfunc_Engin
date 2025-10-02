@@ -17,10 +17,10 @@ function reizo_mcfunc_engin:asset/object/.manager/register/run.m with storage re
 execute \
 if data storage reizo_mcfunc_engin:object Register{IsAbstract:0b} \
 if data storage reizo_mcfunc_engin:object Register.Extends run \
-function reizo_mcfunc_engin:asset/object/.manager/register/set_data/extends/_
+function reizo_mcfunc_engin:asset/object/.manager/set_data/init/extends/_
 
 # 登録したデータを適応
-function reizo_mcfunc_engin:asset/object/.manager/register/set_data/_
+function reizo_mcfunc_engin:asset/object/.manager/set_data/init/_
 
 # Tag剥奪
 tag @s remove reizo_mcfunc_Engin.Object.Init
