@@ -17,7 +17,7 @@ data modify storage reizo_mcfunc_engin:object Registry.CopyExtends.ID set from e
 data modify storage reizo_mcfunc_engin:object Extends.namespace set from entity @s data.Object.namespace
 
 # このままだと配列なんで...なんとか分けて実行する。
-function reizo_mcfunc_engin:api/extends/get_id.m {Type:"object",namespace:"reizo_mcfunc_engin",S_namsepace:"reizo_mcfunc_engin"}
+function reizo_mcfunc_engin:api/extends/get_id.m {Type:"object",namespace:"reizo_mcfunc_engin",S_namespace:"reizo_mcfunc_engin"}
 
 # 継承元のFinalデータ格納
 data modify entity @s data.Registry.Extends.SuperClass.Final set from storage reizo_mcfunc_engin:object Register.Final
