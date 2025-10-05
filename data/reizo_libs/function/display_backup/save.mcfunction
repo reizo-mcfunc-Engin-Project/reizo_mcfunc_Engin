@@ -8,7 +8,7 @@
 data modify storage reizo_mcfunc_engin:lib DisplayBackUp.old.Data set from storage reizo_mcfunc_engin:lib DisplayBackUp.Data
 
 # data削除
-data remove storage reizo_mcfunc_engin:lib DisplayBackUp
+data remove storage reizo_mcfunc_engin:lib DisplayBackUp.Data
 
 # data取得
 execute \
