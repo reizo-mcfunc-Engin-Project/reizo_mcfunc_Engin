@@ -7,11 +7,4 @@
 #   ID        = Mob,ObjectのID、動的にIDを使えることにより、Tagで管理するような長い記述を減らすことが出来ている。
 # @public
 
-# ID設定
-$data modify storage reizo_mcfunc_engin:object ID set value "$(ID)"
-
-# namespace設定
-$data modify storage reizo_mcfunc_engin:object namespace set value "$(namespace)"
-
-# summon
-function reizo_mcfunc_engin:asset/object/.manager/summon/summon
+$function $(namespace):asset/object/$(ID)/summon/_
