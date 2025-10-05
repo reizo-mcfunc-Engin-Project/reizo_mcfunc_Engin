@@ -27,7 +27,7 @@ summon slime 0.0 0.0 0.0 \
                 {\
                 enchantments:\
                     {\
-                    "reizo_mcfunc_engin:p_fire":1\
+                    "reizo_libs:p_fire":1\
                     }\
                 }\
             }\
