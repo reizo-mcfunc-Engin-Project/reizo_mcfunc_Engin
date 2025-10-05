@@ -53,6 +53,11 @@ data modify entity @s DeathLootTable set value "reizo_mcfunc_engin:death/empty"
 # 大きさ変更
 function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/scale.m with storage reizo_mcfunc_engin:mob Register
 
+# フィールドが存在しているのならフィールドをコピーする。
+execute \
+if data storage reizo_mcfunc_engin:mob Field run \
+data modify entity @s data.Field set from storage reizo_mcfunc_engin:mob Field
+
 #> dataにして持っていきたいものがあるんだ。
     # Flammable
     data modify entity @s data.Registry.Flammable set from storage reizo_mcfunc_engin:mob Register.Flammable

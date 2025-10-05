@@ -16,6 +16,11 @@ execute \
 if data storage reizo_mcfunc_engin:object {Register:{Allow_Movement:0b}} run \
 data modify entity @s data.Registry.InitPos set from entity @s Pos
 
+# フィールドが存在しているのならフィールドをコピーする。
+execute \
+if data storage reizo_mcfunc_engin:object Field run \
+data modify entity @s data.Field set from storage reizo_mcfunc_engin:object Field
+
 #> dataにして、持っていきたいものがあるんだ。
     # Allow_Movement
     data modify entity @s data.Registry.Allow_Movement set from storage reizo_mcfunc_engin:object Register.Allow_Movement
