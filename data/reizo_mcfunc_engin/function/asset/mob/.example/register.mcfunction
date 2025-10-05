@@ -10,7 +10,7 @@
     # 継承されないかどうか。 boolean型
     data modify storage reizo_mcfunc_engin:mob Register.Final set value 1b
     # 継承されることを前提とした、抽象的なMobかどうか。
-    data modify storage reizo_mcfunc_engin:mob Register.IsAbstract set value 1b
+    data modify storage reizo_mcfunc_engin:mob Register.IsAbstract set value 0b
     # 名前 String型
     data modify storage reizo_mcfunc_engin:mob Register.Name set value "お手本ゾンビマン"
     # 体力はどれぐらい？ Float型

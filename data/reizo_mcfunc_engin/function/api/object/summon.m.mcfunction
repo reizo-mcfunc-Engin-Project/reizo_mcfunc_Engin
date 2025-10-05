@@ -14,4 +14,4 @@ $data modify storage reizo_mcfunc_engin:object ID set value "$(ID)"
 $data modify storage reizo_mcfunc_engin:object namespace set value "$(namespace)"
 
 # Asset処理を叩く
-function reizo_mcfunc_engin:asset/object/.manager/summon/summon
+function reizo_mcfunc_engin:asset/object/.manager/summon/_

@@ -1,8 +1,8 @@
-#> reizo_mcfunc_engin:asset/object/.manager/summon/summon
+#> reizo_mcfunc_engin:asset/object/.manager/summon/_
 #
-# 召喚処理はここで管理。
+# 
 #
-# @within function reizo_mcfunc_engin:asset/object/.manager/summon/run.m
+# @within function reizo_mcfunc_engin:api/object/summon.m
 
 # 登録しておく。
 function reizo_mcfunc_engin:asset/object/.manager/register/run.m with storage reizo_mcfunc_engin:object
