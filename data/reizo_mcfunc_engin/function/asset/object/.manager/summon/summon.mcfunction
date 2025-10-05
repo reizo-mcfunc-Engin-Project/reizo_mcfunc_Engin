@@ -4,6 +4,14 @@
 #
 # @within function reizo_mcfunc_engin:asset/object/.manager/summon/run.m
 
+# 登録しておく。
+function reizo_mcfunc_engin:asset/object/.manager/register/run.m with storage reizo_mcfunc_engin:object
+
+# 抽象的なObjectであるならこの召喚は許されない。
+execute \
+if predicate {condition:"value_check",value:{type:"storage",storage:"reizo_mcfunc_engin:object",path:"Register.IsAbstract"},range:1b} run \
+return run tellraw @s {"text":"抽象的なObjectであるため、召喚できませんでした。","color":"red"}
+
 # 召喚！
 function reizo_mcfunc_engin:asset/object/.manager/summon/core/summon.m with storage reizo_mcfunc_engin:object
 

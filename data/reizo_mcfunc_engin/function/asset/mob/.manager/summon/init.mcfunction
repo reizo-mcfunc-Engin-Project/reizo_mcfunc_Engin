@@ -10,12 +10,8 @@
     # namespaceコピー
     data modify entity @s data.Mob.namespace set from storage reizo_mcfunc_engin:mob namespace
 
-# 登録処理
-function reizo_mcfunc_engin:asset/mob/.manager/register/run.m with storage reizo_mcfunc_engin:mob
-
 # 何かしら継承している。
 execute \
-if data storage reizo_mcfunc_engin:mob {Register:{IsAbstract:0b}} \
 if data storage reizo_mcfunc_engin:mob Register.Extends run \
 function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/extends/_
 
