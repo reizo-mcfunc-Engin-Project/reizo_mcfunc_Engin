@@ -6,7 +6,7 @@
 
 #> データ登録
     # 継承(オプション) String型
-    data modify storage reizo_mcfunc_engin:object Register.Extends append value "super.particle"
+    data modify storage reizo_mcfunc_engin:object Register.Extends append value {ID:"super.particle",namespace:"reizo_mcfunc_engin"}
     # data modify storage reizo_mcfunc_engin:object Register.Extends append value "super.particle_2"
     # 継承されないかどうか。 boolean型
     data modify storage reizo_mcfunc_engin:object Register.Final set value 1b

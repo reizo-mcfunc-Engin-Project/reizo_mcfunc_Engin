@@ -4,11 +4,9 @@
 #
 # @within function reizo_mcfunc_engin:asset/object/.manager/set_data/tick/extends/_
 
-# 実行用にnamespaceをコピー
-data modify storage reizo_mcfunc_engin:object Extends.namespace set from entity @s data.Object.namespace
-
-# IDをコピー
-data modify storage reizo_mcfunc_engin:object Extends.ID set from storage reizo_mcfunc_engin:object CopyExtends[0]
+# 継承情報から実行情報をコピー
+    data modify storage reizo_mcfunc_engin:object Extends.ID set from storage reizo_mcfunc_engin:object CopyExtends[0].ID
+    data modify storage reizo_mcfunc_engin:object Extends.namespace set from storage reizo_mcfunc_engin:object CopyExtends[0].namespace
 
 # Fianl1bの奴は継承が禁止されてんだ。
 execute \

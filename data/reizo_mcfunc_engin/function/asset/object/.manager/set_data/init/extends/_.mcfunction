@@ -10,11 +10,8 @@ data modify storage reizo_mcfunc_engin:object Temp.Register set from storage rei
 # 継承情報は持っておきたいものだ。
 data modify entity @s data.Registry.Extends set from storage reizo_mcfunc_engin:object Register.Extends
 
-# 継承したいObjectのレジストリに対応させるためにIDに。
-data modify storage reizo_mcfunc_engin:object Registry.CopyExtends.ID set from entity @s data.Register.Extends
-
-# namespaceをExtendsにコピー
-data modify storage reizo_mcfunc_engin:object Extends.namespace set from entity @s data.Object.namespace
+# 継承情報をコピー
+data modify storage reizo_mcfunc_engin:object Registry.CopyExtends set from entity @s data.Register.Extends
 
 # このままだと配列なんで...なんとか分けて実行する。
 function reizo_mcfunc_engin:api/extends/get_id.m {Type:"object",namespace:"reizo_mcfunc_engin",S_namespace:"reizo_mcfunc_engin"}

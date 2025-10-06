@@ -6,7 +6,7 @@
 
 #> データ登録
     # 継承(オプション)
-    data modify storage reizo_mcfunc_engin:mob Register.Extends append value "super.test"
+    data modify storage reizo_mcfunc_engin:mob Register.Extends append value {ID:"super.test",namespace:"reizo_mcfunc_engin"}
     # 継承されないかどうか。 boolean型
     data modify storage reizo_mcfunc_engin:mob Register.Final set value 1b
     # 継承されることを前提とした、抽象的なMobかどうか。
