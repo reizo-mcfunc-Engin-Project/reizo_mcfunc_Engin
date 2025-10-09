@@ -18,7 +18,10 @@ $function $(namespace):asset/$(Type)/.manager/set_data/init/_
 # 先頭のデータ削除
 data remove storage reizo_mcfunc_engin:api Args.Extends.foreach[0]
 
-# 先頭のデータがまだ残るなら再帰
-execute \
+# お掃除
+data remove storage reizo_mcfunc_engin:api Extends.foreach
+
+# 先頭のデータが残るなら再帰
+$execute \
 if data storage reizo_mcfunc_engin:api Args.Extends.foreach[0] run \
-function reizo_mcfunc_engin:api/extends/foreach.m
+function reizo_mcfunc_engin:api/extends/foreach.m {Type:"$(Type)",namespace:"$(namespace)"}

@@ -13,3 +13,5 @@
     data modify storage reizo_mcfunc_engin:object Register.IsAbstract set value 0b
     # 動くことを許すか？ boolean型
     data modify storage reizo_mcfunc_engin:object Register.Allow_Movement set value 1b
+
+    tellraw @a "super.p2"
