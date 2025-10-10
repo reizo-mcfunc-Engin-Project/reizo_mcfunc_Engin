@@ -5,8 +5,6 @@
 # @api
 # @within function reizo_mcfunc_engin:api/extends/foreach.m
 
-tellraw @a {"storage":"reizo_mcfunc_engin:api","nbt":"Args.Extends.foreach",color:"aqua"}
-
 # まずは[0]のデータを取得
     data modify storage reizo_mcfunc_engin:api Extends.foreach.ID set from storage reizo_mcfunc_engin:api Args.Extends.foreach[0].ID
     data modify storage reizo_mcfunc_engin:api Extends.foreach.namespace set from storage reizo_mcfunc_engin:api Args.Extends.foreach[0].namespace
