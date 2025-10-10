@@ -14,4 +14,4 @@ function reizo_mcfunc_engin:asset/object/.manager/summon/run.m with storage reiz
 
 # init処理
 execute as @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.Init] at @s run \
-function reizo_mcfunc_engin:asset/object/.manager/summon/init
+function reizo_mcfunc_engin:asset/object/.manager/init/_

@@ -1,8 +1,11 @@
-#> reizo_mcfunc_engin:asset/mob/.manager/summon/init
+#> reizo_mcfunc_engin:asset/mob/.manager/init/_
 #
 # 
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/summon/summon
+
+# IDとnamespaceからmobごとのInit処理呼び出し
+function reizo_mcfunc_engin:asset/mob/.manager/init/run.m with storage reizo_mcfunc_engin:mob
 
 #> ID,namespaceをdataに
     # IDをコピー

@@ -1,8 +1,11 @@
-#> reizo_mcfunc_engin:asset/object/.manager/summon/init
+#> reizo_mcfunc_engin:asset/object/.manager/init/_
 #
-# Object共通のInit処理
+# 
 #
 # @within function reizo_mcfunc_engin:asset/object/.manager/summon/summon
+
+# IDと名前空間から指定したObjectのInit処理呼び出し
+function reizo_mcfunc_engin:asset/object/.manager/init/run.m with storage reizo_mcfunc_engin:object
 
 #> ID,namespaceをdataに
     # IDをコピー
