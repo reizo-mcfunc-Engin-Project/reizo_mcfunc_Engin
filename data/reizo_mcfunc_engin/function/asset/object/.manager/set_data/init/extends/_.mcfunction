@@ -13,6 +13,9 @@ data modify entity @s data.Registry.Extends set from storage reizo_mcfunc_engin:
 # 継承情報をコピー
 data modify storage reizo_mcfunc_engin:api Args.Extends.foreach set from storage reizo_mcfunc_engin:object Register.Extends
 
+# お掃除
+data remove storage reizo_mcfunc_engin:object Register
+
 # このままだと配列なんで...なんとか分けて実行する。
 function reizo_mcfunc_engin:api/extends/foreach.m {Type:"object",namespace:"reizo_mcfunc_engin"}
 
