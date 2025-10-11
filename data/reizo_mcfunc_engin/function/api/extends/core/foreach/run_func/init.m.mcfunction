@@ -1,8 +1,11 @@
-#> reizo_mcfunc_engin:api/extends/core/foreach/run_func/set_data.m
+#> reizo_mcfunc_engin:api/extends/core/foreach/run_func/init.m
 #
 # 
 #
 # @within function reizo_mcfunc_engin:api/extends/foreach.m
+
+# Init処理も動かす
+$function $(namespace):asset/$(Type)/.manager/init/run.m with storage reizo_mcfunc_engin:api Extends.foreach
 
 # 継承元のregisterを呼び出し
 $function $(namespace):asset/$(Type)/.manager/register/run.m with storage reizo_mcfunc_engin:api Extends.foreach
