@@ -34,3 +34,5 @@
     data modify storage reizo_mcfunc_engin:mob Register.DethItem_Empty set value 1b
     # 燃えるかどうか。 boolean型
     data modify storage reizo_mcfunc_engin:mob Register.Flammable set value 0b
+    # 重力がどれくらい影響するか。高ければ高いほど重力の影響を受ける。 double型
+    data modify storage reizo_mcfunc_engin:mob Register.Gravity set value -0.01d

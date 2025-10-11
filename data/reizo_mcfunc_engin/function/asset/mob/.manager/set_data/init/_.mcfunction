@@ -53,6 +53,9 @@ data modify entity @s DeathLootTable set value "reizo_mcfunc_engin:death/empty"
 # 大きさ変更
 function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/scale.m with storage reizo_mcfunc_engin:mob Register
 
+# 重力の影響度
+data modify entity @s attributes[{id:"gravity"}].base set from storage reizo_mcfunc_engin:mob Register.Gravity
+
 # フィールドが存在しているのならフィールドをコピーする。
 execute \
 if data storage reizo_mcfunc_engin:mob Field run \
