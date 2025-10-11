@@ -9,22 +9,8 @@
     data modify storage reizo_mcfunc_engin:api Extends.foreach.ID set from storage reizo_mcfunc_engin:api Args.Extends.foreach[0].ID
     data modify storage reizo_mcfunc_engin:api Extends.foreach.namespace set from storage reizo_mcfunc_engin:api Args.Extends.foreach[0].namespace
 
-# 継承元のregisterを呼び出し
-$function $(namespace):asset/$(Type)/.manager/register/run.m with storage reizo_mcfunc_engin:api Extends.foreach
-
-# 継承元のデータ適応
-$function $(namespace):asset/$(Type)/.manager/set_data/init/_
-
-# 継承元のregisterをコピー
-$function $(namespace):api/$(Type)/get_register
-
-# 手に入れたデータの中に継承情報があれば多段継承となる。
-execute \
-if data storage reizo_mcfunc_engin:api Out.Register.Extends run \
-function reizo_mcfunc_engin:api/extends/core/foreach/multilevel_inheritance/_
-
-# お掃除
-data remove storage reizo_mcfunc_engin:api Out.Register
+# なんの関数を実行する?
+$function reizo_mcfunc_engin:api/extends/core/foreach/run_func/$(func).m {Type:"$(Type)",namespace:"$(namespace)"}
 
 # 先頭のデータ削除
 data remove storage reizo_mcfunc_engin:api Args.Extends.foreach[0]
@@ -35,4 +21,4 @@ data remove storage reizo_mcfunc_engin:api Extends.foreach
 # 先頭のデータが残るなら再帰
 $execute \
 if data storage reizo_mcfunc_engin:api Args.Extends.foreach[0] run \
-function reizo_mcfunc_engin:api/extends/foreach.m {Type:"$(Type)",namespace:"$(namespace)"}
+function reizo_mcfunc_engin:api/extends/foreach.m {Type:"$(Type)",namespace:"$(namespace)",func:"$(func)"}

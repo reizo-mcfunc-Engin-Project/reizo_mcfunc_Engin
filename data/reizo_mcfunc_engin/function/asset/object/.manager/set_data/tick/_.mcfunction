@@ -20,7 +20,7 @@ function reizo_mcfunc_engin:asset/object/.manager/set_data/tick/allo_movement/_
 # 何かしら継承している！
 execute \
 if data storage reizo_mcfunc_engin:object Registry.Extends run \
-function reizo_mcfunc_engin:api/extends/tick.m {Type:"object",namespace:"reizo_mcfunc_engin"}
+function reizo_mcfunc_engin:asset/object/.manager/set_data/tick/extends
 
 # データリセット
 data remove storage reizo_mcfunc_engin:object Registry

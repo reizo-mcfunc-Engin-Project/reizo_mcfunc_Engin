@@ -17,7 +17,7 @@ data modify storage reizo_mcfunc_engin:api Args.Extends.foreach set from storage
 data remove storage reizo_mcfunc_engin:mob Register
 
 # このままだと配列なんで...なんとか分けて実行する。
-function reizo_mcfunc_engin:api/extends/foreach.m {Type:"mob",namespace:"reizo_mcfunc_engin"}
+function reizo_mcfunc_engin:api/extends/foreach.m {Type:"mob",namespace:"reizo_mcfunc_engin",func:"set_data"}
 
 # 継承元のFinalデータ格納
 data modify entity @s data.Registry.SuperClass_Final set from storage reizo_mcfunc_engin:mob Register.Final
