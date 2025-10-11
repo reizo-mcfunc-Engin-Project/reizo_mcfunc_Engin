@@ -16,7 +16,7 @@ function reizo_mcfunc_engin:asset/mob/.manager/init/run.m with storage reizo_mcf
 # 何かしら継承している。
 execute \
 if data storage reizo_mcfunc_engin:mob Register.Extends run \
-function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/extends/_
+function reizo_mcfunc_engin:asset/mob/.manager/init/extends
 
 # 登録したデータを適応
 function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/_

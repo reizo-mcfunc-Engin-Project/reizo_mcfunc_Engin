@@ -1,8 +1,8 @@
-#> reizo_mcfunc_engin:asset/mob/.manager/set_data/init/extends/_
+#> reizo_mcfunc_engin:asset/mob/.manager/init/extends
 #
 # 
 #
-# @within function reizo_mcfunc_engin:asset/mob/.manager/summon/init
+# @within function reizo_mcfunc_engin:asset/mob/.manager/init/_
 
 # RegisterをTempに。
 data modify storage reizo_mcfunc_engin:mob Temp.Register set from storage reizo_mcfunc_engin:mob Register
