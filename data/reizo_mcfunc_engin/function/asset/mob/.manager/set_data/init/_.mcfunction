@@ -48,7 +48,7 @@ data modify entity @s Health set from storage reizo_mcfunc_engin:mob Register.He
 # 死んだときのアイテムはどうなるか。
 execute \
 if data storage reizo_mcfunc_engin:mob {Register:{DethItem_Empty:1b}} run \
-data modify entity @s DeathLootTable set value "reizo_mcfunc_engin:death/empty"
+data modify entity @s DeathLootTable set value "minecraft:empty"
 
 # 大きさ変更
 data modify entity @s attributes[{id:"scale"}].base set from storage reizo_mcfunc_engin:mob Register.Scale
