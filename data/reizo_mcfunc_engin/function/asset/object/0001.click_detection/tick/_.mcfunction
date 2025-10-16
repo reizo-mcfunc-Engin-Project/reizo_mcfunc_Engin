@@ -9,3 +9,5 @@ scoreboard players add @s reizo_mcfunc_Engin.KiiTimer 1
 
 # kill
 kill @s[scores={reizo_mcfunc_Engin.KiiTimer=2..}]
+
+particle electric_spark

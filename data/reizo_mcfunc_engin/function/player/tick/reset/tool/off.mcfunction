@@ -8,3 +8,4 @@
 data remove storage reizo_mcfunc_engin:_ Tool.Both
 data remove storage reizo_mcfunc_engin:_ Tool.Off_namespace
 data remove storage reizo_mcfunc_engin:_ Tool.Off_Address
+data remove storage reizo_mcfunc_engin:_ Tool.Off_Extends
