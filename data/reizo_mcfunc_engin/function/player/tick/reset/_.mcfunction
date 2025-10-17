@@ -12,19 +12,15 @@
 # Storage
     # Item
         # 左手
-        execute \
-        unless data entity @s equipment.offhand.components."minecraft:custom_data".Item run \
-        function reizo_mcfunc_engin:player/tick/reset/item/off
+        data remove storage reizo_mcfunc_engin:_ Item.Off
         # 右手
-        execute \
-        unless data entity @s SelectedItem.components."minecraft:custom_data".Item run \
-        function reizo_mcfunc_engin:player/tick/reset/item/main
+        data remove storage reizo_mcfunc_engin:_ Item.Main
+        # 両手
+        data remove storage reizo_mcfunc_engin:_ Item.Both
     # Tool
         # 左手
-        execute \
-        unless data entity @s equipment.offhand.components."minecraft:custom_data".Tool run \
-        function reizo_mcfunc_engin:player/tick/reset/tool/off
+        data remove storage reizo_mcfunc_engin:_ Tool.Off
         # 右手
-        execute \
-        unless data entity @s SelectedItem.components."minecraft:custom_data".Tool run \
-        function reizo_mcfunc_engin:player/tick/reset/tool/main
+        data remove storage reizo_mcfunc_engin:_ Tool.Main
+        # 両手
+        data remove storage reizo_mcfunc_engin:_ Tool.Both
