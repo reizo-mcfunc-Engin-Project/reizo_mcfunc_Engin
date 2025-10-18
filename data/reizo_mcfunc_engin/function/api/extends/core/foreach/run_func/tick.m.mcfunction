@@ -6,7 +6,7 @@
 
 # Fianl1bの奴は継承が禁止されてんだ。
 execute \
-if predicate {condition:"entity_properties",entity:"this",predicate:{nbt:"{data:{Registry:{SuperClass_Final:1b}}}"}} run \
+if predicate {condition:"value_check",value:{type:"storage",storage:"reizo_mcfunc_engin:api",path:"Args.Extends.foreach.SuperClass_Final"},range:1b} run \
 return run function reizo_erros:call.super_method/final
 
 # SuperClass呼び出し

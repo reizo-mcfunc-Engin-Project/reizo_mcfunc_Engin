@@ -19,7 +19,7 @@
                 # namespace
                 data modify storage reizo_mcfunc_engin:_ Item.Off.namespace set from entity @s equipment.offhand.components."minecraft:custom_data".Item.namespace
                 # 継承情報
-                data modify storage reizo_mcfunc_engin:_ Item.Off.Extends set from entity @s equipment.offhand.components."minecraft:custom_data".Item.Extends
+                data modify storage reizo_mcfunc_engin:_ Item.Off.Extends set from entity @s equipment.offhand.components."minecraft:custom_data".Item.Registry.Extends
     # 右手
             # ツール
                 # アドレス
@@ -34,7 +34,7 @@
                 # namespace
                 data modify storage reizo_mcfunc_engin:_ Item.Main.namespace set from entity @s SelectedItem.components."minecraft:custom_data".Item.namespace
                 # 継承情報
-                data modify storage reizo_mcfunc_engin:_ Item.Main.Extends set from entity @s SelectedItem.components."minecraft:custom_data".Item.Extends
+                data modify storage reizo_mcfunc_engin:_ Item.Main.Extends set from entity @s SelectedItem.components."minecraft:custom_data".Item.Registry.Extends
     # 両手、基本的にここで持っていること検知
         # 左手からBothに
             # ツール
