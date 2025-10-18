@@ -1,12 +1,8 @@
-#> reizo_mcfunc_engin:api/call_method/_.m
+#> reizo_mcfunc_engin:api/call_method/_
 #
 # 
 #
 # @api
-
-# TypeとMethodをセット
-    $data modify storage reizo_mcfunc_engin:api Args.CallMethod.Type set value "$(Type)"
-    $data modify storage reizo_mcfunc_engin:api Args.CallMethod.Method set value "$(Method)"
 
 # 継承情報があるなら継承元の動作を実行
 execute \
