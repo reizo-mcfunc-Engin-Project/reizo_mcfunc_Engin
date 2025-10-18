@@ -5,7 +5,7 @@
 # @within function reizo_mcfunc_engin:core/tick/_
 
 # 残ったら困るから殺す
-kill @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CubeParticle,type=armor_stand]
+kill @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CubeParticle,type=marker]
 
 # 召喚
 function reizo_mcfunc_engin:api/object/summon.m {ID:"0002.cube_particle",namespace:"reizo_mcfunc_engin"}
