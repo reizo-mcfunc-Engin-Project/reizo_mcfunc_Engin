@@ -27,12 +27,12 @@ function reizo_mcfunc_engin:core/tick/re_spawn_cube_particle
 
 # Object以外は基本Mob
 execute \
-if entity @e[type=!#reizo_mcfunc_engin:object/default,type=!player,tag=reizo_mcfunc_Engin.Mob] \
-as @e[type=!#reizo_mcfunc_engin:object/default,type=!player,tag=reizo_mcfunc_Engin.Mob] at @s run \
+if entity @e[type=!player,tag=reizo_mcfunc_Engin.Mob] \
+as @e[type=!player,tag=reizo_mcfunc_Engin.Mob] at @s run \
 function reizo_mcfunc_engin:asset/mob/.manager/tick/_
 
 # Objectの処理
 execute \
-if entity @e[tag=reizo_mcfunc_Engin.Object,type=#reizo_mcfunc_engin:object/default] \
-as @e[tag=reizo_mcfunc_Engin.Object,type=#reizo_mcfunc_engin:object/default] at @s run \
+if entity @e[tag=reizo_mcfunc_Engin.Object] \
+as @e[tag=reizo_mcfunc_Engin.Object] at @s run \
 function reizo_mcfunc_engin:asset/object/.manager/tick/_
