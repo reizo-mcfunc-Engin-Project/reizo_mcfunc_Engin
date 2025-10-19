@@ -15,3 +15,13 @@
     data modify storage reizo_mcfunc_engin:item Register.Name set value {"text":".Example Item"}
     # 説明文 (TextComponentsString[])
     data modify storage reizo_mcfunc_engin:item Register.Lore set value [{"text":"井田"}]
+    # 消費アイテム\
+    (\
+        {\
+        animation: (block | bow | brush | crossbow | drink | eat | none | spear | spyglass | toot_horn),\
+        consume_seconds:(float型),\
+        has_consume_particles:(boolean型),\
+        on_consume_effects:(TextComponentsString[])\
+        }\
+    )
+    # data modify storage reizo_mcfunc_engin:item Register.Consumable set value {"animation":"none","consume_seconds":2147483647}

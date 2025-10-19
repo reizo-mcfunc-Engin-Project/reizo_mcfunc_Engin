@@ -9,3 +9,6 @@ data modify entity @s Item.components."minecraft:item_name" set from storage rei
 
 # 説明文
 data modify entity @s Item.components."minecraft:lore" set from storage reizo_mcfunc_engin:item Register.Lore
+
+# 消費
+data modify entity @s Item.components."minecraft:consumable" set from storage reizo_mcfunc_engin:item Register.Consumable
