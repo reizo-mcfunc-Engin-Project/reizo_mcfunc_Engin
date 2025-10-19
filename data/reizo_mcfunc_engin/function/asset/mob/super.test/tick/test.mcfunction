@@ -4,4 +4,5 @@
 #
 # @within function reizo_mcfunc_engin:asset/mob/super.test/tick/_
 
+# private
 particle explosion

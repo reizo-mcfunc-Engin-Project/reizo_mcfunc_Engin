@@ -5,6 +5,9 @@
 # @api
 # @within function reizo_mcfunc_engin:api/extends/foreach.m
 
+# 継承中
+data modify storage reizo_mcfunc_engin:api Extends.foreach.Inheriting set value 1b
+
 # まずは[0]のデータを取得
     data modify storage reizo_mcfunc_engin:api Extends.foreach.ID set from storage reizo_mcfunc_engin:api Args.Extends.foreach[0].ID
     data modify storage reizo_mcfunc_engin:api Extends.foreach.namespace set from storage reizo_mcfunc_engin:api Args.Extends.foreach[0].namespace

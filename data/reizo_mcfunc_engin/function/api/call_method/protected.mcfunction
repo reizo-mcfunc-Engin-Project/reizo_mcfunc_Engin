@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:api/call_method/_
+#> reizo_mcfunc_engin:api/call_method/protected
 #
 # 
 #
