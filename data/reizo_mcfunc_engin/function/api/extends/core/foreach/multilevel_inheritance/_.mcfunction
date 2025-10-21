@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:api/extends/core/foreach/multilevel_inheritance/_
 #
-# 
+# 多段継承時の処理
 #
 # @within function reizo_mcfunc_engin:api/extends/foreach.m
 

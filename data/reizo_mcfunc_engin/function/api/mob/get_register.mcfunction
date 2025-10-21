@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:api/mob/get_register
 #
-# 
+# MobのRegisterをAPIに移動
 #
 # @api
 

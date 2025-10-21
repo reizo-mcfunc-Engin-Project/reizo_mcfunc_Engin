@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:api/call_method/private
 #
-# 
+# 他メソッドから処理を呼び出せないメソッド。
 #
 # @api
 

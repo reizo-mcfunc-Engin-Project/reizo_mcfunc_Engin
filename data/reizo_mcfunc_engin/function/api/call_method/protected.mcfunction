@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:api/call_method/protected
 #
-# 
+# 継承時にサブクラスとスーパークラスのみメソッドを呼び出せる。
 #
 # @api
 

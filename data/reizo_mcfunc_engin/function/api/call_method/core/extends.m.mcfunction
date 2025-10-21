@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:api/call_method/core/extends.m
 #
-# 
+# 継承元の処理を呼び出すAPIの呼び出し。
 #
 # @within function reizo_mcfunc_engin:api/call_method/_.m
 

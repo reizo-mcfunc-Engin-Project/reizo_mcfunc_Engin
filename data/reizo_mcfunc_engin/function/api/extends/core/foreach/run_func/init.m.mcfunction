@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:api/extends/core/foreach/run_func/init.m
 #
-# 
+# 継承元のInit処理を呼び出す。
 #
 # @within function reizo_mcfunc_engin:api/extends/foreach.m
 

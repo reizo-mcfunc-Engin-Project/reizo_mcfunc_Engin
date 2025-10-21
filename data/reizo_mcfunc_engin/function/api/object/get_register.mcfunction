@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:api/object/get_register
 #
-# 
+# ObjectのRegisterをAPIに移動
 #
 # @api
 

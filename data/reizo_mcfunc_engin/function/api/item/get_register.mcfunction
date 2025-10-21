@@ -1,8 +1,8 @@
 #> reizo_mcfunc_engin:api/item/get_register
 #
-# 
+# ItemのRegisterをAPIに移動
 #
-# @within function reizo_mcfunc_engin:asset/item/.manager/init/extends
+# @api
 
 # Registerをコピー
 data modify storage reizo_mcfunc_engin:api Out.Register set from storage reizo_mcfunc_engin:item Register

@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:api/object/remove
 #
-# 
+# Objectのremove処理
 #
 # @api
 

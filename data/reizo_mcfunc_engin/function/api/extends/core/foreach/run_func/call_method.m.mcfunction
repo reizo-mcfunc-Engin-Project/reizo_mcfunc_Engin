@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:api/extends/core/foreach/run_func/call_method.m
 #
-# 
+# 継承元のメソッドを呼び出す。
 #
 # @within function reizo_mcfunc_engin:api/extends/foreach.m
 

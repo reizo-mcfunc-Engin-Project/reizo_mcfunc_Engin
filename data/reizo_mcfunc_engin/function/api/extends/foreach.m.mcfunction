@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:api/extends/foreach.m
 #
-# 
+# 継承元の動作を呼び出す。
 #
 # @api
 # @within function reizo_mcfunc_engin:api/extends/foreach.m

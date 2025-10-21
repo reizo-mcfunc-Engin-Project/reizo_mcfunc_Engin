@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:api/extends/core/foreach/multilevel_inheritance/foreach
 #
-# 
+# 親クラスの親クラスの動作を呼び出す
 #
 # @within function reizo_mcfunc_engin:api/extends/core/foreach/multilevel_inheritance/_
 
