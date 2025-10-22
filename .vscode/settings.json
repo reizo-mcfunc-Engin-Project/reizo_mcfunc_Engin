@@ -217,6 +217,99 @@
                     ]
                 }
             ]
+        },
+        {
+            "label": "Item / 登録処理",
+            "picked": true,
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/reizo_mcfunc_engin/function/asset/item/%namespace%/register.mcfunction",
+                    "content":[
+                        "#> reizo_mcfunc_engin:asset/item/%namespace%/register",
+                        "#",
+                        "# ",
+                        "#",
+                        "# @within function reizo_mcfunc_engin:asset/item/.manager/register/run.m",
+                        "",
+                        "#> 登録処理",
+                        "    # 継承(オプション)",
+                        "    data modify storage reizo_mcfunc_engin:item Register.Extends append value {ID:\"\",namespace:\"\"}",
+                        "    # 継承されないかどうか。 boolean型",
+                        "    data modify storage reizo_mcfunc_engin:item Register.Final set value 1b",
+                        "    # 継承されることを前提とした、抽象的なMobかどうか。",
+                        "    data modify storage reizo_mcfunc_engin:item Register.IsAbstract set value 0b",
+                        "    # 名前 (TextComponentsString)",
+                        "    data modify storage reizo_mcfunc_engin:item Register.Name set value {\"text\":\"\"}",
+                        "    # 説明文 (TextComponentsString[])",
+                        "    data modify storage reizo_mcfunc_engin:item Register.Lore set value [{\"text\":\"\"}]",
+                        "    # 消費アイテム",
+                        "    # ({animation: (block | bow | brush | crossbow | drink | eat | none | spear | spyglass | toot_horn),consume_seconds:(float型),has_consume_particles:(boolean型),on_consume_effects:(TextComponentsString[])})",
+                        "    # data modify storage reizo_mcfunc_engin:item Register.Consumable set value {\"animation\":\"none\",\"consume_seconds\":2147483647}"
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Item / 取得処理",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/reizo_mcfunc_engin/function/asset/item/%namespace%/give/_.mcfunction",
+                    "content":[
+                        "#> reizo_mcfunc_engin:asset/item/%namespace%/give/_",
+                        "#",
+                        "# Itemの取得処理",
+                        "#",
+                        "# @within function reizo_mcfunc_engin:asset/item/.manager/run.m",
+                        "",
+                        "# 元となるアイテムを召喚",
+                        "summon item ~ ~ ~ {Item:{id:\"%item%\"},Tags:[\"reizo_mcfunc_Engin.Item.Init\"]}"
+                    ]
+                }
+            ],
+            "customQuestion": [
+                {
+                    "name": "item",
+                    "question": "元となるアイテム"
+                }
+            ]
+        },
+        {
+            "label": "Item / Tick処理",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/reizo_mcfunc_engin/function/asset/item/%namespace%/tick/_.mcfunction",
+                    "content":[
+                        "#> reizo_mcfunc_engin:asset/%namespace%/tick/_",
+                        "#",
+                        "# ItemのTick処理",
+                        "#",
+                        "# @within function reizo_mcfunc_engin:asset/item/.manager/tick/run.m",
+                        "",
+                        "# Tick処理"
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Item / Init処理",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/reizo_mcfunc_engin/function/asset/item/%namespace%/init/_.mcfunction",
+                    "content":[
+                        "#> reizo_mcfunc_engin:asset/item/%namespace%/init/_",
+                        "#",
+                        "# ItemのInit処理",
+                        "#",
+                        "# @within function reizo_mcfunc_engin:asset/item/.manager/init/run.m",
+                        "",
+                        "# Init処理"
+                    ]
+                }
+            ]
         }
     ]
 }
