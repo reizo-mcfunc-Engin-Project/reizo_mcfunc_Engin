@@ -3,5 +3,3 @@
 # 
 #
 # @within function reizo_mcfunc_engin:asset/item/.manager/tick/run.m
-
-particle wax_on
