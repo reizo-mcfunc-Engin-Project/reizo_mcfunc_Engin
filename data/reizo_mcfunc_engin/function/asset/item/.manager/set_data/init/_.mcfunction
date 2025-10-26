@@ -14,4 +14,4 @@ data modify entity @s Item.components."minecraft:lore" set from storage reizo_mc
 data modify entity @s Item.components."minecraft:consumable" set from storage reizo_mcfunc_engin:item Register.Consumable
 
 # FieldをCustomDataに入れる。
-data modify entity @s Item.components."minecraft:custom_data".Field set from storage reizo_mcfunc_engin:item Field
+data modify entity @s Item.components."minecraft:custom_data".Item.Field set from storage reizo_mcfunc_engin:item Field
