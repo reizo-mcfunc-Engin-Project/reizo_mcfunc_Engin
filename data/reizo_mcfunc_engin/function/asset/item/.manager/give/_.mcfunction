@@ -14,3 +14,4 @@ function reizo_mcfunc_engin:asset/item/.manager/give/give
 data remove storage reizo_mcfunc_engin:item ID
 data remove storage reizo_mcfunc_engin:item namespace
 data remove storage reizo_mcfunc_engin:item Register
+data remove storage reizo_mcfunc_engin:item Field
