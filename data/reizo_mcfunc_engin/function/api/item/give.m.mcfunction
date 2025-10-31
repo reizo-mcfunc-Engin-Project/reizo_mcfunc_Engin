@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:api/item/give
+#> reizo_mcfunc_engin:api/item/give.m
 #
 # Itemを取得するAPI
 #
