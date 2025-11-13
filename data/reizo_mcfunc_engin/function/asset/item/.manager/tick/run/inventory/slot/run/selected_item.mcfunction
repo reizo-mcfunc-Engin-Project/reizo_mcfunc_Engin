@@ -1,10 +1,10 @@
-#> reizo_mcfunc_engin:asset/item/.manager/tick/run/selected_item/run
+#> reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/run/selected_item
 #
 # 
 #
-# @within function reizo_mcfunc_engin:asset/item/.manager/tick/run/selected_item/foreach
+# @within function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/foreach
 
-# IDとnamespaceをコピー
+# IDとnamespaceを取得
 data modify storage reizo_mcfunc_engin:item _.ID set from storage reizo_mcfunc_engin:item data.SelectedItem.components."minecraft:custom_data".Item.ID
 data modify storage reizo_mcfunc_engin:item _.namespace set from storage reizo_mcfunc_engin:item data.SelectedItem.components."minecraft:custom_data".Item.namespace
 
@@ -13,4 +13,3 @@ function reizo_mcfunc_engin:asset/item/.manager/tick/run.m with storage reizo_mc
 
 # お掃除
 data remove storage reizo_mcfunc_engin:item _
-data remove storage reizo_mcfunc_engin:item data.SelectedItem.components."minecraft:custom_data".Item.Registry.Slot
