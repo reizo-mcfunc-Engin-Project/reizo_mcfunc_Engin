@@ -4,6 +4,8 @@
 #
 # @within function reizo_mcfunc_engin:asset/item/.manager/tick/_
 
+# TODO:継承作れ。
+
 #> Run
     # Invetory
     execute \
