@@ -29,15 +29,13 @@ function reizo_mcfunc_engin:player/tick/get_id
     # シフトを離したことを検知するために使う
     scoreboard players set @s reizo_mcfunc_Engin.Sneaked 0
 
-# データがあるなら、データがあるほうを実行
-    # Item
-    execute \
-    if data storage reizo_mcfunc_engin:_ Item.Both run \
-    function reizo_mcfunc_engin:asset/item/.manager/tick/_
+
+# Itemの処理
+function reizo_mcfunc_engin:asset/item/.manager/tick/_
     # Tool
-    execute \
-    if data storage reizo_mcfunc_engin:_ Tool.Both run \
-    function reizo_mcfunc_engin:asset/tools/.manager/tick/_
+    # execute \
+    # if data storage reizo_mcfunc_engin:_ Tool.Both run \
+    # function reizo_mcfunc_engin:asset/tools/.manager/tick/_
 # Item,Toolは、必ずcustom_dataに、IDとnamespaceを記述すること。
 
 # リセット

@@ -2,7 +2,8 @@
 #
 # 
 #
-# @within function reizo_mcfunc_engin:asset/item/.manager/tick/_
+# @within function
+#    reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/run
+#    reizo_mcfunc_engin:asset/item/.manager/tick/run/selected_item/run
 
-# アドレスを代入、実行。
 $function $(namespace):asset/item/$(ID)/tick/_

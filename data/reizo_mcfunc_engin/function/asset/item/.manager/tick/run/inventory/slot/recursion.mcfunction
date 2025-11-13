@@ -1,0 +1,14 @@
+#> reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/recursion
+#
+# 
+#
+# @within function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/foreach
+
+# お掃除
+data remove storage reizo_mcfunc_engin:item Inventory.Top.components."minecraft:custom_data".Item.Registry.Slot[0]
+scoreboard players reset $Item.foreach.RunSlot reizo_mcfunc_Engin.Temp
+
+# 先頭が残るなら再帰
+execute \
+if data storage reizo_mcfunc_engin:item Inventory.Top.components."minecraft:custom_data".Item.Registry.Slot[0] run \
+function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/foreach

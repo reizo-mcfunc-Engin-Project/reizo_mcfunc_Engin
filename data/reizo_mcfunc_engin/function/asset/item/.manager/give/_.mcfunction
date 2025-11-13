@@ -4,7 +4,7 @@
 #
 # @within function reizo_mcfunc_engin:api/item/give.m
 
-# 登録処理
+# 登録処理呼び出し
 function reizo_mcfunc_engin:asset/item/.manager/register/run.m with storage reizo_mcfunc_engin:item
 
 # 取得処理
