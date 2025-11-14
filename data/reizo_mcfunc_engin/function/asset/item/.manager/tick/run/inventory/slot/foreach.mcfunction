@@ -17,12 +17,12 @@ return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/sl
 execute \
 if score $Item.foreach.RunSlot reizo_mcfunc_Engin.Temp matches -1 \
 if data storage reizo_mcfunc_engin:item data.SelectedItem run \
-return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/selected_item
+return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/run/selected_item/_
 
 # 起動SlotとSlotが同じなら実行。
 execute \
 if score $Item.foreach.Slot reizo_mcfunc_Engin.Temp = $Item.foreach.RunSlot reizo_mcfunc_Engin.Temp run \
-function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/run/_
+function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/run/_/_
 
 # 再帰
 function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/recursion

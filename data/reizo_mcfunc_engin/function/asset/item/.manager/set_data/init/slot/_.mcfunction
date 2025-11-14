@@ -34,7 +34,7 @@ data modify storage reizo_mcfunc_engin:item Registry.Slot.Top set from storage r
     return run function reizo_mcfunc_engin:asset/item/.manager/set_data/init/slot/feet
 
 # どれにも当てはまらなかったのなら数字なのでそのまま追加
-data modify storage reizo_mcfunc_engin:item Registry.Slot.Temp append from storage reizo_mcfunc_engin:item Registry.Slot.Top
+data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append from storage reizo_mcfunc_engin:item Registry.Slot.Top
 
 # 再帰
 function reizo_mcfunc_engin:asset/item/.manager/set_data/init/slot/_recursion
