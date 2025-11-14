@@ -32,11 +32,7 @@ function reizo_mcfunc_engin:player/tick/get_id
 
 # Itemの処理
 function reizo_mcfunc_engin:asset/item/.manager/tick/_
-    # Tool
-    # execute \
-    # if data storage reizo_mcfunc_engin:_ Tool.Both run \
-    # function reizo_mcfunc_engin:asset/tools/.manager/tick/_
-# Item,Toolは、必ずcustom_dataに、IDとnamespaceを記述すること。
+# 必ずcustom_dataに、IDとnamespaceを記述すること。
 
 # リセット
 function reizo_mcfunc_engin:player/tick/reset/_
