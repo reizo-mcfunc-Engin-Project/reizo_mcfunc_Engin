@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/_
 #
-# 
+# Mobの常時データセット
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/tick/_
 

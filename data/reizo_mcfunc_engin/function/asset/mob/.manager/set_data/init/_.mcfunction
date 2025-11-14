@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/mob/.manager/set_data/init/_
 #
-# 
+# MobのInitデータセット
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/summon/init
 

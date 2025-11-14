@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/extends
 #
-# 
+# Mobの継承元の動作を呼び出す。
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/_
 

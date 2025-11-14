@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:player/tick/reset/_
 #
-# 
+# プレイヤー関係の色々をリセット。
 #
 # @within function reizo_mcfunc_engin:player/tick/_
 

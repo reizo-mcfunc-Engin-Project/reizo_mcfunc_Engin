@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:player/tick/reset/using_item
 #
-# 
+# アイテムの使用に関してのリセット
 #
 # @within function reizo_mcfunc_engin:player/tick/_
 

@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:player/get_data/click/right
 #
-# 
+# 右クリックしたか。
 #
 # @within advancement reizo_mcfunc_engin:interaction/right_click
 

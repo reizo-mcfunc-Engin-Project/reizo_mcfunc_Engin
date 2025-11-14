@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:player/get_data/is_on_ground
 #
-# 
+# プレイヤーが地面についているか。
 #
 # @within function reizo_mcfunc_engin:player/get_data/tick
 

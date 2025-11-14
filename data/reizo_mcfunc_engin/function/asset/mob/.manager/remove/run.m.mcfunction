@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/mob/.manager/remove/run.m
 #
-# 
+# Mobを削除する処理を呼び出す。
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/tick/_
 

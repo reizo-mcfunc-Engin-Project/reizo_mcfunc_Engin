@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/mob/.manager/register/run.m
 #
-# 
+# Mobの登録処理を呼び出す。
 #
 # @MacroInput
 #   namespace = データパックの名前空間、動的に名前空間を変えることによって違う名前空間でもこのデータパックのシステムを利用できる。

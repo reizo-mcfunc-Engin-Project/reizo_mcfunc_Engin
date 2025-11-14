@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:player/tick/reset/sneking
 #
-# 
+# シフト関係のリセット
 #
 # @within function reizo_mcfunc_engin:player/tick/_
 

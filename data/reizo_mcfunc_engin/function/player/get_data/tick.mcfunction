@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:player/get_data/tick
 #
-# 
+# 常時Tickでプレイヤーのデータを取得
 #
 # @within function reizo_mcfunc_engin:player/tick/_
 

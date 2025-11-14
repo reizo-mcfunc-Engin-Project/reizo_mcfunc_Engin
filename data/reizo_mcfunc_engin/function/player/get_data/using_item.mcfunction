@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:player/get_data/using_item
 #
-# 
+# アイテムを使用したか。
 #
 # @within advancement reizo_mcfunc_engin:using_item
 

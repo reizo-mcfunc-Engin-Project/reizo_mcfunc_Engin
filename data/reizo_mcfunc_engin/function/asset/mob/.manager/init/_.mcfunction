@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/mob/.manager/init/_
 #
-# 
+# Mobの共通Init処理
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/summon/summon
 

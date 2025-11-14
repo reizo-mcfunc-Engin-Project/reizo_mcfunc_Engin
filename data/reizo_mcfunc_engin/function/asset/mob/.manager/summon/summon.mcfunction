@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/mob/.manager/summon/summon
 #
-# 
+# Mobを召喚する。
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/summon/_
 

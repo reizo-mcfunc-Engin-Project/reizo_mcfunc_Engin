@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:core/load/inited
 #
-# 
+# Init後の処理
 #
 # @within function reizo_mcfunc_engin:core/load/_
 

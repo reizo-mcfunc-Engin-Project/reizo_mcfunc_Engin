@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/mob/.manager/init/extends
 #
-# 
+# MobのInit処理時に継承元の動作を呼び出す。
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/init/_
 

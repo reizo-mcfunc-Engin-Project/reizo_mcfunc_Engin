@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:player/tick/_
 #
-# 
+# Tick時に行われるプレイヤーの処理
 #
 # @within function reizo_mcfunc_engin:core/tick/_
 

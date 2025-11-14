@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:asset/mob/.manager/summon/_
 #
-# 
+# Mob召喚時の共通処理。
 #
 # @within function reizo_mcfunc_engin:api/mob/summon.m
 

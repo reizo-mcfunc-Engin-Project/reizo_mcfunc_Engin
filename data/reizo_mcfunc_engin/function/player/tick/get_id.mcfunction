@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:player/tick/get_id
 #
-# 
+# プレイヤーにIDを割りあてる。
 #
 # @within function reizo_mcfunc_engin:player/tick/_
 

@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:player/get_data/Is_on_Fire
 #
-# 
+# プレイヤーが燃えているか。
 #
 # @within function reizo_mcfunc_engin:player/get_data/tick
 

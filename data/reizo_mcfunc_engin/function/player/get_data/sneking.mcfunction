@@ -1,6 +1,6 @@
 #> reizo_mcfunc_engin:player/get_data/sneking
 #
-# 
+# シフトを押しているか。
 #
 # @within function reizo_mcfunc_engin:player/get_data/tick
 
