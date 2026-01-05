@@ -1,11 +1,11 @@
-#> reizo_mcfunc_engin:player/tick/get_id
+#> reizo_mcfunc_engin:api/id/allocate
 #
-# プレイヤーにIDを割りあてる。
+# 実行者にスコアIDを割り当てる。
 #
-# @within function reizo_mcfunc_engin:player/tick/_
+# @api
 
 # Coreを一つ上げる
 scoreboard players add $Core reizo_mcfunc_Engin.ScoreID 1
 
-# プレイヤーに割り当て
+# 実行者にスコアを割り当て
 scoreboard players operation @s reizo_mcfunc_Engin.ScoreID = $Core reizo_mcfunc_Engin.ScoreID
