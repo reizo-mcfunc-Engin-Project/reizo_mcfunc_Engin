@@ -64,3 +64,10 @@ data modify entity @s data.Field set from storage reizo_mcfunc_engin:mob Field
 #> dataにして持っていきたいものがあるんだ。
     # Flammable
     data modify entity @s data.Registry.Flammable set from storage reizo_mcfunc_engin:mob Register.Flammable
+    # Extends
+    data modify entity @s data.Registry.Extends set from storage reizo_mcfunc_engin:mob Register.Extends
+
+    # main_hand
+    execute \
+    if data storage reizo_mcfunc_engin:mob Register.main_hand run \
+    data modify entity @s equipment.mainhand set value {id:"iron_axe"}

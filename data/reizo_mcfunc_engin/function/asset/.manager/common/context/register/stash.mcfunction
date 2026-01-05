@@ -1,0 +1,9 @@
+#> reizo_mcfunc_engin:asset/.manager/common/context/register/stash
+#
+# 
+#
+# @public
+
+data modify storage reizo_mcfunc_engin:context RegisterStackStash append value {}
+data modify storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value set from storage reizo_mcfunc_engin:context Register
+data remove storage reizo_mcfunc_engin:context Register

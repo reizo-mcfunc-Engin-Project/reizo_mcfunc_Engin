@@ -12,4 +12,6 @@
 function reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/_
 
 # IDからtick処理を叩く。
-function reizo_mcfunc_engin:asset/mob/.manager/tick/run.m with entity @s data.Mob
+    data modify storage reizo_mcfunc_engin:context data set from entity @s data.Mob
+    function reizo_mcfunc_engin:asset/mob/.manager/tick/run.m with storage reizo_mcfunc_engin:context data
+    data remove storage reizo_mcfunc_engin:context data

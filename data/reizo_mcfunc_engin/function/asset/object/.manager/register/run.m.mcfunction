@@ -9,3 +9,6 @@
 
 # IDから登録処理を呼び出す。
 $function $(namespace):asset/object/$(ID)/register
+
+# RegisterをContextへ
+data modify storage reizo_mcfunc_engin:context Register set from storage reizo_mcfunc_engin:object Register

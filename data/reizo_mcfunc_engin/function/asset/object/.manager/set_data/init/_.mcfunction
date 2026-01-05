@@ -24,3 +24,5 @@ data modify entity @s data.Field set from storage reizo_mcfunc_engin:object Fiel
 #> dataにして、持っていきたいものがあるんだ。
     # Allow_Movement
     data modify entity @s data.Registry.Allow_Movement set from storage reizo_mcfunc_engin:object Register.Allow_Movement
+    # Extends
+    data modify entity @s data.Registry.Extends set from storage reizo_mcfunc_engin:object Register.Extends

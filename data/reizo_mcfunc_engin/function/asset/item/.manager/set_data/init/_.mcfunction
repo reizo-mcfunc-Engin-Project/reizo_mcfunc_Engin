@@ -21,3 +21,7 @@ data modify entity @s Item.components."minecraft:custom_data".Item.Field set fro
     function reizo_mcfunc_engin:asset/item/.manager/set_data/init/slot/_
     # お掃除
     data remove storage reizo_mcfunc_engin:item Registry.Slot
+
+# Registryに格納するもの
+    # Extends
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Extends set from storage reizo_mcfunc_engin:item Register.Extends

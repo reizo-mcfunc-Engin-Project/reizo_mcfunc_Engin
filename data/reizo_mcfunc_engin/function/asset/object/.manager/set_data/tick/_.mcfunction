@@ -17,10 +17,5 @@ execute \
 if data storage reizo_mcfunc_engin:object {Registry:{Allow_Movement:0b}} run \
 function reizo_mcfunc_engin:asset/object/.manager/set_data/tick/allo_movement/_
 
-# 何かしら継承している！
-execute \
-if data storage reizo_mcfunc_engin:object Registry.Extends run \
-function reizo_mcfunc_engin:asset/object/.manager/set_data/tick/extends
-
 # データリセット
 data remove storage reizo_mcfunc_engin:object Registry

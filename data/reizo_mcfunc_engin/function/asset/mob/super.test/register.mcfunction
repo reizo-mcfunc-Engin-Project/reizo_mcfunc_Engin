@@ -35,4 +35,4 @@
     # 燃えるかどうか。 boolean型
     data modify storage reizo_mcfunc_engin:mob Register.Flammable set value 0b
 
-    tellraw @a "s.t"
+    tellraw @a "s.t reg"

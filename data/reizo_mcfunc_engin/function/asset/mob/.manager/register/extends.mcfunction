@@ -1,12 +1,11 @@
-#> reizo_mcfunc_engin:asset/mob/.example/init/_
+#> reizo_mcfunc_engin:asset/mob/.manager/register/extends
 #
 # 
 #
-# @within function reizo_mcfunc_engin:asset/mob/.manager/init/run.m
+# @within function reizo_mcfunc_engin:asset/mob/.manager/summon/_
 
-tellraw @a {"text":".example",color:"aqua"}
-
+# API使用
 data modify storage reizo_mcfunc_engin:api Args.Super.Extends set from storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends
 data modify storage reizo_mcfunc_engin:api Args.Super.Type set value "mob"
-data modify storage reizo_mcfunc_engin:api Args.Super.Method set value "init/_"
+data modify storage reizo_mcfunc_engin:api Args.Super.Method set value "register/_"
 function reizo_mcfunc_engin:api/super/_

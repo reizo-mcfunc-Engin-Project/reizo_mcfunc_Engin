@@ -19,10 +19,5 @@ execute \
 if data storage reizo_mcfunc_engin:mob {Registry:{Flammable:0b}} run \
 data modify entity @s Fire set value -255
 
-# 何かしら継承している！
-execute \
-if data storage reizo_mcfunc_engin:mob Registry.Extends run \
-function reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/extends
-
 # データリセット
 data remove storage reizo_mcfunc_engin:mob Registry

@@ -9,5 +9,6 @@
 #   reizo_mcfunc_engin:asset/object/.manager/tick/_
 #   reizo_mcfunc_engin:asset/object/.manager/data_adaptation/extends/foreach
 
-# マクロに代入して実行
 $function $(namespace):asset/object/$(ID)/tick/_
+$execute store success storage reizo_mcfunc_engin:object Implement byte 1 run schedule function $(namespace):asset/object/$(ID)/tick/_ 2147483647t
+$schedule clear asset:mob/alias/$(id)/tick
