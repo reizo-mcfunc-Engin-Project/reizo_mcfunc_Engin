@@ -9,7 +9,3 @@
 
 # Register呼び出し
 $function $(namespace):asset/mob/$(ID)/register
-data modify storage reizo:test _ set from storage reizo_mcfunc_engin:mob Register.Extends
-
-# RegisterをContextへ
-data modify storage reizo_mcfunc_engin:context Register set from storage reizo_mcfunc_engin:mob Register

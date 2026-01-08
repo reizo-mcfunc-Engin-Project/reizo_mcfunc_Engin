@@ -9,3 +9,6 @@ $function $(namespace):asset/$(Type)/.manager/register/run.m with storage reizo_
 
 # 適応
 $function $(namespace):asset/$(Type)/.manager/set_data/init/_
+
+# Register取得
+$function reizo_mcfunc_engin:api/$(Type)/get_register

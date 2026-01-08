@@ -25,7 +25,7 @@
         # feet
         # data modify storage reizo_mcfunc_engin:mob Register.Feet set value {id:""}
         # main_hand
-        data modify storage reizo_mcfunc_engin:mob Register.main_hand set value {id:"iron_axe"}
+        # data modify storage reizo_mcfunc_engin:mob Register.main_hand set value {id:"iron_axe"}
         # off_hand
         # data modify storage reizo_mcfunc_engin:mob Register.off_hand set value {id:""}
     # 大きさはどれくらい？ Max = 16.0d

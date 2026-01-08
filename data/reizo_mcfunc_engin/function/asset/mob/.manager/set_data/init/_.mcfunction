@@ -7,7 +7,7 @@
 # まさかのデータ取得出来てない事件
 execute \
 unless data storage reizo_mcfunc_engin:mob Register run \
-function reizo_erros:fail_data_get {Data:"Register"}
+function reizo_erros:fail_data_get {Data:"Register(init)"}
 
 # お名前つけます。
 execute \
@@ -66,8 +66,3 @@ data modify entity @s data.Field set from storage reizo_mcfunc_engin:mob Field
     data modify entity @s data.Registry.Flammable set from storage reizo_mcfunc_engin:mob Register.Flammable
     # Extends
     data modify entity @s data.Registry.Extends set from storage reizo_mcfunc_engin:mob Register.Extends
-
-    # main_hand
-    execute \
-    if data storage reizo_mcfunc_engin:mob Register.main_hand run \
-    data modify entity @s equipment.mainhand set value {id:"iron_axe"}
