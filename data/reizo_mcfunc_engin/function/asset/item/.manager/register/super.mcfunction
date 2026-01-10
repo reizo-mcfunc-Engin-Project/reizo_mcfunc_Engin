@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:asset/item/.manager/register/extends
+#> reizo_mcfunc_engin:asset/item/.manager/register/super
 #
 # 
 #

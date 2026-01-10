@@ -8,7 +8,7 @@
     # Registerの退避
     function reizo_mcfunc_engin:asset/.manager/common/context/register/stash
     # 登録処理の親クラス
-    execute if data storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends run function reizo_mcfunc_engin:asset/object/.manager/register/extends
+    execute if data storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends run function reizo_mcfunc_engin:asset/object/.manager/register/super
     # Registerを戻す
     function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
 
