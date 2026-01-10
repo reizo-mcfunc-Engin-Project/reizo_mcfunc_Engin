@@ -27,5 +27,13 @@ data modify storage reizo_mcfunc_engin:object Register set from storage reizo_mc
 # 登録したデータを適応
 function reizo_mcfunc_engin:asset/object/.manager/set_data/init/_
 
+# データ取得
+data modify storage reizo_mcfunc_engin:context data set from entity @s data
+
+# 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
+    execute unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:asset/object/.manager/init/super
+    data remove storage reizo_mcfunc_engin:object Implement
+
 # お掃除
 tag @s remove reizo_mcfunc_Engin.Object.Init
+data remove storage reizo_mcfunc_engin:context data

@@ -8,3 +8,5 @@
 data remove storage reizo_mcfunc_engin:object Register
 
 $function $(namespace):asset/object/$(ID)/init/_
+$execute store success storage reizo_mcfunc_engin:object Implement byte 1 run schedule function $(namespace):asset/object/$(ID)/init/_ 2147483647t
+$schedule clear $(namespace):asset/object/$(ID)/init/_

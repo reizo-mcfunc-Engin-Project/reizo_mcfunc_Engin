@@ -11,4 +11,4 @@
 
 $function $(namespace):asset/object/$(ID)/tick/_
 $execute store success storage reizo_mcfunc_engin:object Implement byte 1 run schedule function $(namespace):asset/object/$(ID)/tick/_ 2147483647t
-$schedule clear asset:mob/alias/$(id)/tick
+$schedule clear $(namespace):asset/object/$(ID)/tick/_

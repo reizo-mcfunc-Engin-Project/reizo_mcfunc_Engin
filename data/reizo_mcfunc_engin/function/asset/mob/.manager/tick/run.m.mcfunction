@@ -10,3 +10,5 @@
 #   reizo_mcfunc_engin:asset/mob/.manager/data_adaptation/extends/foreach
 
 $function $(namespace):asset/mob/$(ID)/tick/_
+$execute store success storage reizo_mcfunc_engin:mob Implement byte 1 run schedule function $(namespace):asset/mob/$(ID)/tick/_ 2147483647t
+$schedule clear $(namespace):asset/mob/$(ID)/tick/_

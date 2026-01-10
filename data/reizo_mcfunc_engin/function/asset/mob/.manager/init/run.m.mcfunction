@@ -8,3 +8,5 @@
 data remove storage reizo_mcfunc_engin:mob Register
 
 $function $(namespace):asset/mob/$(ID)/init/_
+$execute store success storage reizo_mcfunc_engin:mob Implement byte 1 run schedule function $(namespace):asset/mob/$(ID)/init/_ 2147483647t
+$schedule clear $(namespace):asset/mob/$(ID)/init/_

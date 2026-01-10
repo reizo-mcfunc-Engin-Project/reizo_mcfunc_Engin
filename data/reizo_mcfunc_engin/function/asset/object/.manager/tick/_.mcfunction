@@ -12,7 +12,12 @@
 function reizo_mcfunc_engin:asset/object/.manager/set_data/tick/_
 
 # tick処理を動かすぜ！
-    data modify storage reizo_mcfunc_engin:context object set from entity @s data.Object
-    function reizo_mcfunc_engin:asset/object/.manager/tick/run.m with storage reizo_mcfunc_engin:context object
-        execute unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:asset/object/.manager/tick/super
-    data remove storage reizo_mcfunc_engin:context object
+    data modify storage reizo_mcfunc_engin:context data set from entity @s data
+    function reizo_mcfunc_engin:asset/object/.manager/tick/run.m with storage reizo_mcfunc_engin:context data.Object
+
+# 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
+execute unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:asset/object/.manager/tick/super
+
+# お掃除
+data remove storage reizo_mcfunc_engin:context data
+data remove storage reizo_mcfunc_engin:object Implement

@@ -8,3 +8,5 @@
 
 # IDと名前空間から召喚処理を叩く
 $function $(namespace):asset/mob/$(ID)/summon/_
+$execute store success storage reizo_mcfunc_engin:mob Implement byte 1 run schedule function $(namespace):asset/mob/$(ID)/summon/_ 2147483647t
+$schedule clear $(namespace):asset/mob/$(ID)/summon/_

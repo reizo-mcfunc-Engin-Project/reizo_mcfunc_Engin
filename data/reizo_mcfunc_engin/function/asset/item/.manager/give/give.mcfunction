@@ -12,6 +12,10 @@ return run tellraw @s {"text":"抽象的なItemであるため、取得できま
 # 個々の取得処理呼び出し
 function reizo_mcfunc_engin:asset/item/.manager/give/run.m with storage reizo_mcfunc_engin:item
 
+# もし自分のファイルが無かったら継承元のファイルを呼び出す。
+    execute unless data storage reizo_mcfunc_engin:item {Implement:1b} run function reizo_mcfunc_engin:asset/item/.manager/give/super
+    data remove storage reizo_mcfunc_engin:item Implement
+
 # Init処理
 execute as @e[tag=reizo_mcfunc_Engin.Item.Init,type=item] at @s run \
 function reizo_mcfunc_engin:asset/item/.manager/init/_
