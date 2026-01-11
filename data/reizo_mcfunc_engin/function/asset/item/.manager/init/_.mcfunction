@@ -7,8 +7,8 @@
 # Init処理呼び出し
 function reizo_mcfunc_engin:asset/item/.manager/init/run.m with storage reizo_mcfunc_engin:item
 
-# 多段継承対策のために一度Init処理を呼び出すファイル内でRegisterを消去したためcontextから読み込む。
-data modify storage reizo_mcfunc_engin:item Register set from storage reizo_mcfunc_engin:context Register
+# 多段継承対策のために一度Init処理を呼び出すファイル内でRegisterを消去したためcontextから引き出す
+function reizo_mcfunc_engin:asset/item/.manager/context/register/pull
 
 # IDとnamespaceをCustomDataへ。
     data modify entity @s Item.components."minecraft:custom_data".Item.ID set from storage reizo_mcfunc_engin:item ID

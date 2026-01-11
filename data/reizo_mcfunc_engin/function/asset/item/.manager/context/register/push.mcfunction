@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:asset/item/.manager/context/get/register
+#> reizo_mcfunc_engin:asset/item/.manager/context/register/push
 #
 # 
 #

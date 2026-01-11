@@ -12,6 +12,18 @@ return run tellraw @s {"text":"抽象的なObjectであるため、召喚でき�
 # 召喚！
 function reizo_mcfunc_engin:asset/object/.manager/summon/run.m with storage reizo_mcfunc_engin:object
 
+#> 継承している場合、データのみはデフォルトで受け継ぐため、ここに動作を記す。
+    # Registerの取得
+    data modify storage reizo_mcfunc_engin:context Register set from storage reizo_mcfunc_engin:object Register
+    # Registerの退避
+    function reizo_mcfunc_engin:asset/.manager/common/context/register/stash
+    # RegisterのPush
+    function reizo_mcfunc_engin:asset/object/.manager/context/register/push
+    # 登録処理の親クラス
+    execute as @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.Init] at @s if data storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends run function reizo_mcfunc_engin:asset/object/.manager/register/super
+    # Registerを戻す
+    function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
+
 # 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
     execute unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:asset/object/.manager/summon/super
     data remove storage reizo_mcfunc_engin:object Implement
