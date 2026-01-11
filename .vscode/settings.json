@@ -17,7 +17,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/register.mcfunction",
                     "content": [
-                        "#>reizo_mcfunc_engin:asset/mob/%namespace%/register",
+                        "#> reizo_mcfunc_engin:asset/mob/%namespace%/register",
                         "#",
                         "# Mobの登録処理",
                         "#",
