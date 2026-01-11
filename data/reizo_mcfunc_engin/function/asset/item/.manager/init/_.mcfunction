@@ -4,14 +4,6 @@
 #
 # @within function reizo_mcfunc_engin:asset/item/.manager/give/give
 
-#> 継承している場合、データのみはデフォルトで受け継ぐため、ここに動作を記す。
-    # Registerの退避
-    function reizo_mcfunc_engin:asset/.manager/common/context/register/stash
-    # 登録処理の親クラス
-    execute if data storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends run function reizo_mcfunc_engin:asset/item/.manager/register/super
-    # Registerを戻す
-    function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
-
 # Init処理呼び出し
 function reizo_mcfunc_engin:asset/item/.manager/init/run.m with storage reizo_mcfunc_engin:item
 
