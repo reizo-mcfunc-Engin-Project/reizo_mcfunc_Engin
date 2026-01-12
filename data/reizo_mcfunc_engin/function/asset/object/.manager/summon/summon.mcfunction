@@ -25,7 +25,7 @@ function reizo_mcfunc_engin:asset/object/.manager/summon/run.m with storage reiz
     function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
 
 # 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
-    execute unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:asset/object/.manager/summon/super
+    execute if data storage reizo_mcfunc_engin:context Register.Extends unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:asset/object/.manager/summon/super
     data remove storage reizo_mcfunc_engin:object Implement
 
 # init処理
