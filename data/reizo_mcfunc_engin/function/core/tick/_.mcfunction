@@ -28,6 +28,6 @@ function reizo_mcfunc_engin:asset/mob/.manager/tick/_
 
 # Objectの処理
 execute \
-if entity @e[tag=reizo_mcfunc_Engin.Object] \
-as @e[tag=reizo_mcfunc_Engin.Object] at @s run \
+if entity @e[type=!player,tag=reizo_mcfunc_Engin.Object] \
+as @e[type=!player,tag=reizo_mcfunc_Engin.Object] at @s run \
 function reizo_mcfunc_engin:asset/object/.manager/tick/_
