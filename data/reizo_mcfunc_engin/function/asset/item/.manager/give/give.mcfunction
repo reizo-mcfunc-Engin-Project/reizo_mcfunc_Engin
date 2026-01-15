@@ -25,7 +25,7 @@ function reizo_mcfunc_engin:asset/item/.manager/give/run.m with storage reizo_mc
     function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
-    execute unless data storage reizo_mcfunc_engin:item {Implement:1b} run function reizo_mcfunc_engin:asset/item/.manager/give/super
+    execute if data storage reizo_mcfunc_engin:context Register.Extends unless data storage reizo_mcfunc_engin:item {Implement:1b} run function reizo_mcfunc_engin:asset/item/.manager/give/super
     data remove storage reizo_mcfunc_engin:item Implement
 
 # Init処理

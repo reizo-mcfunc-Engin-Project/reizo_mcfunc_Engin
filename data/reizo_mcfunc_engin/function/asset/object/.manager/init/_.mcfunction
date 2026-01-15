@@ -23,7 +23,7 @@ function reizo_mcfunc_engin:asset/object/.manager/set_data/init/_
 data modify storage reizo_mcfunc_engin:context data set from entity @s data
 
 # 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
-    execute unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:asset/object/.manager/init/super
+    execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:asset/object/.manager/init/super
     data remove storage reizo_mcfunc_engin:object Implement
 
 # お掃除

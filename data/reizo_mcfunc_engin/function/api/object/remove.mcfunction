@@ -14,7 +14,7 @@ return run tellraw @a [{"text":"このEntity",color:"red"},{"text":"は、",colo
     function reizo_mcfunc_engin:asset/object/.manager/remove/run.m with storage reizo_mcfunc_engin:context data.Object
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
-    execute unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:asset/object/.manager/remove/super
+    execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:asset/object/.manager/remove/super
     data remove storage reizo_mcfunc_engin:object Implement
 
 # お掃除
