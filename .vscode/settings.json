@@ -47,14 +47,10 @@
                         "        # data modify storage reizo_mcfunc_engin:mob Register.main_hand set value {id:}",
                         "        # off_hand",
                         "        # data modify storage reizo_mcfunc_engin:mob Register.off_hand set value {id:}",
-                        "    # 大きさはどれくらい？ Max = 16.0d double型",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.Scale set value 1.1d",
                         "    # アイテムを落とさないか？ boolean型",
                         "    data modify storage reizo_mcfunc_engin:mob Register.DethItem_Empty set value 1b",
                         "    # 燃えるかどうか。 boolean型",
-                        "    data modify storage reizo_mcfunc_engin:mob Register.Flammable set value 0b",
-                        "    # 重力がどれくらい影響するか。高ければ高いほど重力の影響を受ける。値を-にすると浮き始める。 double型",
-                        "    # data modify storage reizo_mcfunc_engin:mob Register.Gravity set value 0.08d"
+                        "    data modify storage reizo_mcfunc_engin:mob Register.Flammable set value 0b"
                     ]
                 }
             ]

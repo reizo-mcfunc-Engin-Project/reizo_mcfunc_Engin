@@ -28,8 +28,6 @@
         # data modify storage reizo_mcfunc_engin:mob Register.main_hand set value {id:"iron_axe"}
         # off_hand
         # data modify storage reizo_mcfunc_engin:mob Register.off_hand set value {id:""}
-    # 大きさはどれくらい？ Max = 16.0d
-    data modify storage reizo_mcfunc_engin:mob Register.Scale set value 1.1d
     # アイテムを落とさないか？ boolean型
     data modify storage reizo_mcfunc_engin:mob Register.DethItem_Empty set value 1b
     # 燃えるかどうか。 boolean型

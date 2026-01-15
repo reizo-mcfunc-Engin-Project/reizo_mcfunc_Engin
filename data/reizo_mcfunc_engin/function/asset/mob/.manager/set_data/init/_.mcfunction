@@ -50,12 +50,6 @@ execute \
 if data storage reizo_mcfunc_engin:mob {Register:{DethItem_Empty:1b}} run \
 data modify entity @s DeathLootTable set value "minecraft:empty"
 
-# 大きさ変更
-data modify entity @s attributes[{id:"scale"}].base set from storage reizo_mcfunc_engin:mob Register.Scale
-
-# 重力の影響度
-data modify entity @s attributes[{id:"gravity"}].base set from storage reizo_mcfunc_engin:mob Register.Gravity
-
 # フィールドが存在しているのならフィールドをコピーする。
 execute \
 if data storage reizo_mcfunc_engin:mob Field run \

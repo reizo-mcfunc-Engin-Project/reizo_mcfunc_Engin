@@ -6,7 +6,7 @@
 
 #> データ登録
     # 継承(オプション)
-    # data modify storage reizo_mcfunc_engin:mob Register.Extends append value {ID:"super.test",namespace:"reizo_mcfunc_engin"}
+    data modify storage reizo_mcfunc_engin:mob Register.Extends append value {ID:"super.test",namespace:"reizo_mcfunc_engin"}
     # 継承されないかどうか。 boolean型
     data modify storage reizo_mcfunc_engin:mob Register.Final set value 1b
     # 継承されることを前提とした、抽象的なMobかどうか。
@@ -28,11 +28,7 @@
         # data modify storage reizo_mcfunc_engin:mob Register.main_hand set value {id:"golden_axe"}
         # off_hand
         # data modify storage reizo_mcfunc_engin:mob Register.off_hand set value {id:""}
-    # 大きさはどれくらい？ Max = 16.0d
-    data modify storage reizo_mcfunc_engin:mob Register.Scale set value 1.1d
     # アイテムを落とさないか？ boolean型
     data modify storage reizo_mcfunc_engin:mob Register.DethItem_Empty set value 1b
     # 燃えるかどうか。 boolean型
     data modify storage reizo_mcfunc_engin:mob Register.Flammable set value 0b
-    # 重力がどれくらい影響するか。高ければ高いほど重力の影響を受ける。値を-にすると浮き始める。 double型
-    # data modify storage reizo_mcfunc_engin:mob Register.Gravity set value -0.01d
