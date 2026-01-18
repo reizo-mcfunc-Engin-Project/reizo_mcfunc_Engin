@@ -8,3 +8,5 @@ execute \
 anchored eyes \
 positioned ^ ^ ^ run \
 particle wax_on ~ ~0.9 ~
+
+function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"tick/test"}

@@ -9,3 +9,4 @@
 particle wax_on ~ ~ ~
 
 # testメソッド実行
+function reizo_mcfunc_engin:api/call/_protected.m {Type:"mob",Method:"tick/test"}
