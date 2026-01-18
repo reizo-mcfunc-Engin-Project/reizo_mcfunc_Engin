@@ -21,7 +21,7 @@ function reizo_mcfunc_engin:asset/item/.manager/set_data/init/_
 data modify storage reizo_mcfunc_engin:context data set from entity @s Item.components."minecraft:custom_data".Item
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
-    execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:item {Implement:1b} run function reizo_mcfunc_engin:asset/item/.manager/init/super
+    execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:item {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"item",Method:"init/_"}
     data remove storage reizo_mcfunc_engin:item Implement
 
 # お掃除
