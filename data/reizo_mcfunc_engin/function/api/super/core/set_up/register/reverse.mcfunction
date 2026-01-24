@@ -4,8 +4,6 @@
 #
 # @within function reizo_mcfunc_engin:api/super/core/set_up/register/run.m
 
-tellraw @a "reverse"
-
 # 退避したRegisterを解放
 function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
 
