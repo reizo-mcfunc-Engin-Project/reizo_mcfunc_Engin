@@ -12,11 +12,22 @@
     function reizo_mcfunc_engin:api/super/core/set_up/check.m with storage reizo_mcfunc_engin:api Super.data
     execute if data storage reizo_mcfunc_engin:api Super.SetUp{required:1b} run function reizo_mcfunc_engin:api/super/core/set_up/run.m with storage reizo_mcfunc_engin:api Super.data
 
+# dataを退避
+function reizo_mcfunc_engin:asset/.manager/common/context/data/stash
+
+# 必要データをセット
+    data modify storage reizo_mcfunc_engin:context data.ID set from storage reizo_mcfunc_engin:api Super.data.ID
+    data modify storage reizo_mcfunc_engin:context data.namespace set from storage reizo_mcfunc_engin:api Super.data.namespace
+    data modify storage reizo_mcfunc_engin:context data.Registry set from storage reizo_mcfunc_engin:context dataStackStash[-1].Value.Registry
+
 # メソッド実行
 function reizo_mcfunc_engin:api/super/core/run.m with storage reizo_mcfunc_engin:api Super.data
 
 # 先頭のデータ削除
 data remove storage reizo_mcfunc_engin:api Args.Super.Extends[0]
+
+# dataを解放
+function reizo_mcfunc_engin:asset/.manager/common/context/data/pop
 
 # 先頭のデータが残るなら再帰
 execute if data storage reizo_mcfunc_engin:api Args.Super.Extends[0] run function reizo_mcfunc_engin:api/super/core/foreach
