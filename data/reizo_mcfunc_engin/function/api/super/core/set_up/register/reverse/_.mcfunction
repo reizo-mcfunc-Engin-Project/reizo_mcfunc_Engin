@@ -1,8 +1,8 @@
-#> reizo_mcfunc_engin:api/super/core/set_up/register/reverse
+#> reizo_mcfunc_engin:api/super/core/set_up/register/reverse/_
 #
 # 
 #
-# @within function reizo_mcfunc_engin:api/super/core/set_up/register/run.m
+# @within function reizo_mcfunc_engin:api/super/core/set_up/register/reverse/check
 
 # 退避したRegisterを解放
 function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
