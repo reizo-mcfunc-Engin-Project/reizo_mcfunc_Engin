@@ -7,7 +7,7 @@
 # IDと名前空間から指定したObjectのInit処理呼び出し
 function reizo_mcfunc_engin:asset/object/.manager/init/run.m with storage reizo_mcfunc_engin:object
 
-# 多段継承対策のために一度Init処理を呼び出すファイル内でRegisterを消去したためcontextから引き出す
+# 継承した際にはcontext内にRegisterが存在しているので引き出す。
 function reizo_mcfunc_engin:asset/object/.manager/context/register/pull
 
 #> ID,namespaceをdataに

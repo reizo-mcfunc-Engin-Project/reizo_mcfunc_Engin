@@ -7,7 +7,7 @@
 # IDとnamespaceからmobごとのInit処理呼び出し
 function reizo_mcfunc_engin:asset/mob/.manager/init/run.m with storage reizo_mcfunc_engin:mob
 
-# 多段継承対策のために一度Init処理を呼び出すファイル内でRegisterを消去したためcontextから引き出す
+# 継承した際にはcontext内にRegisterが存在しているので引き出す。
 function reizo_mcfunc_engin:asset/mob/.manager/context/register/pull
 
 #> ID,namespaceをdataに
