@@ -21,5 +21,3 @@ data remove storage reizo_libs:_ Out
 
 # Registerを退避する。
 function reizo_mcfunc_engin:asset/.manager/common/context/register/stash
-
-tellraw @a "rev"
