@@ -19,6 +19,7 @@ function reizo_mcfunc_engin:asset/.manager/common/context/data/stash
     data modify storage reizo_mcfunc_engin:context data.ID set from storage reizo_mcfunc_engin:api Super.data.ID
     data modify storage reizo_mcfunc_engin:context data.namespace set from storage reizo_mcfunc_engin:api Super.data.namespace
     data modify storage reizo_mcfunc_engin:context data.Registry set from storage reizo_mcfunc_engin:context dataStackStash[-1].Value.Registry
+    data modify storage reizo_mcfunc_engin:context data.Field set from storage reizo_mcfunc_engin:context dataStackStash[-1].Value.Field
 
 # メソッド実行
 function reizo_mcfunc_engin:api/super/core/run.m with storage reizo_mcfunc_engin:api Super.data
