@@ -14,7 +14,7 @@ function reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/_
 # IDからtick処理を叩く。
     data modify storage reizo_mcfunc_engin:context data set from entity @s data
     data modify storage reizo_mcfunc_engin:context origin_data set from storage reizo_mcfunc_engin:context data
-    function reizo_mcfunc_engin:asset/mob/.manager/tick/run.m with storage reizo_mcfunc_engin:context data.Mob
+    function reizo_mcfunc_engin:asset/mob/.manager/tick/run.m with storage reizo_mcfunc_engin:context data
 
 # 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
 execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:mob {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"tick/_"}

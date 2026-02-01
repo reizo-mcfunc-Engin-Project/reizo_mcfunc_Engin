@@ -12,9 +12,9 @@ function reizo_mcfunc_engin:asset/object/.manager/context/register/pull
 
 #> ID,namespaceをdataに
     # IDをコピー
-    data modify entity @s data.Object.ID set from storage reizo_mcfunc_engin:object ID
+    data modify entity @s data.ID set from storage reizo_mcfunc_engin:object ID
     # namespaceコピー
-    data modify entity @s data.Object.namespace set from storage reizo_mcfunc_engin:object namespace
+    data modify entity @s data.namespace set from storage reizo_mcfunc_engin:object namespace
 
 # 登録したデータを適応
 function reizo_mcfunc_engin:asset/object/.manager/set_data/init/_
