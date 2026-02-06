@@ -243,7 +243,9 @@
                         "    # ({animation: (block | bow | brush | crossbow | drink | eat | none | spear | spyglass | toot_horn),consume_seconds:(float型),has_consume_particles:(boolean型),on_consume_effects:(TextComponentsString[])})",
                         "    # data modify storage reizo_mcfunc_engin:item Register.Consumable set value {\"animation\":\"none\",\"consume_seconds\":2147483647}",
                         "    # 動作スロット (0b..26b, mainhand, offhand, head, chest, legs, feet)",
-                        "    data modify storage reizo_mcfunc_engin:item Register.Slot set value []"
+                        "    data modify storage reizo_mcfunc_engin:item Register.Slot set value []",
+                        "    # アイテムを持っていない場合でも動作させるかどうか。 boolean型",
+                        "    # data modify storage reizo_mcfunc_engin:item Register.NotHold set value 1b"
                     ]
                 }
             ]
