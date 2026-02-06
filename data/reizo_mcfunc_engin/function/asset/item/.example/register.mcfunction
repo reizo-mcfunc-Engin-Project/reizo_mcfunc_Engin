@@ -20,5 +20,5 @@
     # data modify storage reizo_mcfunc_engin:item Register.Consumable set value {"animation":"none","consume_seconds":2147483647}
     # 動作スロット (0b..26b, mainhand, offhand, head, chest, legs, feet)
     data modify storage reizo_mcfunc_engin:item Register.Slot set value ["mainhand","offhand"]
-    # アイテムを持っていない場合でも動作させるかどうか。 boolean
-    data modify storage reizo_mcfunc_engin:item Register.NotHold set value 1b
+    # アイテムを持っていない場合でも動作させるかどうか。 boolean型
+    # data modify storage reizo_mcfunc_engin:item Register.NotHold set value 1b
