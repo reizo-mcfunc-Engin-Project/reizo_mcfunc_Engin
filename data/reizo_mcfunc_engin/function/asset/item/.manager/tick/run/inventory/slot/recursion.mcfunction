@@ -9,6 +9,7 @@ data remove storage reizo_mcfunc_engin:item Inventory.Top.components."minecraft:
 scoreboard players reset $Item.foreach.RunSlot reizo_mcfunc_Engin.Temp
 
 # NotHold
+# TODO:Equipmentに対応させておけ！！！恐らくここで処理できるはずだ！
 execute \
 if data storage reizo_mcfunc_engin:item Inventory.Top.components."minecraft:custom_data".Item.Registry{NotHold:1b} \
 unless data storage reizo_mcfunc_engin:item Inventory.Top.components."minecraft:custom_data".Item.Registry.Slot[1] run \
