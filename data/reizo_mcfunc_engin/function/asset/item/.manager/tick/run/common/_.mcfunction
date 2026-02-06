@@ -7,6 +7,9 @@
 # OriginDataの取得
 data modify storage reizo_mcfunc_engin:context origin_data set from storage reizo_mcfunc_engin:context data
 
+# NotHold
+execute if data storage reizo_mcfunc_engin:context data.Registry{NotHold:1b} run data modify storage reizo_mcfunc_engin:item NotHold.IsRun set value 1b
+
 # 実行
 function reizo_mcfunc_engin:asset/item/.manager/tick/run.m with storage reizo_mcfunc_engin:context data
 

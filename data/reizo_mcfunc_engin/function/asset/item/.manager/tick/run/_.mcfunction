@@ -16,3 +16,4 @@
 
 # お掃除
 data remove storage reizo_mcfunc_engin:item data
+data remove storage reizo_mcfunc_engin:item NotHold
