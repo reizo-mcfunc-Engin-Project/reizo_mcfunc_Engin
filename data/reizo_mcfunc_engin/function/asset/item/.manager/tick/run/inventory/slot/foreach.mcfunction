@@ -22,7 +22,7 @@ return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/sl
 # 起動SlotとSlotが同じなら実行。
 execute \
 if score $Item.foreach.Slot reizo_mcfunc_Engin.Temp = $Item.foreach.RunSlot reizo_mcfunc_Engin.Temp run \
-function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/run/_
+return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/run/_
 
 # 再帰
 function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/recursion
