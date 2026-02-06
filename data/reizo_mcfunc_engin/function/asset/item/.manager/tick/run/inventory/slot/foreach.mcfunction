@@ -26,7 +26,7 @@ return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/sl
 
 # NotHoldが有効ならアイテムが起動Slotになくても実行させる。
 execute \
-if data storage reizo_mcfunc_engin:item Inventory.Top.components."minecraft:custom_data".Item.Registry.NotHold{_:1b} \
+if data storage reizo_mcfunc_engin:item Inventory.Top.components."minecraft:custom_data".Item.Registry{NotHold:1b} \
 if score $Item.foreach.RunSlot reizo_mcfunc_Engin.Temp matches -1 \
 unless score $Item.foreach.RunSlot reizo_mcfunc_Engin.Temp = $Item.foreach.Slot reizo_mcfunc_Engin.Temp run \
 return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/run/not_hold
