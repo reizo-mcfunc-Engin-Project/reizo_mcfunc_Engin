@@ -16,6 +16,9 @@ data modify entity @s Item.components."minecraft:consumable" set from storage re
 # FieldをCustomDataに入れる。
 data modify entity @s Item.components."minecraft:custom_data".Item.Field set from storage reizo_mcfunc_engin:item Field
 
+# NotHold
+execute if data storage reizo_mcfunc_engin:item Register.NotHold run function reizo_mcfunc_engin:asset/item/.manager/set_data/init/not_hold
+
 #> 実行されるスロット
     # チェック
     execute if data storage reizo_mcfunc_engin:item Register.Slot run function reizo_mcfunc_engin:asset/item/.manager/set_data/init/slot/_
