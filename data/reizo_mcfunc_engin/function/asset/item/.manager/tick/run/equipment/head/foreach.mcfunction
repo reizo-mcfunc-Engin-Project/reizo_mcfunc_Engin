@@ -15,4 +15,4 @@ unless score $Item.foreach.RunSlot reizo_mcfunc_Engin.Temp matches -3 run \
 return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/head/recursion
 
 # 実行
-function reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/head/run
+function reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/head/run/_

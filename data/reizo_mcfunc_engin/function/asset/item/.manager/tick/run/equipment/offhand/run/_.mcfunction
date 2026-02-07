@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/offhand/run
+#> reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/offhand/run/_
 #
 # 
 #

@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/head/run
+#> reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/head/run/_
 #
 # 
 #
