@@ -10,7 +10,7 @@ data remove storage reizo_mcfunc_engin:item data.Equipment.head.components."mine
 # NotHold関係
 execute \
 if data storage reizo_mcfunc_engin:item data.Equipment.head.components."minecraft:custom_data".Item.Registry{NotHold:1b} \
-unless data storage reizo_mcfunc_engin:item data.Equipment.head.components."minecraft:custom_data".Item.Registry.Slot[1] run \
+unless data storage reizo_mcfunc_engin:item data.Equipment.head.components."minecraft:custom_data".Item.Registry.Slot[0] run \
 return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/head/run/not_hold
 
 # お掃除

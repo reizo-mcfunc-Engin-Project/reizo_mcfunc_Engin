@@ -11,7 +11,7 @@ return run tellraw @a [{"text":"このEntity",color:"red"},{"text":"は、",colo
 
 # IDと名前空間から死亡処理を呼び出し
     data modify storage reizo_mcfunc_engin:context data set from entity @s data
-    function reizo_mcfunc_engin:asset/mob/.manager/remove/run.m with storage reizo_mcfunc_engin:context data.Mob
+    function reizo_mcfunc_engin:asset/mob/.manager/remove/run.m with storage reizo_mcfunc_engin:context data
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
     execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:mob {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"remove/_"}
