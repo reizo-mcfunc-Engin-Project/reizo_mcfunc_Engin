@@ -33,7 +33,3 @@ function reizo_mcfunc_engin:api/id/allocate
 # Itemの処理
 function reizo_mcfunc_engin:asset/item/.manager/tick/_
 # 必ずcustom_dataに、IDとnamespaceを記述すること。
-
-# リセット
-    tag @s[tag=reizo_mcfunc_Engin.Click.Left] remove reizo_mcfunc_Engin.Click.Left
-    tag @s[tag=reizo_mcfunc_Engin.Click.Right] remove reizo_mcfunc_Engin.Click.Right
