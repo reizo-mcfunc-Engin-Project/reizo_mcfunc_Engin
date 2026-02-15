@@ -13,4 +13,4 @@ if entity @a
 execute \
 store result score $CubeParticleCount reizo_mcfunc_Engin._ \
 positioned 0.0 0.0 0.0 \
-if entity @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CubeParticle,type=marker,distance=..0.1]
+if entity @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CubeParticle,type=marker,distance=..0]
