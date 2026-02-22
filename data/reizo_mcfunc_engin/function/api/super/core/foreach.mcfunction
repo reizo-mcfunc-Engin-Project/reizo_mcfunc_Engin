@@ -15,6 +15,9 @@
 # dataを退避
 function reizo_mcfunc_engin:asset/.manager/common/context/data/stash
 
+# thisの解放
+function reizo_mcfunc_engin:asset/.manager/common/context/this/pop
+
 # 必要データをセット
     data modify storage reizo_mcfunc_engin:context data.ID set from storage reizo_mcfunc_engin:api Super.data.ID
     data modify storage reizo_mcfunc_engin:context data.namespace set from storage reizo_mcfunc_engin:api Super.data.namespace
@@ -29,6 +32,9 @@ data remove storage reizo_mcfunc_engin:api Args.Super.Extends[0]
 
 # dataを解放
 function reizo_mcfunc_engin:asset/.manager/common/context/data/pop
+
+# thisの退避
+function reizo_mcfunc_engin:asset/.manager/common/context/this/stash
 
 # 先頭のデータが残るなら再帰
 execute if data storage reizo_mcfunc_engin:api Args.Super.Extends[0] run function reizo_mcfunc_engin:api/super/core/foreach
