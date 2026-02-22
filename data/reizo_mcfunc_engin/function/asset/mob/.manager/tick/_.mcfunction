@@ -13,6 +13,8 @@ function reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/_
 
 # IDからtick処理を叩く。
     data modify storage reizo_mcfunc_engin:context data set from entity @s data
+    data modify storage reizo_mcfunc_engin:context this set from storage reizo_mcfunc_engin:context data.this
+    data remove storage reizo_mcfunc_engin:context data.this
     data modify storage reizo_mcfunc_engin:context origin_data set from storage reizo_mcfunc_engin:context data
     function reizo_mcfunc_engin:asset/mob/.manager/tick/run.m with storage reizo_mcfunc_engin:context data
 
@@ -23,3 +25,4 @@ execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless 
 data remove storage reizo_mcfunc_engin:context data
 data remove storage reizo_mcfunc_engin:mob Implement
 data remove storage reizo_mcfunc_engin:context origin_data
+data remove storage reizo_mcfunc_engin:context this
