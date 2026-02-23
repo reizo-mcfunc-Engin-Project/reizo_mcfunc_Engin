@@ -7,9 +7,6 @@
 # IDとnamespaceからmobごとのInit処理呼び出し
 function reizo_mcfunc_engin:asset/mob/.manager/init/run.m with storage reizo_mcfunc_engin:mob
 
-# thisをdataに移動
-data modify entity @s data.this set from storage reizo_mcfunc_engin:context this
-
 # 継承した際にはcontext内にRegisterが存在しているので引き出す。
 function reizo_mcfunc_engin:asset/mob/.manager/context/register/pull
 
@@ -24,11 +21,13 @@ function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/_
 
 # データ取得
 data modify storage reizo_mcfunc_engin:context data set from entity @s data
-data remove storage reizo_mcfunc_engin:context data.this
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
     execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:mob {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"init/_"}
     data remove storage reizo_mcfunc_engin:mob Implement
+
+# thisをdataに移動
+data modify entity @s data.this set from storage reizo_mcfunc_engin:context this
 
 # お掃除
 tag @s remove reizo_mcfunc_Engin.Mob.Init
