@@ -7,8 +7,8 @@
 # IDと名前空間から指定したObjectのInit処理呼び出し
 function reizo_mcfunc_engin:asset/object/.manager/init/run.m with storage reizo_mcfunc_engin:object
 
-# 継承した際にはcontext内にRegisterが存在しているので引き出す。
-function reizo_mcfunc_engin:asset/object/.manager/context/register/pull
+# thisをdataに移動
+data modify entity @s data.this set from storage reizo_mcfunc_engin:context this
 
 #> ID,namespaceをdataに
     # IDをコピー
@@ -20,7 +20,8 @@ function reizo_mcfunc_engin:asset/object/.manager/context/register/pull
 function reizo_mcfunc_engin:asset/object/.manager/set_data/init/_
 
 # データ取得
-data modify storage reizo_mcfunc_engin:context data set from entity @s data
+    data modify storage reizo_mcfunc_engin:context data set from entity @s data
+    data remove storage reizo_mcfunc_engin:context data.this
 
 # 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
     execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"object",Method:"init/_"}
