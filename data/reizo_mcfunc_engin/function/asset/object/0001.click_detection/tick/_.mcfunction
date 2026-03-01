@@ -10,9 +10,9 @@
     # tag @a[tag=reizo_mcfunc_Engin.Click.Right] remove reizo_mcfunc_Engin.Click.Right
 
 # スコアアップ
-scoreboard players add @s reizo_mcfunc_Engin.KiiTimer 1
+scoreboard players add @s reizo_mcfunc_Engin.KillTimer 1
 
 # kill
-kill @s[scores={reizo_mcfunc_Engin.KiiTimer=2..}]
+kill @s[scores={reizo_mcfunc_Engin.KillTimer=2..}]
 
 particle electric_spark
