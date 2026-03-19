@@ -11,8 +11,8 @@ function reizo_mcfunc_engin:asset/item/.manager/init/run.m with storage reizo_mc
 function reizo_mcfunc_engin:asset/item/.manager/context/register/pull
 
 # IDとnamespaceをCustomDataへ。
-    data modify entity @s Item.components."minecraft:custom_data".Item.ID set from storage reizo_mcfunc_engin:item ID
-    data modify entity @s Item.components."minecraft:custom_data".Item.namespace set from storage reizo_mcfunc_engin:item namespace
+    data modify entity @s Item.components."minecraft:custom_data".Item.ID set from storage reizo_mcfunc_engin:context Args.ID
+    data modify entity @s Item.components."minecraft:custom_data".Item.namespace set from storage reizo_mcfunc_engin:context Args.namespace
 
 # データセット
 function reizo_mcfunc_engin:asset/item/.manager/set_data/init/_
