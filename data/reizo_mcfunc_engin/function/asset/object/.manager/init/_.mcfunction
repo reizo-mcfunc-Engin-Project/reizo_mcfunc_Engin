@@ -9,15 +9,15 @@ function reizo_mcfunc_engin:asset/object/.manager/init/run.m with storage reizo_
 
 #> ID,namespaceをdataに
     # IDをコピー
-    data modify entity @s data.ID set from storage reizo_mcfunc_engin:context Args.ID
+    data modify entity @s data.Args.ID set from storage reizo_mcfunc_engin:context Args.ID
     # namespaceコピー
-    data modify entity @s data.namespace set from storage reizo_mcfunc_engin:context Args.namespace
+    data modify entity @s data.Args.namespace set from storage reizo_mcfunc_engin:context Args.namespace
 
 # 登録したデータを適応
 function reizo_mcfunc_engin:asset/object/.manager/set_data/init/_
 
-# データ取得
-data modify storage reizo_mcfunc_engin:context data set from entity @s data
+# データを送る
+function reizo_mcfunc_engin:asset/.manager/common/context/data/push
 
 # 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
     execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"object",Method:"init/_"}
