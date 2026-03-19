@@ -10,7 +10,7 @@ if predicate {condition:"value_check",value:{type:"storage",storage:"reizo_mcfun
 return run tellraw @s {"text":"抽象的なMobであるため、召喚できませんでした。","color":"red"}
 
 # 召喚！
-function reizo_mcfunc_engin:asset/mob/.manager/summon/run.m with storage reizo_mcfunc_engin:mob
+function reizo_mcfunc_engin:asset/mob/.manager/summon/run.m with storage reizo_mcfunc_engin:context Args
 
 # データの取得
     data modify storage reizo_mcfunc_engin:context Register set from storage reizo_mcfunc_engin:mob Register
