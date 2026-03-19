@@ -5,13 +5,13 @@
 # @within function reizo_mcfunc_engin:asset/object/.manager/summon/summon
 
 # IDと名前空間から指定したObjectのInit処理呼び出し
-function reizo_mcfunc_engin:asset/object/.manager/init/run.m with storage reizo_mcfunc_engin:object
+function reizo_mcfunc_engin:asset/object/.manager/init/run.m with storage reizo_mcfunc_engin:context Args
 
 #> ID,namespaceをdataに
     # IDをコピー
-    data modify entity @s data.ID set from storage reizo_mcfunc_engin:object ID
+    data modify entity @s data.ID set from storage reizo_mcfunc_engin:context Args.ID
     # namespaceコピー
-    data modify entity @s data.namespace set from storage reizo_mcfunc_engin:object namespace
+    data modify entity @s data.namespace set from storage reizo_mcfunc_engin:context Args.namespace
 
 # 登録したデータを適応
 function reizo_mcfunc_engin:asset/object/.manager/set_data/init/_

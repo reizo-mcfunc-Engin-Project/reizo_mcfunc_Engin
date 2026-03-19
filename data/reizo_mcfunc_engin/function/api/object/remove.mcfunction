@@ -10,15 +10,18 @@ unless entity @s[tag=reizo_mcfunc_Engin.Object] run \
 return run tellraw @a [{"text":"このEntity",color:"red"},{"text":"は、",color:"red"},{"text":"Object",color:"red",hover_event:{action:"show_text",value:"RMEで作られたObject,reizo_mcfunc_engin:asset/object/.manager/tick/_に説明文あり。"}},{"text":"ではありません！",color:"red"}]
 
 # 退避
-function reizo_mcfunc_engin:asset/.manager/common/context/data/stash
+    function reizo_mcfunc_engin:asset/.manager/common/context/args/stash
+    function reizo_mcfunc_engin:asset/.manager/common/context/data/stash
 
 # IDと名前空間から死亡処理を呼び出し
-    data modify storage reizo_mcfunc_engin:context data set from entity @s data
-    function reizo_mcfunc_engin:asset/object/.manager/remove/run.m with storage reizo_mcfunc_engin:context data
+    function reizo_mcfunc_engin:asset/.manager/common/context/args/push
+    function reizo_mcfunc_engin:asset/.manager/common/context/data/push
+    function reizo_mcfunc_engin:asset/object/.manager/remove/run.m with storage reizo_mcfunc_engin:context Args
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
     execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:object {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"object",Method:"remove/_"}
     data remove storage reizo_mcfunc_engin:object Implement
 
 # 解放
-function reizo_mcfunc_engin:asset/.manager/common/context/data/pop
+    function reizo_mcfunc_engin:asset/.manager/common/context/args/pop
+    function reizo_mcfunc_engin:asset/.manager/common/context/data/pop

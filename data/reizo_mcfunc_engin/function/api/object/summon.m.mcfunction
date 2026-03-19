@@ -11,10 +11,10 @@
 function reizo_mcfunc_engin:asset/.manager/common/context/data/stash
 
 # ID設定
-$data modify storage reizo_mcfunc_engin:object ID set value "$(ID)"
+$data modify storage reizo_mcfunc_engin:context Args.ID set value "$(ID)"
 
 # namespace設定
-$data modify storage reizo_mcfunc_engin:object namespace set value "$(namespace)"
+$data modify storage reizo_mcfunc_engin:context Args.namespace set value "$(namespace)"
 
 # Asset処理を叩く
 function reizo_mcfunc_engin:asset/object/.manager/summon/_
