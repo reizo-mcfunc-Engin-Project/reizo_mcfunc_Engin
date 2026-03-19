@@ -21,7 +21,7 @@ function reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/_
 execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:mob {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"tick/_"}
 
 # お掃除
-data remove storage reizo_mcfunc_engin:context data
+data remove storage reizo_mcfunc_engin:context Args
+data remove storage reizo_mcfunc_engin:context origin_Args
 data remove storage reizo_mcfunc_engin:mob Implement
-data remove storage reizo_mcfunc_engin:context origin_data
 data remove storage reizo_mcfunc_engin:context this

@@ -24,6 +24,7 @@ execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless 
 data modify entity @s data.this set from storage reizo_mcfunc_engin:context this
 
 # お掃除
-data remove storage reizo_mcfunc_engin:context data
+data remove storage reizo_mcfunc_engin:context Args
+data remove storage reizo_mcfunc_engin:context origin_Args
 data remove storage reizo_mcfunc_engin:object Implement
 data remove storage reizo_mcfunc_engin:context this
