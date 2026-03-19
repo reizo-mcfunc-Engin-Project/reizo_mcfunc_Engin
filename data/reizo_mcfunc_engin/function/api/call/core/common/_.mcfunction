@@ -5,8 +5,8 @@
 # @within function reizo_mcfunc_engin:api/call/*
 
 # データ取得
-    data modify storage reizo_mcfunc_engin:api Args.Call.ID set from storage reizo_mcfunc_engin:context origin_data.ID
-    data modify storage reizo_mcfunc_engin:api Args.Call.namespace set from storage reizo_mcfunc_engin:context origin_data.namespace
+    data modify storage reizo_mcfunc_engin:api Args.Call.ID set from storage reizo_mcfunc_engin:context origin_Args.ID
+    data modify storage reizo_mcfunc_engin:api Args.Call.namespace set from storage reizo_mcfunc_engin:context origin_Args.namespace
 
 # メソッド起動
 function reizo_mcfunc_engin:api/call/core/run.m with storage reizo_mcfunc_engin:api Args.Call

@@ -8,4 +8,4 @@
 data modify storage reizo_mcfunc_engin:context Args set from entity @s data.Args
 
 # Originにコピー
-data modify storage reizo_mcfunc_engin:context Origin_Args set from storage reizo_mcfunc_engin:context Args
+data modify storage reizo_mcfunc_engin:context origin_Args set from storage reizo_mcfunc_engin:context Args
