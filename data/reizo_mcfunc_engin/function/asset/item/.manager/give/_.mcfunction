@@ -5,7 +5,7 @@
 # @within function reizo_mcfunc_engin:api/item/give.m
 
 # 登録処理呼び出し
-function reizo_mcfunc_engin:asset/item/.manager/register/run.m with storage reizo_mcfunc_engin:item
+function reizo_mcfunc_engin:asset/item/.manager/register/run.m with storage reizo_mcfunc_engin:context Args
 
 # 取得処理
 function reizo_mcfunc_engin:asset/item/.manager/give/give

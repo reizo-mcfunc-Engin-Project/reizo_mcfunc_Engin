@@ -10,7 +10,7 @@ if predicate {condition:"value_check",value:{type:"storage",storage:"reizo_mcfun
 return run tellraw @s {"text":"抽象的なItemであるため、取得できませんでした。","color":"red"}
 
 # 個々の取得処理呼び出し
-function reizo_mcfunc_engin:asset/item/.manager/give/run.m with storage reizo_mcfunc_engin:item
+function reizo_mcfunc_engin:asset/item/.manager/give/run.m with storage reizo_mcfunc_engin:context Args
 
 # データの取得
     data modify storage reizo_mcfunc_engin:context Register set from storage reizo_mcfunc_engin:item Register
