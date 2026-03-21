@@ -33,6 +33,8 @@ function reizo_mcfunc_engin:api/super/core/run.m with storage reizo_mcfunc_engin
     data modify storage reizo_mcfunc_engin:api Super.dataTemp.Method set from storage reizo_mcfunc_engin:api Super.data.Method
     data modify storage reizo_mcfunc_engin:api Super.data set from storage reizo_mcfunc_engin:api Super.dataTemp
     data remove storage reizo_mcfunc_engin:api Super.dataTemp
+    data remove storage reizo_mcfunc_engin:context Args
+    data remove storage reizo_mcfunc_engin:context data
 
 # 解放
     function reizo_mcfunc_engin:asset/.manager/common/context/args/pop
