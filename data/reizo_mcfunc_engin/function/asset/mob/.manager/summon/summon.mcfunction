@@ -28,10 +28,10 @@ function reizo_mcfunc_engin:asset/mob/.manager/summon/run.m with storage reizo_m
     # 引数の取得
     data modify storage reizo_mcfunc_engin:api Args.Super.Extends set from storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends
     # 登録処理の親クラス
-    execute as @e[tag=reizo_mcfunc_Engin.Mob,tag=reizo_mcfunc_Engin.Mob.Init] at @s if data storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends run function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"register/_"}
+    execute as @e[tag=reizo_mcfunc_Engin.Mob,tag=reizo_mcfunc_Engin.Mob.Init,limit=1] at @s if data storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends run function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"register/_"}
     # Registerを戻す
     function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
 
 # Init処理
-execute as @e[tag=reizo_mcfunc_Engin.Mob,tag=reizo_mcfunc_Engin.Mob.Init] at @s run \
+execute as @e[tag=reizo_mcfunc_Engin.Mob,tag=reizo_mcfunc_Engin.Mob.Init,limit=1] at @s run \
 function reizo_mcfunc_engin:asset/mob/.manager/init/_

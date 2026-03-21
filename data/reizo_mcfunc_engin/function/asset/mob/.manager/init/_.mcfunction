@@ -4,6 +4,9 @@
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/summon/summon
 
+# タグ剥奪
+tag @s remove reizo_mcfunc_Engin.Mob.Init
+
 # IDとnamespaceからmobごとのInit処理呼び出し
 function reizo_mcfunc_engin:asset/mob/.manager/init/run.m with storage reizo_mcfunc_engin:context Args
 
@@ -27,5 +30,4 @@ data modify storage reizo_mcfunc_engin:context data set from entity @s data
 data modify entity @s data.this set from storage reizo_mcfunc_engin:context this
 
 # お掃除
-tag @s remove reizo_mcfunc_Engin.Mob.Init
 data remove storage reizo_mcfunc_engin:context data
