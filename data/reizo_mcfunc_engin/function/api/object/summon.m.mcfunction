@@ -7,6 +7,13 @@
 #   ID        = Mob,ObjectのID、動的にIDを使えることにより、Tagで管理するような長い記述を減らすことが出来ている。
 # @api
 
+# お掃除
+data remove storage reizo_mcfunc_engin:context Args.ID
+data remove storage reizo_mcfunc_engin:context Args.namespace
+data remove storage reizo_mcfunc_engin:object Register
+data remove storage reizo_mcfunc_engin:object Field
+data remove storage reizo_mcfunc_engin:context Register
+
 # 退避
 function reizo_mcfunc_engin:asset/.manager/common/context/data/stash
 
