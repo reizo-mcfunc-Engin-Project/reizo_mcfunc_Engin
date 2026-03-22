@@ -19,7 +19,7 @@ data modify entity @s data.Args set from storage reizo_mcfunc_engin:context Args
 function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/_
 
 # データ取得
-data modify storage reizo_mcfunc_engin:context data set from entity @s data
+function reizo_mcfunc_engin:asset/.manager/common/context/data/push
 
 # IDとnamespaceからmobごとのInit処理呼び出し
 function reizo_mcfunc_engin:asset/mob/.manager/init/run.m with storage reizo_mcfunc_engin:context Args
