@@ -4,14 +4,10 @@
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/summon/summon
 
+# TODO:Objにもやっといて！！！dataを入れるタイミングをずらす
+
 # タグ剥奪
 tag @s remove reizo_mcfunc_Engin.Mob.Init
-
-# IDとnamespaceからmobごとのInit処理呼び出し
-function reizo_mcfunc_engin:asset/mob/.manager/init/run.m with storage reizo_mcfunc_engin:context Args
-
-# 継承した際にはcontext内にRegisterが存在しているので引き出す。
-function reizo_mcfunc_engin:asset/mob/.manager/context/register/pull
 
 # ID,namespaceをArgsに
 data modify entity @s data.Args set from storage reizo_mcfunc_engin:context Args
@@ -21,6 +17,12 @@ function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/_
 
 # データ取得
 data modify storage reizo_mcfunc_engin:context data set from entity @s data
+
+# IDとnamespaceからmobごとのInit処理呼び出し
+function reizo_mcfunc_engin:asset/mob/.manager/init/run.m with storage reizo_mcfunc_engin:context Args
+
+# 継承した際にはcontext内にRegisterが存在しているので引き出す。
+function reizo_mcfunc_engin:asset/mob/.manager/context/register/pull
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
     execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:mob {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"init/_"}
