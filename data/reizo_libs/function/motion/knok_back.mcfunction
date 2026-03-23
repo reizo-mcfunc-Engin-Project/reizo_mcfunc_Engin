@@ -15,7 +15,7 @@ scoreboard players set $MotionPower reizo_mcfunc_Engin.Temp 125
     # AttackerのRotation対象に、座標0.0 0.0 0.0からローカル座標zから0.4離れた場所にAECを召喚。
     execute \
     positioned 0.0 0.0 0.0 \
-    rotated as @s[tag=reizo_mcfunc_Engin.Motion.Attacker] run \
+    rotated as @p[tag=reizo_mcfunc_Engin.Motion.Attacker] run \
     summon area_effect_cloud ^ ^ ^0.4 \
     {\
     Tags:\
