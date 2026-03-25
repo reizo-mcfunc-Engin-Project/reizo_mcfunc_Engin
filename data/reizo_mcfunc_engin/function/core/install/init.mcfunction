@@ -5,7 +5,8 @@
 # @within function reizo_mcfunc_engin:core/install/check
 
 # フォースロード！
-forceload add 0 0
+    forceload add 0 0
+    forceload add 10000 10000
 
 # team作成
 team add NoCol
@@ -23,3 +24,6 @@ function reizo_mcfunc_engin:api/object/summon.m {ID:"0002.cube_particle",namespa
 # 配列ストレージの準備
     # Wind_P_Motion
     data merge storage reizo_mcfunc_engin:lib {Wind_P_Motion:{XYZ:[0,0,0]}}
+
+# Boxの用意
+setblock 10000 0 10000 shulker_box
