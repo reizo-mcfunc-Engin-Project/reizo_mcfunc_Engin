@@ -13,10 +13,11 @@ function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/not_hold
 # thisを入れる
     # thisがないなら動作中断
     execute unless data storage reizo_mcfunc_engin:context this run return 0
-    # アイテムを一時的にboxへ
-    data modify block 10000 0 10000 Items[0] set from storage reizo_mcfunc_engin:item Inventory.Top
-    # thisをアイテムへと入れる
-    data modify block 10000 0 10000 Items[0].components."minecraft:custom_data".Item.this set from storage reizo_mcfunc_engin:context this
+    # 引数セット
+        data modify storage reizo_mcfunc_engin:item InThis.Args.data set from storage reizo_mcfunc_engin:context this
+        data modify storage reizo_mcfunc_engin:item InThis.Args.Slot set from storage reizo_mcfunc_engin:item Inventory.Top.Slot
     # アイテムを手に戻す
-    function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/replace_item/slot.m with storage reizo_mcfunc_engin:item Inventory.Top
-    function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/replace_item/equipment
+    function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/copy/slot.m with storage reizo_mcfunc_engin:item InThis.Args
+    function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/copy/equipment.m with storage reizo_mcfunc_engin:context
+    # お掃除
+    data remove storage reizo_mcfunc_engin:item InThis
