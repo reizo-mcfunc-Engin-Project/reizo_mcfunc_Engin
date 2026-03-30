@@ -7,15 +7,11 @@
 #   ID        = Mob,ObjectのID、動的にIDを使えることにより、Tagで管理するような長い記述を減らすことが出来ている。
 # @api
 
-# お掃除
-data remove storage reizo_mcfunc_engin:context Args.ID
-data remove storage reizo_mcfunc_engin:context Args.namespace
-data remove storage reizo_mcfunc_engin:object Register
-data remove storage reizo_mcfunc_engin:object Field
-data remove storage reizo_mcfunc_engin:context Register
-
-# 退避
-function reizo_mcfunc_engin:asset/.manager/common/context/data/stash
+# すでにデータが存在する可能性があるため退避
+    function reizo_mcfunc_engin:asset/.manager/common/context/args/stash
+    function reizo_mcfunc_engin:asset/.manager/common/context/data/stash
+    function reizo_mcfunc_engin:asset/.manager/common/context/this/stash
+    function reizo_mcfunc_engin:asset/.manager/common/context/register/stash
 
 # ID設定
 $data modify storage reizo_mcfunc_engin:context Args.ID set value "$(ID)"
@@ -26,5 +22,8 @@ $data modify storage reizo_mcfunc_engin:context Args.namespace set value "$(name
 # Asset処理を叩く
 function reizo_mcfunc_engin:asset/object/.manager/summon/_
 
-# 解放
-function reizo_mcfunc_engin:asset/.manager/common/context/data/pop
+# 召喚処理が終わったため、解放
+    function reizo_mcfunc_engin:asset/.manager/common/context/args/pop
+    function reizo_mcfunc_engin:asset/.manager/common/context/data/pop
+    function reizo_mcfunc_engin:asset/.manager/common/context/this/pop
+    function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
