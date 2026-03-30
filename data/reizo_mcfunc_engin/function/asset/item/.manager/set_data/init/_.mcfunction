@@ -13,7 +13,7 @@ data modify entity @s Item.components."minecraft:lore" set from storage reizo_mc
 # 消費
 data modify entity @s Item.components."minecraft:consumable" set from storage reizo_mcfunc_engin:item Register.Consumable
 
-# FieldをCustomDataに入れる。
+# ThisとFieldをCustomDataに入れる。
 data modify entity @s Item.components."minecraft:custom_data".Item.Field set from storage reizo_mcfunc_engin:item Field
 
 #> 実行されるスロット

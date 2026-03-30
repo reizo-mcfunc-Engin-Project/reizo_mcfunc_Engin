@@ -4,8 +4,9 @@
 #
 # @within function reizo_mcfunc_engin:asset/item/.manager/tick/run/**
 
-# Argsの取得
-function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/get_args
+# 必要なデータの取得
+    function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/get_data/args
+    function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/get_data/this
 
 # 実行
 function reizo_mcfunc_engin:asset/item/.manager/tick/run.m with storage reizo_mcfunc_engin:context Args
