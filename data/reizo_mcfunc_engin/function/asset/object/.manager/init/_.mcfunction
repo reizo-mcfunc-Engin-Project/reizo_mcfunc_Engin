@@ -8,13 +8,13 @@
 tag @s remove reizo_mcfunc_Engin.Object.Init
 
 # 継承した際にはcontext内にRegisterが存在しているので引き出す。
-function reizo_mcfunc_engin:asset/mob/.manager/context/register/pull
+function reizo_mcfunc_engin:asset/object/.manager/context/register/pull
 
 # ID,namespaceをArgsに
 data modify entity @s data.Args set from storage reizo_mcfunc_engin:context Args
 
 # 登録したデータを適応
-function reizo_mcfunc_engin:asset/object/.empty/register
+function reizo_mcfunc_engin:asset/object/.manager/set_data/init/_
 
 # データ取得
 function reizo_mcfunc_engin:asset/.manager/common/context/data/push
