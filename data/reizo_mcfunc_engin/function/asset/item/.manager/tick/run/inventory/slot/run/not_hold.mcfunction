@@ -16,6 +16,8 @@ function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/not_hold
     # 引数セット
         data modify storage reizo_mcfunc_engin:item InThis.Args.data set from storage reizo_mcfunc_engin:context this
         data modify storage reizo_mcfunc_engin:item InThis.Args.Slot set from storage reizo_mcfunc_engin:item Inventory.Top.Slot
+    # thisがないならデータを空にセット
+    execute unless data storage reizo_mcfunc_engin:item InThis.Args.data run data modify storage reizo_mcfunc_engin:item InThis.Args.data set value {}
     # アイテムを手に戻す
     function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/copy/slot.m with storage reizo_mcfunc_engin:item InThis.Args
     function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/copy/equipment.m with storage reizo_mcfunc_engin:context

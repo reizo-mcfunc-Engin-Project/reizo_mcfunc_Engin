@@ -11,7 +11,7 @@ data modify storage reizo_mcfunc_engin:context data set from storage reizo_mcfun
 function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/_
 
 # thisを入れる
-    # thisがないなら動作中断
-    execute unless data storage reizo_mcfunc_engin:context this run return 0
+    # thisがないならデータを空のやつに
+    execute unless data storage reizo_mcfunc_engin:context this run data modify storage reizo_mcfunc_engin:context this set value {}
     # アイテムを手に戻す
     function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/copy/selected_item.m with storage reizo_mcfunc_engin:context
