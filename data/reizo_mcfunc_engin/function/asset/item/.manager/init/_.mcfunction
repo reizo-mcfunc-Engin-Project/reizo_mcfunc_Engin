@@ -29,7 +29,10 @@ function reizo_mcfunc_engin:asset/item/.manager/set_data/init/_
     data remove storage reizo_mcfunc_engin:item Implement
 
 # thisをCustomDataへ
-data modify entity @s Item.components."minecraft:custom_data".Item.this set from storage reizo_mcfunc_engin:context this
+    # もしcontextにthisが無かったら空のオブジェクトにして渡す
+    execute unless data storage reizo_mcfunc_engin:context this run data modify storage reizo_mcfunc_engin:context this set value {}
+    # データコピー
+    data modify entity @s Item.components."minecraft:custom_data".Item.this set from storage reizo_mcfunc_engin:context this
 
 # お掃除
 tag @s remove reizo_mcfunc_Engin.Item.Init
