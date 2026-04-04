@@ -14,7 +14,7 @@ function reizo_mcfunc_engin:asset/item/.manager/give/run.m with storage reizo_mc
 
 # データの取得
     data modify storage reizo_mcfunc_engin:context Register set from storage reizo_mcfunc_engin:item Register
-    data modify storage reizo_mcfunc_engin:api Args.Super.Extends set from storage reizo_mcfunc_engin:context Register.Extends
+    data modify storage reizo_mcfunc_engin:api Args.Super[-1].Extends set from storage reizo_mcfunc_engin:context Register.Extends
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
     execute if data storage reizo_mcfunc_engin:context Register.Extends unless data storage reizo_mcfunc_engin:item {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"item",Method:"give/_"}
@@ -26,7 +26,7 @@ function reizo_mcfunc_engin:asset/item/.manager/give/run.m with storage reizo_mc
     # RegisterのPush
     function reizo_mcfunc_engin:asset/item/.manager/context/register/push
     # 引数の取得
-    data modify storage reizo_mcfunc_engin:api Args.Super.Extends set from storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends
+    data modify storage reizo_mcfunc_engin:api Args.Super[-1].Extends set from storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends
     # 登録処理の親クラス
     execute as @e[type=item,tag=reizo_mcfunc_Engin.Item,tag=reizo_mcfunc_Engin.Item.Init] at @s if data storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends run function reizo_mcfunc_engin:api/super/_.m {Type:"item",Method:"register/_"}
     # Registerを戻す

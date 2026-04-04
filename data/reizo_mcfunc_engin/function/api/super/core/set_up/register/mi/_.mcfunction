@@ -4,6 +4,6 @@
 #
 # @within function reizo_mcfunc_engin:api/super/core/set_up/register/run.m
 
-data modify storage reizo_mcfunc_engin:api Args.Super.Extends[].IsFirstExtend._ set value 0b
+data modify storage reizo_mcfunc_engin:api Args.Super[-1].Extends[].IsFirstExtend._ set value 0b
 function reizo_mcfunc_engin:api/super/core/set_up/register/mi/foreach
-data modify storage reizo_mcfunc_engin:api Args.Super.Extends prepend value "empty"
+data modify storage reizo_mcfunc_engin:api Args.Super[-1].Extends prepend value "empty"
