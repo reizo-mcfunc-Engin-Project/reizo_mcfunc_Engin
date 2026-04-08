@@ -14,6 +14,7 @@
 
 # 退避
     function reizo_mcfunc_engin:asset/.manager/common/context/args/stash
+    function reizo_mcfunc_engin:asset/.manager/common/context/this/stash
     function reizo_mcfunc_engin:asset/.manager/common/context/data/stash
 
 # 必要データをセット
@@ -34,6 +35,7 @@ function reizo_mcfunc_engin:api/super/core/run.m with storage reizo_mcfunc_engin
 
 # 解放
     function reizo_mcfunc_engin:asset/.manager/common/context/args/pop
+    function reizo_mcfunc_engin:asset/.manager/common/context/this/pop
     function reizo_mcfunc_engin:asset/.manager/common/context/data/pop
 
 # 先頭のデータが残るなら再帰
