@@ -4,8 +4,8 @@
 #
 # @within function reizo_mcfunc_engin:asset/item/.manager/give/give
 
-# Init処理呼び出し
-function reizo_mcfunc_engin:asset/item/.manager/init/run.m with storage reizo_mcfunc_engin:context Args
+# タグ剥奪
+tag @s remove reizo_mcfunc_Engin.Item.Init
 
 # 継承した際にはcontext内にRegisterが存在しているので引き出す。
 function reizo_mcfunc_engin:asset/item/.manager/context/register/pull
@@ -24,6 +24,9 @@ function reizo_mcfunc_engin:asset/item/.manager/set_data/init/_
         data remove storage reizo_mcfunc_engin:context data.Args
         data remove storage reizo_mcfunc_engin:context data.this
 
+# Init処理呼び出し
+function reizo_mcfunc_engin:asset/item/.manager/init/run.m with storage reizo_mcfunc_engin:context Args
+
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
     execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:item {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"item",Method:"init/_"}
     data remove storage reizo_mcfunc_engin:item Implement
@@ -35,5 +38,4 @@ function reizo_mcfunc_engin:asset/item/.manager/set_data/init/_
     data modify entity @s Item.components."minecraft:custom_data".Item.this set from storage reizo_mcfunc_engin:context this
 
 # お掃除
-tag @s remove reizo_mcfunc_Engin.Item.Init
 data remove storage reizo_mcfunc_engin:context data
