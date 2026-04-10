@@ -4,6 +4,8 @@
 #
 # @within advancement reizo_mcfunc_engin:api/trigger/example
 
+return 0
+
 # 実行
 function reizo_mcfunc_engin:api/trigger/run.m {trigger:"example"}
 
