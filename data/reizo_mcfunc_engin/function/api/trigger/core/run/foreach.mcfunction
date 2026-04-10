@@ -12,7 +12,13 @@ data modify storage reizo_mcfunc_engin:api Trigger.run.Entry.trigger set from st
 
 # タイプがアイテムなら現在のスロットを確認
 execute if data storage reizo_mcfunc_engin:api Trigger.run.Entry{Type:"item"} run function reizo_mcfunc_engin:api/trigger/core/run/slot_check/_
-execute if data storage reizo_mcfunc_engin:api Trigger.run.Entry{Type:"item"} unless data storage reizo_mcfunc_engin:api Trigger.run.Item.Check{Flag:1b} run return run data remove storage reizo_mcfunc_engin:api Trigger.run.Entry
+
+# タイプがObject,またはMobの場合の確認
+    execute if data storage reizo_mcfunc_engin:api Trigger.run.Entry{Type:"mob"} run function reizo_mcfunc_engin:api/trigger/core/run/check/entity/mob with storage reizo_mcfunc_engin:api Trigger.run.Entry
+    execute if data storage reizo_mcfunc_engin:api Trigger.run.Entry{Type:"object"} run function reizo_mcfunc_engin:api/trigger/core/run/check/entity/object with storage reizo_mcfunc_engin:api Trigger.run.Entry
+
+# チェックしても1bじゃないならデータを消去
+execute unless data storage reizo_mcfunc_engin:api Trigger.run{Check:1b} run data remove storage reizo_mcfunc_engin:api Trigger.run.Entry
 
 # 実行
 function reizo_mcfunc_engin:api/trigger/core/run/call.m with storage reizo_mcfunc_engin:api Trigger.run.Entry

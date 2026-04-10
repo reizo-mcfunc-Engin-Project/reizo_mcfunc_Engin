@@ -15,3 +15,5 @@
     function reizo_mcfunc_engin:api/trigger/core/run/slot_check/get_data/foreach
     # 手に入れたデータをチェック！
     function reizo_mcfunc_engin:api/trigger/core/run/slot_check/check/foreach
+    # お掃除
+    data remove storage reizo_mcfunc_engin:api Trigger.run.Item
