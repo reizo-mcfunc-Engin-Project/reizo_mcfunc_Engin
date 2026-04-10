@@ -6,3 +6,4 @@
 
 # print!
 # tellraw @a "EXAMPLE TRIGGER!"
+tellraw @a {"storage":"reizo_mcfunc_engin:context",nbt:"data.Registry.Slot"}

@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:api/trigger/core/run/slot_check/_
+#> reizo_mcfunc_engin:api/trigger/core/run/check/item/_
 #
 # 
 #
@@ -12,8 +12,8 @@
     # お掃除
     data remove storage reizo_mcfunc_engin:item Register
     # 実行スロット分のスロットにあるアイテムを取得
-    function reizo_mcfunc_engin:api/trigger/core/run/slot_check/get_data/foreach
+    function reizo_mcfunc_engin:api/trigger/core/run/check/item/get_data/foreach
     # 手に入れたデータをチェック！
-    function reizo_mcfunc_engin:api/trigger/core/run/slot_check/check/foreach
+    function reizo_mcfunc_engin:api/trigger/core/run/check/item/foreach
     # お掃除
     data remove storage reizo_mcfunc_engin:api Trigger.run.Item
