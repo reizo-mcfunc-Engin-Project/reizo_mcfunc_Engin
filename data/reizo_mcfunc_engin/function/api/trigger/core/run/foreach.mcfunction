@@ -19,10 +19,18 @@ execute unless data storage reizo_mcfunc_engin:api Trigger.run{Check:1b} run dat
 # 実行
 function reizo_mcfunc_engin:api/trigger/core/run/call.m with storage reizo_mcfunc_engin:api Trigger.run.Entry
 
+# もし自分のファイルが無かったら継承元のファイルを呼び出す。
+    execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:api Trigger.run{Implement:1b} run function reizo_mcfunc_engin:api/trigger/core/run/super.m with storage reizo_mcfunc_engin:api Trigger.run.Entry
+    data remove storage reizo_mcfunc_engin:api Trigger.run.Implement
+
 # お掃除
     data remove storage reizo_mcfunc_engin:api Trigger.run.Registry[0]
     data remove storage reizo_mcfunc_engin:api Trigger.run.Entry
     data remove storage reizo_mcfunc_engin:api Trigger.run.Check
+    data remove storage reizo_mcfunc_engin:context data
+    data remove storage reizo_mcfunc_engin:context Args
+    data remove storage reizo_mcfunc_engin:context origin_Args
+    data remove storage reizo_mcfunc_engin:context this
 
 # 先頭が残るなら再帰
 execute if data storage reizo_mcfunc_engin:api Trigger.run.Registry[0] run function reizo_mcfunc_engin:api/trigger/core/run/foreach

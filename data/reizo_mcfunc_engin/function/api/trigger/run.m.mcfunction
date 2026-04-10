@@ -16,7 +16,3 @@ function reizo_mcfunc_engin:api/trigger/core/run/foreach
 # お掃除
     data remove storage reizo_mcfunc_engin:api Args.Trigger
     data remove storage reizo_mcfunc_engin:api Trigger.run
-    data remove storage reizo_mcfunc_engin:context data
-    data remove storage reizo_mcfunc_engin:context Args
-    data remove storage reizo_mcfunc_engin:context origin_Args
-    data remove storage reizo_mcfunc_engin:context this
