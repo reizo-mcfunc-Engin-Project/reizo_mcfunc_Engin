@@ -10,6 +10,10 @@ data modify storage reizo_mcfunc_engin:api Trigger.run.Entry set from storage re
 # トリガー名をセット
 data modify storage reizo_mcfunc_engin:api Trigger.run.Entry.trigger set from storage reizo_mcfunc_engin:api Args.Trigger.run.trigger
 
+# タイプがアイテムなら現在のスロットを確認
+execute if data storage reizo_mcfunc_engin:api Trigger.run.Entry{Type:"item"} run function reizo_mcfunc_engin:api/trigger/core/run/slot_check/_
+execute if data storage reizo_mcfunc_engin:api Trigger.run.Entry{Type:"item"} unless data storage reizo_mcfunc_engin:api Trigger.run.Item.Check{Flag:1b} run return run data remove storage reizo_mcfunc_engin:api Trigger.run.Entry
+
 # 実行
 function reizo_mcfunc_engin:api/trigger/core/run/call.m with storage reizo_mcfunc_engin:api Trigger.run.Entry
 

@@ -14,4 +14,5 @@ $data modify storage reizo_mcfunc_engin:api Trigger.run.Registry set from storag
 function reizo_mcfunc_engin:api/trigger/core/run/foreach
 
 # お掃除
-data remove storage reizo_mcfunc_engin:api Args.Trigger
+    data remove storage reizo_mcfunc_engin:api Args.Trigger
+    data remove storage reizo_mcfunc_engin:api Trigger.run
