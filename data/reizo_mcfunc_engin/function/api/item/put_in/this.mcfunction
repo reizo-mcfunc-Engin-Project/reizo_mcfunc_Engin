@@ -4,6 +4,9 @@
 #
 # @api
 
+# このAPIを実行したということを宣言する
+data modify storage reizo_mcfunc_engin:api PutIn.hasUsed set value 1b
+
 # アイテムをboxにPush
 function reizo_mcfunc_engin:api/item/core/put_in/push
 
@@ -16,6 +19,4 @@ function reizo_mcfunc_engin:api/item/core/put_in/push
 
 # boxに入れたアイテムを手に戻す
 function reizo_mcfunc_engin:api/item/core/put_in/pop
-
-# お掃除
-data remove storage reizo_mcfunc_engin:item InThis
+# tellraw @a {"entity":"@s",nbt:'SelectedItem.components."minecraft:custom_data".Item.this'}

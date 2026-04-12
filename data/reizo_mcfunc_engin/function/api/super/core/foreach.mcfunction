@@ -38,5 +38,10 @@ function reizo_mcfunc_engin:api/super/core/run.m with storage reizo_mcfunc_engin
     function reizo_mcfunc_engin:asset/.manager/common/context/this/pop
     function reizo_mcfunc_engin:asset/.manager/common/context/data/pop
 
+# もしTypeがItemでPutIn APIを使用したのならデータをマージする
+    data modify storage reizo_mcfunc_engin:api Super.Type set from storage reizo_mcfunc_engin:api Args.Super[-1].Type
+    execute if data storage reizo_mcfunc_engin:api {Super:{Type:"item"},PutIn:{hasUsed:1b}} run function reizo_mcfunc_engin:api/super/core/item_data_merge/_
+    data remove storage reizo_mcfunc_engin:api Super.Type
+
 # 先頭のデータが残るなら再帰
 execute if data storage reizo_mcfunc_engin:api Args.Super[-1].Extends[0] run function reizo_mcfunc_engin:api/super/core/foreach
