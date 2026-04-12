@@ -1,13 +1,22 @@
 #> reizo_mcfunc_engin:api/item/put_in/this
 #
-# 
+# お好きなときにthisを中に！！！
 #
 # @api
 
-# 動作スロットをストレージにして取得
-execute store result storage reizo_mcfunc_engin:api Args.Item.RunSlot int 1 run scoreboard players get $Item.foreach.RunSlot reizo_mcfunc_Engin.Temp
+# このAPIを実行したということを宣言する
+data modify storage reizo_mcfunc_engin:api PutIn.hasUsed set value 1b
+
+# アイテムをboxにPush
+function reizo_mcfunc_engin:api/item/core/put_in/push
 
 # カスタムデータに格納する。
-    execute if score $Item.foreach.RunSlot reizo_mcfunc_Engin.Temp matches -6..-2 run return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/copy/equipment.m with storage reizo_mcfunc_engin:context
-    execute if score $Item.foreach.RunSlot reizo_mcfunc_Engin.Temp matches -1 run return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/copy/selected_item.m with storage reizo_mcfunc_engin:context
-    function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/copy/slot.m with storage reizo_mcfunc_engin:api Args.Item.RunSlot
+    # boxに移動したアイテムにデータを適応
+    # tellraw @a {"storage":"reizo_mcfunc_engin:context",nbt:"this",color:"green"}
+    data modify block 10000 0 10000 Items[0].components."minecraft:custom_data".Item.this set from storage reizo_mcfunc_engin:context this
+    # thisがないならデータを消去
+    execute unless data storage reizo_mcfunc_engin:context this run data remove block 10000 0 10000 Items[0].components."minecraft:custom_data".Item.this
+
+# boxに入れたアイテムを手に戻す
+function reizo_mcfunc_engin:api/item/core/put_in/pop
+# tellraw @a {"entity":"@s",nbt:'SelectedItem.components."minecraft:custom_data".Item.this'}
