@@ -4,9 +4,6 @@
 #
 # @api
 
-# このAPIを実行したということを宣言する
-data modify storage reizo_mcfunc_engin:api PutIn.hasUsed set value 1b
-
 # アイテムをboxにPush
 function reizo_mcfunc_engin:api/item/core/put_in/push
 
