@@ -28,6 +28,9 @@
 # メソッド実行
 function reizo_mcfunc_engin:api/super/core/run.m with storage reizo_mcfunc_engin:api Args.Super[-1]
 
+# 現在のthisを一時的に保存する
+data modify storage reizo_mcfunc_engin:api Super.this set from storage reizo_mcfunc_engin:context this
+
 # お掃除
     data remove storage reizo_mcfunc_engin:api Args.Super[-1].Extends[0]
     data remove storage reizo_mcfunc_engin:api Args.Super[-1].ID
@@ -37,6 +40,10 @@ function reizo_mcfunc_engin:api/super/core/run.m with storage reizo_mcfunc_engin
     function reizo_mcfunc_engin:asset/.manager/common/context/args/pop
     function reizo_mcfunc_engin:asset/.manager/common/context/this/pop
     function reizo_mcfunc_engin:asset/.manager/common/context/data/pop
+
+# thisをFieldにマージする
+    data modify storage reizo_mcfunc_engin:context this set from storage reizo_mcfunc_engin:api Super.this
+    data remove storage reizo_mcfunc_engin:api Super.this
 
 # 先頭のデータが残るなら再帰
 execute if data storage reizo_mcfunc_engin:api Args.Super[-1].Extends[0] run function reizo_mcfunc_engin:api/super/core/foreach
