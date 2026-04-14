@@ -30,3 +30,10 @@ https://github.com/Hirobao1/CustomEnchant_PlayerMotion
 
 #### こま氏の距離測定ライブラリ
 https://github.com/komaramune/km-distance
+
+### TSB
+https://github.com/ProjectTSB/TheSkyBlessing\
+
+今回これを作るにあたってものすごく参考にしたものです！\
+設計思想はここから取っているといっても過言ではない！\
+**みんなもTSB、やろうな！！！**
