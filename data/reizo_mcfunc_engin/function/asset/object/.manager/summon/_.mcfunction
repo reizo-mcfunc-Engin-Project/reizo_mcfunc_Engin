@@ -9,3 +9,8 @@ function reizo_mcfunc_engin:asset/object/.manager/register/run.m with storage re
 
 # 召喚処理
 function reizo_mcfunc_engin:asset/object/.manager/summon/summon
+
+# お掃除
+    data remove storage reizo_mcfunc_engin:object Register
+    data remove storage reizo_mcfunc_engin:object Field
+    data remove storage reizo_mcfunc_engin:context Register

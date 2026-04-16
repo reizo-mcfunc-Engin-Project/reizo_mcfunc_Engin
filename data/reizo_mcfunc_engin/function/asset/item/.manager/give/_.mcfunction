@@ -11,8 +11,6 @@ function reizo_mcfunc_engin:asset/item/.manager/register/run.m with storage reiz
 function reizo_mcfunc_engin:asset/item/.manager/give/give
 
 # お掃除
-data remove storage reizo_mcfunc_engin:item ID
-data remove storage reizo_mcfunc_engin:item namespace
-data remove storage reizo_mcfunc_engin:item Register
-data remove storage reizo_mcfunc_engin:item Field
-data remove storage reizo_mcfunc_engin:context Register
+    data remove storage reizo_mcfunc_engin:item Register
+    data remove storage reizo_mcfunc_engin:item Field
+    data remove storage reizo_mcfunc_engin:context Register
