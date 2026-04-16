@@ -22,5 +22,5 @@ data modify storage reizo_mcfunc_engin:api Super.IsFirstExtends append value {_:
 function reizo_mcfunc_engin:api/super/core/foreach
 
 # お掃除
-    data remove storage reizo_mcfunc_engin:api Args.Super[-1].Value
+    data remove storage reizo_mcfunc_engin:api Args.Super[-1]
     data remove storage reizo_mcfunc_engin:api Super
