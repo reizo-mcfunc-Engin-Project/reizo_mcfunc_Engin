@@ -4,6 +4,9 @@
 #
 # @api
 
+# 退避
+function reizo_mcfunc_engin:asset/.manager/common/context/args/stash
+
 # 空の空間を作成
 data modify storage reizo_mcfunc_engin:api Args.Super append value {}
 
@@ -24,3 +27,6 @@ function reizo_mcfunc_engin:api/super/core/foreach
 # お掃除
     data remove storage reizo_mcfunc_engin:api Args.Super[-1]
     data remove storage reizo_mcfunc_engin:api Super
+
+# 解放
+function reizo_mcfunc_engin:asset/.manager/common/context/args/pop
