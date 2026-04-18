@@ -7,6 +7,9 @@
 # 登録処理
 function reizo_mcfunc_engin:asset/mob/.manager/register/run.m with storage reizo_mcfunc_engin:context Args
 
+# 継承している場合は、継承元のRegisterを使う
+execute if data storage reizo_mcfunc_engin:item Register.Extends run function reizo_mcfunc_engin:api/extends/_.m {Type:"mob"}
+
 # 召喚処理
 function reizo_mcfunc_engin:asset/mob/.manager/summon/summon
 
