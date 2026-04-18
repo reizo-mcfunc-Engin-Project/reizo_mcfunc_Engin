@@ -18,13 +18,7 @@ data modify storage reizo_mcfunc_engin:context data.Registry.Extends set from st
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
     execute if data storage reizo_mcfunc_engin:item Register.Extends unless data storage reizo_mcfunc_engin:item {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"item",Method:"give/_"}
     data remove storage reizo_mcfunc_engin:item Implement
-
-tellraw @a {"storage":"reizo_mcfunc_engin:item",nbt:"Register.Extends"}
-# 継承している場合は、継承元のRegisterを使う
-execute if data storage reizo_mcfunc_engin:item Register.Extends run function reizo_mcfunc_engin:api/super/_.m {Type:"item",Method:"register/_"}
-
-# お掃除
-data remove storage reizo_mcfunc_engin:context data.Registry.Extends
+    data remove storage reizo_mcfunc_engin:context data.Registry.Extends
 
 # Init処理
 execute as @e[tag=reizo_mcfunc_Engin.Item.Init,type=item] at @s run \
