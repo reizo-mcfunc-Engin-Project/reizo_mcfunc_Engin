@@ -7,8 +7,6 @@
 # Push
 $function reizo_mcfunc_engin:asset/$(Type)/.manager/context/register/push
 
-tellraw @a "!"
-
 # 引数取得
     data modify storage reizo_mcfunc_engin:api Args.Extends.data append from storage reizo_mcfunc_engin:context Register.Extends
     $data modify storage reizo_mcfunc_engin:api Args.Extends.Type set value "$(Type)"
@@ -33,11 +31,15 @@ $function reizo_mcfunc_engin:asset/$(Type)/.manager/context/register/pull
 
 # お掃除
     data remove storage reizo_mcfunc_engin:api Args.Extends.data[-1]
-    data remove storage reizo_mcfunc_engin:api Args.Extends.Type
     data remove storage reizo_mcfunc_engin:api Extends.IsFirstExtends[-1]
+    data remove storage reizo_mcfunc_engin:api Args.Extends.Type
 
 #> この処理をすると一番下のクラスのデータになってしまうため、再度自分の登録を行う
     # Argsを引数とし、自分の登録を行う。
-    execute unless data storage reizo_mcfunc_engin:api Extends.IsFirstExtends[-1] run function reizo_mcfunc_engin:asset/item/.manager/register/run.m with storage reizo_mcfunc_engin:context Args
-
-tellraw @a "?"
+    function reizo_mcfunc_engin:asset/item/.manager/register/run.m with storage reizo_mcfunc_engin:context Args
+    # Push
+    $function reizo_mcfunc_engin:asset/$(Type)/.manager/context/register/push
+    # 配列はマージすると置き換えになるらしいので退避したものをここで追加
+    data modify storage reizo_mcfunc_engin:context Register.Extends set from storage reizo_mcfunc_engin:api Extends.ExtendsStash
+    # Pull
+    $function reizo_mcfunc_engin:asset/$(Type)/.manager/context/register/pull
