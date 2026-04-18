@@ -26,6 +26,9 @@ function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
 # 重複したデータを消去する
 function reizo_mcfunc_engin:api/extends/core/remove_duplicates/_
 
+# 継承情報を退避
+data modify storage reizo_mcfunc_engin:api Extends.ExtendsStash set from storage reizo_mcfunc_engin:context Register.Extends
+
 # Pull
 $function reizo_mcfunc_engin:asset/$(Type)/.manager/context/register/pull
 
