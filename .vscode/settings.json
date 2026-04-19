@@ -63,7 +63,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/summon/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin/asset/mob/%namespace%/summon/_",
+                        "#> reizo_mcfunc_engin:asset/mob/%namespace%/summon/_",
                         "#",
                         "# Mobの召喚処理",
                         "#",
@@ -91,7 +91,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/tick/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin/asset/mob/%namespace%/tick/_",
+                        "#> reizo_mcfunc_engin:asset/mob/%namespace%/tick/_",
                         "#",
                         "# Mobの常時Tick処理",
                         "#",
@@ -110,7 +110,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/init/_.mcfunction",
                     "content":[
-                        "#> reizo_mcfunc_engin/asset/mob/%namespace%/init",
+                        "#> reizo_mcfunc_engin:asset/mob/%namespace%/init",
                         "#",
                         "# MobのInit処理",
                         "#",
@@ -156,7 +156,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/object/%namespace%/summon/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin/asset/object/%namespace%/summon/_",
+                        "#> reizo_mcfunc_engin:asset/object/%namespace%/summon/_",
                         "#",
                         "# Objectの召喚処理",
                         "#",
@@ -184,7 +184,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/object/%namespace%/tick/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin/asset/object/%namespace%/tick/_",
+                        "#> reizo_mcfunc_engin:asset/object/%namespace%/tick/_",
                         "#",
                         "# Objectの常時Tick処理",
                         "#",
@@ -203,7 +203,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/object/%namespace%/init/_.mcfunction",
                     "content":[
-                        "#> reizo_mcfunc_engin/asset/object/%namespace%/init/_",
+                        "#> reizo_mcfunc_engin:asset/object/%namespace%/init/_",
                         "#",
                         "# ",
                         "#",
