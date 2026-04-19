@@ -29,8 +29,8 @@ function reizo_mcfunc_engin:api/extends/core/remove_duplicates/_
 # 継承情報を退避
 data modify storage reizo_mcfunc_engin:api Extends.ExtendsStash set from storage reizo_mcfunc_engin:context Register.Extends
 
-# Pull
-$function reizo_mcfunc_engin:asset/$(Type)/.manager/context/register/pull
+# 現在、Registerが一番抽象度の高いクラスになっているため、逆にして実行する
+function reizo_mcfunc_engin:api/extends/core/reverse/_
 
 # お掃除
     data remove storage reizo_mcfunc_engin:api Args.Extends.data[-1]
