@@ -1,0 +1,52 @@
+{
+  "Super": {
+    "prefix": "super",
+    "body": [
+        "# 親クラスのメソッドを呼ぶ",
+        "function reizo_mcfunc_engin:api/super/_.m {Type:\"\",Method:\"\"}"
+    ]
+  },
+  "Call Method": {
+    "prefix": "call",
+    "body": [
+        "# メソッドを呼ぶ",
+        "function reizo_mcfunc_engin:api/call/_protected.m {Type:\"\",Method:\"\"}"
+    ]
+  },
+  "Stash of Context this": {
+    "prefix": "this/stash",
+    "body": [
+        "# 他のやつにこのデータが干渉してほしくないので退避",
+        "function reizo_mcfunc_engin:asset/.manager/common/context/this/stash"
+    ]
+  },
+  "Pop of Context this": {
+    "prefix": "this/pop",
+    "body": [
+        "# 退避したデータを解放する",
+        "function reizo_mcfunc_engin:asset/.manager/common/context/this/pop"
+    ]
+  },
+  "Stash of Context data": {
+    "prefix": "data/stash",
+    "body": [
+        "# 他のやつにこのデータが干渉してほしくないので退避",
+        "function reizo_mcfunc_engin:asset/.manager/common/context/data/stash"
+    ]
+  },
+  "Pop of Context data": {
+    "prefix": "data/pop",
+    "body": [
+        "# 退避したデータを解放する",
+        "function reizo_mcfunc_engin:asset/.manager/common/context/data/pop"
+    ]
+  },
+  "Print Out Test": {
+    "prefix": "test",
+    "body": [
+        "",
+        "tellraw @a {\"text\":\"LAM!\",color:\"#007D7A\"}",
+        ""
+    ]
+  }
+}
