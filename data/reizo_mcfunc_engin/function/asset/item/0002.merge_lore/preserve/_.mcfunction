@@ -4,6 +4,9 @@
 #
 # @within function reizo_mcfunc_engin:asset/item/0001.abstract_item/init/_
 
+# 最初にloreの削除を行う
+data remove entity @s Item.components."minecraft:lore"
+
 # 取得したデータから、マージを行う
 function reizo_mcfunc_engin:asset/item/0002.merge_lore/preserve/merge/_
 
