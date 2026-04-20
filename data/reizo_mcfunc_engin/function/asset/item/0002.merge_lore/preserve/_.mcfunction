@@ -4,7 +4,7 @@
 #
 # @within function reizo_mcfunc_engin:asset/item/0001.abstract_item/init/_
 
-# 最初にloreの削除を行う
+# 既存のlroeが残っていると二重にloreが存在してしまうため、最初に既存のloreの削除を行う
 data remove entity @s Item.components."minecraft:lore"
 
 # 取得したデータから、マージを行う
