@@ -32,11 +32,6 @@ data modify storage reizo_mcfunc_engin:api Extends.ExtendsStash set from storage
 # 現在、Registerが一番抽象度の高いクラスになっているため、逆にして実行する
 function reizo_mcfunc_engin:api/extends/core/reverse/_
 
-# お掃除
-    data remove storage reizo_mcfunc_engin:api Args.Extends.data[-1]
-    data remove storage reizo_mcfunc_engin:api Extends.IsFirstExtends[-1]
-    data remove storage reizo_mcfunc_engin:api Args.Extends.Type
-
 #> この処理をすると一番下のクラスのデータになってしまうため、再度自分の登録を行う
     # Argsを引数とし、自分の登録を行う。
     function reizo_mcfunc_engin:asset/item/.manager/register/run.m with storage reizo_mcfunc_engin:context Args
@@ -46,3 +41,7 @@ function reizo_mcfunc_engin:api/extends/core/reverse/_
     data modify storage reizo_mcfunc_engin:context Register.Extends set from storage reizo_mcfunc_engin:api Extends.ExtendsStash
     # Pull
     $function reizo_mcfunc_engin:asset/$(Type)/.manager/context/register/pull
+
+# お掃除
+    data remove storage reizo_mcfunc_engin:api Args.Extends
+    data remove storage reizo_mcfunc_engin:api Extends
