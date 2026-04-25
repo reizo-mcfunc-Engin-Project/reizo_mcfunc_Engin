@@ -16,4 +16,6 @@ function reizo_mcfunc_engin:asset/item/.manager/give/give
 # お掃除
     data remove storage reizo_mcfunc_engin:item Register
     data remove storage reizo_mcfunc_engin:item Field
+    data remove storage reizo_mcfunc_engin:context Args
+    data remove storage reizo_mcfunc_engin:context data
     data remove storage reizo_mcfunc_engin:context Register
