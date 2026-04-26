@@ -5,7 +5,7 @@
 # @within function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/push/not_hold
 
 # Slot
-execute if score $Item.foreach.Slot reizo_mcfunc_Engin.Temp matches 0..26 run return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/pop/core/not_hold/slot
+execute if score $Item.foreach.Slot reizo_mcfunc_Engin.Temp matches 0..35 run return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/pop/core/not_hold/slot
 
 # SelectedItem
 execute if score $Item.foreach.Slot reizo_mcfunc_Engin.Temp matches -1 run return run item replace entity @s weapon.mainhand from block 10000 0 10000 container.0

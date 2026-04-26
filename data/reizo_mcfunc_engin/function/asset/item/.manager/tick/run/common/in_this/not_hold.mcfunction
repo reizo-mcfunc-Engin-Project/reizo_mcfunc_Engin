@@ -8,7 +8,6 @@
     # 一度boxに移動
     function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/push/not_hold
     # boxに移動したアイテムにデータを適応
-    # tellraw @a {"storage":"reizo_mcfunc_engin:context",nbt:"this",color:"green"}
     data modify block 10000 0 10000 Items[0].components."minecraft:custom_data".Item.this set from storage reizo_mcfunc_engin:context this
     # thisがないならデータを消去
     execute unless data storage reizo_mcfunc_engin:context this run data remove block 10000 0 10000 Items[0].components."minecraft:custom_data".Item.this
