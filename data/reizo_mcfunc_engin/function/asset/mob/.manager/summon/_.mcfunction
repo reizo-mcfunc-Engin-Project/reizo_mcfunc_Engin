@@ -16,4 +16,6 @@ function reizo_mcfunc_engin:asset/mob/.manager/summon/summon
 # お掃除
     data remove storage reizo_mcfunc_engin:mob Register
     data remove storage reizo_mcfunc_engin:mob Field
+    data remove storage reizo_mcfunc_engin:context Args
+    data remove storage reizo_mcfunc_engin:context data
     data remove storage reizo_mcfunc_engin:context Register
