@@ -15,6 +15,9 @@
 # メソッド実行
 function reizo_mcfunc_engin:api/super/core/run.m with storage reizo_mcfunc_engin:api Args.Super[-1].Value
 
+# 最初の継承でないことを示す
+data modify storage reizo_mcfunc_engin:api Super.IsFirstExtends[-1]._._ set value 0b
+
 # お掃除
     data remove storage reizo_mcfunc_engin:api Args.Super[-1].Value.Extends[0]
     data remove storage reizo_mcfunc_engin:api Args.Super[-1].Value.ID

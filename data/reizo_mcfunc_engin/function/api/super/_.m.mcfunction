@@ -18,8 +18,8 @@ execute if data storage reizo_mcfunc_engin:api Super.IsFirstExtends[-1]._{_:0b} 
     $data modify storage reizo_mcfunc_engin:api Args.Super[-1].Value.Type set value "$(Type)"
     $data modify storage reizo_mcfunc_engin:api Args.Super[-1].Value.Method set value "$(Method)"
 
-# 最初の継承ではないことを示す。
-data modify storage reizo_mcfunc_engin:api Super.IsFirstExtends append value {_:{_:0b}}
+# 最初の継承であることを示す
+data modify storage reizo_mcfunc_engin:api Super.IsFirstExtends append value {_:{_:1b}}
 
 # メソッドを叩く
 function reizo_mcfunc_engin:api/super/core/foreach
