@@ -13,7 +13,7 @@ return run tellraw @s {"text":"抽象的なItemであるため、取得できま
 function reizo_mcfunc_engin:asset/item/.manager/give/run.m with storage reizo_mcfunc_engin:context Args
 
 # データの取得
-data modify storage reizo_mcfunc_engin:context data.Registry.Extends set from storage reizo_mcfunc_engin:item Register.Extends
+data modify storage reizo_mcfunc_engin:context data.Registry.Extends append from storage reizo_mcfunc_engin:item Register.Extends[0]
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
     execute if data storage reizo_mcfunc_engin:item Register.Extends unless data storage reizo_mcfunc_engin:item {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"item",Method:"give/_"}
