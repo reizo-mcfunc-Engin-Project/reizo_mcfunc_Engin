@@ -11,15 +11,11 @@ data modify storage reizo_mcfunc_engin:context data set from storage reizo_mcfun
 function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/_
 
 # thisを入れる
-    # 一度boxに移動
-        data modify storage reizo_mcfunc_engin:item InThis.Args.Slot set from storage reizo_mcfunc_engin:item Inventory.Top.components."minecraft:custom_data".Item.Registry.Slot[0]
-        function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/push/slot.m with storage reizo_mcfunc_engin:item InThis.Args
-    # boxに移動したアイテムにデータを適応
-    # tellraw @a {"storage":"reizo_mcfunc_engin:context",nbt:"this",color:"green"}
-    data modify block 10000 0 10000 Items[0].components."minecraft:custom_data".Item.this set from storage reizo_mcfunc_engin:context this
-    # thisがないならデータを消去
-    execute unless data storage reizo_mcfunc_engin:context this run data remove block 10000 0 10000 Items[0].components."minecraft:custom_data".Item.this
-    # アイテムを手に戻す
-    function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/pop/slot.m with storage reizo_mcfunc_engin:item InThis.Args
+    # Slot取得
+    execute store result storage reizo_mcfunc_engin:item InThis.Slot int 1 run scoreboard players get $Item.foreach.Slot reizo_mcfunc_Engin.Temp
+    # this取得
+    data modify storage reizo_mcfunc_engin:item InThis.data set from storage reizo_mcfunc_engin:context this
+    # コンポーネントにぶち込む
+    function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/slot.m with storage reizo_mcfunc_engin:item InThis
     # お掃除
     data remove storage reizo_mcfunc_engin:item InThis
