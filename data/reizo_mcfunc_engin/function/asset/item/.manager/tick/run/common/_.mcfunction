@@ -6,7 +6,7 @@
 
 # 必要なデータの取得
     function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/get_data/args
-    function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/get_data/this
+    data modify storage reizo_mcfunc_engin:context this set from storage reizo_mcfunc_engin:context data.Field
 
 # 実行
 function reizo_mcfunc_engin:asset/item/.manager/tick/run.m with storage reizo_mcfunc_engin:context Args

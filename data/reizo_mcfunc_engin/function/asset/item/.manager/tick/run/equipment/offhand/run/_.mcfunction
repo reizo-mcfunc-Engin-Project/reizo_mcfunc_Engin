@@ -11,4 +11,4 @@ data modify storage reizo_mcfunc_engin:context data set from storage reizo_mcfun
 function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/_
 
 # thisを入れる
-item modify entity @s weapon.offhand {function:"copy_custom_data",source:{type:"storage",source:"reizo_mcfunc_engin:context"},ops:[{op:"replace",source:"this",target:"Item.this"}]}
+item modify entity @s weapon.offhand {function:"copy_custom_data",source:{type:"storage",source:"reizo_mcfunc_engin:context"},ops:[{op:"replace",source:"this",target:"Item.Field"}]}
