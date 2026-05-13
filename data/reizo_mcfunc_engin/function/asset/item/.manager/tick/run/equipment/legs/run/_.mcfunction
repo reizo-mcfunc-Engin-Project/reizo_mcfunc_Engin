@@ -11,12 +11,4 @@ data modify storage reizo_mcfunc_engin:context data set from storage reizo_mcfun
 function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/_
 
 # thisを入れる
-    # 一度boxに移動
-    item replace block 10000 0 10000 container.0 from entity @s armor.legs
-    # boxに移動したアイテムにデータを適応
-    # tellraw @a {"storage":"reizo_mcfunc_engin:context",nbt:"this",color:"green"}
-    data modify block 10000 0 10000 Items[0].components."minecraft:custom_data".Item.this set from storage reizo_mcfunc_engin:context this
-    # thisがないならデータを消去
-    execute unless data storage reizo_mcfunc_engin:context this run data remove block 10000 0 10000 Items[0].components."minecraft:custom_data".Item.this
-    # アイテムを手に戻す
-    item replace entity @s armor.legs from block 10000 0 10000 container.0
+item modify entity @s armor.legs {function:"copy_custom_data",source:{type:"storage",source:"reizo_mcfunc_engin:context"},ops:[{op:"replace",source:"this",target:"Item.this"}]}
