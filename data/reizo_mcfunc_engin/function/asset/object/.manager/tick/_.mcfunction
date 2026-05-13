@@ -14,7 +14,7 @@ function reizo_mcfunc_engin:asset/object/.manager/set_data/tick/_
 # tick処理を動かすぜ！
     function reizo_mcfunc_engin:asset/.manager/common/context/args/push
     function reizo_mcfunc_engin:asset/.manager/common/context/data/push
-    data modify storage reizo_mcfunc_engin:context this set from entity @s data.this
+    data modify storage reizo_mcfunc_engin:context this set from entity @s data.Field
     function reizo_mcfunc_engin:asset/object/.manager/tick/run.m with storage reizo_mcfunc_engin:context Args
 
 # 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
