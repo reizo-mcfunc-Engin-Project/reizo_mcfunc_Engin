@@ -21,8 +21,8 @@ function reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/_
 execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:mob {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"tick/_"}
 
 # thisを戻す
-    data modify entity @s data.this set from storage reizo_mcfunc_engin:context this
-    execute unless data storage reizo_mcfunc_engin:context this run data remove entity @s data.this
+    data modify entity @s data.Field set from storage reizo_mcfunc_engin:context this
+    execute unless data storage reizo_mcfunc_engin:context this run data remove entity @s data.Field
 
 # お掃除
 data remove storage reizo_mcfunc_engin:context Args
