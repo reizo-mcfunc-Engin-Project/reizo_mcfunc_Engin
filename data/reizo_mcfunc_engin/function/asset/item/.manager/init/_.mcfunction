@@ -20,6 +20,8 @@ function reizo_mcfunc_engin:asset/item/.manager/set_data/init/_
     # dataから不要なデータの削除
         data remove storage reizo_mcfunc_engin:context data.Args
         data remove storage reizo_mcfunc_engin:context data.this
+    # thisを入れる
+    data modify storage reizo_mcfunc_engin:context this set from storage reizo_mcfunc_engin:context data.Field
 
 # Init処理呼び出し
 function reizo_mcfunc_engin:asset/item/.manager/init/run.m with storage reizo_mcfunc_engin:context Args

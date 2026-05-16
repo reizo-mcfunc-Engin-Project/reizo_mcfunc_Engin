@@ -22,6 +22,9 @@ function reizo_mcfunc_engin:asset/.manager/common/context/data/push
 # データを送る
 function reizo_mcfunc_engin:asset/.manager/common/context/data/push
 
+# thisを入れる
+data modify storage reizo_mcfunc_engin:context this set from storage reizo_mcfunc_engin:context data.Field
+
 # IDと名前空間から指定したObjectのInit処理呼び出し
 function reizo_mcfunc_engin:asset/object/.manager/init/run.m with storage reizo_mcfunc_engin:context Args
 
