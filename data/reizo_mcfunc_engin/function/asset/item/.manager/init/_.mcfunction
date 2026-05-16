@@ -31,7 +31,7 @@ function reizo_mcfunc_engin:asset/item/.manager/init/run.m with storage reizo_mc
     data remove storage reizo_mcfunc_engin:item Implement
 
 # thisをCustomDataへ
-data modify entity @s Item.components."minecraft:custom_data".Item.this set from storage reizo_mcfunc_engin:context this
+data modify entity @s Item.components."minecraft:custom_data".Item.Field set from storage reizo_mcfunc_engin:context this
 
 # お掃除
 data remove storage reizo_mcfunc_engin:context data

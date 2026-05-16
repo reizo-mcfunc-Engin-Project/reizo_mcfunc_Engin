@@ -32,7 +32,7 @@ function reizo_mcfunc_engin:asset/mob/.manager/init/run.m with storage reizo_mcf
     data remove storage reizo_mcfunc_engin:mob Implement
 
 # thisをdataに移動
-data modify entity @s data.this set from storage reizo_mcfunc_engin:context this
+data modify entity @s data.Field set from storage reizo_mcfunc_engin:context this
 
 # お掃除
 data remove storage reizo_mcfunc_engin:context data
