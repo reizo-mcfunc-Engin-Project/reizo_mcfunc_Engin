@@ -34,7 +34,7 @@ function reizo_mcfunc_engin:api/extends/core/reverse/_
 
 #> この処理をすると一番下のクラスのデータになってしまうため、再度自分の登録を行う
     # Argsを引数とし、自分の登録を行う。
-    function reizo_mcfunc_engin:api/extends/core/register.m with storage reizo_mcfunc_engin:api Args.Extends
+    $function reizo_mcfunc_engin:asset/$(Type)/.manager/register/run.m with storage reizo_mcfunc_engin:context Args
     # Push
     $function reizo_mcfunc_engin:asset/$(Type)/.manager/context/register/push
     # 配列はマージすると置き換えになるらしいので退避したものをここで追加
