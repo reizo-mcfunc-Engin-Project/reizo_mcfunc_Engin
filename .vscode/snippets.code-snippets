@@ -13,6 +13,20 @@
         "function reizo_mcfunc_engin:api/call/_protected.m {Type:\"\",Method:\"\"}"
     ]
   },
+  "Stash of Context Args": {
+    "prefix": "args/stash",
+    "body": [
+        "# 既存にargsが存在する可能性があるため、退避する。",
+        "function reizo_mcfunc_engin:asset/.manager/common/context/args/stash"
+    ]
+  },
+  "Pop of Context args": {
+    "prefix": "args/pop",
+    "body": [
+        "# 退避したデータを解放する",
+        "function reizo_mcfunc_engin:asset/.manager/common/context/args/pop"
+    ]
+  },
   "Stash of Context this": {
     "prefix": "this/stash",
     "body": [
