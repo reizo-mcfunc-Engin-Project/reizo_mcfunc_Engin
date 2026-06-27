@@ -3,14 +3,14 @@
     "prefix": "super",
     "body": [
         "# 親クラスのメソッドを呼ぶ",
-        "function reizo_mcfunc_engin:api/super/_.m {Type:\"\",Method:\"\"}"
+        "function reizo_mcfunc_engin:api/super/_.m {Type:\"${TM_DIRECTORY/.*\\\\asset\\\\([^\\\\]+)\\\\.*$/$1/}\",Method:\"${TM_DIRECTORY/.*\\\\([^\\\\]+)$/$1/}/${TM_FILENAME_BASE}\"}"
     ]
   },
   "Call Method": {
     "prefix": "call",
     "body": [
         "# メソッドを呼ぶ",
-        "function reizo_mcfunc_engin:api/call/_protected.m {Type:\"\",Method:\"\"}"
+        "function reizo_mcfunc_engin:api/call/_protected.m {Type:\"${TM_DIRECTORY/.*\\\\asset\\\\([^\\\\]+)\\\\.*$/$1/}\",Method:\"\"}"
     ]
   },
   "Stash of Context Args": {
