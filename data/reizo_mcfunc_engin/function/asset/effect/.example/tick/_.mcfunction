@@ -4,4 +4,4 @@
 #
 # @within function reizo_mcfunc_engin:asset/effect/.manager/tick/run.m
 
-tellraw @s "なんと！テスト用だぜこれ！TICK"
+tellraw @a "なんと！テスト用だぜこれ！TICK"
