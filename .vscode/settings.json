@@ -312,6 +312,75 @@
                     ]
                 }
             ]
+        },
+                {
+            "label": "Effect / 登録処理",
+            "picked": true,
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/reizo_mcfunc_engin/function/asset/effect/%namespace%/register.mcfunction",
+                    "content":[
+                        "#> reizo_mcfunc_engin:asset/effect/%namespace%/register",
+                        "#",
+                        "# ",
+                        "#",
+                        "# @within function reizo_mcfunc_engin:asset/effect/.manager/register/run.m",
+                        "",
+                        "#> 登録処理",
+                        "    # 継承(オプション)",
+                        "    data modify storage reizo_mcfunc_engin:effect Register.Extends append value {ID:\"\",namespace:\"\"}",
+                        "    # 継承されないかどうか。 boolean型",
+                        "    data modify storage reizo_mcfunc_engin:effect Register.Final set value 1b",
+                        "    # 継承されることを前提とした、抽象的なMobかどうか。",
+                        "    data modify storage reizo_mcfunc_engin:effect Register.IsAbstract set value 0b",
+                        "    # 名前 (TextComponentsString)",
+                        "    data modify storage reizo_mcfunc_engin:effect Register.Name set value {\"text\":\"\"}",
+                        "    # 説明文 (TextComponentsString[])",
+                        "    data modify storage reizo_mcfunc_engin:effect Register.Lore set value [{\"text\":\"\"}]",
+                        "    # 残り時間 Int型",
+                        "    data modify storage reizo_mcfunc_engin:effect Register.Duration set value 100",
+                        "    # どのトリガーを使用する？",
+                        "    # data modify storage reizo_mcfunc_engin:effect Register.Trigger append value \"\""
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Effect / Tick処理",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/reizo_mcfunc_engin/function/asset/effect/%namespace%/tick/_.mcfunction",
+                    "content":[
+                        "#> reizo_mcfunc_engin:asset/effect/%namespace%/tick/_",
+                        "#",
+                        "# EffectのTick処理",
+                        "#",
+                        "# @within function reizo_mcfunc_engin:asset/effect/.manager/tick/run.m",
+                        "",
+                        "# Tick処理"
+                    ]
+                }
+            ]
+        },
+        {
+            "label": "Item / Init処理",
+            "generates": [
+                {
+                    "type": "file",
+                    "rel": "data/reizo_mcfunc_engin/function/asset/effect/%namespace%/init/_.mcfunction",
+                    "content":[
+                        "#> reizo_mcfunc_engin:asset/effect/%namespace%/init/_",
+                        "#",
+                        "# EffectのInit処理",
+                        "#",
+                        "# @within function reizo_mcfunc_engin:asset/effect/.manager/init/run.m",
+                        "",
+                        "# Init処理"
+                    ]
+                }
+            ]
         }
     ]
 }

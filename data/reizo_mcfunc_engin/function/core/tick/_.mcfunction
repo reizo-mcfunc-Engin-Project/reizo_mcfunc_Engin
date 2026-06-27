@@ -26,3 +26,8 @@ execute \
 if entity @e[type=!player,tag=reizo_mcfunc_Engin.Object] \
 as @e[type=!player,tag=reizo_mcfunc_Engin.Object] at @s run \
 function reizo_mcfunc_engin:asset/object/.manager/tick/_
+
+# Effectの処理
+execute \
+as @e[type=#reizo_mcfunc_engin:living,tag=reizo_mcfunc_Engin.HasAssetEffect] at @s run \
+function reizo_mcfunc_engin:asset/effect/.manager/tick/_
