@@ -8,7 +8,7 @@
 data modify storage reizo_mcfunc_engin:item Inventory.Top set from storage reizo_mcfunc_engin:item Inventory.foreach[0]
 
 # Slot
-function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/foreach
+function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/check.m with storage reizo_mcfunc_engin:item Inventory.Top
 
 # お掃除
 data remove storage reizo_mcfunc_engin:item Inventory.foreach[0]
