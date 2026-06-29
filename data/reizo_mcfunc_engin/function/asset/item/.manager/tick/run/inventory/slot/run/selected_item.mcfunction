@@ -4,6 +4,9 @@
 #
 # @within function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/selected_item
 
+# スコアをセットする
+scoreboard players set $Item.Slot reizo_mcfunc_Engin.Temp -1
+
 # データ取得
 data modify storage reizo_mcfunc_engin:context data set from storage reizo_mcfunc_engin:item data.SelectedItem.components."minecraft:custom_data".Item
 

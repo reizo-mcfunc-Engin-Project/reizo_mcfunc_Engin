@@ -5,7 +5,7 @@
 # @within function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/foreach
 
 # スコアにも入れておく
-execute store result score $Item.foreach.Slot reizo_mcfunc_Engin.Temp run data get storage reizo_mcfunc_engin:item Inventory.Top.Slot
+execute store result score $Item.Slot reizo_mcfunc_Engin.Temp run data get storage reizo_mcfunc_engin:item Inventory.Top.Slot
 
 #> 実行チェック
     # メインハンド
