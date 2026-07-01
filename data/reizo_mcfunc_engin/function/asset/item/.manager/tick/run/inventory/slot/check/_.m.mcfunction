@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/check.m
+#> reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/check/_.m
 #
 # 
 #
@@ -7,13 +7,7 @@
 # スコアにも入れておく
 execute store result score $Item.Slot reizo_mcfunc_Engin.Temp run data get storage reizo_mcfunc_engin:item Inventory.Top.Slot
 
-#> 実行チェック
-    # メインハンド
-    $execute \
-    if data storage reizo_mcfunc_engin:item Inventory.Top.components."minecraft:custom_data".Item.Registry.Slot[{Value:-1}] \
-    if data storage reizo_mcfunc_engin:item data.SelectedItem \
-    if data storage reizo_mcfunc_engin:item data{SelectedItemSlot:$(Slot)} run \
-    return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/run/selected_item
+# チェック
     # not_hold
     $execute \
     if data storage reizo_mcfunc_engin:item Inventory.Top.components."minecraft:custom_data".Item.Registry{NotHold:1b} \
