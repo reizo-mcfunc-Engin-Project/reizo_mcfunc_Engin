@@ -15,5 +15,6 @@ execute store result score $Item.Slot reizo_mcfunc_Engin.Temp run data get stora
     return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/run/not_hold
     # インベントリ
     $execute \
+    unless data storage reizo_mcfunc_engin:item Inventory.Top.components."minecraft:custom_data".Item.Registry{IsTicking:0b} \
     if data storage reizo_mcfunc_engin:item Inventory.Top.components."minecraft:custom_data".Item.Registry.Slot[{Value:$(Slot)b}] run \
     function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/run/_
