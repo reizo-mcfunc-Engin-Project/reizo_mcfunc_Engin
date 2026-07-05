@@ -13,13 +13,6 @@ execute if data storage reizo_mcfunc_engin:effect Register.Extends run function 
 # 付与処理
 function reizo_mcfunc_engin:asset/effect/.manager/give/give
 
-#> 実際にデータを増やす
-    # お願いOMD!
-    function #oh_my_dat:please
-    # データ適応
-        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Effects append value {}
-        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Effects[-1] set from storage reizo_mcfunc_engin:effect Effect
-
 # お掃除
     data remove storage reizo_mcfunc_engin:effect Register
     data remove storage reizo_mcfunc_engin:effect Field
@@ -27,3 +20,4 @@ function reizo_mcfunc_engin:asset/effect/.manager/give/give
     data remove storage reizo_mcfunc_engin:context Args
     data remove storage reizo_mcfunc_engin:context data
     data remove storage reizo_mcfunc_engin:context Register
+    data remove storage reizo_mcfunc_engin:context Effects

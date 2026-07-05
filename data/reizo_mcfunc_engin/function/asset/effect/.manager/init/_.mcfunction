@@ -16,6 +16,8 @@ function reizo_mcfunc_engin:asset/effect/.manager/set_data/init/_
 # Contextの作成
     data modify storage reizo_mcfunc_engin:context data set from storage reizo_mcfunc_engin:effect Effect.data
     data modify storage reizo_mcfunc_engin:context this set from storage reizo_mcfunc_engin:effect Field
+    data modify storage reizo_mcfunc_engin:context Effects append from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Effects[].Args
+    data modify storage reizo_mcfunc_engin:context Effects append from storage reizo_mcfunc_engin:context Args
 
 # IDとnamespaceからeffectごとのInit処理呼び出し
 function reizo_mcfunc_engin:asset/effect/.manager/init/run.m with storage reizo_mcfunc_engin:context Args

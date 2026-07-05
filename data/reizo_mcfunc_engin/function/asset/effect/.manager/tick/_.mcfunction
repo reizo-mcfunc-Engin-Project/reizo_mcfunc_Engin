@@ -16,6 +16,9 @@ function #oh_my_dat:please
     data modify storage reizo_mcfunc_engin:effect Effects set from storage reizo_libs:_ Out[-1]
     data remove storage reizo_libs:_ Out[-1]
 
+# Context作成
+data modify storage reizo_mcfunc_engin:context Effects append from storage reizo_mcfunc_engin:effect Effects[].Args
+
 # 各エフェクトの処理をする
 execute if data storage reizo_mcfunc_engin:effect Effects[0] run function reizo_mcfunc_engin:asset/effect/.manager/tick/foreach
 
@@ -26,4 +29,5 @@ data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Effects append 
 execute unless data storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Effects[0] run tag @s remove reizo_mcfunc_Engin.HasAssetEffect
 
 # お掃除
-data remove storage reizo_mcfunc_engin:effect NextTickEffects
+    data remove storage reizo_mcfunc_engin:effect NextTickEffects
+    data remove storage reizo_mcfunc_engin:context Effects

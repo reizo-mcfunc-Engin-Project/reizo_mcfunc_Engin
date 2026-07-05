@@ -14,3 +14,10 @@ tag @s add reizo_mcfunc_Engin.HasAssetEffect
 
 # Init処理
 function reizo_mcfunc_engin:asset/effect/.manager/init/_
+
+#> 実際にデータを増やす
+    # お願いOMD!
+    function #oh_my_dat:please
+    # データ適応
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Effects append value {}
+        data modify storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Effects[-1] set from storage reizo_mcfunc_engin:effect Effect
