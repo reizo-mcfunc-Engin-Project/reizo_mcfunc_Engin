@@ -247,7 +247,9 @@
                         "    # アイテムを持っていない場合でも動作させるかどうか。 boolean型",
                         "    # data modify storage reizo_mcfunc_engin:item Register.NotHold set value 1b",
                         "    # どのトリガーを使用する？",
-                        "    data modify storage reizo_mcfunc_engin:item Register.Trigger append value \"\""
+                        "    data modify storage reizo_mcfunc_engin:item Register.Trigger append value \"\"",
+                        "    # Tick処理をするかどうか。 boolean型 (オプション)",
+                        "    data modify storage reizo_mcfunc_engin:item Register.IsTicking set value 1b"
                     ]
                 }
             ]
@@ -313,7 +315,7 @@
                 }
             ]
         },
-                {
+        {
             "label": "Effect / 登録処理",
             "picked": true,
             "generates": [
@@ -365,7 +367,7 @@
             ]
         },
         {
-            "label": "Item / Init処理",
+            "label": "Effect / Init処理",
             "generates": [
                 {
                     "type": "file",
