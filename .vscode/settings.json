@@ -315,7 +315,7 @@
                 }
             ]
         },
-                {
+        {
             "label": "Effect / 登録処理",
             "picked": true,
             "generates": [
@@ -367,7 +367,7 @@
             ]
         },
         {
-            "label": "Item / Init処理",
+            "label": "Effect / Init処理",
             "generates": [
                 {
                     "type": "file",
