@@ -18,6 +18,7 @@ function reizo_mcfunc_engin:asset/effect/.manager/give/give
     data remove storage reizo_mcfunc_engin:effect Field
     data remove storage reizo_mcfunc_engin:effect Effect
     data remove storage reizo_mcfunc_engin:context Args
+    data remove storage reizo_mcfunc_engin:context origin_Args
     data remove storage reizo_mcfunc_engin:context data
     data remove storage reizo_mcfunc_engin:context Register
     data remove storage reizo_mcfunc_engin:context Effects

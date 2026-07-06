@@ -14,6 +14,9 @@
     $data modify storage reizo_mcfunc_engin:context Args.ID set value "$(ID)"
     $data modify storage reizo_mcfunc_engin:context Args.namespace set value "$(namespace)"
 
+# originセット
+data modify storage reizo_mcfunc_engin:context origin_Args set from storage reizo_mcfunc_engin:context Args
+
 # Asset処理起動
 function reizo_mcfunc_engin:asset/item/.manager/give/_
 

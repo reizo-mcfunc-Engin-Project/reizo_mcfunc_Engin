@@ -17,5 +17,6 @@ function reizo_mcfunc_engin:asset/object/.manager/summon/summon
     data remove storage reizo_mcfunc_engin:object Register
     data remove storage reizo_mcfunc_engin:object Field
     data remove storage reizo_mcfunc_engin:context Args
+    data remove storage reizo_mcfunc_engin:context origin_Args
     data remove storage reizo_mcfunc_engin:context data
     data remove storage reizo_mcfunc_engin:context Register
