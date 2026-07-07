@@ -6,6 +6,7 @@
 
 # すでにデータが存在する可能性があるため退避
     function reizo_mcfunc_engin:asset/.manager/common/context/args/stash
+    function reizo_mcfunc_engin:asset/.manager/common/context/origin_args/stash
     function reizo_mcfunc_engin:asset/.manager/common/context/data/stash
     function reizo_mcfunc_engin:asset/.manager/common/context/this/stash
     function reizo_mcfunc_engin:asset/.manager/common/context/register/stash
@@ -24,6 +25,7 @@ function reizo_mcfunc_engin:asset/effect/.manager/give/_
 
 # 付与処理が終わったため、解放
     function reizo_mcfunc_engin:asset/.manager/common/context/args/pop
+    function reizo_mcfunc_engin:asset/.manager/common/context/origin_args/pop
     function reizo_mcfunc_engin:asset/.manager/common/context/data/pop
     function reizo_mcfunc_engin:asset/.manager/common/context/this/pop
     function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
