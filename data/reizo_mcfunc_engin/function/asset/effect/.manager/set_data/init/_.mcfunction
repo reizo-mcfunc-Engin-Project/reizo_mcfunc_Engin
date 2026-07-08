@@ -16,3 +16,5 @@ data modify storage reizo_mcfunc_engin:effect Effect.Duration set from storage r
 # Registryに格納するもの
     # Extends
     data modify storage reizo_mcfunc_engin:effect Effect.data.Registry.Extends set from storage reizo_mcfunc_engin:effect Register.Extends
+    # Duration
+    data modify storage reizo_mcfunc_engin:effect Effect.data.Registry.Duration set from storage reizo_mcfunc_engin:effect Register.Duration
