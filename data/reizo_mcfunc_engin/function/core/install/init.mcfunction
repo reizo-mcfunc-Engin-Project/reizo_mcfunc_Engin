@@ -12,10 +12,6 @@
 team add NoCol
 team modify NoCol collisionRule never
 
-# 完了通告
-tellraw @a [{"text":"reizo_mcfunc_Enginが、"},{"text":"DownLoad",color:"aqua",hover_event:{action:"show_text",value:{text:"サンキューな！"}}},{"text":"されました。"}]
-playsound ui.toast.challenge_complete player @a ~ ~ ~ 100 1.5 1
-
 # 四角形製作用のObject
 execute \
 unless entity @e[tag=reizo_mcfunc_Engin.Object,tag=reizo_mcfunc_Engin.Object.CubeParticle,type=marker] run \
