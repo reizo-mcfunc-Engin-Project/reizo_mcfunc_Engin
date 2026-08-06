@@ -20,6 +20,8 @@ scoreboard objectives add reizo_mcfunc_Engin.KillTimer dummy "killされるま�
 scoreboard objectives add reizo_mcfunc_Engin.GetDis.Get_N.UseCount dummy
 scoreboard objectives add reizo_mcfunc_Engin.Sneaking dummy "シフトを押している。 Int型"
 scoreboard objectives add reizo_mcfunc_Engin.Sneaked dummy "シフトを押した。 Int型"
+scoreboard objectives add reizo_mcfunc_Engin.Leave custom:leave_game
+scoreboard objectives add reizo_mcfunc_Engin.Join custom:leave_game
 
 # Initが終わった後の処理
 execute \
