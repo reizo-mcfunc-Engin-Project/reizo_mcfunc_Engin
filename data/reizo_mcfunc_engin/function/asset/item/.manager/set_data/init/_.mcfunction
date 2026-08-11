@@ -13,7 +13,7 @@ data modify entity @s Item.components."minecraft:lore" set from storage reizo_mc
 # 消費
 data modify entity @s Item.components."minecraft:consumable" set from storage reizo_mcfunc_engin:item Register.Consumable
 
-# FieldをCustomDataに入れる。
+# ThisとFieldをCustomDataに入れる。
 data modify entity @s Item.components."minecraft:custom_data".Item.Field set from storage reizo_mcfunc_engin:item Field
 
 #> 実行されるスロット
@@ -22,8 +22,14 @@ data modify entity @s Item.components."minecraft:custom_data".Item.Field set fro
     # お掃除
     data remove storage reizo_mcfunc_engin:item Registry.Slot
 
+# トリガー
+execute if data storage reizo_mcfunc_engin:item Register.Trigger run function reizo_mcfunc_engin:asset/item/.manager/set_data/init/trigger/_
+
 # Registryに格納するもの
     # Extends
     data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Extends set from storage reizo_mcfunc_engin:item Register.Extends
     # NotHold
     data modify entity @s Item.components."minecraft:custom_data".Item.Registry.NotHold set from storage reizo_mcfunc_engin:item Register.NotHold
+    # IsTicking
+    execute if data storage reizo_mcfunc_engin:item Register{IsTicking:0b} run \
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.IsTicking set value 0b

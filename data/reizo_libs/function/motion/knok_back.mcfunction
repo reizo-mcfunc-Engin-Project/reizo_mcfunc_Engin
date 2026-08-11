@@ -46,5 +46,4 @@ scoreboard players set $MotionPower reizo_mcfunc_Engin.Temp 125
     function reizo_libs:motion/sys/player
 
 # リセット！
-    function reizo_libs:motion/sys/reset/_
-    tag @s remove reizo_mcfunc_Engin.Motion.Attacker
+function reizo_libs:motion/sys/reset/_

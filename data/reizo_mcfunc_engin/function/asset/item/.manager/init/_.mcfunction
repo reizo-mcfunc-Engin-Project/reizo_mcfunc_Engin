@@ -4,26 +4,34 @@
 #
 # @within function reizo_mcfunc_engin:asset/item/.manager/give/give
 
-# Init処理呼び出し
-function reizo_mcfunc_engin:asset/item/.manager/init/run.m with storage reizo_mcfunc_engin:item
-
-# 継承した際にはcontext内にRegisterが存在しているので引き出す。
-function reizo_mcfunc_engin:asset/item/.manager/context/register/pull
+# タグ剥奪
+tag @s remove reizo_mcfunc_Engin.Item.Init
 
 # IDとnamespaceをCustomDataへ。
-    data modify entity @s Item.components."minecraft:custom_data".Item.ID set from storage reizo_mcfunc_engin:item ID
-    data modify entity @s Item.components."minecraft:custom_data".Item.namespace set from storage reizo_mcfunc_engin:item namespace
+    data modify entity @s Item.components."minecraft:custom_data".Item.Args.ID set from storage reizo_mcfunc_engin:context Args.ID
+    data modify entity @s Item.components."minecraft:custom_data".Item.Args.namespace set from storage reizo_mcfunc_engin:context Args.namespace
 
 # データセット
 function reizo_mcfunc_engin:asset/item/.manager/set_data/init/_
 
 # データ取得
-data modify storage reizo_mcfunc_engin:context data set from entity @s Item.components."minecraft:custom_data".Item
+    # data取得
+    data modify storage reizo_mcfunc_engin:context data set from entity @s Item.components."minecraft:custom_data".Item
+    # dataから不要なデータの削除
+        data remove storage reizo_mcfunc_engin:context data.Args
+        data remove storage reizo_mcfunc_engin:context data.this
+    # thisを入れる
+    data modify storage reizo_mcfunc_engin:context this set from storage reizo_mcfunc_engin:context data.Field
+
+# Init処理呼び出し
+function reizo_mcfunc_engin:asset/item/.manager/init/run.m with storage reizo_mcfunc_engin:context Args
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
     execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:item {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"item",Method:"init/_"}
     data remove storage reizo_mcfunc_engin:item Implement
 
+# thisをCustomDataへ
+data modify entity @s Item.components."minecraft:custom_data".Item.Field set from storage reizo_mcfunc_engin:context this
+
 # お掃除
-tag @s remove reizo_mcfunc_Engin.Item.Init
 data remove storage reizo_mcfunc_engin:context data

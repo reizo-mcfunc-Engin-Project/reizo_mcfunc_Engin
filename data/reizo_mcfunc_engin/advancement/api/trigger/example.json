@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "example":{
+            "trigger": "tick"
+        }
+    },
+    "rewards": {
+        "function": "reizo_mcfunc_engin:api/trigger/.trigger/example"
+    }
+}

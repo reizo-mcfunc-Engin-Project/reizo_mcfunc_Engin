@@ -10,3 +10,6 @@ particle wax_on ~ ~ ~
 
 # testメソッド実行
 function reizo_mcfunc_engin:api/call/_protected.m {Type:"mob",Method:"tick/test"}
+
+# tellraw @a {"storage":"reizo_mcfunc_engin:api",nbt:"Args.Super[-1].Value.ID"}
+# tellraw @a {"storage":"reizo_mcfunc_engin:context",nbt:"Args.ID"}

@@ -10,28 +10,17 @@ if predicate {condition:"value_check",value:{type:"storage",storage:"reizo_mcfun
 return run tellraw @s {"text":"抽象的なMobであるため、召喚できませんでした。","color":"red"}
 
 # 召喚！
-function reizo_mcfunc_engin:asset/mob/.manager/summon/run.m with storage reizo_mcfunc_engin:mob
+function reizo_mcfunc_engin:asset/mob/.manager/summon/run.m with storage reizo_mcfunc_engin:context Args
 
 # データの取得
     data modify storage reizo_mcfunc_engin:context Register set from storage reizo_mcfunc_engin:mob Register
-    data modify storage reizo_mcfunc_engin:api Args.Super.Extends set from storage reizo_mcfunc_engin:context Register.Extends
+    data modify storage reizo_mcfunc_engin:context data.Registry.Extends set from storage reizo_mcfunc_engin:context Register.Extends
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
     execute if data storage reizo_mcfunc_engin:context Register.Extends unless data storage reizo_mcfunc_engin:mob {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"summon/_"}
     data remove storage reizo_mcfunc_engin:mob Implement
-
-#> 継承している場合、データのみはデフォルトで受け継ぐため、ここに動作を記す。
-    # Registerの退避
-    function reizo_mcfunc_engin:asset/.manager/common/context/register/stash
-    # RegisterのPush
-    function reizo_mcfunc_engin:asset/mob/.manager/context/register/push
-    # 引数の取得
-    data modify storage reizo_mcfunc_engin:api Args.Super.Extends set from storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends
-    # 登録処理の親クラス
-    execute as @e[tag=reizo_mcfunc_Engin.Mob,tag=reizo_mcfunc_Engin.Mob.Init] at @s if data storage reizo_mcfunc_engin:context RegisterStackStash[-1].Value.Extends run function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"register/_"}
-    # Registerを戻す
-    function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
+    data remove storage reizo_mcfunc_engin:context data.Registry.Extends
 
 # Init処理
-execute as @e[tag=reizo_mcfunc_Engin.Mob,tag=reizo_mcfunc_Engin.Mob.Init] at @s run \
+execute as @e[tag=reizo_mcfunc_Engin.Mob,tag=reizo_mcfunc_Engin.Mob.Init,limit=1] at @s run \
 function reizo_mcfunc_engin:asset/mob/.manager/init/_

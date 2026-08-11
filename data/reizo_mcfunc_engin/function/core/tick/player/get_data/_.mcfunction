@@ -10,3 +10,8 @@
 
 # スニークしている。
     execute if predicate reizo_mcfunc_engin:sneak run function reizo_mcfunc_engin:core/tick/player/get_data/sneaking
+
+# join検知
+    tag @s remove reizo_mcfunc_Engin.justJoined
+    execute if score @s reizo_mcfunc_Engin.Join matches 1.. run tag @s add reizo_mcfunc_Engin.justJoined
+    scoreboard players set @s reizo_mcfunc_Engin.Join 0

@@ -4,19 +4,29 @@
 #
 # @api
 
+# 退避
+function reizo_mcfunc_engin:asset/.manager/common/context/args/stash
+
+# 空の空間を作成
+data modify storage reizo_mcfunc_engin:api Args.Super append value {}
+
 # 最初の継承でないのなら、originからデータを取得する。
-execute if data storage reizo_mcfunc_engin:api Super.IsFirstExtends[-1]._{_:0b} run data modify storage reizo_mcfunc_engin:api Args.Super.Extends set from storage reizo_mcfunc_engin:context data.Registry.Extends
+execute if data storage reizo_mcfunc_engin:api Super.IsFirstExtends[-1]._{_:0b} run data modify storage reizo_mcfunc_engin:api Args.Super[-1].Value.Extends set from storage reizo_mcfunc_engin:context data.Registry.Extends
 
 # 必要なデータを取得
-    execute unless data storage reizo_mcfunc_engin:api Args.Super.Extends[] if data storage reizo_mcfunc_engin:context data.Registry.Extends run data modify storage reizo_mcfunc_engin:api Args.Super.Extends set from storage reizo_mcfunc_engin:context data.Registry.Extends
-    $data modify storage reizo_mcfunc_engin:api Super.data.Type set value "$(Type)"
-    $data modify storage reizo_mcfunc_engin:api Super.data.Method set value "$(Method)"
+    execute unless data storage reizo_mcfunc_engin:api Args.Super[-1].Value.Extends[] if data storage reizo_mcfunc_engin:context data.Registry.Extends run data modify storage reizo_mcfunc_engin:api Args.Super[-1].Value.Extends set from storage reizo_mcfunc_engin:context data.Registry.Extends
+    $data modify storage reizo_mcfunc_engin:api Args.Super[-1].Value.Type set value "$(Type)"
+    $data modify storage reizo_mcfunc_engin:api Args.Super[-1].Value.Method set value "$(Method)"
 
-# 最初の継承ではないことを示す。
-data modify storage reizo_mcfunc_engin:api Super.IsFirstExtends append value {_:{_:0b}}
+# 最初の継承であることを示す
+data modify storage reizo_mcfunc_engin:api Super.IsFirstExtends append value {_:{_:1b}}
 
 # メソッドを叩く
 function reizo_mcfunc_engin:api/super/core/foreach
 
 # お掃除
-data remove storage reizo_mcfunc_engin:api Super
+    data remove storage reizo_mcfunc_engin:api Args.Super[-1]
+    data remove storage reizo_mcfunc_engin:api Super
+
+# 解放
+function reizo_mcfunc_engin:asset/.manager/common/context/args/pop

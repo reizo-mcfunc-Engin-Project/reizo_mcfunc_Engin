@@ -22,3 +22,7 @@
     data modify storage reizo_mcfunc_engin:item Register.Slot set value ["mainhand","offhand"]
     # アイテムを持っていない場合でも動作させるかどうか。 boolean型
     data modify storage reizo_mcfunc_engin:item Register.NotHold set value 1b
+    # どのトリガーを使用する？
+    data modify storage reizo_mcfunc_engin:item Register.Trigger append value ["example"]
+    # Tick処理をするかどうか。 boolean型 (オプション)
+    # data modify storage reizo_mcfunc_engin:item Register.IsTicking set value 0b
