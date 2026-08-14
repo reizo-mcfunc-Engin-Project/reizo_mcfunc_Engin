@@ -26,3 +26,5 @@
     data modify storage reizo_mcfunc_engin:item Register.Trigger append value ["example"]
     # Tick処理をするかどうか。 boolean型 (オプション)
     # data modify storage reizo_mcfunc_engin:item Register.IsTicking set value 0b
+    # ドロップ検知を行うか？ boolean型 (オプション)
+    data modify storage reizo_mcfunc_engin:item Register.Drop set value 1b

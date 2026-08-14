@@ -33,3 +33,5 @@ execute if data storage reizo_mcfunc_engin:item Register.Trigger run function re
     # IsTicking
     execute if data storage reizo_mcfunc_engin:item Register{IsTicking:0b} run \
     data modify entity @s Item.components."minecraft:custom_data".Item.Registry.IsTicking set value 0b
+    # Drop
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Drop set from storage reizo_mcfunc_engin:item Register.Drop

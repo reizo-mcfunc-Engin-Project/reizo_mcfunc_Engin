@@ -22,6 +22,7 @@ scoreboard objectives add reizo_mcfunc_Engin.Sneaking dummy "シフトを押し�
 scoreboard objectives add reizo_mcfunc_Engin.Sneaked dummy "シフトを押した。 Int型"
 scoreboard objectives add reizo_mcfunc_Engin.Leave custom:leave_game
 scoreboard objectives add reizo_mcfunc_Engin.Join custom:leave_game
+scoreboard objectives add reizo_mcfunc_Engin.Drop custom:drop
 
 # Initが終わった後の処理
 execute \
