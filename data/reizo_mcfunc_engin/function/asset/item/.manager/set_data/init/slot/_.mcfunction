@@ -34,7 +34,7 @@ data modify storage reizo_mcfunc_engin:item Registry.Slot.Top set from storage r
     data modify storage reizo_mcfunc_engin:item Registry.Slot.Top set value -6
     # ホットバー
     execute \
-    if data storage reizo_mcfunc_engin:item Registry.Slot{Top:"feet"} run \
+    if data storage reizo_mcfunc_engin:item Registry.Slot{Top:"hotbar"} run \
     return run function reizo_mcfunc_engin:asset/item/.manager/set_data/init/slot/hotbar
 
 # どれにも当てはまらなかったのなら数字なのでそのまま追加
