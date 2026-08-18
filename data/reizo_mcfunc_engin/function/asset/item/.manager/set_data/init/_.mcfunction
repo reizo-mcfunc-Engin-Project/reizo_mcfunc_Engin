@@ -22,6 +22,11 @@ data modify entity @s Item.components."minecraft:custom_data".Item.Field set fro
     # お掃除
     data remove storage reizo_mcfunc_engin:item Registry.Slot
 
+# NotHoldが有効ならInventoryもターゲットにされる。
+execute \
+if data storage reizo_mcfunc_engin:item Register{NotHold:1b} run \
+data modify entity @s Item.components."minecraft:custom_data".Item.Registry.TargetType set value "Inventory"
+
 # トリガー
 execute if data storage reizo_mcfunc_engin:item Register.Trigger run function reizo_mcfunc_engin:asset/item/.manager/set_data/init/trigger/_
 

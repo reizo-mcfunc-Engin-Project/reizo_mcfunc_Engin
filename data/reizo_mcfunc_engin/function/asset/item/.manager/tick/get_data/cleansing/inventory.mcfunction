@@ -6,10 +6,10 @@
 
 # 必要データならば退避
     execute \
-        if data storage reizo_mcfunc_engin:item Cleansing.Inventory[0].components."minecraft:custom_data".Item.Registry{IsTicking:1b} run \
+        if data storage reizo_mcfunc_engin:item Cleansing.Inventory[0].components."minecraft:custom_data".Item.Registry{IsTicking:1b,TargetType:"Inventory"} run \
         data modify storage reizo_mcfunc_engin:item data.Inventory append from storage reizo_mcfunc_engin:item Cleansing.Inventory[0]
     execute \
-        if data storage reizo_mcfunc_engin:item Cleansing.Inventory[0].components."minecraft:custom_data".Item.Registry{IsTicking:0b,NotHold:1b} run \
+        if data storage reizo_mcfunc_engin:item Cleansing.Inventory[0].components."minecraft:custom_data".Item.Registry{IsTicking:0b,NotHold:1b,TargetType:"Inventory"} run \
         data modify storage reizo_mcfunc_engin:item data.Inventory append from storage reizo_mcfunc_engin:item Cleansing.Inventory[0]
 
 # 先頭削除
