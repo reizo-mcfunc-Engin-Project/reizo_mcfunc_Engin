@@ -5,24 +5,15 @@
 # @within function reizo_mcfunc_engin:asset/item/.manager/set_data/init/slot/_
 
 # 追加
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:null}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot[-1].Value set value 0
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:null}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot[-1].Value set value 1
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:null}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot[-1].Value set value 2
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:null}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot[-1].Value set value 3
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:null}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot[-1].Value set value 4
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:null}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot[-1].Value set value 5
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:null}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot[-1].Value set value 6
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:null}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot[-1].Value set value 7
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:null}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot[-1].Value set value 8
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:0}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:1}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:2}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:3}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:4}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:5}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:6}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:7}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:8}
 
 # お掃除
 data remove storage reizo_mcfunc_engin:item Registry.Slot.Top
