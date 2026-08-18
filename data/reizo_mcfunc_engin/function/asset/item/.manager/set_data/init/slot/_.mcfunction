@@ -39,7 +39,7 @@ data modify storage reizo_mcfunc_engin:item Registry.Slot.Top set from storage r
 
 # どれにも当てはまらなかったのなら数字なのでそのまま追加
     data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:null}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot[-1].Value set from storage reizo_mcfunc_engin:item Registry.Slot.Top
+    execute store result entity @s Item.components."minecraft:custom_data".Item.Registry.Slot[-1].Value byte 1 run data get storage reizo_mcfunc_engin:item Registry.Slot.Top
 
 # TargetTypeを確定させる。
 data modify entity @s Item.components."minecraft:custom_data".Item.Registry.TargetType set value "Inventory"

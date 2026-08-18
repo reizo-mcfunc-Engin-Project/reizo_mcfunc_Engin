@@ -5,15 +5,15 @@
 # @within function reizo_mcfunc_engin:asset/item/.manager/set_data/init/slot/_
 
 # 追加
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:0}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:1}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:2}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:3}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:4}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:5}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:6}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:7}
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:8}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:0b}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:1b}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:2b}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:3b}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:4b}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:5b}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:6b}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:7b}
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Slot append value {Value:8b}
 
 # お掃除
 data remove storage reizo_mcfunc_engin:item Registry.Slot.Top
