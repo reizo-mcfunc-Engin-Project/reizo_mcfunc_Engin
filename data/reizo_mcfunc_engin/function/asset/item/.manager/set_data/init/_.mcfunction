@@ -29,9 +29,10 @@ execute if data storage reizo_mcfunc_engin:item Register.Trigger run function re
     # Extends
     data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Extends set from storage reizo_mcfunc_engin:item Register.Extends
     # NotHold
+    execute unless data storage reizo_mcfunc_engin:item Register.NotHold run data modify entity @s Item.components."minecraft:custom_data".Item.Registry.NotHold set value 0b
     data modify entity @s Item.components."minecraft:custom_data".Item.Registry.NotHold set from storage reizo_mcfunc_engin:item Register.NotHold
     # IsTicking
-    execute if data storage reizo_mcfunc_engin:item Register{IsTicking:0b} run \
-    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.IsTicking set value 0b
+    execute unless data storage reizo_mcfunc_engin:item Register.IsTicking run data modify entity @s Item.components."minecraft:custom_data".Item.Registry.IsTicking set value 1b
+    data modify entity @s Item.components."minecraft:custom_data".Item.Registry.IsTicking set from storage reizo_mcfunc_engin:item Register.IsTicking
     # Drop
     data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Drop set from storage reizo_mcfunc_engin:item Register.Drop
