@@ -12,6 +12,5 @@
     return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/feet/run/not_hold
     # feet
     execute \
-    unless data storage reizo_mcfunc_engin:item data.Equipment.feet.components."minecraft:custom_data".Item.Registry{IsTicking:0b} \
-    if data storage reizo_mcfunc_engin:item data.Equipment.feet.components."minecraft:custom_data".Item.Registry.Slot[{Value:-6}] run \
+    unless data storage reizo_mcfunc_engin:item data.Equipment.feet.components."minecraft:custom_data".Item.Registry{IsTicking:0b} run \
     function reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/feet/run/_

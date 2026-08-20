@@ -12,6 +12,5 @@
     return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/offhand/run/not_hold
     # offhand
     execute \
-    unless data storage reizo_mcfunc_engin:item data.Equipment.offhand.components."minecraft:custom_data".Item.Registry{IsTicking:0b} \
-    if data storage reizo_mcfunc_engin:item data.Equipment.offhand.components."minecraft:custom_data".Item.Registry.Slot[{Value:-2}] run \
+    unless data storage reizo_mcfunc_engin:item data.Equipment.offhand.components."minecraft:custom_data".Item.Registry{IsTicking:0b} run \
     function reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/offhand/run/_
