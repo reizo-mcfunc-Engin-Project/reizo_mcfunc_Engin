@@ -18,7 +18,7 @@ function reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/_
     function reizo_mcfunc_engin:asset/mob/.manager/tick/run.m with storage reizo_mcfunc_engin:context Args
 
 # 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
-execute unless data storage reizo_mcfunc_engin:mob {Implement:1b} if data storage reizo_mcfunc_engin:context data.Registry.Extends run function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"tick/_"}
+execute unless data storage reizo_mcfunc_engin:mob {Implement:1b} if data storage reizo_mcfunc_engin:context data.Registry.Extends run function reizo_mcfunc_engin:asset/mob/.manager/tick/call_super_method/_
 
 # thisを戻す
     data modify entity @s data.Field set from storage reizo_mcfunc_engin:context this
