@@ -22,7 +22,7 @@ execute store result storage reizo_mcfunc_engin:context Duration int 1 run data 
     # 自分のIDとnamespaceを使って叩く
     function reizo_mcfunc_engin:asset/effect/.manager/tick/run.m with storage reizo_mcfunc_engin:context Args
     # 自クラスのtickメソッドが存在しない場合、親クラスのtickメソッドを呼び出す。
-    execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:effect {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"effect",Method:"tick/_"}
+    execute unless data storage reizo_mcfunc_engin:effect {Implement:1b} if data storage reizo_mcfunc_engin:context data.Registry.Extends run function reizo_mcfunc_engin:api/super/_.m {Type:"effect",Method:"tick/_"}
     # お掃除
     data remove storage reizo_mcfunc_engin:effect Implement
 

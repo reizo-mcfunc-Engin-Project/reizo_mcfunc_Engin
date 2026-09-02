@@ -42,7 +42,7 @@ summon slime 0.0 0.0 0.0 \
 # 燃やす強さを設定
 execute \
 positioned 0.0 0.0 0.0 run \
-data modify entity @n[type=slime,tag=reizo_mcfunc_Engin.PFire.On_Fire] equipment.mainhand.components."minecraft:enchantments"."reizo_mcfunc_engin:p_fire" set from storage reizo_mcfunc_engin:lib In.PFire
+data modify entity @n[type=slime,tag=reizo_mcfunc_Engin.PFire.On_Fire] equipment.mainhand.components."minecraft:enchantments"."reizo_libs:p_fire" set from storage reizo_mcfunc_engin:lib In.PFire
 
 # 実行者にスライムをtp
 execute \
