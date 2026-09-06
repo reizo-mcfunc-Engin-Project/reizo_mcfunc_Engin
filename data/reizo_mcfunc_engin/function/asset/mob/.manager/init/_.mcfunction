@@ -28,7 +28,7 @@ data modify storage reizo_mcfunc_engin:context this set from storage reizo_mcfun
 function reizo_mcfunc_engin:asset/mob/.manager/init/run.m with storage reizo_mcfunc_engin:context Args
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
-    execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:mob {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"mob",Method:"init/_"}
+    execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:mob {Implement:1b} run function reizo_mcfunc_engin:asset/mob/.manager/init/call_super_method/_
     data remove storage reizo_mcfunc_engin:mob Implement
 
 # thisをdataに移動

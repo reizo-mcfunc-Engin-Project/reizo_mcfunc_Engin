@@ -27,7 +27,7 @@ function reizo_mcfunc_engin:asset/item/.manager/set_data/init/_
 function reizo_mcfunc_engin:asset/item/.manager/init/run.m with storage reizo_mcfunc_engin:context Args
 
 # もし自分のファイルが無かったら継承元のファイルを呼び出す。
-    execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:item {Implement:1b} run function reizo_mcfunc_engin:api/super/_.m {Type:"item",Method:"init/_"}
+    execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:item {Implement:1b} run function reizo_mcfunc_engin:asset/item/.manager/init/call_super_method/_
     data remove storage reizo_mcfunc_engin:item Implement
 
 # thisをCustomDataへ
