@@ -21,6 +21,9 @@ execute \
 if data storage reizo_mcfunc_engin:object Field run \
 data modify entity @s data.Field set from storage reizo_mcfunc_engin:object Field
 
+# キャッシュ
+execute if data storage reizo_mcfunc_engin:object Register.Extends run function reizo_mcfunc_engin:asset/object/.manager/set_data/init/cache
+
 #> dataにして、持っていきたいものがあるんだ。
     # Allow_Movement
     data modify entity @s data.Registry.Allow_Movement set from storage reizo_mcfunc_engin:object Register.Allow_Movement

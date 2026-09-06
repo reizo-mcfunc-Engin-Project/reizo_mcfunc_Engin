@@ -15,6 +15,7 @@ function reizo_mcfunc_engin:asset/mob/.manager/set_data/tick/_
     function reizo_mcfunc_engin:asset/.manager/common/context/args/push
     function reizo_mcfunc_engin:asset/.manager/common/context/data/push
     data modify storage reizo_mcfunc_engin:context this set from entity @s data.Field
+    data modify storage reizo_mcfunc_engin:context Cache set from entity @s data.Cache
     function reizo_mcfunc_engin:asset/mob/.manager/tick/run.m with storage reizo_mcfunc_engin:context Args
 
 # 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
@@ -25,7 +26,8 @@ execute unless data storage reizo_mcfunc_engin:mob {Implement:1b} if data storag
     execute unless data storage reizo_mcfunc_engin:context this run data remove entity @s data.Field
 
 # お掃除
-data remove storage reizo_mcfunc_engin:context Args
-data remove storage reizo_mcfunc_engin:context origin_Args
-data remove storage reizo_mcfunc_engin:mob Implement
-data remove storage reizo_mcfunc_engin:context this
+    data remove storage reizo_mcfunc_engin:context Args
+    data remove storage reizo_mcfunc_engin:context origin_Args
+    data remove storage reizo_mcfunc_engin:mob Implement
+    data remove storage reizo_mcfunc_engin:context this
+    data remove storage reizo_mcfunc_engin:context Cache
