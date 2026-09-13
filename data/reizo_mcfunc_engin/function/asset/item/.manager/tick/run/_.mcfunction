@@ -4,8 +4,6 @@
 #
 # @within function reizo_mcfunc_engin:asset/item/.manager/tick/_
 
-# TODO: NOT_HOLDも作れ！！！！
-
 # お願いOMD!
 function #oh_my_dat:please
 

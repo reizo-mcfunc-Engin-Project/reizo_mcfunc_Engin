@@ -9,7 +9,7 @@
     execute if data storage reizo_mcfunc_engin:item {IsRerun:0b} run return run function reizo_mcfunc_engin:asset/item/.manager/tick/rerun/inventory
 
 # お掃除
-    data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Old.Success.Inventory
+data remove storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Item.Old.Success.Inventory
 
 # Inventory取得
 data modify storage reizo_mcfunc_engin:item Inventory.foreach set from storage reizo_mcfunc_engin:item data.Inventory
