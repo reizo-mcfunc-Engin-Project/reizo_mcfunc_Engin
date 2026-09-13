@@ -10,6 +10,9 @@ data modify storage reizo_mcfunc_engin:context data set from storage reizo_mcfun
 # 実行
 function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/_
 
+# 実行出来たデータを退避させる
+function reizo_mcfunc_engin:asset/item/.manager/tick/rerun/stash/inventory
+
 # thisを入れる
     # Slot取得
     execute store result storage reizo_mcfunc_engin:item InThis.Slot int 1 run scoreboard players get $Item.Slot reizo_mcfunc_Engin.Temp
