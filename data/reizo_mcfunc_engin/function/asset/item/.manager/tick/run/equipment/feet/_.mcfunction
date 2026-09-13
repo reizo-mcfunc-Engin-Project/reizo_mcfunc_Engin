@@ -4,6 +4,9 @@
 #
 # @within function reizo_mcfunc_engin:asset/item/.manager/tick/run/equipment/_
 
+# スコアにも入れておく
+scoreboard players set $Item.Slot reizo_mcfunc_Engin.Temp -6
+
 #> 実行チェック
     # not_hold
     execute \
