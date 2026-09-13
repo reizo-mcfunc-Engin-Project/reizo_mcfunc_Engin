@@ -25,4 +25,4 @@ data remove storage reizo_mcfunc_engin:item Old.Success.Inventory.Tick[0]
 execute if data storage reizo_mcfunc_engin:item Old.Success.Inventory.Tick[0] run return run function reizo_mcfunc_engin:asset/item/.manager/tick/rerun/inventory
 
 # NotHoldもあるなら実行
-execute if data storage reizo_mcfunc_engin:item Old.Success.NotHold[0] run function reizo_mcfunc_engin:asset/item/.manager/not_hold/rerun/inventory
+execute if data storage reizo_mcfunc_engin:item Old.Success.NotHold[0] run function reizo_mcfunc_engin:asset/item/.manager/not_hold/rerun/_
