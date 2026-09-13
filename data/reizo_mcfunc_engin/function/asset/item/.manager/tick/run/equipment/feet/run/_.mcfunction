@@ -10,5 +10,8 @@ data modify storage reizo_mcfunc_engin:context data set from storage reizo_mcfun
 # 実行
 function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/_
 
+# 実行出来たデータを退避させる
+function reizo_mcfunc_engin:asset/item/.manager/tick/rerun/stash/equipment
+
 # thisを入れる
 item modify entity @s armor.feet {function:"copy_custom_data",source:{type:"storage",source:"reizo_mcfunc_engin:context"},ops:[{op:"replace",source:"this",target:"Item.Field"}]}
