@@ -19,6 +19,9 @@ function reizo_mcfunc_engin:asset/item/.manager/not_hold/run.m with storage reiz
     execute unless data storage reizo_mcfunc_engin:item {Implement:1b} if data storage reizo_mcfunc_engin:context data.Registry.Extends run function reizo_mcfunc_engin:asset/item/.manager/not_hold/call_super_method/_
     data remove storage reizo_mcfunc_engin:item Implement
 
+# thisを入れる
+function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/not_hold/_
+
 # お掃除
     data remove storage reizo_mcfunc_engin:context data
     data remove storage reizo_mcfunc_engin:context this

@@ -18,6 +18,16 @@ function reizo_mcfunc_engin:asset/item/.manager/tick/run.m with storage reizo_mc
     execute unless data storage reizo_mcfunc_engin:item {Implement:1b} if data storage reizo_mcfunc_engin:context data.Registry.Extends run function reizo_mcfunc_engin:asset/item/.manager/tick/call_super_method/_
     data remove storage reizo_mcfunc_engin:item Implement
 
+# thisを入れる
+    # Slot取得
+    execute store result storage reizo_mcfunc_engin:item InThis.Slot int 1 run scoreboard players get $Item.Slot reizo_mcfunc_Engin.Temp
+    # this取得
+    data modify storage reizo_mcfunc_engin:item InThis.data set from storage reizo_mcfunc_engin:context this
+    # コンポーネントにぶち込む
+    function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/slot.m with storage reizo_mcfunc_engin:item InThis
+    # お掃除
+    data remove storage reizo_mcfunc_engin:item InThis
+
 # お掃除
     data remove storage reizo_mcfunc_engin:context data
     data remove storage reizo_mcfunc_engin:context this
