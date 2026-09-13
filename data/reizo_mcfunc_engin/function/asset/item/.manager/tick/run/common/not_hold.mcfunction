@@ -15,3 +15,6 @@ function reizo_mcfunc_engin:asset/item/.manager/not_hold/run.m with storage reiz
 # 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
     execute unless data storage reizo_mcfunc_engin:item {Implement:1b} if data storage reizo_mcfunc_engin:context data.Registry.Extends run function reizo_mcfunc_engin:asset/item/.manager/not_hold/call_super_method/_
     data remove storage reizo_mcfunc_engin:item Implement
+
+# 実行出来たデータを退避させる
+function reizo_mcfunc_engin:asset/item/.manager/not_hold/rerun/_stash
