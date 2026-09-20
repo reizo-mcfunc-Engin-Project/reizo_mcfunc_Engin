@@ -18,6 +18,10 @@ function #oh_my_dat:please
     execute \
     if data storage reizo_mcfunc_engin:item data.Inventory run \
     function reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/_
+    # SelectedItem
+    execute \
+    if data storage reizo_mcfunc_engin:item data.SelectedItem run \
+    function reizo_mcfunc_engin:asset/item/.manager/tick/run/selected_item/_
     # Equipment
     execute \
     if data storage reizo_mcfunc_engin:item data.Equipment run \

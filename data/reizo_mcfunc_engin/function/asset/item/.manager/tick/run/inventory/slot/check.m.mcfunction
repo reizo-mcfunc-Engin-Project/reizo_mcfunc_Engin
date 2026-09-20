@@ -1,4 +1,4 @@
-#> reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/check/_.m
+#> reizo_mcfunc_engin:asset/item/.manager/tick/run/inventory/slot/check.m
 #
 # 
 #
