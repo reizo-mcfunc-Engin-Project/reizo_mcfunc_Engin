@@ -7,8 +7,6 @@
 # Slotの値によって動作を変える
     # 値取得
     execute store result score $Item.Slot reizo_mcfunc_Engin.Temp run data get storage reizo_mcfunc_engin:item Old.Success.Inventory.Tick[0].Slot
-    # SelectedItemに移行
-    # execute if score $Item.Slot reizo_mcfunc_Engin.Temp matches -1 if data storage reizo_mcfunc_engin:item data.SelectedItem run return run function reizo_mcfunc_engin:asset/item/.manager/tick/run/rerun/selected_item
     # Inventoryのものでなければスキップ
     execute unless score $Item.Slot reizo_mcfunc_Engin.Temp matches 0..35 run return run function reizo_mcfunc_engin:asset/item/.manager/tick/rerun/fail/inventory
 
