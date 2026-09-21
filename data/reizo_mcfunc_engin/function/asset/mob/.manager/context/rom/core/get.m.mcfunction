@@ -4,4 +4,4 @@
 #
 # @within function reizo_mcfunc_engin:asset/mob/.manager/context/rom/push
 
-$data modify storage reizo_mcfunc_engin:context Rom set from storage reizo_mcfunc_engin:rom Rom.mob.'$(Args)'
+$data modify storage reizo_mcfunc_engin:context Rom set from storage reizo_mcfunc_engin:rom Rom.mob.'{ID:"$(ID)",namespace:"$(namespace)"}'

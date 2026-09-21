@@ -10,3 +10,4 @@ data modify storage reizo_mcfunc_engin:context data set from entity @s data
 # 不要データ削除
     data remove storage reizo_mcfunc_engin:context data.Args
     data remove storage reizo_mcfunc_engin:context data.this
+    data remove storage reizo_mcfunc_engin:context data.Cache
