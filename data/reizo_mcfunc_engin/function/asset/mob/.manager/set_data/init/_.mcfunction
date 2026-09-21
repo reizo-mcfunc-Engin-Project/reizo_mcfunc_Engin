@@ -40,3 +40,6 @@ execute if data storage reizo_mcfunc_engin:mob Register.Extends run function rei
     data modify entity @s data.Registry.Flammable set from storage reizo_mcfunc_engin:mob Register.Flammable
     # Extends
     data modify entity @s data.Registry.Extends set from storage reizo_mcfunc_engin:mob Register.Extends
+
+# Rom Pull
+function reizo_mcfunc_engin:asset/mob/.manager/context/rom/pull
