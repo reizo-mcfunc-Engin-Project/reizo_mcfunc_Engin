@@ -10,11 +10,6 @@ execute as @a at @s run function reizo_mcfunc_engin:core/tick/player/_
 # tick単位でのデータ取得
 function reizo_mcfunc_engin:core/tick/get_data
 
-# CubeParticleがいなくなると困るよ。
-execute \
-if score $CubeParticleCount reizo_mcfunc_Engin._ matches ..1 run \
-function reizo_mcfunc_engin:core/tick/re_spawn_cube_particle
-
 # Mobの処理
 execute \
 if entity @e[type=!player,tag=reizo_mcfunc_Engin.Mob] \
