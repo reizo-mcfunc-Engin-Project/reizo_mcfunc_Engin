@@ -31,4 +31,4 @@ execute if data storage reizo_mcfunc_engin:object Register.Extends run function 
     data modify entity @s data.Registry.Extends set from storage reizo_mcfunc_engin:object Register.Extends
 
 # Rom Pull
-function reizo_mcfunc_engin:asset/object/.manager/context/rom/pull
+function reizo_mcfunc_engin:asset/item/.manager/context/rom/pull
