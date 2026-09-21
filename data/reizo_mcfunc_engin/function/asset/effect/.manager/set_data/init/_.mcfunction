@@ -18,3 +18,9 @@ data modify storage reizo_mcfunc_engin:effect Effect.Duration set from storage r
     data modify storage reizo_mcfunc_engin:effect Effect.data.Registry.Extends set from storage reizo_mcfunc_engin:effect Register.Extends
     # Duration
     data modify storage reizo_mcfunc_engin:effect Effect.data.Registry.Duration set from storage reizo_mcfunc_engin:effect Register.Duration
+
+#> Rom系
+    # キャッシュ
+    function reizo_mcfunc_engin:asset/effect/.manager/set_data/init/cache/_
+    # Pull
+    function reizo_mcfunc_engin:asset/effect/.manager/context/rom/pull

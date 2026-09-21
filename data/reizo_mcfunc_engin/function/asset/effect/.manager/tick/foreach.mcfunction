@@ -14,6 +14,7 @@
     data modify storage reizo_mcfunc_engin:context this set from storage reizo_mcfunc_engin:effect EntryEffect.Field
     data modify storage reizo_mcfunc_engin:context data set from storage reizo_mcfunc_engin:effect EntryEffect.data
     data modify storage reizo_mcfunc_engin:context Duration set from storage reizo_mcfunc_engin:effect EntryEffect.Duration
+    function reizo_mcfunc_engin:asset/effect/.manager/context/rom/push
 
 # 残り時間を減らす
 execute store result storage reizo_mcfunc_engin:context Duration int 1 run data get storage reizo_mcfunc_engin:context Duration 0.9999999999
