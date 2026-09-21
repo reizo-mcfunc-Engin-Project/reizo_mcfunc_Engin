@@ -30,9 +30,6 @@ data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Targ
 # トリガー
 execute if data storage reizo_mcfunc_engin:item Register.Trigger run function reizo_mcfunc_engin:asset/item/.manager/set_data/init/trigger/_
 
-# キャッシュを作成
-execute if data storage reizo_mcfunc_engin:item Register.Extends run function reizo_mcfunc_engin:asset/item/.manager/set_data/init/cache
-
 # Registryに格納するもの
     # Extends
     data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Extends set from storage reizo_mcfunc_engin:item Register.Extends
@@ -45,5 +42,8 @@ execute if data storage reizo_mcfunc_engin:item Register.Extends run function re
     # Drop
     data modify entity @s Item.components."minecraft:custom_data".Item.Registry.Drop set from storage reizo_mcfunc_engin:item Register.Drop
 
-# Rom pull
-function reizo_mcfunc_engin:asset/item/.manager/context/rom/pull
+#> ROM系
+    # Cache
+    execute if data storage reizo_mcfunc_engin:item Register.Extends run function reizo_mcfunc_engin:asset/item/.manager/set_data/init/cache
+    # Pull
+    function reizo_mcfunc_engin:asset/item/.manager/context/rom/pull

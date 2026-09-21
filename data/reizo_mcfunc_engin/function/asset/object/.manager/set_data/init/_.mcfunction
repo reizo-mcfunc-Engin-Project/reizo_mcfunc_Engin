@@ -21,14 +21,14 @@ execute \
 if data storage reizo_mcfunc_engin:object Field run \
 data modify entity @s data.Field set from storage reizo_mcfunc_engin:object Field
 
-# キャッシュ
-execute if data storage reizo_mcfunc_engin:object Register.Extends run function reizo_mcfunc_engin:asset/object/.manager/set_data/init/cache
-
 #> dataにして、持っていきたいものがあるんだ。
     # Allow_Movement
     data modify entity @s data.Registry.Allow_Movement set from storage reizo_mcfunc_engin:object Register.Allow_Movement
     # Extends
     data modify entity @s data.Registry.Extends set from storage reizo_mcfunc_engin:object Register.Extends
 
-# Rom Pull
-function reizo_mcfunc_engin:asset/item/.manager/context/rom/pull
+#> ROM系
+    # Cache
+    execute if data storage reizo_mcfunc_engin:object Register.Extends run function reizo_mcfunc_engin:asset/object/.manager/set_data/init/cache
+    # Pull
+    function reizo_mcfunc_engin:asset/item/.manager/context/rom/pull
