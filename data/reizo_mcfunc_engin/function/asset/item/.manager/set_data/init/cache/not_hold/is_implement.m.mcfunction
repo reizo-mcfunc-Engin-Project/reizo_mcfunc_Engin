@@ -1,8 +1,8 @@
-#> reizo_mcfunc_engin:asset/item/.manager/context/cache/not_hold/is_implement.m
+#> reizo_mcfunc_engin:asset/item/.manager/set_data/init/cache/not_hold/is_implement.m
 #
 # 
 #
-# @within function reizo_mcfunc_engin:asset/item/.manager/context/cache/not_hold/foreach
+# @within function reizo_mcfunc_engin:asset/item/.manager/set_data/init/cache/not_hold/foreach
 
 $execute store success storage reizo_mcfunc_engin:item Temp.Cache.Implement byte 1 run schedule function $(namespace):asset/item/$(ID)/not_hold/_ 2147483647t
 $schedule clear $(namespace):asset/item/$(ID)/not_hold/_

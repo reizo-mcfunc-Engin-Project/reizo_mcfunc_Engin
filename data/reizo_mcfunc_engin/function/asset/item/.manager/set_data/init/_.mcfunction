@@ -44,6 +44,6 @@ execute if data storage reizo_mcfunc_engin:item Register.Trigger run function re
 
 #> ROM系
     # Cache
-    execute if data storage reizo_mcfunc_engin:item Register.Extends run function reizo_mcfunc_engin:asset/item/.manager/set_data/init/cache
+    execute if data storage reizo_mcfunc_engin:item Register.Extends run function reizo_mcfunc_engin:asset/item/.manager/set_data/init/cache/_
     # Pull
     function reizo_mcfunc_engin:asset/item/.manager/context/rom/pull

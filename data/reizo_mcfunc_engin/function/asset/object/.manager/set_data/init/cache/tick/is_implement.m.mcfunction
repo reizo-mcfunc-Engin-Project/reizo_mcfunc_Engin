@@ -1,8 +1,8 @@
-#> reizo_mcfunc_engin:asset/object/.manager/context/cache/tick/is_implement.m
+#> reizo_mcfunc_engin:asset/object/.manager/set_data/init/cache/tick/is_implement.m
 #
 # 
 #
-# @within function reizo_mcfunc_engin:asset/object/.manager/context/cache/tick/foreach
+# @within function reizo_mcfunc_engin:asset/object/.manager/set_data/init/cache/tick/foreach
 
 $execute store success storage reizo_mcfunc_engin:object Temp.Cache.Implement byte 1 run schedule function $(namespace):asset/object/$(ID)/tick/_ 2147483647t
 $schedule clear $(namespace):asset/object/$(ID)/tick/_

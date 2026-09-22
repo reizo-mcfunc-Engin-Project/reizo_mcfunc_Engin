@@ -7,7 +7,7 @@
 # 実装されているか確認
 function reizo_mcfunc_engin:asset/effect/.manager/set_data/init/cache/tick/is_implement.m with storage reizo_mcfunc_engin:context Register.Extends[0]
 
-# tickメソッドが実装されていた場合、キャッシュにデータを積む
+# メソッドが実装されていた場合、キャッシュにデータを積む
 execute \
     if data storage reizo_mcfunc_engin:effect Temp.Cache{Implement:1b} run \
     data modify storage reizo_mcfunc_engin:effect Cache.Tick append from storage reizo_mcfunc_engin:context Register.Extends[0]

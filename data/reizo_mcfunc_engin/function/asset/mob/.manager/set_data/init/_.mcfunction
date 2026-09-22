@@ -40,6 +40,6 @@ data modify entity @s data.Field set from storage reizo_mcfunc_engin:mob Field
 
 #> ROM系
     # Cache
-    execute if data storage reizo_mcfunc_engin:mob Register.Extends run function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/cache
+    execute if data storage reizo_mcfunc_engin:mob Register.Extends run function reizo_mcfunc_engin:asset/mob/.manager/set_data/init/cache/_
     # Pull
     function reizo_mcfunc_engin:asset/mob/.manager/context/rom/pull

@@ -29,6 +29,6 @@ data modify entity @s data.Field set from storage reizo_mcfunc_engin:object Fiel
 
 #> ROM系
     # Cache
-    execute if data storage reizo_mcfunc_engin:object Register.Extends run function reizo_mcfunc_engin:asset/object/.manager/set_data/init/cache
+    execute if data storage reizo_mcfunc_engin:object Register.Extends run function reizo_mcfunc_engin:asset/object/.manager/set_data/init/cache/_
     # Pull
     function reizo_mcfunc_engin:asset/item/.manager/context/rom/pull

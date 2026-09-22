@@ -1,11 +1,11 @@
-#> reizo_mcfunc_engin:asset/object/.manager/context/cache/tick/foreach
+#> reizo_mcfunc_engin:asset/object/.manager/set_data/init/cache/tick/foreach
 #
 # 
 #
-# @within function reizo_mcfunc_engin:asset/object/.manager/context/cache/tick/create
+# @within function reizo_mcfunc_engin:asset/object/.manager/set_data/init/cache/tick/create
 
 # 実装されているか確認
-function reizo_mcfunc_engin:asset/object/.manager/context/cache/tick/is_implement.m with storage reizo_mcfunc_engin:context Register.Extends[0]
+function reizo_mcfunc_engin:asset/object/.manager/set_data/init/cache/tick/is_implement.m with storage reizo_mcfunc_engin:context Register.Extends[0]
 
 # tickメソッドが実装されていた場合、キャッシュにデータを積む
 execute \
@@ -17,4 +17,4 @@ execute \
     data remove storage reizo_mcfunc_engin:object Temp.Cache
 
 # 要素が残るなら再帰
-execute if data storage reizo_mcfunc_engin:context Register.Extends[0] run return run function reizo_mcfunc_engin:asset/object/.manager/context/cache/tick/foreach
+execute if data storage reizo_mcfunc_engin:context Register.Extends[0] run function reizo_mcfunc_engin:asset/object/.manager/set_data/init/cache/tick/foreach
