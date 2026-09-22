@@ -30,5 +30,7 @@ data modify entity @s data.Field set from storage reizo_mcfunc_engin:object Fiel
 #> ROM系
     # Cache
     execute if data storage reizo_mcfunc_engin:object Register.Extends run function reizo_mcfunc_engin:asset/object/.manager/set_data/init/cache/_
+    # Romに書き込む
+    data modify storage reizo_mcfunc_engin:context Rom merge from storage reizo_mcfunc_engin:object Rom
     # Pull
-    function reizo_mcfunc_engin:asset/item/.manager/context/rom/pull
+    function reizo_mcfunc_engin:asset/object/.manager/context/rom/pull

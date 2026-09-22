@@ -45,5 +45,7 @@ execute if data storage reizo_mcfunc_engin:item Register.Trigger run function re
 #> ROM系
     # Cache
     execute if data storage reizo_mcfunc_engin:item Register.Extends run function reizo_mcfunc_engin:asset/item/.manager/set_data/init/cache/_
+    # Romに焼きこむ
+    data modify storage reizo_mcfunc_engin:context Rom merge from storage reizo_mcfunc_engin:item Rom
     # Pull
     function reizo_mcfunc_engin:asset/item/.manager/context/rom/pull
