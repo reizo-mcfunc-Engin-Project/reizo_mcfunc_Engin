@@ -8,4 +8,4 @@
     function reizo_mcfunc_engin:asset/object/.manager/context/cache/tick/create
 
 # dataに格納
-data modify entity @s data.Cache set from storage reizo_mcfunc_engin:context Cache
+data modify storage reizo_mcfunc_engin:context Rom.Cache set from storage reizo_mcfunc_engin:context Cache

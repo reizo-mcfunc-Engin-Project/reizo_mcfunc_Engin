@@ -14,6 +14,7 @@ function reizo_mcfunc_engin:asset/object/.manager/set_data/tick/_
 # tick処理を動かすぜ！
     function reizo_mcfunc_engin:asset/.manager/common/context/args/push
     function reizo_mcfunc_engin:asset/.manager/common/context/data/push
+    function reizo_mcfunc_engin:asset/object/.manager/context/rom/push
     data modify storage reizo_mcfunc_engin:context this set from entity @s data.Field
     function reizo_mcfunc_engin:asset/object/.manager/tick/run.m with storage reizo_mcfunc_engin:context Args
 

@@ -10,6 +10,7 @@
     function reizo_mcfunc_engin:asset/.manager/common/context/data/stash
     function reizo_mcfunc_engin:asset/.manager/common/context/this/stash
     function reizo_mcfunc_engin:asset/.manager/common/context/register/stash
+    function reizo_mcfunc_engin:asset/.manager/common/context/rom/stash
 
 # IDとnamespaceを設定
     $data modify storage reizo_mcfunc_engin:context Args.ID set value "$(ID)"
@@ -27,3 +28,4 @@ function reizo_mcfunc_engin:asset/item/.manager/give/_
     function reizo_mcfunc_engin:asset/.manager/common/context/data/pop
     function reizo_mcfunc_engin:asset/.manager/common/context/this/pop
     function reizo_mcfunc_engin:asset/.manager/common/context/register/pop
+    function reizo_mcfunc_engin:asset/.manager/common/context/rom/pop
