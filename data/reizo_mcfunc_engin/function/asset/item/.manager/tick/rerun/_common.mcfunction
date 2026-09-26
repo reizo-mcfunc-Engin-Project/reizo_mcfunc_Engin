@@ -9,7 +9,7 @@
     data modify storage reizo_mcfunc_engin:context origin_Args set from storage reizo_mcfunc_engin:context Args
     data modify storage reizo_mcfunc_engin:context data set from storage reizo_mcfunc_engin:item Rerun.Entry.data
     data modify storage reizo_mcfunc_engin:context this set from storage reizo_mcfunc_engin:item Rerun.Entry.this
-    execute store result score $Item.Slot reizo_mcfunc_Engin.Temp run data get storage reizo_mcfunc_engin:item Rerun.Slot
+    execute store result score $Item.Slot reizo_mcfunc_Engin.Temp run data get storage reizo_mcfunc_engin:item Rerun.Entry.Slot
     function reizo_mcfunc_engin:asset/item/.manager/context/rom/push
 
 # 実行
@@ -20,5 +20,4 @@ function reizo_mcfunc_engin:asset/item/.manager/tick/run.m with storage reizo_mc
     data remove storage reizo_mcfunc_engin:item Implement
 
 # お掃除
-    data remove storage reizo_mcfunc_engin:context Cache
-    scoreboard players reset $Item.Slot reizo_mcfunc_Engin.Temp
+data remove storage reizo_mcfunc_engin:context Cache
