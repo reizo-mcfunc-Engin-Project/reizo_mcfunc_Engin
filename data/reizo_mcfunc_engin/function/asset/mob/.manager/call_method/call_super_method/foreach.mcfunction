@@ -7,8 +7,12 @@
 # Args取得
 data modify storage reizo_mcfunc_engin:context Args set from storage reizo_mcfunc_engin:mob CopiedExtends[-1][0]
 
+# 実際使うのはこっち
+    data modify storage reizo_mcfunc_engin:mob Call.Args set from storage reizo_mcfunc_engin:context Args
+    data modify storage reizo_mcfunc_engin:mob Call.Args.method set from storage reizo_mcfunc_engin:context method
+
 # 呼び出し
-function reizo_mcfunc_engin:asset/mob/.manager/call_method/run.m with storage reizo_mcfunc_engin:context
+function reizo_mcfunc_engin:asset/mob/.manager/call_method/run.m with storage reizo_mcfunc_engin:mob Call.Args
 
 # お掃除
 data remove storage reizo_mcfunc_engin:mob CopiedExtends[-1][0]
