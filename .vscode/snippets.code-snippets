@@ -2,6 +2,22 @@
   "Super": {
     "prefix": "super",
     "body": [
+        "# 親クラスの${TM_DIRECTORY/.*\\\\([^\\\\]+)$/$1/}メソッドを呼ぶ",
+        "function reizo_mcfunc_engin:asset/${TM_DIRECTORY/.*\\\\asset\\\\([^\\\\]+)\\\\.*$/$1/}/super.${TM_DIRECTORY/.*\\\\([^\\\\]+)$/$1/}"
+    ],
+    "description": "tick | init | not_holdでのsuperが可能"
+  },
+  "Super Method": {
+    "prefix": "super/method",
+    "body": [
+        "# 親クラスの${TM_DIRECTORY/.*\\\\([^\\\\]+)$/$1/}メソッドを呼ぶ",
+        "function reizo_mcfunc_engin:asset/${TM_DIRECTORY/.*\\\\asset\\\\([^\\\\]+)\\\\.*$/$1/}/super.method"
+    ],
+    "description": "自作メソッドでのsuperが可能"
+  },
+  "Super_API": {
+    "prefix": "super/api",
+    "body": [
         "# 親クラスのメソッドを呼ぶ",
         "function reizo_mcfunc_engin:api/super/_.m {Type:\"${TM_DIRECTORY/.*\\\\asset\\\\([^\\\\]+)\\\\.*$/$1/}\",Method:\"${TM_DIRECTORY/.*\\\\([^\\\\]+)$/$1/}/${TM_FILENAME_BASE}\"}"
     ]
@@ -10,7 +26,7 @@
     "prefix": "call",
     "body": [
         "# メソッドを呼ぶ",
-        "function reizo_mcfunc_engin:api/call/_protected.m {Type:\"${TM_DIRECTORY/.*\\\\asset\\\\([^\\\\]+)\\\\.*$/$1/}\",Method:\"\"}"
+        "function reizo_mcfunc_engin:asset/${TM_DIRECTORY/.*\\\\asset\\\\([^\\\\]+)\\\\.*$/$1/}/call.m {method:\"\"}"
     ]
   },
   "Stash of Context Args": {
