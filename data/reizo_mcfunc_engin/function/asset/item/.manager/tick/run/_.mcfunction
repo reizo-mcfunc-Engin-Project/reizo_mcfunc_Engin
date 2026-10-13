@@ -31,3 +31,4 @@ function #oh_my_dat:please
     data remove storage reizo_mcfunc_engin:item data
     data remove storage reizo_mcfunc_engin:item NotHold
     data remove storage reizo_mcfunc_engin:item Old
+    data remove storage reizo_mcfunc_engin:item Rerun

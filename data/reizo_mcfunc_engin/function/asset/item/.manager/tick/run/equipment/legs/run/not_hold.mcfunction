@@ -11,4 +11,5 @@ data modify storage reizo_mcfunc_engin:context data set from storage reizo_mcfun
 function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/not_hold
 
 # thisを入れる
-function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/not_hold/_
+    function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/not_hold/_
+    data remove storage reizo_mcfunc_engin:context this

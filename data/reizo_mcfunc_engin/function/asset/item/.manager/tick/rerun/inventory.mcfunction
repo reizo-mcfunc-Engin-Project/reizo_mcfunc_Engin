@@ -24,7 +24,8 @@ data remove storage reizo_mcfunc_engin:item Old.Success.Inventory.Tick[0]
     data remove storage reizo_mcfunc_engin:item InThis
 
 # お掃除
-scoreboard players reset $Item.Slot reizo_mcfunc_Engin.Temp
+    data remove storage reizo_mcfunc_engin:context this
+    scoreboard players reset $Item.Slot reizo_mcfunc_Engin.Temp
 
 # 要素が残るなら再帰
 execute if data storage reizo_mcfunc_engin:item Old.Success.Inventory.Tick[0] run return run function reizo_mcfunc_engin:asset/item/.manager/tick/rerun/inventory

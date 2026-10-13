@@ -21,4 +21,5 @@ function reizo_mcfunc_engin:asset/item/.manager/tick/rerun/stash/inventory
     # コンポーネントにぶち込む
     function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/slot.m with storage reizo_mcfunc_engin:item InThis
     # お掃除
-    data remove storage reizo_mcfunc_engin:item InThis
+        data remove storage reizo_mcfunc_engin:item InThis
+        data remove storage reizo_mcfunc_engin:context this

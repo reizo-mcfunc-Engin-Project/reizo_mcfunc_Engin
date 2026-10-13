@@ -11,4 +11,5 @@ scoreboard players set $Item.Slot reizo_mcfunc_Engin.Temp -1
 function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/_
 
 # thisを入れる
-item modify entity @s weapon.mainhand {function:"copy_custom_data",source:{type:"storage",source:"reizo_mcfunc_engin:context"},ops:[{op:"replace",source:"this",target:"Item.Field"}]}
+    item modify entity @s weapon.mainhand {function:"copy_custom_data",source:{type:"storage",source:"reizo_mcfunc_engin:context"},ops:[{op:"replace",source:"this",target:"Item.Field"}]}
+    data remove storage reizo_mcfunc_engin:context this
