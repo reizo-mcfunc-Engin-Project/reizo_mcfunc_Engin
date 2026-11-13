@@ -16,5 +16,9 @@ function reizo_mcfunc_engin:api/item/box.m with storage reizo_mcfunc_engin:conte
     function reizo_mcfunc_engin:api/item/core/refresh_register/set_item.m with storage reizo_mcfunc_engin:api Item.refresh_register
     data remove storage reizo_mcfunc_engin:api Item.refresh_register.SlotList[0]
 
+# 数をセット
+    data modify block 10000 0 10000 Items[0].count set from storage reizo_mcfunc_engin:api Item.refresh_register.CountList[0]
+    data remove storage reizo_mcfunc_engin:api Item.refresh_register.CountList[0]
+
 # 要素が残るなら再帰
 execute if data storage reizo_mcfunc_engin:api Item.refresh_register.ArgsList[0] run function reizo_mcfunc_engin:api/item/core/refresh_register/foreach

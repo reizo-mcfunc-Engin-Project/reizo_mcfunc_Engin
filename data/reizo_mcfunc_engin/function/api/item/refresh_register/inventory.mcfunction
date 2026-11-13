@@ -11,6 +11,7 @@ function reizo_mcfunc_engin:asset/.manager/common/context/args/stash
 # 引数の取得
     data modify storage reizo_mcfunc_engin:api Item.refresh_register.ArgsList append from entity @s Inventory[].components."minecraft:custom_data".Item.Args
     data modify storage reizo_mcfunc_engin:api Item.refresh_register.SlotList append from entity @s Inventory[].Slot
+    data modify storage reizo_mcfunc_engin:api Item.refresh_register.CountList append from entity @s Inventory[].count
 
 # foreach
 function reizo_mcfunc_engin:api/item/core/refresh_register/foreach

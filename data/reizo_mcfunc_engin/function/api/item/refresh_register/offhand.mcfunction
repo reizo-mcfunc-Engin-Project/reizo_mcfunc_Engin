@@ -9,13 +9,20 @@
 function reizo_mcfunc_engin:asset/.manager/common/context/args/stash
 
 # 引数の取得
-data modify storage reizo_mcfunc_engin:context Args set from entity @s equipment.offhand.components."minecraft:custom_data".Item.Args
+    data modify storage reizo_mcfunc_engin:context Args set from entity @s equipment.offhand.components."minecraft:custom_data".Item.Args
+    data modify storage reizo_mcfunc_engin:api Item.refresh_register.count set from entity @s equipment.offhand.count
 
 # 取得した引数からboxに新しいアイテムを設置
 function reizo_mcfunc_engin:api/item/box.m with storage reizo_mcfunc_engin:context Args
+
+# 数をセット
+data modify block 10000 0 10000 Items[0].count set from storage reizo_mcfunc_engin:api Item.refresh_register.count
 
 # メインハンドに移動
 item replace entity @s weapon.offhand from block 10000 0 10000 container.0
 
 # 退避したデータを解放する
 function reizo_mcfunc_engin:asset/.manager/common/context/args/pop
+
+# お掃除
+data remove storage reizo_mcfunc_engin:api Item.refresh_register
