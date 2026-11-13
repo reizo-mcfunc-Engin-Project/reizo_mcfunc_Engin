@@ -17,7 +17,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/register.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin:asset/mob/%namespace%/register",
+                        "#> %fileResourcePath%",
                         "#",
                         "# Mobの登録処理",
                         "#",
@@ -63,7 +63,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/summon/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin:asset/mob/%namespace%/summon/_",
+                        "#> %fileResourcePath%",
                         "#",
                         "# Mobの召喚処理",
                         "#",
@@ -91,7 +91,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/tick/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin:asset/mob/%namespace%/tick/_",
+                        "#> %fileResourcePath%",
                         "#",
                         "# Mobの常時Tick処理",
                         "#",
@@ -110,7 +110,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/mob/%namespace%/init/_.mcfunction",
                     "content":[
-                        "#> reizo_mcfunc_engin:asset/mob/%namespace%/init",
+                        "#> %fileResourcePath%",
                         "#",
                         "# MobのInit処理",
                         "#",
@@ -129,7 +129,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/object/%namespace%/register.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin:asset/object/%namespace%/register",
+                        "#> %fileResourcePath%",
                         "#",
                         "# ",
                         "#",
@@ -156,7 +156,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/object/%namespace%/summon/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin:asset/object/%namespace%/summon/_",
+                        "#> %fileResourcePath%",
                         "#",
                         "# Objectの召喚処理",
                         "#",
@@ -184,7 +184,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/object/%namespace%/tick/_.mcfunction",
                     "content": [
-                        "#> reizo_mcfunc_engin:asset/object/%namespace%/tick/_",
+                        "#> %fileResourcePath%",
                         "#",
                         "# Objectの常時Tick処理",
                         "#",
@@ -203,7 +203,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/object/%namespace%/init/_.mcfunction",
                     "content":[
-                        "#> reizo_mcfunc_engin:asset/object/%namespace%/init/_",
+                        "#> %fileResourcePath%",
                         "#",
                         "# ",
                         "#",
@@ -222,7 +222,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/item/%namespace%/register.mcfunction",
                     "content":[
-                        "#> reizo_mcfunc_engin:asset/item/%namespace%/register",
+                        "#> %fileResourcePath%",
                         "#",
                         "# ",
                         "#",
@@ -263,7 +263,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/item/%namespace%/give/_.mcfunction",
                     "content":[
-                        "#> reizo_mcfunc_engin:asset/item/%namespace%/give/_",
+                        "#> %fileResourcePath%",
                         "#",
                         "# Itemの取得処理",
                         "#",
@@ -288,7 +288,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/item/%namespace%/tick/_.mcfunction",
                     "content":[
-                        "#> reizo_mcfunc_engin:asset/%namespace%/tick/_",
+                        "#> %fileResourcePath%",
                         "#",
                         "# ItemのTick処理",
                         "#",
@@ -306,7 +306,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/item/%namespace%/init/_.mcfunction",
                     "content":[
-                        "#> reizo_mcfunc_engin:asset/item/%namespace%/init/_",
+                        "#> %fileResourcePath%",
                         "#",
                         "# ItemのInit処理",
                         "#",
@@ -325,7 +325,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/effect/%namespace%/register.mcfunction",
                     "content":[
-                        "#> reizo_mcfunc_engin:asset/effect/%namespace%/register",
+                        "#> %fileResourcePath%",
                         "#",
                         "# ",
                         "#",
@@ -357,7 +357,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/effect/%namespace%/tick/_.mcfunction",
                     "content":[
-                        "#> reizo_mcfunc_engin:asset/effect/%namespace%/tick/_",
+                        "#> %fileResourcePath%",
                         "#",
                         "# EffectのTick処理",
                         "#",
@@ -375,7 +375,7 @@
                     "type": "file",
                     "rel": "data/reizo_mcfunc_engin/function/asset/effect/%namespace%/init/_.mcfunction",
                     "content":[
-                        "#> reizo_mcfunc_engin:asset/effect/%namespace%/init/_",
+                        "#> %fileResourcePath%",
                         "#",
                         "# EffectのInit処理",
                         "#",
