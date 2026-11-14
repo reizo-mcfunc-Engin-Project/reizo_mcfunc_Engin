@@ -14,6 +14,10 @@ data modify storage reizo_mcfunc_engin:context Args set from storage reizo_mcfun
 # 空の空間を作成
 $data modify storage reizo_mcfunc_engin:context method set value "$(method)"
 
+# キャッシュが無ければキャッシュの作成をしておく
+    $execute if data storage reizo_mcfunc_engin:context data.Registry.Extends unless data storage reizo_mcfunc_engin:context Rom.Cache.Method.$(method)[0] run function reizo_mcfunc_engin:asset/object/.manager/call_method/cache/_
+    $execute unless data storage reizo_mcfunc_engin:context Rom.Cache.Method.$(method)[0] run data modify storage reizo_mcfunc_engin:context Rom.Cache.Method.$(method) set from storage reizo_mcfunc_engin:object Call.Cache.Method
+
 # 実際使うのはこっち
     data modify storage reizo_mcfunc_engin:object Call.Args set from storage reizo_mcfunc_engin:context Args
     data modify storage reizo_mcfunc_engin:object Call.Args.method set from storage reizo_mcfunc_engin:context method
