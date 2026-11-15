@@ -30,4 +30,4 @@ execute unless data storage reizo_mcfunc_engin:mob {Implement:1b} if data storag
     data remove storage reizo_mcfunc_engin:context origin_Args
     data remove storage reizo_mcfunc_engin:mob Implement
     data remove storage reizo_mcfunc_engin:context this
-    data remove storage reizo_mcfunc_engin:context Cache
+    data remove storage reizo_mcfunc_engin:context data

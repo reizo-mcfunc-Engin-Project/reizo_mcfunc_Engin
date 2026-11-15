@@ -18,6 +18,3 @@ function reizo_mcfunc_engin:asset/item/.manager/tick/run.m with storage reizo_mc
 # 子クラスのtickファイルが存在しない場合、親クラスのtickファイルを呼び出す。
     execute unless data storage reizo_mcfunc_engin:item {Implement:1b} if data storage reizo_mcfunc_engin:context data.Registry.Extends run function reizo_mcfunc_engin:asset/item/.manager/tick/call_super_method/_
     data remove storage reizo_mcfunc_engin:item Implement
-
-# お掃除
-data remove storage reizo_mcfunc_engin:context Cache

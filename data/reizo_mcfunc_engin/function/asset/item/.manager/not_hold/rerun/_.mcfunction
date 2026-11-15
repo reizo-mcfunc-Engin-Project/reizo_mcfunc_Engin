@@ -28,7 +28,6 @@ function reizo_mcfunc_engin:asset/item/.manager/tick/run/common/in_this/not_hold
 # お掃除
     data remove storage reizo_mcfunc_engin:context data
     data remove storage reizo_mcfunc_engin:context this
-    data remove storage reizo_mcfunc_engin:context Cache
     scoreboard players reset $Item.Slot reizo_mcfunc_Engin.Temp
 
 # 要素の削除

@@ -26,7 +26,8 @@ execute unless data storage reizo_mcfunc_engin:object {Implement:1b} if data sto
     execute unless data storage reizo_mcfunc_engin:context this run data remove entity @s data.Field
 
 # お掃除
-data remove storage reizo_mcfunc_engin:context Args
-data remove storage reizo_mcfunc_engin:context origin_Args
-data remove storage reizo_mcfunc_engin:object Implement
-data remove storage reizo_mcfunc_engin:context this
+    data remove storage reizo_mcfunc_engin:context Args
+    data remove storage reizo_mcfunc_engin:context origin_Args
+    data remove storage reizo_mcfunc_engin:object Implement
+    data remove storage reizo_mcfunc_engin:context this
+    data remove storage reizo_mcfunc_engin:context data
